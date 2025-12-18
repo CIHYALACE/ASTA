@@ -66,7 +66,7 @@ export default function Header() {
             <div className="nav-content flex justify-between items-center flex-row-reverse">
               <a href="#" className="logo no-underline flex items-center gap-4">
                 <img
-                  src="/images/ASTA_Logo.svg"
+                  src="/svgs/ASTA_Logo.svg"
                   alt="أكاديمية المهارات التطبيقية"
                   className="w-[500px] max-w-full h-auto"
                 />
@@ -238,7 +238,6 @@ export default function Header() {
                   href="#"
                   className="btn btn-primary bg-gradient-to-r from-[#226796] to-[#3cbeb3] text-white no-rounded py-2 px-2 rounded-full font-semibold no-underline transition-all inline-flex items-center gap-2 text-md whitespace-nowrap hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <i className="fas fa-certificate"></i>
                   التحقق من الشهادة
                 </a>
               </div>

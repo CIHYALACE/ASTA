@@ -16,8 +16,8 @@ module.exports = {
         accent2: '#FF9E6D'
       },
       fontFamily: {
-        'arabic-heading': ['Noto Naskh Arabic', 'serif'],
-        'arabic-body': ['Almarai', 'sans-serif']
+        'arabic-heading': ['GE Dinar Two Light Italic', 'serif'],
+        'arabic-body': ['GE Dinar Two Light Italic', 'sans-serif']
       },
       backgroundImage: {
         'gradient-theme': 'linear-gradient(135deg, #202C5B 0%, #226796 25%, #23A0D0 50%, #30AFC1 75%, #3CBEB3 100%)',

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'GE Dinar Two Light Italic';
+  src: url('/fonts/GE-Dinar-Two-Light-Italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}

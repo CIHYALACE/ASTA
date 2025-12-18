@@ -35,7 +35,7 @@ export default function Header() {
                   href="#"
                   className="text-white text-lg hover:-translate-y-0.5 transition-transform"
                 >
-                  <i className="fab fa-twitter"></i>
+                  <i className="fa-brands fa-x-twitter"></i>
                 </a>
                 <a
                   href="#"

@@ -39,7 +39,10 @@ export default function Footer() {
       { platform: 'linkedin', href: '#', icon: 'fab fa-linkedin', color: 'hover:bg-[#0077B5]' },
       { platform: 'youtube', href: '#', icon: 'fab fa-youtube', color: 'hover:bg-[#FF0000]' },
       { platform: 'instagram', href: '#', icon: 'fab fa-instagram', color: 'hover:bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45]' },
-      { platform: 'facebook', href: '#', icon: 'fab fa-facebook', color: 'hover:bg-[#3B5998]' }
+      { platform: 'facebook', href: '#', icon: 'fab fa-facebook', color: 'hover:bg-[#3B5998]' },
+      { platform: 'linkedin-in', href: '#', icon: 'fab fa-linkedin-in', color: 'hover:bg-[#0077B5]' },
+      { platform: 'snapchat', href: '#', icon: 'fab fa-snapchat', color: 'hover:bg-[#FFD700]' },
+      { platform: 'tiktok', href: '#', icon: 'fab fa-tiktok', color: 'hover:bg-[#3B5998]' },
     ],
     
     partners: [
@@ -61,9 +64,9 @@ export default function Footer() {
             <div className="mb-8">
               <a href="#" className="no-underline inline-block mb-6">
                 <img
-                  src="/images/ASTA_Nav_Logo.svg"
+                  src="/svgs/ASTA_Logo.svg"
                   alt="أكاديمية المهارات التطبيقية"
-                  className="w-[250px] h-auto invert brightness-0"
+                  className="w-[250px] h-auto0" // invert brightness-0 to make the logo color white
                   width={250}
                   height={60}
                 />

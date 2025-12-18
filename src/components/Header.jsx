@@ -4,8 +4,8 @@ export default function Header() {
       {/* Header */}
       <header className="main-header bg-white shadow-lg sticky top-0 z-50">
         {/* Top Bar */}
-        <div className="header-top bg-gradient-to-r from-[#202c5b] via-[#226796,#23a0d0,#30afc1] to-[#3cbeb3] py-2.5">
-          <div className="max-w-[1300px] mx-auto px-2">
+        <div className="header-top bg-gradient-to-r from-[#202c5b] via-[#23a0d0] to-[#3cbeb3] py-3">
+          <div className="container max-w-[1300px] mx-auto px-2">
             <div className="header-top-content flex justify-between items-center gap-5 text-sm flex-row-reverse">
               <div className="contact-info flex gap-5 flex-row-reverse">
                 <a
@@ -92,24 +92,24 @@ export default function Header() {
                   </a>
                 </li>
                 <li>
-            <button id="dropdownNvbarButton" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+            <button id="dropdownNvbarButton" data-dropdown-toggle="dropdownNavbar" className="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
               Dropdown 
-              <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+              <svg className="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7"/></svg>
           </button>
           {/* <!-- Dropdown menu --> */}
-          <div id="dropdownNavbar" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
-              <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton">
+          <div id="dropdownNavbar" className="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+              <ul className="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton">
                 <li>
-                  <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
+                  <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
                 </li>
                 <li>
-                  <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Settings</a>
+                  <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Settings</a>
                 </li>
                 <li>
-                  <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
+                  <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
                 </li>
                 <li>
-                  <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                  <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
                 </li>
               </ul>
           </div>

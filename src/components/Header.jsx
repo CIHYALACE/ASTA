@@ -85,7 +85,7 @@ export default function Header() {
               >
                 <li>
                   <a
-                    href="#"
+                    href="/"
                     className="active no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
                   >
                     الرئيسية
@@ -106,7 +106,7 @@ export default function Header() {
                   <ul className="absolute top-full right-0 mt-2 w-48 bg-white shadow-lg rounded-md border border-gray-100 hidden group-hover:block text-right">
                     <li>
                       <a
-                        href="#"
+                        href="/about-us-ar"
                         className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
                       >
                         نبذة عن الأكاديمية
@@ -114,7 +114,7 @@ export default function Header() {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/about-us-ar"
                         className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
                       >
                         الرؤية والرسالة
@@ -122,7 +122,7 @@ export default function Header() {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/about-us-ar"
                         className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
                       >
                         فريق العمل

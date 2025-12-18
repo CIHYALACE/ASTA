@@ -62,11 +62,11 @@ export default function Header() {
 
         {/* Main Navigation */}
         <nav className="main-nav">
-          <div className="max-w-[1300px] mx-auto px-2">
+          <div className="max-w-[1200px] mx-auto px-2">
             <div className="nav-content flex justify-between items-center flex-row-reverse">
               <a href="#" className="logo no-underline flex items-center gap-4">
                 <img
-                  src="/images/ASTA_Nav_Logo.svg"
+                  src="/images/ASTA_Logo.svg"
                   alt="أكاديمية المهارات التطبيقية"
                   className="w-[500px] max-w-full h-auto"
                 />
@@ -91,60 +91,145 @@ export default function Header() {
                     الرئيسية
                   </a>
                 </li>
-                <li>
-            <button id="dropdownNvbarButton" data-dropdown-toggle="dropdownNavbar" className="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
-              Dropdown 
-              <svg className="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7"/></svg>
-          </button>
-          {/* <!-- Dropdown menu --> */}
-          <div id="dropdownNavbar" className="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
-              <ul className="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton">
-                <li>
-                  <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
+
+                {/* عن الاكاديمية dropdown */}
+                <li className="relative group">
+                  <a
+                    href="#"
+                    className="no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
+                  >
+                    عن الاكاديمية
+                    <svg className="inline-block w-4 h-4 mr-1 transition-transform group-hover:rotate-180" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </a>
+                  <ul className="absolute top-full right-0 mt-2 w-48 bg-white shadow-lg rounded-md border border-gray-100 hidden group-hover:block text-right">
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                      >
+                        نبذة عن الأكاديمية
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                      >
+                        الرؤية والرسالة
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                      >
+                        فريق العمل
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Settings</a>
-                </li>
-                <li>
-                  <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
-                </li>
-                <li>
-                  <a href="#" className="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
-                </li>
-              </ul>
-          </div>
-                </li>
-                <li>
+
+                {/* البرامج التدريبية dropdown */}
+                <li className="relative group">
                   <a
                     href="#"
                     className="no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
                   >
                     البرامج التدريبية
+                    <svg className="inline-block w-4 h-4 mr-1 transition-transform group-hover:rotate-180" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
                   </a>
+                  <ul className="absolute top-full right-0 mt-2 w-56 bg-white shadow-lg rounded-md border border-gray-100 hidden group-hover:block text-right">
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                      >
+                        برامج طويلة المدى
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                      >
+                        برامج قصيرة المدى
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                      >
+                        برامج متخصصة
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
+
+                {/* الدورات الاحترافية dropdown */}
+                <li className="relative group">
                   <a
                     href="#"
                     className="no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
                   >
                     الدورات الاحترافية
+                    <svg className="inline-block w-4 h-4 mr-1 transition-transform group-hover:rotate-180" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
                   </a>
+                  <ul className="absolute top-full right-0 mt-2 w-56 bg-white shadow-lg rounded-md border border-gray-100 hidden group-hover:block text-right">
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                      >
+                        دورات معتمدة
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                      >
+                        ورش عمل
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <a
-                    href="#"
-                    className="no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
-                  >
-                    التسجيل
-                  </a>
-                </li>
-                <li>
+
+                {/* خدمات الطلاب dropdown */}
+                <li className="relative group">
                   <a
                     href="#"
                     className="no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
                   >
                     خدمات الطلاب
+                    <svg className="inline-block w-4 h-4 mr-1 transition-transform group-hover:rotate-180" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
                   </a>
+                  <ul className="absolute top-full right-0 mt-2 w-52 bg-white shadow-lg rounded-md border border-gray-100 hidden group-hover:block text-right">
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                      >
+                        الدعم الأكاديمي
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                      >
+                        التسجيل والاستفسارات
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
 

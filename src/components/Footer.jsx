@@ -57,7 +57,7 @@ export default function Footer() {
       {/* Top Section - Main Footer Content */}
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
         {/* Three Column Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Column 1: Logo and Contact Info */}
           <div>

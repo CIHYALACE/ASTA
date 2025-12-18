@@ -1,0 +1,83 @@
+        :root {
+            --gradient: linear-gradient(135deg, #202C5B 0%, #226796 25%, #23A0D0 50%, #30AFC1 75%, #3CBEB3 100%);
+            --dark_blue: #202C5B;
+            --mid_blue: #226796;
+            --light_blue: #23A0D0;
+            --teal: #30AFC1;
+            --aqua: #3CBEB3;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .gradient-bg {
+            background: var(--gradient);
+        }
+
+        .gradient-text {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .gradient-border {
+            border-image: var(--gradient);
+            border-image-slice: 1;
+        }
+
+        .triangle {
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .timeline-line {
+            background: var(--gradient);
+        }
+
+        /* Smooth transitions */
+        .transition-all-custom {
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effects */
+        .hover-lift:hover {
+            transform: translateY(-10px);
+        }
+
+        .hover-lift-small:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .timeline-item {
+                flex-direction: column !important;
+            }
+            
+            .timeline-content {
+                width: calc(100% - 80px) !important;
+                margin-right: 80px !important;
+            }
+            
+            .timeline-icon {
+                right: 0 !important;
+                left: auto !important;
+            }
+        }

@@ -95,7 +95,7 @@ export default function Header() {
                 {/* عن الاكاديمية dropdown */}
                 <li className="relative group">
                   <a
-                    href="#"
+                    href="/about-us-ar"
                     className="no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
                   >
                     عن الاكاديمية

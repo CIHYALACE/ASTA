@@ -13,11 +13,17 @@ module.exports = {
         quaternary: '#30AFC1',
         quinary: '#3CBEB3',
         accent: '#FFD166',
-        accent2: '#FF9E6D'
+        accent2: '#FF9E6D',
+        dark_blue: '#202C5B',
+        mid_blue: '#226796',
+        light_blue: '#23A0D0',
+        teal: '#30AFC1',
+        aqua: '#3CBEB3',
       },
       fontFamily: {
         'arabic-heading': ['GE Dinar Two Light Italic', 'serif'],
-        'arabic-body': ['GE Dinar Two Light Italic', 'sans-serif']
+        'arabic-body': ['GE Dinar Two Light Italic', 'sans-serif'],
+        'cairo': ['Cairo', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-theme': 'linear-gradient(135deg, #202C5B 0%, #226796 25%, #23A0D0 50%, #30AFC1 75%, #3CBEB3 100%)',

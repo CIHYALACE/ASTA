@@ -44,7 +44,7 @@ export default function Navbar() {
 
   return (
     // the Navbar
-    <nav className="w-full sticky top-0 z-30">
+    <nav className="w-full sticky top-0 z-30 border-b-2 gradient-border">
       {/* Top Bar */}
        <div className="header-top hidden md:block bg-gradient-to-r from-[#202c5b] via-[#23a0d0] to-[#3cbeb3] py-3">
           <div className="container max-w-[1300px] mx-auto px-2">

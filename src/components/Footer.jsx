@@ -53,7 +53,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-b from-[#202c5b] to-[#151e3f] text-white pt-12 pb-6">
+    <footer className="bg-gradient-to-b from-[#202c5b] to-[#151e3f] text-white pt-12 pb-6 border-t-6 gradient-border">
       {/* Top Section - Main Footer Content */}
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
         {/* Three Column Layout */}
@@ -215,7 +215,7 @@ export default function Footer() {
       </div>
       
       {/* Bottom Bar - Copyright */}
-      <div className="border-t border-white/10 pt-6">
+      <div className="border-t-2 gradient-border pt-6">
         <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}

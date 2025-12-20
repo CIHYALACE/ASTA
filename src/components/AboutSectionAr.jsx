@@ -5,7 +5,7 @@ const AboutSection = () => {
 <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-12 relative">
-                <h2 className="text-3xl md:text-4xl font-bold gradient-text inline-block px-6 relative">
+                <h2 className="text-3xl md:text-4xl font-bold gradient-text inline-block px-6 relative py-3">
                     من نحن؟
                     <div className="absolute top-1/2 right-full w-24 h-1 gradient-bg transform -translate-y-1/2 hidden md:block"></div>
                     <div className="absolute top-1/2 left-full w-24 h-1 gradient-bg transform -translate-y-1/2 hidden md:block"></div>
@@ -16,13 +16,24 @@ const AboutSection = () => {
                 <div className="md:w-1/2">
                     <div className="space-y-6 text-lg text-gray-700">
                         <p className="leading-relaxed">
-                            أكاديمية المهارات التطبيقية (ASTA) هي منصة تعليمية رائدة تهدف إلى سد الفجوة بين المعرفة الأكاديمية ومتطلبات سوق العمل. تأسست عام 2015 بمبادرة من مجموعة من الخبراء في مختلف المجالات المهنية.
+                            أكاديمية المهارات التطبيقية ليست مجرد 
+                            أكاديمية تدريب؛ نحن مسار مهني تدريبي احترافي 
+                            يؤهل الى سوق العمل, ُ صمم ليحول المعرفة 
+                            ُ النظرية إلى مهارات عملية مطلوبة ومعتمدة 
+                            ومرخصة من المؤسسة العامة للتدريب التقني 
+                            والمهني . وتؤمن بأن الاحتراف المهني في العمل 
+                            يبدأ بالتدريب، ولذا تبنينا منهجية تطبيقية مرنة 
+                            تضمن لك اكتساب الخبرة الحقيقية.
                         </p>
                         <p className="leading-relaxed">
-                            نحن نؤمن بأن التعلم الحقيقي لا يقتصر على المعلومات النظرية، بل يحتاج إلى تطبيق عملي ومهارات قابلة للقياس. لذلك صممنا برامجنا لتكون مزيجًا متوازنًا بين الأسس النظرية والتطبيق العملي.
+                            أكاديمية المهارات التطبيقية انطلاقة نحو 
+                            اكتساب المزيد من المهارات التي تضعك في 
+                            صدارة المنافسة.
                         </p>
                         <p className="leading-relaxed">
-                            رؤيتنا تتجاوز التعليم التقليدي إلى بناء جيل من المحترفين القادرين على قيادة التغيير والإبداع في مجالاتهم، مع التركيز على القيم المهنية والتميز العملي.
+                            أكاديمية المهارات التطبيقية انطلاقة نحو 
+                            اكتساب المزيد من المهارات التي تضعك في 
+                            صدارة المنافسة.
                         </p>
                     </div>
                 </div>

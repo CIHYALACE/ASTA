@@ -13,7 +13,7 @@ const ValuesSection = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-dark_blue to-aqua bg-clip-text text-transparent">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-dark_blue to-aqua bg-clip-text text-transparent py-3">
           قيمنا
         </h2>
         

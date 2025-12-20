@@ -43,9 +43,11 @@ const JourneyTimeline = () => {
   return (
  <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
-            <div className="text-center mb-12 relative">
-                <h2 className="text-3xl md:text-4xl font-bold gradient-text inline-block px-6 relative">
-                    رحلة التأسيس والتطور
+            <div className="text-center mb-10 relative">
+                <h2 className="text-3xl md:text-4xl font-bold gradient-text inline-block px-6 py-3 relative">
+                    أكاديميـــــة المهارات التطبيقية
+رحلــة متكاملة لـ التأهيل المهني
+
                     <div className="absolute top-1/2 right-full w-24 h-1 gradient-bg transform -translate-y-1/2 hidden md:block"></div>
                     <div className="absolute top-1/2 left-full w-24 h-1 gradient-bg transform -translate-y-1/2 hidden md:block"></div>
                 </h2>
@@ -58,14 +60,15 @@ const JourneyTimeline = () => {
                 {/* <!-- 2015 --> */}
                 <div className="flex mb-16 timeline-item relative">
                     <div className="w-full md:w-1/2 md:pr-10">
-                        <div className="bg-white rounded-2xl p-8 shadow-lg border-r-4 border-gradient transition-all-custom hover:shadow-2xl hover-lift border-gradient animate-fadeInUp" style={{animationDelay: '0.1s'}}>
-                            <div className="absolute -right-9 md:-right-10 top-8 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center z-10 border-4 border-gradient">
+                        <div className="bg-white rounded-2xl p-8 shadow-lg border-4 gradient-border transition-all-custom hover:shadow-2xl hover-lift gradient-border animate-fadeInUp" style={{animationDelay: '0.1s'}}>
+                            <div className="absolute -right-9 md:-right-10 top-8 w-16 h-16 bg-white  shadow-lg flex items-center justify-center z-10 border-4 gradient-border">
                                 <i className="fas fa-seedling text-2xl gradient-text"></i>
                             </div>
-                            <div className="font-bold text-xl mb-2 gradient-text">٢٠١٥</div>
-                            <h3 className="text-2xl font-bold text-dark-blue mb-4">بداية الرحلة</h3>
+                            <h3 className="text-2xl font-bold text-dark-blue mb-4 gradient-text">بداية الرحلة</h3>
                             <p className="text-gray-600 leading-relaxed">
-                                تأسيس الأكاديمية بمبادرة من خمسة خبراء في التعليم والتدريب المهني. بدأت برامجنا الأولى بتدريب ٣٠ متدربًا في مجال تطوير الويب والتسويق الرقمي. شعارنا كان "التعليم التطبيقي طريق التميز".
+                            حلتك مع أكاديمية المهارات التطبيقية لا تبدأ وتنتهي بدورة واحدة، بل هي مسار متدرج يرافقك 
+                            خطوة بخطوة نحو مستقبل مهني واعد. تبدأ أولى محطاتك بدورات احترافية قصيرة مدعومة من 
+                            صندوق الموارد البشرية (هدف)، تمنحك شهادات مهنية معتمدة تفتح لك أبواب العمل بثقة.
                             </p>
                         </div>
                     </div>
@@ -76,87 +79,40 @@ const JourneyTimeline = () => {
                 <div className="flex mb-16 timeline-item relative">
                     <div className="hidden md:flex w-1/2"></div>
                     <div className="w-full md:w-1/2 md:pl-10">
-                        <div className="bg-white rounded-2xl p-8 shadow-lg border-r-4 border-gradient transition-all-custom hover:shadow-2xl hover-lift border-gradient animate-fadeInUp" style={{animationDelay: '0.2s'}}>
-                            <div className="absolute -left-9 md:-left-10 top-8 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center z-10 border-4 border-gradient">
+                        <div className="bg-white rounded-2xl p-8 shadow-lg border-4 gradient-border transition-all-custom hover:shadow-2xl hover-lift gradient-border animate-fadeInUp" style={{animationDelay: '0.2s'}}>
+                            <div className="absolute -left-9 md:-left-10 top-8 w-16 h-16 bg-white  shadow-lg flex items-center justify-center z-10 border-4 gradient-border">
                                 <i className="fas fa-rocket text-2xl gradient-text"></i>
                             </div>
-                            <div className="font-bold text-xl mb-2 gradient-text">٢٠١٧</div>
-                            <h3 className="text-2xl font-bold text-dark-blue mb-4">التوسع والتخصص</h3>
+                            <h3 className="text-2xl font-bold text-dark-blue mb-4 gradient-text">البرامج الاحترافية </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                إطلاق أول برامج التخصص المهني المتقدمة. توسيع القاعدة التدريبية لتشمل ٨ تخصصات مهنية جديدة. تخرج الدفعة الأولى من المدربين المعتمدين لدى الأكاديمية.
+                            ومن هناك تنتقل إلى مرحلة متقدمة عبر برامج الدبلوم، حيث تجمع بين التخصص ا³كاديمي والشهادة 
+                            هناك تنتقل إلى مرحلة متقدمة عبر برامج الدبلوم، حيث تجمع بين التخصص ا³كاديمي والشهادة 
+                            المهنية، لتحصل على تأهيل مزدوج يعزز مكانتك ويمنحك ميزة تنافسية قوية .
                             </p>
                         </div>
                     </div>
-                    {/* <div className="hidden md:flex w-1/2"></div> */}
                 </div>
 
                 {/* <!-- 2019 --> */}
                 <div className="flex mb-16 timeline-item relative">
                     <div className="w-full md:w-1/2 md:pr-10">
-                        <div className="bg-white rounded-2xl p-8 shadow-lg border-r-4 border-gradient transition-all-custom hover:shadow-2xl hover-lift border-gradient animate-fadeInUp" style={{animationDelay: '0.3s'}}>
-                            <div className="absolute -right-9 md:-right-10 top-8 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center z-10 border-4 border-gradient">
+                        <div className="bg-white rounded-2xl p-8 shadow-lg border-4 gradient-border transition-all-custom hover:shadow-2xl hover-lift gradient-border animate-fadeInUp" style={{animationDelay: '0.3s'}}>
+                            <div className="absolute -right-9 md:-right-10 top-8 w-16 h-16 bg-white  shadow-lg flex items-center justify-center z-10 border-4 gradient-border">
                                 <i className="fas fa-network-wired text-2xl gradient-text"></i>
                             </div>
-                            <div className="font-bold text-xl mb-2 gradient-text">٢٠١٩</div>
-                            <h3 className="text-2xl font-bold text-dark-blue mb-4">التحول الرقمي والشراكات</h3>
+                            <h3 className="text-2xl font-bold text-dark-blue mb-4 gradient-text">البكالوريوس  </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                إطلاق المنصة التعليمية الإلكترونية بالكامل. عقد شراكات استراتيجية مع ١٢ شركة رائدة في القطاعين العام والخاص. تجاوز عدد المتدربين ٢٠٠٠ متدرب بنهاية العام.
+                                لكن الرحلة لا تتوقف عند هذا الحد؛ فا³كاديمية تتيح لك مواصلة مسيرتك التعليمية نحو 
+                                البكالوريوس، عبر شراكتها الاستراتيجية مع جامعة العلوم التطبيقية الخاصة بالمملكة ا³ردنية 
+                                الهاشمية، لتصل إلى أعلى درجات التميز في تخصصات مطلوبة من خلال رحلة تضمن لك النمو 
+                                المستمر من دورة احترافية تؤهلك لاجتياز الاختبار المهني لتوائم حسب تخصصك إلى دبلوم 
+                                متوسط، ليساعدك للحصول على درجة البكالوريوس .
                             </p>
                         </div>
                     </div>
                     <div className="hidden md:flex w-1/2"></div>
                 </div>
 
-                {/* <!-- 2021 --> */}
-                <div className="flex mb-16 timeline-item relative">
-                  <div className="hidden md:flex w-1/2"></div>
-                    <div className="w-full md:w-1/2 md:pl-10">
-                        <div className="bg-white rounded-2xl p-8 shadow-lg border-r-4 border-gradient transition-all-custom hover:shadow-2xl hover-lift border-gradient animate-fadeInUp" style= {{animationDelay: '0.4s'}}>
-                            <div className="absolute -left-9 md:-left-10 top-8 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center z-10 border-4 border-gradient">
-                                <i className="fas fa-award text-2xl gradient-text"></i>
-                            </div>
-                            <div className="font-bold text-xl mb-2 gradient-text">٢٠٢١</div>
-                            <h3 className="text-2xl font-bold text-dark-blue mb-4">الجودة والاعتماد</h3>
-                            <p className="text-gray-600 leading-relaxed">
-                                حصول الأكاديمية على اعتماد دولي من مجلس التدريب الأوروبي. فوزنا بجائزة التميز في التعليم المهني على مستوى الوطن العربي. إطلاق برامج التعلم الهجين بنجاح كبير.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* <!-- 2023 --> */}
-                <div className="flex mb-16 timeline-item relative">
-                    <div className="w-full md:w-1/2 md:pr-10">
-                        <div className="bg-white rounded-2xl p-8 shadow-lg border-r-4 border-gradient transition-all-custom hover:shadow-2xl hover-lift border-gradient animate-fadeInUp" style={{animationDelay: '0.5s'}}>
-                            <div className="absolute -right-9 md:-right-10 top-8 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center z-10 border-4 border-gradient">
-                                <i className="fas fa-globe text-2xl gradient-text"></i>
-                            </div>
-                            <div className="font-bold text-xl mb-2 gradient-text">٢٠٢٣</div>
-                            <h3 className="text-2xl font-bold text-dark-blue mb-4">الريادة والتأثير</h3>
-                            <p className="text-gray-600 leading-relaxed">
-                                توسيع نطاق العمل ليشمل ٤ دول عربية. تخطي حاجز ١٠٠٠٠ متدرب تخرجوا من برامجنا. إطلاق مبادرة "مليون شاب مهني" بالتعاون مع مؤسسات حكومية.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="hidden md:flex w-1/2"></div>
-                </div>
-
-                {/* <!-- 2024 --> */}
-                <div className="flex timeline-item relative">
-                  <div className="hidden md:flex w-1/2"></div>
-                    <div className="w-full md:w-1/2 md:pl-10">
-                        <div className="bg-white rounded-2xl p-8 shadow-lg border-r-4 border-gradient transition-all-custom hover:shadow-2xl hover-lift border-gradient animate-fadeInUp" style={{animationDelay: '0.6s'}}>
-                            <div className="absolute -left-9 md:-left-10 top-8 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center z-10 border-4 border-gradient">
-                                <i className="fas fa-bullseye text-2xl gradient-text"></i>
-                            </div>
-                            <div className="font-bold text-xl mb-2 gradient-text">٢٠٢٤</div>
-                            <h3 className="text-2xl font-bold text-dark-blue mb-4">الطموحات المستقبلية</h3>
-                            <p className="text-gray-600 leading-relaxed">
-                                الاستعداد لإطلاق برامج الذكاء الاصطناعي والتعلم الآلي. التخطيط لافتتاح فروع جديدة في ثلاث دول إضافية. تطوير نظام تعلم مخصص باستخدام الذكاء الاصطناعي.
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

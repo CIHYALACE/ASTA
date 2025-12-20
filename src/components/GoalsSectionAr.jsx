@@ -13,7 +13,7 @@ const GoalsSection = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-dark_blue to-aqua bg-clip-text text-transparent">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-dark_blue to-aqua bg-clip-text text-transparent py-3">
           أهداف أكاديمية ASTA
         </h2>
         

@@ -8,7 +8,7 @@ const DestinationSection = () => {
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpolygon points='50,0 100,100 0,100' fill='white'/%3E%3C/svg%3E')] bg-[length:120px]"></div>
           <div className="relative z-10">
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 py-3">
               وجهتك، أيًا كان طموحك
             </h3>
             

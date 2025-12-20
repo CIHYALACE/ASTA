@@ -431,12 +431,6 @@ export default function Navbar() {
                         عن الأكاديمية
                       </a>
                       <a
-                        href="/Vission&Mission"
-                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
-                      >
-                        رؤيتنا ورسالتنا
-                      </a>
-                      <a
                         href="/Team"
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >

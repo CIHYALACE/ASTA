@@ -12,7 +12,7 @@ const AboutSection = () => {
                 </h2>
             </div>
             
-            <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                 <div className="md:w-1/2">
                     <div className="space-y-6 text-lg text-gray-700">
                         <p className="leading-relaxed">

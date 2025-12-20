@@ -1,10 +1,52 @@
-export default function Header() {
+"use client";
+import React, { useState, useRef, useEffect } from "react";
+import { Bars3Icon } from "@heroicons/react/24/solid";
+import { useLocation } from "react-router-dom";
+
+export default function Navbar() {
+  const [search, setSearch] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [aboutDropdown, setAboutDropdown] = useState(false);
+  const [diplomasDropdown, setDiplomasDropdown] = useState(false);
+  const [coursesDropdown, setCoursesDropdown] = useState(false);
+  const [studnetServicesDropdown, setStudentServicesDropdown] = useState(false);
+  // const router = useRouter();
+  const location = useLocation();
+  const pathname = location.pathname;
+  const diplomasRef = useRef(null);
+  const aboutRef = useRef(null);
+  const courses = useRef(null);
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    console.log(e.currentTarget.elements[0].value);
+    router.replace(`/search?q=${e.currentTarget.elements[0].value}`);
+  };
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (diplomasRef.current && !diplomasRef.current.contains(event.target)) {
+        setDiplomasDropdown(false);
+      }
+      if (aboutRef.current && !aboutRef.current.contains(event.target)) {
+        setAboutDropdown(false);
+      }
+      if (courses.current && !courses.current.contains(event.target)) {
+        setCoursesDropdown(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <>
-      {/* Header */}
-      <header className="main-header bg-white shadow-lg sticky top-0 z-50">
-        {/* Top Bar */}
-        <div className="header-top bg-gradient-to-r from-[#202c5b] via-[#23a0d0] to-[#3cbeb3] py-3">
+    // the Navbar
+    <nav className="w-full sticky top-0 z-30">
+      {/* Top Bar */}
+       <div className="header-top hidden md:block bg-gradient-to-r from-[#202c5b] via-[#23a0d0] to-[#3cbeb3] py-3">
           <div className="container max-w-[1300px] mx-auto px-2">
             <div className="header-top-content flex justify-between items-center gap-5 text-sm flex-row-reverse">
               <div className="contact-info flex gap-5 flex-row-reverse">
@@ -59,201 +101,504 @@ export default function Header() {
             </div>
           </div>
         </div>
+      {/* Main Nav */}
+      <div className="md:hidden bg-white md:pt-8! pt-[8px]">
+        <div className="md:w-[1400px] mx-auto px-2">
+          {/* Mobile Layout */}
+          <div className="md:hidden">
+            {/* Mobile Semi Header */}
+            <div className="py-2! container">
+              <div className="flex items-center justify-between">
+                {/* Mobile Logo - Right side */}
+                <div className="flex-shrink-0">
+                  <a href={"/"}>
+                    <img
+                      src="/svgs/ASTA_Nav_Logo.svg"
+                      alt="ASTA Logo"
+                      width={63}
+                      height={17}
+                      // priority
+                      className="h-auto"
+                    />
+                  </a>
+                </div>
 
-        {/* Main Navigation */}
-        <nav className="main-nav">
-          <div className="max-w-[1200px] mx-auto px-2">
-            <div className="nav-content flex justify-between items-center flex-row-reverse">
-              <a href="#" className="logo no-underline flex items-center gap-4">
+                {/* Mobile menu button and search - Left side */}
+                <div className="flex items-center gap-3 relative">
+                  {/* Mobile search icon */}
+                  {/* <svg
+                    className="w-6 h-6 font-medium text-[#23A0D0]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    onClick={() => {
+                      setSearch(!search);
+                    }}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      router.replace(
+                        `/Courses?search=${e.currentTarget.elements[1].value}`
+                      );
+                    }}
+                  >
+                    <div
+                      className={
+                        "absolute top-[calc(100%+12px)] w-[280px] lg:hidden flex py-1 px-[12px] items-center gap-[12px] after:w-[calc(100%-2PX)] after:h-[calc(100%-2PX)] bg-red after:absolute after:left-[1px] after:top-[1px] rounded-3xl after:rounded-3xl after:bg-white after:z-[-1] z-[10] bg-gradient-to-r from-[#202C5B] via-[#23A0D0] to-[#3CBEB3] duration-300 -left-50 " +
+                        (search ? "" : "invisible opacity-0")
+                      }
+                    >
+                      <button type="submit" className="w-[22px] h-[22px]">
+                        <img src="/images/icons/search.svg" alt="" />
+                      </button>
+                      <input
+                        type="text"
+                        placeholder="عن ماذا تبحث؟"
+                        className="text-[16px] font-medium placeholder:text-[#878787] text-[#202C5B] h-[36px] w-full"
+                      />
+                    </div>
+                  </form> */}
+
+                  {/* Mobile menu button */}
+                  <svg
+                    className="w-6 h-6 text-[#23A0D0] cursor-pointer"
+                    onClick={() => setOpen(true)}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          {/* Desktop Menu */}
+          <div className="bg-white">
+          <div className=" w-[1400px] mx-auto px-2">
+          <div className="hidden sm:flex justify-between items-center py-3 border-gray-200 bg-white  top-0">
+            <div className="flex-shrink-0">
+              <a href="/">
                 <img
                   src="/svgs/ASTA_Logo.svg"
-                  alt="أكاديمية المهارات التطبيقية"
-                  className="w-[500px] max-w-full h-auto"
+                  alt="ASTA Logo"
+                  width={152}
+                  height={42}
+                  className="h-auto md:w-[120px] lg:w-[152px] md:mx-8"
                 />
               </a>
-
-              <button
-                className="mobile-menu-btn hidden bg-transparent border-none text-2xl text-[#202c5b] cursor-pointer p-1"
-                id="mobileMenuBtn"
+            </div>
+            <div className="flex items-center">
+              <a
+                href="/"
+                className={
+                  "md:text-[18px] lg:text-[20px] px-[12px] py-[6px] font-medium hover:text-[#4fd1c5] duration-300 transition-colors !leading-[1.25] " +
+                  (pathname === "/"
+                    ? "text-[#4fd1c5]"
+                    : "text-[#202C5B]")
+                }
               >
-                <i className="fas fa-bars"></i>
-              </button>
+                الرئيسية
+              </a>
+              <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div>
 
-              <ul
-                className="nav-links flex list-none gap-6 flex-row-reverse mx-2"
-                id="navLinks"
-              >
-                <li>
-                  <a
-                    href="/"
-                    className="active no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
+              {/* Diplomas dropdown */}
+              <div className="relative" ref={aboutRef}>
+                <button
+                  onClick={() => {
+                    setCoursesDropdown(!coursesDropdown);
+                    setDiplomasDropdown(false);
+                    setAboutDropdown(false);
+                    setStudentServicesDropdown(false);
+                  }}
+                  className={
+                    "flex items-center cursor-pointer gap-1 md:text-[18px] lg:text-[20px] px-[12px] font-medium transition-colors !leading-[1.25] hover:text-[#4fd1c5] duration-300 min-h-[44px] " +
+                    (false
+                    ? "text-[#4fd1c5]"
+                    : "text-[#202C5B]")
+                  }
+                >
+                   الدورات الإحترافية
+                  <svg
+                    className={`w-3 h-3 transition-transform ${
+                      coursesDropdown ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    الرئيسية
-                  </a>
-                </li>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                {coursesDropdown && (
+                  <div className="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
+                    <div className="py-1">
+                      <a
+                        href="/Diplomas-Ar"
+                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                      >
+                        جميع الدورات الاحترافية
+                      </a>
+                      {/* map for every dimploma */}
+                      {/* diplomas.map((diploma) => (
+                        <a
+                          key={diploma.id}
+                          href={`/Diplomas/${diploma.id}`}>
+                          {diploma.name}
+                        </a>
+                      )) */}
+                    </div>
+                  </div>
+                )}
+              </div>
 
-                {/* عن الاكاديمية dropdown */}
-                <li className="relative group">
-                  <a
-                    href="/about-us-ar"
-                    className="no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
+              <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div>
+
+              {/* Student services dropdown */}
+              <div className="relative" ref={aboutRef}>
+                <button
+                  onClick={() => {
+                    setStudentServicesDropdown(!studnetServicesDropdown);
+                    setDiplomasDropdown(false);
+                    setCoursesDropdown(false);
+                    setAboutDropdown(false);
+                  }}
+                  className={
+                    "flex items-center cursor-pointer gap-1 md:text-[18px] lg:text-[20px] px-[12px] font-medium transition-colors !leading-[1.25] hover:text-[#4fd1c5] duration-300 min-h-[44px] " +
+                    (false
+                      ? "text-[#4fd1c5]"
+                      : "text-[#202C5B]")
+                  }
+                >
+                   خدمات الطلاب
+                  <svg
+                    className={`w-3 h-3 transition-transform ${
+                      studnetServicesDropdown ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    عن الاكاديمية
-                    <svg className="inline-block w-4 h-4 mr-1 transition-transform group-hover:rotate-180" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </a>
-                  <ul className="absolute top-full right-0 mt-2 w-48 bg-white shadow-lg rounded-md border border-gray-100 hidden group-hover:block text-right">
-                    <li>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                {studnetServicesDropdown && (
+                  <div className="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
+                    <div className="py-1">
                       <a
-                        href="/about-us-ar"
-                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                        href="/Diplomas-Ar"
+                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
-                        نبذة عن الأكاديمية
+                        جميع البرامج التدريبية
                       </a>
-                    </li>
-                    <li>
+                      {/* map for every dimploma */}
+                      {/* diplomas.map((diploma) => (
+                        <a
+                          key={diploma.id}
+                          href={`/Diplomas/${diploma.id}`}>
+                          {diploma.name}
+                        </a>
+                      )) */}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div>
+
+              {/* Diplomas dropdown */}
+              <div className="relative" ref={aboutRef}>
+                <button
+                  onClick={() => {
+                    setDiplomasDropdown(!diplomasDropdown);
+                    setCoursesDropdown(false);
+                    setAboutDropdown(false);
+                    setStudentServicesDropdown(false);
+                  }}
+                  className={
+                    "flex items-center cursor-pointer gap-1 md:text-[18px] lg:text-[20px] px-[12px] font-medium transition-colors !leading-[1.25] hover:text-[#4fd1c5] duration-300 min-h-[44px] " +
+                    (false
+                      ? "text-[#4fd1c5]"
+                      : "text-[#202C5B]")
+                  }
+                >
+                   البرامج التدريبية
+                  <svg
+                    className={`w-3 h-3 transition-transform ${
+                      diplomasDropdown ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                {diplomasDropdown && (
+                  <div className="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
+                    <div className="py-1">
                       <a
-                        href="/about-us-ar"
-                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                        href="/Diplomas-Ar"
+                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
-                        الرؤية والرسالة
+                        جميع البرامج التدريبية
                       </a>
-                    </li>
-                    <li>
+                      {/* map for every dimploma */}
+                      {/* diplomas.map((diploma) => (
+                        <a
+                          key={diploma.id}
+                          href={`/Diplomas/${diploma.id}`}>
+                          {diploma.name}
+                        </a>
+                      )) */}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div>
+
+              {/* About dropdown */}
+              <div className="relative" ref={aboutRef}>
+                <button
+                  onClick={() => {
+                    setAboutDropdown(!aboutDropdown);
+                    setDiplomasDropdown(false);
+                    setCoursesDropdown(false);
+                    setStudentServicesDropdown(false);
+                  }}
+                  className={
+                    "flex items-center cursor-pointer gap-1 md:text-[18px] lg:text-[20px] px-[12px] font-medium transition-colors !leading-[1.25] hover:text-[#4fd1c5] duration-300 min-h-[44px] " +
+                    (pathname.startsWith("/about-us-ar")
+                      ? "text-[#4fd1c5]"
+                      : "text-[#202C5B]")
+                  }
+                >
+                  من نحن
+                  <svg
+                    className={`w-3 h-3 transition-transform ${
+                      aboutDropdown ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                {aboutDropdown && (
+                  <div className="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
+                    <div className="py-1">
                       <a
                         href="/about-us-ar"
-                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                      >
+                        عن الأكاديمية
+                      </a>
+                      <a
+                        href="/Vission&Mission"
+                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                      >
+                        رؤيتنا ورسالتنا
+                      </a>
+                      <a
+                        href="/Team"
+                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         فريق العمل
                       </a>
-                    </li>
-                  </ul>
-                </li>
-
-                {/* البرامج التدريبية dropdown */}
-                <li className="relative group">
-                  <a
-                    href="#"
-                    className="no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
-                  >
-                    البرامج التدريبية
-                    <svg className="inline-block w-4 h-4 mr-1 transition-transform group-hover:rotate-180" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </a>
-                  <ul className="absolute top-full right-0 mt-2 w-56 bg-white shadow-lg rounded-md border border-gray-100 hidden group-hover:block text-right">
-                    <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
+                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
-                        برامج طويلة المدى
+                        اتصل بنا
                       </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
-                      >
-                        برامج قصيرة المدى
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
-                      >
-                        برامج متخصصة
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                {/* الدورات الاحترافية dropdown */}
-                <li className="relative group">
-                  <a
-                    href="#"
-                    className="no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
-                  >
-                    الدورات الاحترافية
-                    <svg className="inline-block w-4 h-4 mr-1 transition-transform group-hover:rotate-180" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </a>
-                  <ul className="absolute top-full right-0 mt-2 w-56 bg-white shadow-lg rounded-md border border-gray-100 hidden group-hover:block text-right">
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
-                      >
-                        دورات معتمدة
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
-                      >
-                        ورش عمل
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                {/* خدمات الطلاب dropdown */}
-                <li className="relative group">
-                  <a
-                    href="#"
-                    className="no-underline text-[#202c5b] font-semibold text-lg relative py-2 px-1.5 whitespace-nowrap transition-all hover:text-[#23a0d0] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-[#202c5b] after:via-[#226796,#23a0d0,#30afc1] after:to-[#3cbeb3] after:transition-width"
-                  >
-                    خدمات الطلاب
-                    <svg className="inline-block w-4 h-4 mr-1 transition-transform group-hover:rotate-180" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </a>
-                  <ul className="absolute top-full right-0 mt-2 w-52 bg-white shadow-lg rounded-md border border-gray-100 hidden group-hover:block text-right">
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
-                      >
-                        الدعم الأكاديمي
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-[#202c5b] hover:bg-gray-100 whitespace-nowrap"
-                      >
-                        التسجيل والاستفسارات
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-
-              <div className="nav-buttons flex gap-3">
-                <a
-                  href="#"
-                  className="btn btn-primary bg-gradient-to-r from-[#226796] to-[#3cbeb3] text-white no-rounded py-2 px-2 rounded-full font-semibold no-underline transition-all inline-flex items-center gap-2 text-md whitespace-nowrap hover:-translate-y-1 hover:shadow-lg"
-                >
-                  التحقق من الشهادة
-                </a>
+                    </div>
+                  </div>
+                )}
               </div>
 
-              <div className="nav-buttons">
+              <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div>
+
+              {/* registeration */}
                 <a
-                  href="#"
-                  className="btn btn-primary bg-gradient-to-r from-[#226796] to-[#3cbeb3] text-white no-rounded py-2 px-3 mx-1 rounded-md font-semibold no-underline transition-all inline-flex items-center gap-2 text-md whitespace-nowrap hover:-translate-y-1 hover:shadow-lg"
-                >
-                  EN
+                href="/"
+                className={
+                  "md:text-[18px] lg:text-[20px] px-[12px] py-[6px] font-medium hover:text-[#4fd1c5] duration-300 transition-colors !leading-[1.25] " +
+                  (pathname === "/ar/Registeration"
+                    ? "text-[#4fd1c5]"
+                    : "text-[#202C5B]")
+                }
+              >
+                التسجيل
+              </a>
+            </div>
+            <div>
+              <button onClick={() => router.push("/")} className="mx-2 py-[12px] px-[12px] rounded-full! cursor-pointer hover:text-[#1a2555] text-white lg:text-[16px] sm:text-[14px] font-bold bg-gradient-to-r! from-[#23A0D0]! to-68% to-[#3CBEB3]! focus:outline-none! shadow-md! transition! hover:opacity-80! !leading-[1.25] duration-300">
+                فحص الشهادة
+              </button>
+              <button onClick={() => router.push("/en")} className="mx-2 py-[12px] px-[12px] rounded-full! cursor-pointer hover:text-[#1a2555] text-white lg:text-[16px] sm:text-[14px] font-bold bg-gradient-to-r! from-[#23A0D0]! to-68% to-[#3CBEB3]! focus:outline-none! shadow-md! transition! hover:opacity-80! !leading-[1.25] duration-300">
+                 EN
+              </button>
+            </div>
+          </div>
+          </div>
+          </div>
+          {/* Mobile menu overlay */}
+
+      <div
+        className={
+          "fixed! inset-0! z-50! md:hidden! min-h-screen duration-500 " +
+          (open ? "w-full" : "w-0")
+        }
+      >
+        <div
+          className={
+            "fixed! inset-0! bg-black/50! min-h-screen " +
+            (open ? "w-full" : "w-0")
+          }
+          onClick={() => setOpen(false)}
+        ></div>
+
+        <div
+          className={
+            "fixed! flex flex-col inset-y-0 w-80! min-h-screen bg-[#EEEEEE]! duration-300 " +
+            (open ? "right-0" : "right-0 transform translate-x-[100%]")
+          }
+        >
+          {/* Mobile menu header */}
+          <div className="p-3! space-y-3! flex flex-col grow">
+            {/* Menu items */}
+            <div className="space-y-2!">
+              <div className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!">
+                <div className="flex! items-center! gap-3!">
+                  <img
+                    src="/icons/Vector.svg "
+                    alt="courses"
+                    className="w-4! h-4!"
+                  />
+                  <a
+                    href={"/Courses"}
+                    className="text-black! font-medium! text-lg!"
+                  >
+                    {"الدورات"}
+                  </a>
+                </div>
+              </div>
+              <div
+                className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!"
+                onClick={(e) => {
+                  e.preventDefault();
+                  router.push("/Degrees");
+                  setOpen(false);
+                }}
+              >
+                <div className="flex! items-center! gap-3!">
+                  <img src="/icons/1.svg" alt="paths" className="w-4! h-4!" />
+                  <span className="text-black! font-medium! text-lg!">
+                    المسارات المهنية
+                  </span>
+                </div>
+              </div>
+
+              <div
+                className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!"
+                onClick={(e) => {
+                  e.preventDefault();
+                  router.push("/Trainers");
+                  setOpen(false);
+                }}
+              >
+                <div className="flex! items-center! gap-3!">
+                  <img
+                    src="/icons/2.svg"
+                    alt="trainers"
+                    className="w-4! h-4!"
+                  />
+                  <span className="text-black! font-medium! text-lg!">
+                    المدربين
+                  </span>
+                </div>
+              </div>
+
+
+              <div className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!">
+                <div className="flex! items-center! gap-3!">
+                  <img src="/icons/4.svg" alt="about" className="w-4! h-4!" />
+                  <span className="text-black! font-medium! text-lg!">
+                    من نحن
+                  </span>
+                </div>
+              </div>
+
+              <div className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!">
+                <div className="flex! items-center! gap-3!">
+                  <img
+                    src="/icons/5.svg"
+                    alt="language"
+                    className="w-4! h-4!"
+                  />
+                  <span className="text-black! font-medium! text-lg!">
+                    تغيير اللغة
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className=" mt-auto p-3! text-center!">
+              <div className="text-black! font-medium! mb-3! text-lg!">
+                أكاديمية المهارات التطبيقية للتدريب
+              </div>
+              <div className="flex! justify-center! gap-3!">
+                <a href="mailto:info@ASTA.EDU.SA">
+                  <img src="/icons/7.svg" alt="email" className="w-6! h-6!" />
+                </a>
+                <a href="https://wa.me/+996558919492" target="_blank">
+                  <img
+                    src="/icons/6.svg"
+                    alt="whatsapp"
+                    className="w-6! h-6!"
+                  />
                 </a>
               </div>
             </div>
           </div>
-        </nav>
-      </header>
-    </>
+        </div>
+      </div>
+    </nav>
   );
 }

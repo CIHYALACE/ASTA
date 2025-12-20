@@ -1,7 +1,10 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import { useLocation } from "react-router-dom";
+import { useNavigate, useLocation, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageToggle from "./LanguageToggle";
+
 
 export default function Navbar() {
   const [search, setSearch] = useState(false);
@@ -16,6 +19,19 @@ export default function Navbar() {
   const diplomasRef = useRef(null);
   const aboutRef = useRef(null);
   const courses = useRef(null);
+
+  const navigate = useNavigate();
+  const { lang } = useParams();
+  const { t } = useTranslation();
+
+
+  const switchLang = (newLang) => {
+    const newPath = location.pathname.replace(
+      `/${lang}`,
+      `/${newLang}`
+    );
+    navigate(newPath);
+  };
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -69,7 +85,7 @@ export default function Navbar() {
                   className="text-white no-underline flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
                   <i className="fas fa-map-marker-alt"></i>
-                  <span>الرياض، المملكة العربية السعودية</span>
+                  <span>{t("footer.address")}</span>
                 </a>
               </div>
               <div className="social-links flex gap-4">
@@ -466,9 +482,10 @@ export default function Navbar() {
               <button onClick={() => router.push("/")} className="mx-2 py-[12px] px-[12px] rounded-full! cursor-pointer hover:text-[#1a2555] text-white lg:text-[16px] sm:text-[14px] font-bold bg-gradient-to-r! from-[#23A0D0]! to-68% to-[#3CBEB3]! focus:outline-none! shadow-md! transition! hover:opacity-80! !leading-[1.25] duration-300">
                 فحص الشهادة
               </button>
-              <button onClick={() => router.push("/en")} className="mx-2 py-[12px] px-[12px] rounded-full! cursor-pointer hover:text-[#1a2555] text-white lg:text-[16px] sm:text-[14px] font-bold bg-gradient-to-r! from-[#23A0D0]! to-68% to-[#3CBEB3]! focus:outline-none! shadow-md! transition! hover:opacity-80! !leading-[1.25] duration-300">
+              {/* <button onClick={() => router.push("/en")} className="mx-2 py-[12px] px-[12px] rounded-full! cursor-pointer hover:text-[#1a2555] text-white lg:text-[16px] sm:text-[14px] font-bold bg-gradient-to-r! from-[#23A0D0]! to-68% to-[#3CBEB3]! focus:outline-none! shadow-md! transition! hover:opacity-80! !leading-[1.25] duration-300">
                  EN
-              </button>
+              </button> */}
+              <LanguageToggle />
             </div>
           </div>
           </div>

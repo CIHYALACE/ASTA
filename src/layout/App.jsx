@@ -1,4 +1,5 @@
 import React from 'react';
+import { Navigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SharedLayout from '../shared/SharedLayout';
 import AboutUsEn from '../components/AboutUsEn';
@@ -14,15 +15,18 @@ import HomeAr from '../pages/ar/HomeAr';
 export default function App() {
   return (
       <Routes>
-        <Route path="/" element={<SharedLayout />}>
+        <Route path="/" element={<Navigate to="/ar" />} />
+
+        <Route path="/:lang" element={<SharedLayout />}>
+
           <Route index element={<HomeAr />} />
-          <Route path="/about-us-en" element={<AboutUsEn />} />
-          <Route path="/about-us-ar" element={<AboutUsAr />} />
-          <Route path="/accreditations-en" element={<AccreditationsEn />} />
-          <Route path="/board-members-en" element={<BoardMembersEn />} />
-          <Route path="/contact-en" element={<ContactEn />} />
-          <Route path="/programs-en" element={<ProgramsEn />} />
-          <Route path="/registration-en" element={<RegistrationEn />} />
+          <Route path="about-us-en" element={<AboutUsEn />} />
+          <Route path="about-us-ar" element={<AboutUsAr />} />
+          <Route path="accreditations-en" element={<AccreditationsEn />} />
+          <Route path="board-members-en" element={<BoardMembersEn />} />
+          <Route path="contact-en" element={<ContactEn />} />
+          <Route path="programs-en" element={<ProgramsEn />} />
+          <Route path="registration-en" element={<RegistrationEn />} />
         </Route>
       </Routes>
   );

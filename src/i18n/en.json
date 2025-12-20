@@ -1,0 +1,89 @@
+{
+  "global": {
+    "academyName": "Applied Skills Training Academy",
+    "loading": "Loading...",
+    "readMore": "Read more"
+  },
+
+  "header": {
+    "nav": {
+      "home": "Home",
+      "courses": "Courses",
+      "diplomas": "Diplomas",
+      "registration": "Registration",
+      "about": "About",
+      "contact": "Contact us"
+    }
+  },
+
+  "footer": {
+    "copyright": "All rights reserved to Applied Skills Training Academy © 2025",
+    "address": "Riyadh, Saudi Arabia"
+  },
+
+  "home": {
+    "hero": {
+      "title": "Your Path to Professional Excellence",
+      "subtitle": "Professional programs designed for your success"
+    },
+    "stats": {
+      "students": "Students",
+      "courses": "Courses"
+    }
+  },
+
+  "courses": {
+    "title": "Our Courses",
+    "description": "Explore our professional courses",
+    "card": {
+      "duration": "Duration",
+      "level": "Level"
+    }
+  },
+
+  "diplomas": {
+    "title": "Professional Diplomas",
+    "description": "Accredited diplomas with hands-on training"
+  },
+
+  "forms": {
+    "labels": {
+      "name": "Full name",
+      "email": "Email address",
+      "phone": "Phone number"
+    },
+    "placeholders": {
+      "name": "Enter your full name",
+      "email": "example@email.com"
+    },
+    "validation": {
+      "required": "This field is required",
+      "email": "Invalid email address"
+    }
+  },
+
+  "buttons": {
+    "profile-file": "Profile file",
+    "submit": "Submit",
+    "send": "Send",
+    "register": "Register now"
+  },
+
+  "seo": {
+    "home": {
+      "title": "Future Academy | Professional Education",
+      "description": "Join Future Academy and build your future with accredited programs"
+    },
+    "courses": {
+      "title": "Courses | Future Academy",
+      "description": "Browse professional courses at Future Academy"
+    }
+  },
+
+  "errors": {
+    "404": {
+      "title": "Page not found",
+      "message": "The page you are looking for does not exist"
+    }
+  }
+}

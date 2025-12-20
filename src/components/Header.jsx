@@ -48,14 +48,14 @@ export default function Navbar() {
       {/* Top Bar */}
        <div className="header-top hidden md:block bg-gradient-to-r from-[#202c5b] via-[#23a0d0] to-[#3cbeb3] py-3">
           <div className="container max-w-[1300px] mx-auto px-2">
-            <div className="header-top-content flex justify-between items-center gap-5 text-sm flex-row-reverse">
-              <div className="contact-info flex gap-5 flex-row-reverse">
+            <div className="header-top-content flex justify-between items-center gap-5 text-sm">
+              <div className="contact-info flex gap-5">
                 <a
                   href="tel:+966112345678"
                   className="text-white no-underline flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
                   <i className="fas fa-phone"></i>
-                  <span>+966 11 234 5678</span>
+                  <span>966112345678+</span>
                 </a>
                 <a
                   href="mailto:info@asta.edu.sa"
@@ -191,11 +191,11 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="bg-white">
           <div className=" w-[1400px] mx-auto px-2">
-          <div className="hidden sm:flex justify-between items-center py-3 border-gray-200 bg-white  top-0">
+          <div className="hidden sm:flex justify-between items-center py-3 border-gray-200 bg-white top-0">
             <div className="flex-shrink-0">
               <a href="/">
                 <img
-                  src="/svgs/ASTA_Logo.svg"
+                  src="/svgs/ASTA_Nav_Logo.svg"
                   alt="ASTA Logo"
                   width={152}
                   height={42}

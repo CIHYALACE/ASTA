@@ -2,7 +2,6 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SharedLayout from '../shared/SharedLayout';
-import AboutUsEn from '../components/AboutUsEn';
 import AboutUsAr from '../pages/ar/AboutUsAr';
 import AccreditationsEn from '../components/AccreditationsEn';
 import BoardMembersEn from '../components/BoardMembersEn';
@@ -20,7 +19,6 @@ export default function App() {
         <Route path="/:lang" element={<SharedLayout />}>
 
           <Route index element={<HomeAr />} />
-          <Route path="about-us-en" element={<AboutUsEn />} />
           <Route path="about-us-ar" element={<AboutUsAr />} />
           <Route path="accreditations-en" element={<AccreditationsEn />} />
           <Route path="board-members-en" element={<BoardMembersEn />} />

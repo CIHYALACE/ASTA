@@ -8,8 +8,9 @@
   "header": {
     "nav": {
       "home": " الرئيسية",
-      "courses": "الدورات",
-      "diplomas": "الدبلومات",
+      "courses": "الدورات الإحترافية",
+      "student-services": "خدمات الطلاب",
+      "diplomas": "البرامج التدريبية",
       "registration": "التسجيل",
       "about": "عن الاكاديمية",
       "contact": "اتصل بنا"

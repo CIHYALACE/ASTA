@@ -270,7 +270,7 @@ export default function Navbar() {
                   <div className="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
                     <div className="py-1">
                       <a
-                        href="/courses"
+                        href="/:lang/courses"
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         جميع الدورات الاحترافية
@@ -467,7 +467,7 @@ export default function Navbar() {
 
               {/* registeration */}
                 <a
-                href="/registration"
+                href="/:lang/registration"
                 className={
                   "md:text-[18px] lg:text-[20px] px-[12px] py-[6px] font-medium hover:text-[#4fd1c5] duration-300 transition-colors !leading-[1.25] " +
                   (pathname === "/ar/registration"

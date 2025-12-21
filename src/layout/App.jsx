@@ -2,14 +2,16 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SharedLayout from '../shared/SharedLayout';
-import AboutUsAr from '../pages/ar/AboutUsAr';
-import AccreditationsEn from '../components/AccreditationsEn';
-import BoardMembersEn from '../components/BoardMembersEn';
-import ContactEn from '../components/ContactEn';
-import ProgramsEn from '../components/ProgramsEn';
-import RegistrationEn from '../components/RegistrationEn';
+// Pages
+import HomeAr from '../pages/HomeAr';
+import AboutUsAr from '../pages/AboutUsAr';
+import TrainingPrograms from '../pages/TrainingPrograms';
+import Courses from '../pages/Courses';
+import Registeration from '../pages/Registeration';
+import StudentServices from '../pages/StudentServices';
+import TermsAndConditions from '../pages/Terms&Conditions';
+// Styles
 import '../style/App.css';
-import HomeAr from '../pages/ar/HomeAr';
 
 export default function App() {
   return (
@@ -17,14 +19,13 @@ export default function App() {
         <Route path="/" element={<Navigate to="/ar" />} />
 
         <Route path="/:lang" element={<SharedLayout />}>
-
           <Route index element={<HomeAr />} />
           <Route path="about-us-ar" element={<AboutUsAr />} />
-          <Route path="accreditations-en" element={<AccreditationsEn />} />
-          <Route path="board-members-en" element={<BoardMembersEn />} />
-          <Route path="contact-en" element={<ContactEn />} />
-          <Route path="programs-en" element={<ProgramsEn />} />
-          <Route path="registration-en" element={<RegistrationEn />} />
+          <Route path="programs" element={<TrainingPrograms />} />
+          <Route path="courses" element={<Courses />} />
+          <Route path="registration" element={<Registeration />} />
+          <Route path="student-services" element={<StudentServices />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
         </Route>
       </Routes>
   );

@@ -5,7 +5,7 @@ import { ClockIcon, ChevronRightIcon, DocumentTextIcon, TrophyIcon, VideoCameraI
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 font-['Noto_Naskh_Arabic'] border-r-4 border-[#226796] pr-4">
+            <h2 className="text-3xl font-bold text-gray-800  border-r-4 border-[#226796] pr-4">
               المنهج الدراسي
           </h2>
           <div className="flex items-center gap-2 text-[#226796]">

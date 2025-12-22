@@ -6,7 +6,7 @@ import { CheckCircleIcon, BuildingOfficeIcon, PhoneIcon } from '@heroicons/react
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-8 font-['Noto_Naskh_Arabic'] border-r-4 border-[#30AFC1] pr-4">
+              <h2 className="text-3xl font-bold text-gray-800 mb-8 border-r-4 border-[#30AFC1] pr-4">
               متطلبات القبول
             </h2>
             
@@ -23,7 +23,7 @@ import { CheckCircleIcon, BuildingOfficeIcon, PhoneIcon } from '@heroicons/react
           </div>
           
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 font-['Noto_Naskh_Arabic'] border-r-4 border-[#3CBEB3] pr-4">
+            <h2 className="text-3xl font-bold text-gray-800 mb-8 border-r-4 border-[#3CBEB3] pr-4">
               مزايا البرنامج
             </h2>
             

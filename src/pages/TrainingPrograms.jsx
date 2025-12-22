@@ -12,116 +12,15 @@ import {
 // Components
 import ProgramCard from '../components/ProgramCard.jsx';
 import ProgramsHeroSection from '../components/ProgramsHeroSection';
+// data
+import Programs from '../api/Programs';
 
 const TrainingProgramsPage = () => {
   const [filter, setFilter] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
 
   // بيانات برامج التدريب
-  const programs = [
-    {
-      id: 1,
-      title: "بكالوريوس هندسة البرمجيات",
-      subtitle: "كلية الهندسة والتكنولوجيا",
-      description: "برنامج متكامل يغطي أساسيات هندسة البرمجيات وتطوير التطبيقات الذكية.",
-      category: "برامج أكاديمية",
-      duration: "4 سنوات",
-      level: "مبتدئ إلى متقدم",
-      startDate: "15 سبتمبر 2024",
-      seats: 50,
-      status: "مفتوح للتسجيل",
-      icon: ComputerDesktopIcon,
-      color: "#202C5B",
-      gradient: "from-[#202C5B] to-[#226796]",
-      skills: ["تطوير البرمجيات", "هندسة البيانات", "التصميم الهندسي", "إدارة المشاريع"],
-      price: "مجاني"
-    },
-    {
-      id: 2,
-      title: "شهادة الماجستير في علم البيانات",
-      subtitle: "الدراسات العليا",
-      description: "برنامج متخصص في تحليل البيانات الضخمة وتطبيقات الذكاء الاصطناعي.",
-      category: "برامج متقدمة",
-      duration: "سنتان",
-      level: "متقدم",
-      startDate: "1 أكتوبر 2024",
-      seats: 30,
-      status: "مفتوح للتسجيل",
-      icon: AcademicCapIcon,
-      color: "#226796",
-      gradient: "from-[#226796] to-[#23A0D0]",
-      skills: ["تحليل البيانات", "التعلم الآلي", "هندسة البيانات", "النمذجة التنبؤية"],
-      price: "25,000 ر.س"
-    },
-    {
-      id: 3,
-      title: "دبلوم تطوير الويب المتقدم",
-      subtitle: "التقنية والتطوير",
-      description: "تدريب عملي متقدم على أحدث تقنيات تطوير الويب والتطبيقات.",
-      category: "برامج تقنية",
-      duration: "6 أشهر",
-      level: "متوسط",
-      startDate: "10 أكتوبر 2024",
-      seats: 40,
-      status: "مفتوح للتسجيل",
-      icon: BookOpenIcon,
-      color: "#23A0D0",
-      gradient: "from-[#23A0D0] to-[#30AFC1]",
-      skills: ["React.js", "Node.js", "قواعد البيانات", "واجهات المستخدم"],
-      price: "12,000 ر.س"
-    },
-    {
-      id: 4,
-      title: "دورة القيادة الإدارية",
-      subtitle: "التنمية البشرية",
-      description: "برنامج تطوير المهارات القيادية والإدارية للمستويات الإشرافية.",
-      category: "برامج إدارية",
-      duration: "3 أشهر",
-      level: "متوسط",
-      startDate: "5 نوفمبر 2024",
-      seats: 25,
-      status: "قريبًا",
-      icon: UserGroupIcon,
-      color: "#30AFC1",
-      gradient: "from-[#30AFC1] to-[#3CBEB3]",
-      skills: ["القيادة", "التخطيط الاستراتيجي", "إدارة الفرق", "التواصل الفعال"],
-      price: "8,000 ر.س"
-    },
-    {
-      id: 5,
-      title: "شهادة أمن المعلومات",
-      subtitle: "الأمن السيبراني",
-      description: "برنامج متخصص في أمن المعلومات والحماية من الاختراقات الإلكترونية.",
-      category: "برامج تقنية",
-      duration: "8 أشهر",
-      level: "متقدم",
-      startDate: "20 يناير 2025",
-      seats: 35,
-      status: "مفتوح للتسجيل",
-      icon: ShieldCheckIcon,
-      color: "#3CBEB3",
-      gradient: "from-[#3CBEB3] to-[#202C5B]",
-      skills: ["أمن الشبكات", "اختبار الاختراق", "التشفير", "التحقيق الرقمي"],
-      price: "18,000 ر.س"
-    },
-    {
-      id: 6,
-      title: "دبلوم التسويق الرقمي",
-      subtitle: "التسويق والتطوير",
-      description: "برنامج شامل يغطي استراتيجيات التسويق الرقمي وتحليل البيانات التسويقية.",
-      category: "برامج إدارية",
-      duration: "5 أشهر",
-      level: "مبتدئ",
-      startDate: "15 ديسمبر 2024",
-      seats: 45,
-      status: "مكتمل",
-      icon: BriefcaseIcon,
-      color: "#226796",
-      gradient: "from-[#226796] to-[#3CBEB3]",
-      skills: ["التسويق عبر السوشيال ميديا", "تحليل البيانات", "تحسين محركات البحث", "إدارة الحملات"],
-      price: "10,000 ر.س"
-    }
-  ];
+  const programs = Programs;
 
   const categories = ["all", "برامج أكاديمية", "برامج تقنية", "برامج إدارية", "برامج متقدمة"];
 

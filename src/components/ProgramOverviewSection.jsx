@@ -4,7 +4,7 @@
     return (
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 font-['Noto_Naskh_Arabic'] border-r-4 border-[#202C5B] pr-4">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 border-r-4 border-[#202C5B] pr-4">
             نظرة عامة
           </h2>
         

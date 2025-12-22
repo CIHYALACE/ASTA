@@ -21,7 +21,7 @@
               <span className="text-sm font-medium">{program.category}</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 font-['Noto_Naskh_Arabic']">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {program.title}
             </h1>
             

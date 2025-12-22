@@ -57,8 +57,8 @@ import { ClockIcon, ChevronRightIcon, DocumentTextIcon, TrophyIcon, VideoCameraI
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-100 to-cyan-100 flex items-center justify-center">
                 <VideoCameraIcon className="h-8 w-8 text-[#226796]" />
               </div>
-              <h4 className="font-bold text-gray-800 mb-2">محاضرات فيديو</h4>
-              <p className="text-gray-600 text-sm">80+ ساعة فيديو تعليمية</p>
+              <h4 className="font-bold text-gray-800 mb-2">محاضرات </h4>
+              <p className="text-gray-600 text-sm">80+ ساعة تدريبية</p>
             </div>
             
             <div className="text-center">

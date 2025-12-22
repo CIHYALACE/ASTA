@@ -16,14 +16,6 @@ import { StarIcon, UserIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
                 alt={program.instructor.name}
                 className="w-40 h-40 rounded-2xl object-cover border-4 border-white shadow-lg mx-auto"
               />
-              <div className="mt-4">
-                <div className="flex justify-center gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <StarIcon key={i} className="h-5 w-5 text-[#FFD166] fill-current" />
-                  ))}
-                </div>
-                <div className="text-gray-600 mt-1">تقييم 4.9</div>
-              </div>
             </div>
             
             <div className="flex-1">

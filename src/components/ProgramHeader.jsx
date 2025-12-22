@@ -1,6 +1,8 @@
   import { ArrowLeftIcon, BookOpenIcon, StarIcon, UserGroupIcon, CalendarIcon, ClockIcon, ShareIcon, BookmarkIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
-  
+  import { useNavigate , useParams} from 'react-router-dom';
   function ProgramHeader({ program }) {
+    const navigate = useNavigate();
+    const { lang } = useParams();
     return (
       <div className="relative bg-gradient-to-r from-[#202C5B] to-[#226796] text-white py-16">
         <div className="absolute inset-0 overflow-hidden opacity-20">
@@ -54,11 +56,11 @@
               <div className="flex items-center justify-between mb-6">
                 <div>
                   <div className="text-3xl font-bold">{program.price}</div>
-                  <div className="text-blue-100 line-through">{program.originalPrice}</div>
+                  {/* <div className="text-blue-100 line-through">{program.originalPrice}</div> */}
                 </div>
-                <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm">
+                {/* <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm">
                   خصم {program.discount}
-                </span>
+                </span> */}
               </div>
               
               <div className="space-y-4 mb-6">
@@ -74,9 +76,13 @@
                   <UserGroupIcon className="h-5 w-5 text-blue-200" />
                   <span>{program.availableSeats} مقاعد متبقية من {program.seats}</span>
                 </div>
+                <div className="flex items-center gap-3">
+                  <img src="/images/tabby-logo-1.png" className='w-15' alt="" />
+                  <img src="/images/tamaralogo_ar.png" className='w-15' alt="" />
+                </div>
               </div>
               
-              <button className="w-full bg-gradient-to-r from-[#FFD166] to-[#FF9E6D] text-gray-900 py-4 rounded-xl font-bold text-lg mb-4 hover:shadow-2xl transition-all duration-300">
+              <button onClick={() => navigate(`/${lang}/registration`)} className="w-full bg-gradient-to-r from-[#226796] to-[#23A0D0] text-white py-4 rounded-xl font-bold text-lg mb-4 hover:shadow-2xl transition-all duration-300">
                 سجل الآن
               </button>
               

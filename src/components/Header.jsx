@@ -127,7 +127,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between">
                 {/* Mobile Logo - Right side */}
                 <div className="flex-shrink-0">
-                  <a href={"/"}>
+                  <a href={`/${lang}/`}>
                     <img
                       src="/svgs/ASTA_Nav_Logo.svg"
                       alt="ASTA Logo"
@@ -141,48 +141,6 @@ export default function Navbar() {
 
                 {/* Mobile menu button and search - Left side */}
                 <div className="flex items-center gap-3 relative">
-                  {/* Mobile search icon */}
-                  {/* <svg
-                    className="w-6 h-6 font-medium text-[#23A0D0]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    onClick={() => {
-                      setSearch(!search);
-                    }}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    />
-                  </svg>
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      router.replace(
-                        `/Courses?search=${e.currentTarget.elements[1].value}`
-                      );
-                    }}
-                  >
-                    <div
-                      className={
-                        "absolute top-[calc(100%+12px)] w-[280px] lg:hidden flex py-1 px-[12px] items-center gap-[12px] after:w-[calc(100%-2PX)] after:h-[calc(100%-2PX)] bg-red after:absolute after:left-[1px] after:top-[1px] rounded-3xl after:rounded-3xl after:bg-white after:z-[-1] z-[10] bg-gradient-to-r from-[#202C5B] via-[#23A0D0] to-[#3CBEB3] duration-300 -left-50 " +
-                        (search ? "" : "invisible opacity-0")
-                      }
-                    >
-                      <button type="submit" className="w-[22px] h-[22px]">
-                        <img src="/images/icons/search.svg" alt="" />
-                      </button>
-                      <input
-                        type="text"
-                        placeholder="عن ماذا تبحث؟"
-                        className="text-[16px] font-medium placeholder:text-[#878787] text-[#202C5B] h-[36px] w-full"
-                      />
-                    </div>
-                  </form> */}
-
                   {/* Mobile menu button */}
                   <svg
                     className="w-6 h-6 text-[#23A0D0] cursor-pointer"
@@ -209,7 +167,7 @@ export default function Navbar() {
           <div className=" w-[1400px] mx-auto px-2">
           <div className="hidden sm:flex justify-between items-center py-3 border-gray-200 bg-white top-0">
             <div className="flex-shrink-0">
-              <a href="/">
+              <a href={`/${lang}/`}>
                 <img
                   src="/svgs/ASTA_Nav_Logo.svg"
                   alt="ASTA Logo"
@@ -221,10 +179,10 @@ export default function Navbar() {
             </div>
             <div className="flex items-center">
               <a
-                href="/:lang/"
+                href={`/${lang}/`}
                 className={
                   "md:text-[18px] lg:text-[20px] px-[12px] py-[6px] font-medium hover:text-[#4fd1c5] duration-300 transition-colors !leading-[1.25] " +
-                  (pathname === "/"
+                  (pathname === `/${lang}/`
                     ? "text-[#4fd1c5]"
                     : "text-[#202C5B]")
                 }
@@ -270,7 +228,7 @@ export default function Navbar() {
                   <div className="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
                     <div className="py-1">
                       <a
-                        href="/:lang/courses"
+                        href={`/${lang}/courses`}
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         جميع الدورات الاحترافية
@@ -327,7 +285,7 @@ export default function Navbar() {
                   <div className="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
                     <div className="py-1">
                       <a
-                        href="/:lang/student-services"
+                        href={`/${lang}/student-services`}
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         جميع الخدمات 
@@ -384,7 +342,7 @@ export default function Navbar() {
                   <div className="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
                     <div className="py-1">
                       <a
-                        href="/:lang/programs"
+                        href={`/${lang}/programs`}
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         جميع البرامج التدريبية
@@ -441,13 +399,13 @@ export default function Navbar() {
                   <div className="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
                     <div className="py-1">
                       <a
-                        href="/:lang/about-us-ar"
+                        href={`/${lang}/about-us-ar`}
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         عن الأكاديمية
                       </a>
                       <a
-                        href="/Team"
+                        href={`/${lang}/Team`}
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         فريق العمل
@@ -467,10 +425,10 @@ export default function Navbar() {
 
               {/* registeration */}
                 <a
-                href="/:lang/registration"
+                href={`/${lang}/registration`}
                 className={
                   "md:text-[18px] lg:text-[20px] px-[12px] py-[6px] font-medium hover:text-[#4fd1c5] duration-300 transition-colors !leading-[1.25] " +
-                  (pathname === "/ar/registration"
+                  (pathname === `/${lang}/registration`
                     ? "text-[#4fd1c5]"
                     : "text-[#202C5B]")
                 }
@@ -524,7 +482,7 @@ export default function Navbar() {
                     className="w-4! h-4!"
                   />
                   <a
-                    href={"/Courses"}
+                    href={`/${lang}/Courses`}
                     className="text-black! font-medium! text-lg!"
                   >
                     {"الدورات"}

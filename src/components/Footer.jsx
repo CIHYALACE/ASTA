@@ -12,7 +12,7 @@ export default function Footer() {
   // Data based on AOL footer structure
   const footerData = {
     contactInfo: [
-      { icon: 'fa-map-marker-alt', text: 'الرياض، المملكة العربية السعودية' },
+      { icon: 'fa-map-marker-alt', text: 'الدمام، المملكة العربية السعودية' },
       { icon: 'fa-phone', text: '+966 11 234 5678', href: 'tel:+966112345678' },
       { icon: 'fa-envelope', text: 'info@asta.edu.sa', href: 'mailto:info@asta.edu.sa' }
     ],
@@ -220,8 +220,8 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <div className="text-gray-400 text-sm text-center md:text-right">
-              © {new Date().getFullYear()} أكاديمية المهارات التطبيقية - جميع الحقوق محفوظة
-            </div>
+              © {new Date().getFullYear()} أكاديمية المهارات التطبيقية - جميع الحقوق محفوظة اكاديمية المهارات التطبيقية
+             </div>
             
             {/* Policies Links */}
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
@@ -243,7 +243,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="text-gray-400 text-sm ml-2">طرق الدفع:</div>
               <div className="flex gap-2">
-                {['visa', 'mastercard', 'mada', 'apple-pay'].map((method) => (
+                {['visa', 'mastercard', 'mada', 'apple-pay', 'tabby', 'tamara'].map((method) => (
                   <div
                     key={method}
                     className="w-10 h-6 bg-white/10 rounded flex items-center justify-center text-xs text-gray-300"
@@ -251,7 +251,10 @@ export default function Footer() {
                     {method === 'visa' && 'VISA'}
                     {method === 'mastercard' && 'MC'}
                     {method === 'mada' && 'مدى'}
-                    {method === 'apple-pay' && ''}
+                    {method === 'apple-pay' && 'Apple'}
+                    {method === 'tabby' && 'Tabby'}
+                    {method === 'tamara' && 'Tamara'}
+
                   </div>
                 ))}
               </div>

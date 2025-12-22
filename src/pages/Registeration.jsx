@@ -10,8 +10,8 @@ import PaymentSection from '../components/PaymentSection';
 import SummarySection from '../components/SummarySection';
 import SuccessConfirmation from '../components/SuccessConfirmation';
 
-// تهيئة EmailJS
-emailjs.init("YOUR_PUBLIC_KEY"); // قم باستبدال هذا بالمفتاح العام الخاص بك
+// prepare EmailJS
+emailjs.init("k62cRdPnAvAsP_96b"); // قم باستبدال هذا بالمفتاح العام الخاص بك
 
 const RegistrationPage = ({ programId = 2 }) => {
   // بيانات البرامج المتاحة
@@ -135,47 +135,44 @@ const RegistrationPage = ({ programId = 2 }) => {
         from_name: data.fullName,
         from_email: data.email,
         subject: `تسجيل جديد في البرنامج: ${data.programTitle}`,
-        message: `
-          <h2>تسجيل جديد في البرنامج التدريبي</h2>
-          <hr>
-          <h3>المعلومات الشخصية:</h3>
-          <p><strong>الاسم الكامل:</strong> ${data.fullName}</p>
-          <p><strong>البريد الإلكتروني:</strong> ${data.email}</p>
-          <p><strong>رقم الجوال:</strong> ${data.phone}</p>
-          <p><strong>رقم الهوية:</strong> ${data.nationalId}</p>
-          <p><strong>المؤهل العلمي:</strong> ${data.degree}</p>
-          <p><strong>جهة اتصال الطوارئ:</strong> ${data.emergencyContact || 'غير محدد'}</p>
-          
-          <h3>تفاصيل التسجيل:</h3>
-          <p><strong>البرنامج:</strong> ${data.programTitle}</p>
-          <p><strong>فئة البرنامج:</strong> ${data.programCategory}</p>
-          <p><strong>طريقة الدفع:</strong> ${data.paymentMethod === 'full' ? 'دفع كامل' : data.paymentMethod === 'installment' ? 'تقسيط' : 'تحويل بنكي'}</p>
-          
-          <h3>الخدمات الإضافية:</h3>
-          ${data.selectedServices.length > 0 
-            ? data.selectedServices.map(service => `<p>• ${service.name} - ${service.price} ر.س</p>`).join('')
-            : '<p>لم يتم اختيار خدمات إضافية</p>'
-          }
-          
-          <h3>المعلومات المالية:</h3>
-          <p><strong>سعر البرنامج:</strong> ${data.programPrice} ر.س</p>
-          <p><strong>مجموع الخدمات الإضافية:</strong> ${data.servicesTotal} ر.س</p>
-          <p><strong>المجموع الكلي:</strong> <strong style="color: #202C5B; font-size: 1.2em;">${data.totalAmount} ر.س</strong></p>
-          
-          <h3>ملاحظات إضافية:</h3>
-          <p>${data.notes || 'لا توجد ملاحظات'}</p>
-          
-          <hr>
-          <p><strong>تاريخ التسجيل:</strong> ${new Date().toLocaleString('ar-SA')}</p>
-          <p><strong>رقم المرجع:</strong> REG-${Date.now()}</p>
-        `,
+        message: `تسجيل جديد في البرنامج التدريبي
+
+المعلومات الشخصية:
+الاسم الكامل: ${data.fullName}
+البريد الإلكتروني: ${data.email}
+رقم الجوال: ${data.phone}
+رقم الهوية: ${data.nationalId}
+المؤهل العلمي: ${data.degree}
+جهة اتصال الطوارئ: ${data.emergencyContact || 'غير محدد'}
+
+تفاصيل التسجيل:
+البرنامج: ${data.programTitle}
+فئة البرنامج: ${data.programCategory}
+طريقة الدفع: ${data.paymentMethod === 'full' ? 'دفع كامل' : data.paymentMethod === 'installment' ? 'تقسيط' : 'تحويل بنكي'}
+
+الخدمات الإضافية:
+${data.selectedServices.length > 0 
+  ? data.selectedServices.map(service => `• ${service.name} - ${service.price}`).join('\n')
+  : 'لم يتم اختيار خدمات إضافية'
+}
+
+المعلومات المالية:
+سعر البرنامج: ${data.programPrice}
+مجموع الخدمات الإضافية: ${data.servicesTotal}
+المجموع الكلي: ${data.totalAmount}
+
+ملاحظات إضافية:
+${data.notes || 'لا توجد ملاحظات'}
+
+تاريخ التسجيل: ${new Date().toLocaleString('ar-SA')}
+رقم المرجع: REG-${Date.now()}`,
         reply_to: data.email
       };
 
       // إرسال البريد باستخدام EmailJS
       const response = await emailjs.send(
-        'YOUR_SERVICE_ID', // قم بتغيير هذا لمعرف الخدمة الخاص بك
-        'YOUR_TEMPLATE_ID', // قم بتغيير هذا لقالب البريد الخاص بك
+        'asta', // قم بتغيير هذا لمعرف الخدمة الخاص بك
+        'template_qpi4g3m', // قم بتغيير هذا لقالب البريد الخاص بك
         templateParams
       );
 
@@ -233,8 +230,8 @@ const RegistrationPage = ({ programId = 2 }) => {
       // إرسال نسخة للمستخدم
       try {
         await emailjs.send(
-          'YOUR_SERVICE_ID',
-          'USER_CONFIRMATION_TEMPLATE_ID', // قالب تأكيد للمستخدم
+          'asta',
+          'template_8ir9aeh', // قالب تأكيد للمستخدم
           {
             to_email: formData.email,
             to_name: formData.fullName,
@@ -275,7 +272,7 @@ const RegistrationPage = ({ programId = 2 }) => {
       <EmailConfirmationNotice formData={formData} />
       
       {submitSuccess ? (
-        <SuccessConfirmation />
+        <SuccessConfirmation formData={formData} selectedProgram={selectedProgram} calculateTotal={calculateTotal} />
       ) : (
         <form onSubmit={handleSubmit}>
           <div className="max-w-7xl mx-auto px-4 py-8">

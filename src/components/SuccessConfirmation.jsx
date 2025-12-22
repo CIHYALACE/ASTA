@@ -1,7 +1,7 @@
 import { CheckCircleIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 // import { formData, selectedProgram, calculateTotal } from '../utils/formData';
 
-function SuccessConfirmation () {
+function SuccessConfirmation ({ formData, selectedProgram, calculateTotal }) {
     return (
     <div className="max-w-3xl mx-auto px-4 py-12">
       <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
@@ -30,7 +30,7 @@ function SuccessConfirmation () {
             </div>
             <div className="flex justify-between items-center">
               <span className="text-gray-600">المجموع:</span>
-              <span className="font-bold text-[#202C5B]">{calculateTotal().toLocaleString()} ر.س</span>
+              <span className="font-bold text-[#202C5B]">{calculateTotal().toLocaleString()} </span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-gray-600">وقت الإرسال:</span>

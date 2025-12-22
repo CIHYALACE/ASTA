@@ -46,7 +46,7 @@ import { BookOpenIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
                   <h3 className="font-bold text-gray-800">{program.title}</h3>
                   <div className="flex justify-between items-center mt-2">
                     <span className="text-sm text-gray-600">{program.category}</span>
-                    <span className="font-bold text-[#202C5B]">{program.price.toLocaleString()} ر.س</span>
+                    <span className="font-bold text-[#202C5B]">{program.price.toLocaleString()}</span>
                   </div>
                 </div>
               </div>
@@ -88,7 +88,7 @@ import { BookOpenIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800">{service.name}</h3>
-                    <span className="text-sm text-gray-600">{service.price.toLocaleString()} ر.س</span>
+                    <span className="text-sm text-gray-600">{service.price.toLocaleString()}</span>
                   </div>
                 </div>
               </div>

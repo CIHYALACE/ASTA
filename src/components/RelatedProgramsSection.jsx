@@ -43,3 +43,5 @@
       </section>
     );
   };
+
+  export default RelatedProgramsSection;

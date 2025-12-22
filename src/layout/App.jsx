@@ -10,6 +10,7 @@ import Courses from '../pages/Courses';
 import Registeration from '../pages/Registeration';
 import StudentServices from '../pages/StudentServices';
 import TermsAndConditions from '../pages/Terms&Conditions';
+import ProgramDetails from '../pages/ProgramDetails';
 // Styles
 import '../style/App.css';
 
@@ -22,6 +23,7 @@ export default function App() {
           <Route index element={<HomeAr />} />
           <Route path="about-us-ar" element={<AboutUsAr />} />
           <Route path="programs" element={<TrainingPrograms />} />
+          <Route path="programs/:id" element={<ProgramDetails />} />
           <Route path="courses" element={<Courses />} />
           <Route path="registration" element={<Registeration />} />
           <Route path="student-services" element={<StudentServices />} />

@@ -1,14 +1,14 @@
 import React from "react";
 // Components
-import ProgramHeader from "../components/ProgramDetails/ProgramHeader";
-import OverviewSection from "../components/ProgramDetails/OverviewSection";
-import CurriculumSection from "../components/ProgramDetails/CurriculumSection";
-import InstructorSection from "../components/ProgramDetails/InstructorSection";
-import RequirementsSection from "../components/ProgramDetails/RequirementsSection";
-import RelatedProgramsSection from "../components/ProgramDetails/RelatedProgramsSection";
-import ProgramFAQSection from "../components/ProgramDetails/ProgramFAQSection";
+import ProgramHeader from "../components/ProgramHeader";
+import OverviewSection from "../components/ProgramOverviewSection";
+import CurriculumSection from "../components/ProgramCurriculumSection";
+import InstructorSection from "../components/ProgramInstructorSection";
+import RequirementsSection from "../components/ProgramRequirementsSection";
+import ProgramFAQSection from "../components/ProgramFAQSection";
+import RelatedProgramsSection from "../components/RelatedProgramsSection";
 
-const ProgramDetailsPage = () => {
+const ProgramDetails = () => {
   const program = {
     id: 2,
     title: "شهادة الماجستير في علم البيانات",
@@ -117,4 +117,4 @@ const ProgramDetailsPage = () => {
   );
 };
 
-export default ProgramDetailsPage;
+export default ProgramDetails;

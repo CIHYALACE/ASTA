@@ -6,11 +6,13 @@ import SharedLayout from '../shared/SharedLayout';
 import HomeAr from '../pages/HomeAr';
 import AboutUsAr from '../pages/AboutUsAr';
 import TrainingPrograms from '../pages/TrainingPrograms';
+import ProgramDetails from '../pages/ProgramDetails';
 import Courses from '../pages/Courses';
+import CourseDetails from '../pages/CourseDetails';
 import Registeration from '../pages/Registeration';
 import StudentServices from '../pages/StudentServices';
 import TermsAndConditions from '../pages/Terms&Conditions';
-import ProgramDetails from '../pages/ProgramDetails';
+
 // Styles
 import '../style/App.css';
 
@@ -25,6 +27,7 @@ export default function App() {
           <Route path="programs" element={<TrainingPrograms />} />
           <Route path="programs/:id" element={<ProgramDetails />} />
           <Route path="courses" element={<Courses />} />
+          <Route path="courses/:id" element={<CourseDetails />} />
           <Route path="registration" element={<Registeration />} />
           <Route path="student-services" element={<StudentServices />} />
           <Route path="terms-and-conditions" element={<TermsAndConditions />} />

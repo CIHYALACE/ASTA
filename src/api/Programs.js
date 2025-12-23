@@ -28,7 +28,7 @@ const Programs = [
       name: "م. سارة علي",
       title: "خبيرة UX/UI",
       experience: "8 سنوات",
-      image: "https://images.unsplash.com/photo-1603415526960-f9e1f1a242a6?w=150&h=150&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1667842502725-6ca73ffdbce8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       bio: "متخصصة في تصميم تجربة المستخدم وواجهات التطبيقات والمواقع، عملت مع عدة شركات تقنية محلية وعالمية."
     },
     overview: "برنامج دبلوم يركز على تعليم تصميم واجهات المستخدم وتجربة المستخدم بشكل عملي ونظري لتأهيل الطلاب للعمل في مشاريع تصميم حقيقية.",
@@ -94,7 +94,7 @@ const Programs = [
       name: "م. خالد محمود",
       title: "مطوّر ويب",
       experience: "10 سنوات",
-      image: "https://images.unsplash.com/photo-1502767089025-6572583495f4?w=150&h=150&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1634482273093-f3f1abe5a8ac?q=80&w=768&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       bio: "متخصص في تطوير المواقع والتطبيقات باستخدام HTML, CSS, JavaScript، وReact."
     },
     overview: "دبلوم شامل لتعليم تطوير المواقع من الصفر وحتى بناء تطبيقات تفاعلية باستخدام أحدث التقنيات.",
@@ -158,7 +158,7 @@ const Programs = [
       name: "م. ليلى جمال",
       title: "محللة بيانات",
       experience: "7 سنوات",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1667842502725-6ca73ffdbce8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       bio: "متخصصة في تحليل البيانات باستخدام Python وExcel وPower BI مع خبرة في تحليل الأعمال."
     },
     overview: "برنامج دبلوم يعلّم مهارات تحليل البيانات باستخدام أدوات حديثة لتقديم رؤى واضحة واتخاذ قرارات مبنية على البيانات.",
@@ -222,7 +222,7 @@ const Programs = [
       name: "م. أحمد عبد الله",
       title: "خبير تسويق رقمي",
       experience: "9 سنوات",
-      image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=150&h=150&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1634482273093-f3f1abe5a8ac?q=80&w=768&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       bio: "متخصص في التسويق عبر الإنترنت ووسائل التواصل الاجتماعي، قام بإدارة حملات ناجحة لشركات كبيرة ومتوسطة."
     },
     overview: "دبلوم لتعليم أساسيات واستراتيجيات التسويق الرقمي وكيفية إدارة الحملات التسويقية على الإنترنت ووسائل التواصل الاجتماعي.",

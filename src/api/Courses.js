@@ -28,7 +28,7 @@ const Courses = [
       name: "م. يوسف سالم",
       title: "مطور بايثون",
       experience: "5 سنوات",
-      image: "https://images.unsplash.com/photo-1603415526960-f9e1f1a242a6?w=150&h=150&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1634482273093-f3f1abe5a8ac?q=80&w=768&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       bio: "متخصص في تطوير البرامج باستخدام بايثون ولديه خبرة في تعليم المبتدئين."
     },
     overview: "كورس عملي لتعليم أساسيات بايثون مع تطبيقات عملية لتطوير مهارات البرمجة من الصفر.",
@@ -91,7 +91,7 @@ const Courses = [
       name: "م. نورة سعيد",
       title: "مصممة UX/UI",
       experience: "6 سنوات",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1667842502725-6ca73ffdbce8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       bio: "متخصصة في تصميم واجهات وتجربة المستخدم، عملت على مشاريع تطبيقات ومواقع مختلفة."
     },
     overview: "كورس يركز على تصميم واجهات مستخدم جذابة وعملية باستخدام أدوات التصميم الحديثة مثل Figma وAdobe XD.",
@@ -153,7 +153,7 @@ const Courses = [
       name: "م. أيمن الكردي",
       title: "خبير تسويق رقمي",
       experience: "7 سنوات",
-      image: "https://images.unsplash.com/photo-1502767089025-6572583495f4?w=150&h=150&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1634482273093-f3f1abe5a8ac?q=80&w=768&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       bio: "متخصص في التسويق عبر الإنترنت ووسائل التواصل الاجتماعي، مع خبرة في إدارة الحملات الناجحة."
     },
     overview: "كورس قصير لتعليم أساسيات واستراتيجيات التسويق الرقمي وإدارة الحملات على الإنترنت.",
@@ -214,7 +214,7 @@ const Courses = [
       name: "م. ريم فؤاد",
       title: "محللة بيانات",
       experience: "6 سنوات",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1667842502725-6ca73ffdbce8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       bio: "متخصصة في تحليل البيانات باستخدام Excel وPower BI، قامت بتدريب العديد من الطلاب والشركات."
     },
     overview: "كورس قصير لتعلم تقنيات تحليل البيانات باستخدام Excel، يشمل أدوات وتقارير عملية.",

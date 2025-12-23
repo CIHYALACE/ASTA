@@ -54,13 +54,10 @@
           <div className="lg:w-1/3 w-full">
             <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 border border-white/20 shadow-2xl">
               <div className="flex items-center justify-between mb-6">
-                <div>
+                <div className='flex'>
                   <div className="text-3xl font-bold">{program.price}</div>
-                  {/* <div className="text-blue-100 line-through">{program.originalPrice}</div> */}
+                  <img src="/svgs/icons/WhiteRiyal.svg" alt="" className='w-10'/>
                 </div>
-                {/* <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm">
-                  خصم {program.discount}
-                </span> */}
               </div>
               
               <div className="space-y-4 mb-6">

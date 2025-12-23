@@ -25,7 +25,7 @@
               name="fullName"
               value={formData.fullName}
               onChange={handleInputChange}
-              className={`w-full pr-12 pl-4 py-3.5 rounded-xl border ${
+              className={`w-full pr-10 pl-10 py-3.5 rounded-xl border ${
                 errors.fullName ? 'border-red-500' : 'border-gray-300'
               } focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent`}
               placeholder="أدخل الاسم الكامل كما في الهوية"
@@ -47,7 +47,7 @@
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className={`w-full pr-12 pl-4 py-3.5 rounded-xl border ${
+              className={`w-full pr-10 pl-10 py-3.5 rounded-xl border ${
                 errors.email ? 'border-red-500' : 'border-gray-300'
               } focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent`}
               placeholder="example@email.com"
@@ -69,10 +69,11 @@
               name="phone"
               value={formData.phone}
               onChange={handleInputChange}
-              className={`w-full pr-12 pl-4 py-3.5 rounded-xl border ${
+              className={`w-full pr-10 pl-10 py-3.5 rounded-xl border ${
                 errors.phone ? 'border-red-500' : 'border-gray-300'
               } focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent`}
               placeholder="05XXXXXXXX"
+              maxLength="10"
             />
             <PhoneIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
           </div>
@@ -91,7 +92,7 @@
               name="nationalId"
               value={formData.nationalId}
               onChange={handleInputChange}
-              className={`w-full pr-12 pl-4 py-3.5 rounded-xl border ${
+              className={`w-full pr-10 pl-10 py-3.5 rounded-xl border ${
                 errors.nationalId ? 'border-red-500' : 'border-gray-300'
               } focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent`}
               placeholder="1XXXXXXXXX"
@@ -113,7 +114,7 @@
               name="degree"
               value={formData.degree}
               onChange={handleInputChange}
-              className={`w-full pr-12 pl-4 py-3.5 rounded-xl border ${
+              className={`w-full pr-10 pl-10 py-3.5 rounded-xl border ${
                 errors.degree ? 'border-red-500' : 'border-gray-300'
               } focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent appearance-none`}
             >
@@ -139,8 +140,9 @@
               name="emergencyContact"
               value={formData.emergencyContact}
               onChange={handleInputChange}
-              className="w-full pr-12 pl-4 py-3.5 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent"
-              placeholder="اسم ورقم جهة الاتصال"
+              className="w-full pr-10 pl-10 py-3.5 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent"
+              placeholder=" رقم جهة الاتصال"
+              maxLength="10"
             />
             <PhoneIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
           </div>

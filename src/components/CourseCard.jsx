@@ -10,10 +10,10 @@ import {
 } from "@heroicons/react/24/outline";
 import { useNavigate, useParams } from "react-router-dom";
 
-function ProgramCard({ program }) {
+function CourseCard({ course }) {
   const navigate = useNavigate();
   const { lang } = useParams();
-  const IconComponent = program.icon;
+  const IconComponent = course.icon;
   const statusColors = {
     "مفتوح للتسجيل": "bg-green-100 text-green-800",
     قريبًا: "bg-yellow-100 text-yellow-800",
@@ -36,10 +36,10 @@ function ProgramCard({ program }) {
             <IconComponent className="h-10 w-10 text-white" />
           </div>
           <h3 className="text-2xl font-bold text-center mb-2">
-            {program.title}
+            {course.title}
           </h3>
           <p className="text-blue-100 text-center opacity-90">
-            {program.subtitle}
+            {course.subtitle}
           </p>
         </div>
         <div className="w-full h-2 shadow-md" style={{ background: 'linear-gradient(to right, #202C5B, #226796, #23A0D0, #30AFC1, #3CBEB3)' }}></div>
@@ -51,11 +51,11 @@ function ProgramCard({ program }) {
         <div className="flex flex-wrap gap-2 mb-4">
           <span
             className={`px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1 ${
-              statusColors[program.status]
+              statusColors[course.status]
             }`}
           >
             <TagIcon className="h-3 w-3" />
-            {program.status}
+            {course.status}
           </span>
           <span
             className="px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1"
@@ -65,39 +65,38 @@ function ProgramCard({ program }) {
             }}
           >
             <CheckBadgeIcon className="h-3 w-3" />
-            {program.category}
+            {course.category}
           </span>
         </div>
 
         {/* الوصف */}
         <p className="text-gray-600 mb-6 leading-relaxed text-right text-sm">
-          {program.description}
+          {course.description}
         </p>
-
         {/* تفاصيل البرنامج */}
         <div className="grid grid-cols-2 gap-3 mb-6">
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
             <ClockIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {program.duration}
+              {course.duration}
             </span>
           </div>
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
             <ChartBarIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {program.level}
+              {course.level}
             </span>
           </div>
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
             <CalendarIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {program.startDate}
+              {course.startDate}
             </span>
           </div>
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
             <UserGroupIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {program.seats} مقعد
+              {course.seats} مقعد
             </span>
           </div>
         </div>
@@ -108,7 +107,7 @@ function ProgramCard({ program }) {
             الوظائف المستهدفة:
           </h4>
           <div className="flex flex-wrap gap-1.5">
-            {program.targetdJobs.map((target, index) => (
+            {course.targetdJobs.map((target, index) => (
               <span
                 key={index}
                 className="px-2.5 py-1 text-xs rounded-lg border"
@@ -132,7 +131,7 @@ function ProgramCard({ program }) {
               backgroundColor: "#202C5B",
               color: "white",
             }}
-            onClick={() => navigate(`/${lang}/programs/${program.id}`)}
+            onClick={() => navigate(`/${lang}/courses/${course.id}`)}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "translateX(-5px)";
             }}
@@ -149,4 +148,4 @@ function ProgramCard({ program }) {
   );
 }
 
-export default ProgramCard;
+export default CourseCard;

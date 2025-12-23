@@ -27,13 +27,11 @@ const TrainingProgramsPage = () => {
   // تصفية البرامج حسب الفئة ونتيجة البحث
   const filteredPrograms = programs.filter(program => {
     const matchesCategory = filter === 'all' || program.category === filter;
-    const matchesSearch = program.title.includes(searchTerm) || 
-                         program.description.includes(searchTerm) ||
-                         program.subtitle.includes(searchTerm);
+    const matchesSearch = (program.title && program.title.includes(searchTerm)) || 
+                         (program.description && program.description.includes(searchTerm)) ||
+                         (program.subtitle && program.subtitle.includes(searchTerm));
     return matchesCategory && matchesSearch;
   });
-
-
 
   return (
     <>

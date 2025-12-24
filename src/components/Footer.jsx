@@ -13,7 +13,7 @@ export default function Footer() {
   const footerData = {
     contactInfo: [
       { icon: 'fa-map-marker-alt', text: 'الدمام، المملكة العربية السعودية' },
-      { icon: 'fa-phone', text: '+966 11 234 5678', href: 'tel:+966112345678' },
+      { icon: 'fa-phone', text: '966112345678+', href: 'tel:+966112345678' },
       { icon: 'fa-envelope', text: 'info@asta.edu.sa', href: 'mailto:info@asta.edu.sa' }
     ],
     
@@ -233,9 +233,6 @@ export default function Footer() {
               </a>
               <a href="#" className="hover:text-white transition-colors duration-200">
                 الأسئلة الشائعة
-              </a>
-              <a href="#" className="hover:text-white transition-colors duration-200">
-                دليل المستخدم
               </a>
             </div>
             

@@ -3,7 +3,7 @@ import { ArrowRightIcon, CheckCircleIcon, EnvelopeIcon, ExclamationCircleIcon } 
  
  function SummarySection({ selectedProgram, formData, calculateTotal, additionalServices, handleSubmit, submitError, submitSuccess, isSubmitting }) {
   return (
-    <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8 shadow-lg mb-8 sticky top-8">
+    <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-4 md:p-8shadow-lg mb-8 sticky top-8">
       <h2 className="text-2xl font-bold text-gray-800 mb-6">ملخص التسجيل</h2>
       
       <div className="space-y-4 mb-6">

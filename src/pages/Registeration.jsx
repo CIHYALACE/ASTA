@@ -338,7 +338,7 @@ ${data.notes || 'لا توجد ملاحظات'}
         <SuccessConfirmation formData={formData} selectedProgram={selectedProgram} calculateTotal={calculateTotal} />
       ) : (
         <form onSubmit={handleSubmit}>
-          <div className="max-w-7xl mx-auto px-4 py-8">
+          <div className="max-w-7xl mx-auto px-1 py-8">
             <div className="grid lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2">
                 <ProgramTypeSelector programType={formData.programType} handleProgramTypeChange={handleProgramTypeChange} />

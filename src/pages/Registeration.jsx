@@ -1,21 +1,24 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import emailjs from '@emailjs/browser';
 import Programs from '../api/Programs';
+import Courses from '../api/Courses';
 // components
 import RegistrationHeader from '../components/RegistrationHeader';
 import EmailConfirmationNotice from '../components/EmailConfirmationNotice';
 import PersonalInfoSection from '../components/PersonalInfoSection';
+import ProgramTypeSelector from '../components/ProgramTypeSelector';
 import ProgramSelectionSection from '../components/ProgramSelectionSection';
+import DiplomaSpecificSection from '../components/DiplomaSpecificSection';
 import PaymentSection from '../components/PaymentSection';
 import SummarySection from '../components/SummarySection';
 import SuccessConfirmation from '../components/SuccessConfirmation';
 
 // prepare EmailJS
-emailjs.init("k62cRdPnAvAsP_96b"); // قم باستبدال هذا بالمفتاح العام الخاص بك
+emailjs.init("k62cRdPnAvAsP_96b");
 
 const RegistrationPage = ({ programId = 2 }) => {
-  // بيانات البرامج المتاحة
-  const programs = Programs
+  const programs = Programs;
+  const courses = Courses;
   // بيانات الشهادات المتاحة
   const degrees = [
     "ثانوية عامة",
@@ -33,19 +36,25 @@ const RegistrationPage = ({ programId = 2 }) => {
     { id: 4, name: "متابعة خاصة مع المدرب", price: 2000 }
   ];
 
-  // حالة النموذج
+  // حالة النموذج - initialize with first course by default
   const [formData, setFormData] = useState({
+    programType: 'course',
     fullName: '',
     email: '',
     phone: '',
     nationalId: '',
     degree: '',
-    selectedProgram: programId,
+    selectedProgram: courses.length > 0 ? courses[0].id : 1,
     selectedServices: [],
     emergencyContact: '',
     notes: '',
     agreeToTerms: false,
-    paymentMethod: 'full'
+    paymentMethod: 'full',
+    // Diploma specific fields
+    priorExperience: '',
+    careerGoals: '',
+    studySchedule: '',
+    financialSupport: ''
   });
 
   // حالة التحقق
@@ -53,6 +62,26 @@ const RegistrationPage = ({ programId = 2 }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState('');
+
+  // معالجة تغيير نوع البرنامج
+  const handleProgramTypeChange = (type) => {
+    const initialProgram = type === 'course' 
+      ? (courses.length > 0 ? courses[0].id : 1)
+      : (programs.length > 0 ? programs[0].id : 1);
+    
+    setFormData(prev => ({
+      ...prev,
+      programType: type,
+      selectedProgram: initialProgram,
+      selectedServices: [],
+      priorExperience: '',
+      careerGoals: '',
+      studySchedule: '',
+      financialSupport: ''
+    }));
+    setErrors({});
+    setSubmitError('');
+  };
 
   // معالجة تغيير المدخلات
   const handleInputChange = (e) => {
@@ -62,7 +91,6 @@ const RegistrationPage = ({ programId = 2 }) => {
       [name]: type === 'checkbox' ? checked : value
     }));
     
-    // إزالة رسالة الخطأ عند البدء بالكتابة
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
     }
@@ -118,6 +146,22 @@ const RegistrationPage = ({ programId = 2 }) => {
     if (!formData.degree) {
       newErrors.degree = 'الرجاء اختيار المؤهل العلمي';
     }
+
+    // Diploma specific validation
+    if (formData.programType === 'diploma') {
+      if (!formData.priorExperience) {
+        newErrors.priorExperience = 'الرجاء تحديد خبرتك السابقة';
+      }
+      if (!formData.careerGoals.trim()) {
+        newErrors.careerGoals = 'الرجاء شرح أهدافك المهنية';
+      }
+      if (!formData.studySchedule) {
+        newErrors.studySchedule = 'الرجاء اختيار الجدول الدراسي المفضل';
+      }
+      if (!formData.financialSupport) {
+        newErrors.financialSupport = 'الرجاء تحديد احتياجاتك المالية';
+      }
+    }
     
     if (!formData.agreeToTerms) {
       newErrors.agreeToTerms = 'يجب الموافقة على الشروط والأحكام';
@@ -126,16 +170,30 @@ const RegistrationPage = ({ programId = 2 }) => {
     return newErrors;
   };
 
-  // دالة إرسال البريد الإلكتروني باستخدام EmailJS
+  // دالة إرسال البريد الإلكتروني
   const sendRegistrationEmail = async (data) => {
     try {
+      const programList = formData.programType === 'course' ? courses : programs;
+      const selectedProgram = programList.find(p => p.id === formData.selectedProgram);
+      
+      let diplomaInfo = '';
+      if (formData.programType === 'diploma') {
+        diplomaInfo = `
+معلومات الدبلوم:
+الخبرة السابقة: ${data.priorExperience}
+أهداف الوظيفة: ${data.careerGoals}
+الجدول الدراسي المفضل: ${data.studySchedule}
+الدعم المالي: ${data.financialSupport}
+`;
+      }
+
       const templateParams = {
         to_email: 'abdelRahman.youssef@asta.edu.sa',
         to_name: 'عبدالرحمن يوسف',
         from_name: data.fullName,
         from_email: data.email,
-        subject: `تسجيل جديد في البرنامج: ${data.programTitle}`,
-        message: `تسجيل جديد في البرنامج التدريبي
+        subject: `تسجيل جديد في ${formData.programType === 'diploma' ? 'برنامج دبلوم' : 'دورة'}: ${selectedProgram.title}`,
+        message: `تسجيل جديد في ${formData.programType === 'diploma' ? 'برنامج الدبلوم' : 'الدورة'}
 
 المعلومات الشخصية:
 الاسم الكامل: ${data.fullName}
@@ -146,9 +204,12 @@ const RegistrationPage = ({ programId = 2 }) => {
 جهة اتصال الطوارئ: ${data.emergencyContact || 'غير محدد'}
 
 تفاصيل التسجيل:
-البرنامج: ${data.programTitle}
-فئة البرنامج: ${data.programCategory}
+نوع البرنامج: ${formData.programType === 'diploma' ? 'برنامج دبلوم' : 'دورة احترافية'}
+البرنامج: ${selectedProgram.title}
+الفئة: ${selectedProgram.category}
 طريقة الدفع: ${data.paymentMethod === 'full' ? 'دفع كامل' : data.paymentMethod === 'installment' ? 'تقسيط' : 'تحويل بنكي'}
+
+${diplomaInfo}
 
 الخدمات الإضافية:
 ${data.selectedServices.length > 0 
@@ -169,10 +230,9 @@ ${data.notes || 'لا توجد ملاحظات'}
         reply_to: data.email
       };
 
-      // إرسال البريد باستخدام EmailJS
       const response = await emailjs.send(
-        'asta', // قم بتغيير هذا لمعرف الخدمة الخاص بك
-        'template_qpi4g3m', // قم بتغيير هذا لقالب البريد الخاص بك
+        'asta',
+        'template_qpi4g3m',
         templateParams
       );
 
@@ -198,8 +258,8 @@ ${data.notes || 'لا توجد ملاحظات'}
     setSubmitError('');
     
     try {
-      // جمع البيانات لإرسالها
-      const selectedProgram = programs.find(p => p.id === formData.selectedProgram);
+      const programList = formData.programType === 'course' ? courses : programs;
+      const selectedProgram = programList.find(p => p.id === formData.selectedProgram);
       const selectedServicesList = additionalServices.filter(service => 
         formData.selectedServices.includes(service.id)
       );
@@ -220,18 +280,15 @@ ${data.notes || 'لا توجد ملاحظات'}
         referenceNumber: `REG-${Date.now()}`
       };
       
-      // إرسال البيانات إلى البريد الإلكتروني
       await sendRegistrationEmail(submissionData);
       
-      // رسالة نجاح
       setSubmitSuccess(true);
       window.scrollTo({ top: 0, behavior: 'smooth' });
       
-      // إرسال نسخة للمستخدم
       try {
         await emailjs.send(
           'asta',
-          'template_8ir9aeh', // قالب تأكيد للمستخدم
+          'template_8ir9aeh',
           {
             to_email: formData.email,
             to_name: formData.fullName,
@@ -254,7 +311,8 @@ ${data.notes || 'لا توجد ملاحظات'}
 
   // حساب المجموع الكلي
   const calculateTotal = () => {
-    const program = programs.find(p => p.id === formData.selectedProgram);
+    const programList = formData.programType === 'course' ? courses : programs;
+    const program = programList.find(p => parseInt(p.id) === parseInt(formData.selectedProgram));
     const programPrice = program ? program.price : 0;
     
     const servicesTotal = additionalServices
@@ -265,7 +323,12 @@ ${data.notes || 'لا توجد ملاحظات'}
   };
 
   // الحصول على البرنامج المحدد
-  const selectedProgram = programs.find(p => p.id === formData.selectedProgram);
+  const programList = formData.programType === 'course' ? courses : programs;
+  const selectedProgram = useMemo(() => 
+    programList.find(p => parseInt(p.id) === parseInt(formData.selectedProgram)),
+    [formData.selectedProgram, formData.programType, programList]
+  );
+
   return (
     <div className="bg-gray-50 min-h-screen" dir="rtl">
       <RegistrationHeader selectedProgram={selectedProgram} />
@@ -278,8 +341,20 @@ ${data.notes || 'لا توجد ملاحظات'}
           <div className="max-w-7xl mx-auto px-4 py-8">
             <div className="grid lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2">
+                <ProgramTypeSelector programType={formData.programType} handleProgramTypeChange={handleProgramTypeChange} />
                 <PersonalInfoSection formData={formData} handleInputChange={handleInputChange} errors={errors} degrees={degrees} />
-                <ProgramSelectionSection programs={programs} formData={formData} handleInputChange={handleInputChange} handleServiceToggle={handleServiceToggle} additionalServices={additionalServices} errors={errors} />
+                <ProgramSelectionSection 
+                  programs={programList} 
+                  formData={formData} 
+                  handleInputChange={handleInputChange} 
+                  handleServiceToggle={handleServiceToggle} 
+                  additionalServices={additionalServices} 
+                  errors={errors}
+                  programType={formData.programType}
+                />
+                {formData.programType === 'diploma' && (
+                  <DiplomaSpecificSection formData={formData} handleInputChange={handleInputChange} errors={errors} />
+                )}
                 <PaymentSection formData={formData} handleInputChange={handleInputChange} errors={errors} />
               </div>
               

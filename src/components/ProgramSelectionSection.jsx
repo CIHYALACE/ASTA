@@ -1,57 +1,41 @@
 import { BookOpenIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 
-  function ProgramSelectionSection({ programs, formData, handleInputChange, handleServiceToggle, additionalServices, errors }) {
-    return (
-      <div className="bg-white rounded-2xl p-8 shadow-lg mb-8">
-        <div className="flex items-center gap-3 mb-8">
-          <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
-            <BookOpenIcon className="h-6 w-6 text-green-600" />
-          </div>
+function ProgramSelectionSection({ programs, formData, handleInputChange, handleServiceToggle, additionalServices, errors, programType }) {
+  return (
+    <div className="bg-white rounded-2xl p-8 shadow-lg mb-8">
+      <div className="flex items-center gap-3 mb-8">
+        <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+          <BookOpenIcon className="h-6 w-6 text-[#202C5B]" />
+        </div>
         <div>
-          <h2 className="text-2xl font-bold text-gray-800">اختيار البرنامج</h2>
-          <p className="text-gray-600">اختر البرنامج المناسب لك</p>
+          <h2 className="text-2xl font-bold text-gray-800">
+            اختر {programType === 'diploma' ? 'برنامج الدبلوم' : 'الدورة'}
+          </h2>
+          <p className="text-gray-600">
+            اختر {programType === 'diploma' ? 'برنامج الدبلوم' : 'الدورة'} التي تريد التسجيل بها
+          </p>
         </div>
       </div>
       
-      <div className="mb-8">
-        <label className="block text-gray-700 mb-4 font-medium">
-          البرنامج التدريبي *
+      <div className="space-y-4 mb-8">
+        <label className="block text-gray-700 mb-2 font-medium">
+          البرنامج المتاح *
         </label>
-        <div className="grid md:grid-cols-2 gap-4">
-          {programs.map(program => (
-            <div
-              key={program.id}
-              className={`border-2 rounded-xl p-4 cursor-pointer transition-all duration-300 ${
-                formData.selectedProgram === program.id
-                  ? 'border-[#23A0D0] bg-blue-50'
-                  : 'border-gray-200 hover:border-gray-300'
-              }`}
-              onClick={() => handleInputChange({ 
-                target: { name: 'selectedProgram', value: program.id } 
-              })}
-            >
-              <div className="flex items-start gap-3">
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                  formData.selectedProgram === program.id
-                    ? 'bg-[#23A0D0] text-white'
-                    : 'bg-gray-100 text-gray-600'
-                }`}>
-                  {formData.selectedProgram === program.id ? (
-                    <CheckCircleIcon className="h-5 w-5" />
-                  ) : (
-                    <BookOpenIcon className="h-4 w-4" />
-                  )}
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-gray-800">{program.title}</h3>
-                  <div className="flex justify-between items-center mt-2">
-                    <span className="text-sm text-gray-600">{program.category}</span>
-                    <span className="font-bold text-[#202C5B]">{program.price.toLocaleString()}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="relative">
+          <select
+            name="selectedProgram"
+            value={formData.selectedProgram}
+            onChange={handleInputChange}
+            className={`w-full pr-10 pl-10 py-3.5 rounded-xl border ${
+              errors.selectedProgram ? 'border-red-500' : 'border-gray-300'
+            } focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent appearance-none`}
+          >
+            {programs.map(program => (
+              <option key={program.id} value={program.id}>
+                {program.title} - {program.category} ({program.price.toLocaleString()} ر.س)
+              </option>
+            ))}
+          </select>
         </div>
         {errors.selectedProgram && (
           <p className="text-red-500 text-sm mt-2">{errors.selectedProgram}</p>
@@ -98,6 +82,6 @@ import { BookOpenIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
       </div>
     </div>
   );
-  }
+}
 
 export default ProgramSelectionSection;

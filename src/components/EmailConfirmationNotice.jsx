@@ -5,7 +5,7 @@ function EmailConfirmationNotice ({ formData }) {
     <div className="max-w-7xl mx-auto px-4 -mt-6 mb-8">
       <div className="bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 shadow-sm">
         <div className="flex items-start gap-4">
-          <div className="bg-blue-100 p-3 rounded-xl">
+          <div className="hidden md:block bg-blue-100 p-3 rounded-xl">
             <EnvelopeIcon className="h-8 w-8 text-[#202C5B]" />
           </div>
           <div className="flex-1">

@@ -1,4 +1,4 @@
- import { ArrowRightIcon, CheckCircleIcon, EnvelopeIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, CheckCircleIcon, EnvelopeIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline';
 // import { additionalServices } from '../data/additionalServices';
  
  function SummarySection({ selectedProgram, formData, calculateTotal, additionalServices, handleSubmit, submitError, submitSuccess, isSubmitting }) {
@@ -9,12 +9,14 @@
       <div className="space-y-4 mb-6">
         <div className="flex justify-between items-center py-2 border-b border-gray-200">
           <span className="text-gray-600">البرنامج:</span>
-          <span className="font-bold text-gray-800 text-left max-w-[200px]">{selectedProgram?.title}</span>
+          <span className="font-bold text-gray-800 text-left max-w-[200px]">{selectedProgram?.title || 'لم يتم الاختيار'}</span>
         </div>
         
         <div className="flex justify-between items-center py-2 border-b border-gray-200">
           <span className="text-gray-600">السعر الأساسي:</span>
-          <span className="font-bold text-gray-800">{selectedProgram?.price?.toLocaleString()} ر.س</span>
+          <span className="font-bold text-gray-800">
+            {selectedProgram?.price ? selectedProgram.price.toLocaleString() : '0'} ر.س
+          </span>
         </div>
         
         {formData.selectedServices.length > 0 && (

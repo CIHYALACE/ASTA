@@ -1,9 +1,11 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
-import { Bars3Icon } from "@heroicons/react/24/solid";
 import { useNavigate, useLocation, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "./LanguageToggle";
+// data
+import Courses from "../api/Courses";
+import Programs from "../api/Programs";
 
 
 export default function Navbar() {
@@ -16,9 +18,11 @@ export default function Navbar() {
   // const router = useRouter();
   const location = useLocation();
   const pathname = location.pathname;
-  const diplomasRef = useRef(null);
+  const programsRef = useRef(null);
+  const programs = Programs
   const aboutRef = useRef(null);
-  const courses = useRef(null);
+  const coursesRef = useRef(null);
+  const courses = Courses
 
   const navigate = useNavigate();
   const { lang } = useParams();
@@ -41,13 +45,13 @@ export default function Navbar() {
 
   useEffect(() => {
     function handleClickOutside(event) {
-      if (diplomasRef.current && !diplomasRef.current.contains(event.target)) {
+      if (programsRef.current && !programsRef.current.contains(event.target)) {
         setDiplomasDropdown(false);
       }
       if (aboutRef.current && !aboutRef.current.contains(event.target)) {
         setAboutDropdown(false);
       }
-      if (courses.current && !courses.current.contains(event.target)) {
+      if (coursesRef.current && !coursesRef.current.contains(event.target)) {
         setCoursesDropdown(false);
       }
     }
@@ -233,14 +237,16 @@ export default function Navbar() {
                       >
                         جميع الدورات الاحترافية
                       </a>
-                      {/* map for every dimploma */}
-                      {/* diplomas.map((diploma) => (
+                      {/* map for every Course */}
+                      {courses.map((course) => (
                         <a
-                          key={diploma.id}
-                          href={`/Diplomas/${diploma.id}`}>
-                          {diploma.name}
+                          key={course.id}
+                          href={`${lang}/Courses/${course.id}`}
+                          className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                        >
+                          {course.title}
                         </a>
-                      )) */}
+                      ))}
                     </div>
                   </div>
                 )}

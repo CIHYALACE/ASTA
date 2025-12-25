@@ -42,13 +42,25 @@ const StandardsPage = () => {
   };
 
   const handleDownload = () => {
-    const content = document.getElementById('standard-content').innerText;
-    const blob = new Blob([content], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${activeData.title}.txt`;
-    a.click();
+    if (activeData && activeData.pdf) {
+      const a = document.createElement('a');
+      a.href = activeData.pdf;
+      a.download = activeData.pdf.split('/').pop();
+      a.target = '_blank';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    } else {
+      // Fallback to text download if no PDF is available
+      const content = document.getElementById('standard-content').innerText;
+      const blob = new Blob([content], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${activeData.title}.txt`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
   };
 
   const handleShare = () => {

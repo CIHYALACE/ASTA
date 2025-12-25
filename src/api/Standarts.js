@@ -32,6 +32,7 @@ const standardsData = {
       color: 'bg-blue-600',
       number: 'المعيار الأول',
       lastUpdated: 'ديسمبر 2024',
+      pdf: '/files/FirstStandart.pdf',
       content: {
         introduction: 'تهدف هذه السياسة إلى تعزيز قيم النزاهة الأكاديمية وضمان بيئة تدريبية عادلة ومحترمة، تحافظ على حقوق الملكية الفكرية وتمنع جميع أشكال الغش والانتحال.',
         sections: [
@@ -146,6 +147,7 @@ const standardsData = {
       color: 'bg-green-600',
       number: 'المعيار الثاني',
       lastUpdated: 'ديسمبر 2024',
+      pdf: '/files/SecondStandart.pdf',
       content: {
         introduction: 'تهدف هذه السياسة إلى حماية بيانات المتدربين وضمان الخصوصية والأمان في التعامل مع جميع المعلومات الشخصية التي يتم جمعها خلال عملية التدريب الإلكتروني.',
         sections: [
@@ -217,6 +219,7 @@ const standardsData = {
       color: 'bg-purple-600',
       number: 'المعيار الثالث',
       lastUpdated: 'ديسمبر 2024',
+      pdf: '/files/ThirdStandart.pdf',
       content: {
         introduction: 'يهدف هذا المعيار إلى توضيح أدوار ومسؤوليات الكادر الإشرافي في بيئة التدريب الإلكتروني، وضمان تنفيذ البرامج التدريبية بكفاءة وجودة عالية.',
         sections: [
@@ -311,6 +314,7 @@ const standardsData = {
       color: 'bg-orange-600',
       number: 'المعيار الرابع',
       lastUpdated: 'ديسمبر 2024',
+      pdf: '/files/FourthStandart.pdf',
       content: {
         introduction: 'تهدف هذه السياسة إلى توضيح القواعد والإجراءات المتعلقة بالحضور في الدورات التدريبية الإلكترونية والبرامج التدريبية، بما يضمن التزام المتدربين وتحقيق الاستفادة القصوى من المحتوى التدريبي.',
         sections: [
@@ -405,6 +409,7 @@ const standardsData = {
       color: 'bg-teal-600',
       number: 'المعيار الخامس',
       lastUpdated: 'ديسمبر 2024',
+      pdf: '/files/FifthStandart.pdf',
       content: {
         introduction: 'تسعى الأكاديمية إلى توفير بيئة إلكترونية تفاعلية وآمنة، تُعزز من روح التعاون والاحترام بين جميع المستفيدين (المتدربين، المدربين، والإداريين). وتحدد هذه السياسة ضوابط وأخلاقيات التواصل بين المستفيدين ضمن بيئة التدريب الإلكتروني.',
         sections: [
@@ -507,6 +512,7 @@ const standardsData = {
       color: 'bg-indigo-600',
       number: 'المعيار السادس',
       lastUpdated: 'ديسمبر 2024',
+      pdf: '/files/SixthStandart.pdf',
       content: {
         introduction: 'تهدف إلى ضمان النزاهة ومنع انتحال الشخصية، وتعتمد على آليات مثل التحقق الثنائي عبر الجوال/البريد الإلكتروني، أو الربط بالهوية الوطنية، أو بوابات الهوية الرقمية (مثل نفاذ)، مما يؤكد أن الشخص الذي يتدرب هو صاحب الحساب ويضمن مصداقية الشهادات، وتتضمن عادةً إجراءات إضافية مثل الأسئلة الأمنية أو مطابقة البيانات الرسمية.',
         sections: [
@@ -565,6 +571,7 @@ const standardsData = {
       color: 'bg-pink-600',
       number: 'المعيار السابع',
       lastUpdated: 'ديسمبر 2024',
+      pdf: '/files/SeventhStandart.pdf',
       content: {
         introduction: 'تلتزم الأكاديمية بتوفير دليل إرشادي للمتدربين بهدف تحقيق أعلى إستفادة من التدريب الإلكتروني على النحو التالي:',
         sections: [
@@ -625,6 +632,7 @@ const standardsData = {
       color: 'bg-cyan-600',
       number: 'المعيار الثامن',
       lastUpdated: 'ديسمبر 2024',
+      pdf: '/files/EighthStandart.pdf',
       content: {
         introduction: '',
         sections: [

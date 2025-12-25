@@ -88,8 +88,8 @@ const StandardsPage = () => {
     
     return (
       <div key={index} className="border-b border-gray-200 pb-8 mb-8 last:border-b-0 last:pb-0 last:mb-0">
-        <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-          <div className={`p-2 rounded-lg ${activeData.color.replace('bg-', 'bg-').replace('-600', '-100')} ml-3`}>
+        <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center ">
+          <div className={`p-2 rounded-lg ${activeData.color.replace('bg-', 'bg-').replace('-600', '-100')} ml-3 text-white`}>
             {section.icon && <section.icon className="h-6 w-6" />}
           </div>
           {section.title}
@@ -161,7 +161,7 @@ const StandardsPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white font-['Noto_Sans_Arabic']" dir="rtl">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white" dir="rtl">
       {/* Header */}
       {activeData && activeData.color && (
         <header className="bg-white shadow-lg">
@@ -174,7 +174,7 @@ const StandardsPage = () => {
                 >
                   <ArrowLeftIcon className="h-6 w-6" />
                 </button>
-                <div className={`${activeData.color} p-3 rounded-xl`}>
+                <div className={`${activeData.color} p-3 rounded-xl text-white`}>
                   <activeData.icon className="h-8 w-8" />
                 </div>
                 <div>
@@ -186,24 +186,12 @@ const StandardsPage = () => {
               </div>
 
               <div className="flex items-center gap-3">
-                {/* <button
-                  onClick={() => toggleBookmark(activeStandard)}
-                  className={`p-3 rounded-lg ${isBookmarked[activeStandard] ? 'bg-yellow-50 text-yellow-600' : 'bg-gray-100 hover:bg-gray-200'} transition-colors`}
-                >
-                  <BookmarkIcon className={`h-5 w-5 ${isBookmarked[activeStandard] ? 'fill-current' : ''}`} />
-                </button> */}
                 <button
                   onClick={handleShare}
-                  className="p-3 rounded-lg bg-blue-100 text-blue-600 hover:bg-blue-200 transition-colors"
+                  className="p-3 rounded-lg bg-gradient-to-r from-blue-100 to-blue-200 text-blue-600 hover:bg-blue-300 transition-colors"
                 >
                   <ShareIcon className="h-5 w-5" />
                 </button>
-                {/* <button
-                  onClick={handlePrint}
-                  className="p-3 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                >
-                  <PrinterIcon className="h-5 w-5" />
-                </button> */}
                 <button
                   onClick={handleDownload}
                   className="p-3 rounded-lg bg-green-100 text-green-600 hover:bg-green-200 transition-colors"
@@ -230,26 +218,18 @@ const StandardsPage = () => {
                     onClick={() => setActiveStandard(standard.id)}
                     className={`w-full text-right p-4 rounded-xl transition-all duration-300 flex items-center justify-between group ${
                       activeStandard === standard.id
-                        ? `${standard.color.replace('bg-', 'bg-').replace('-600', '-50')} border-r-4 ${standard.color}`
-                        : 'hover:bg-gray-50 hover:border-r-4 hover:border-gray-300'
+                        ? `${standard.color.replace('bg-', 'bg-').replace('-600', '-50')} ${standard.color}`
+                        : 'hover:bg-gray-50 hover:border-gray-300'
                     }`}
                   >
                     <div className="flex items-center">
                       <div className={`p-2 rounded-lg ${standard.color.replace('bg-', 'bg-').replace('-600', '-100')} ml-4`}>
-                        <standard.icon className="h-6 w-6" />
+                        <standard.icon className="h-6 w-6 text-white" />
                       </div>
                       <div className="text-right">
-                        <h3 className="font-semibold text-gray-800">{standard.title}</h3>
-                        <p className="text-sm text-gray-600 mt-1">{standard.number}</p>
+                        <h3 className={`${activeStandard === standard.id ? 'text-white' : 'text-gray-800'} font-semibold`}>{standard.title}</h3>
+                        <p className={`text-sm ${activeStandard === standard.id ? 'text-white' : 'text-gray-600'} mt-1`}>{standard.number}</p>
                       </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      {isBookmarked[standard.id] && (
-                        <BookmarkIcon className="h-4 w-4 text-yellow-500 fill-current" />
-                      )}
-                      {activeStandard === standard.id && (
-                        <div className={`w-2 h-2 rounded-full ${standard.color}`}></div>
-                      )}
                     </div>
                   </button>
                 ))}

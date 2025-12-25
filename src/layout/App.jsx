@@ -12,6 +12,7 @@ import CourseDetails from '../pages/CourseDetails';
 import Registeration from '../pages/Registeration';
 import StudentServices from '../pages/StudentServices';
 import TermsAndConditions from '../pages/Terms&Conditions';
+import AcademicIntegrityPage from '../pages/AcademicIntegrityPage';
 
 // Styles
 import '../style/App.css';
@@ -23,6 +24,7 @@ export default function App() {
 
         <Route path="/:lang" element={<SharedLayout />}>
           <Route index element={<HomeAr />} />
+          <Route path="academic-integrity" element={<AcademicIntegrityPage />} />
           <Route path="about-us-ar" element={<AboutUsAr />} />
           <Route path="programs" element={<TrainingPrograms />} />
           <Route path="programs/:id" element={<ProgramDetails />} />

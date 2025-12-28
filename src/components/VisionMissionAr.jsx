@@ -3,7 +3,7 @@ import React from 'react';
 const VisionMission = () => {
   const cards = [
     {
-      icon: 'fas fa-eye',
+      icon: 'fas fa-search',
       title: 'الرؤية',
       description: 'الريادة في التأهيل المهني التطبيقي على المستوى الإقليمي، والتميز في إعداد كوادر مهنية قادرة على المنافسة العالمية والمساهمة في بناء الاقتصاد المعرفي.',
     },
@@ -13,7 +13,7 @@ const VisionMission = () => {
       description: 'توفير بيئة تعليمية تطبيقية مبتكرة تلبي احتياجات سوق العمل المتغيرة، من خلال برامج تدريبية احترافية تدمج بين النظرية والتطبيق، وتطور المهارات القيادية والإبداعية للمتدربين.',
     },
     {
-      icon: 'fas fa-heart',
+      icon: 'fas fa-gem',
       title: 'القيم',
       description: 'التميز المهني، الابتكار، النزاهة، العمل الجماعي، المسؤولية المجتمعية، والالتزام بجودة المخرجات. هذه القيم تشكل الأساس الذي تقوم عليه جميع برامجنا وأنشطتنا.',
     },
@@ -22,7 +22,7 @@ const VisionMission = () => {
   return (
     <>
   <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="mx-10 px-4 md:px-6">
             <div className="text-center mb-12 relative">
                 <h2 className="text-3xl md:text-4xl font-bold gradient-text inline-block px-6 relative py-3">
                     الرؤية والرسالة والقيم
@@ -35,8 +35,17 @@ const VisionMission = () => {
                 {/* <!-- الرؤية --> */}
                 <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 transition-all-custom hover:shadow-2xl hover-lift relative overflow-hidden group animate-fadeInUp" style={{animationDelay: '0.1s'}}>
                     <div className="absolute top-0 right-0 w-full h-1 gradient-bg"></div>
-                    <div className="w-20 h-20 gradient-bg triangle flex items-center justify-center mx-auto mb-6">
-                        <i className="fas fa-eye text-3xl text-white"></i>
+                    <div className="w-20 h-20 bg-white border-6 border-gradient triangle flex items-center justify-center mx-auto mb-6"
+                         style={{
+                           borderImage: 'linear-gradient(45deg, #202C5B, #23A0D0) 1'
+                         }}>
+                        <i className="fas fa-search text-3xl"
+                           style={{
+                             background: 'linear-gradient(45deg, #202C5B, #23A0D0)',
+                             WebkitBackgroundClip: 'text',
+                             WebkitTextFillColor: 'transparent',
+                             backgroundClip: 'text'
+                           }}></i>
                     </div>
                     <h3 className="text-2xl font-bold text-dark-blue mb-4 text-center relative pb-3 gradient-text">
                         الرؤية
@@ -52,8 +61,17 @@ const VisionMission = () => {
                 {/* الرسالة */}
                 <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 transition-all-custom hover:shadow-2xl hover-lift relative overflow-hidden group animate-fadeInUp" style={{animationDelay: '0.2s'}}>
                     <div className="absolute top-0 right-0 w-full h-1 gradient-bg"></div>
-                    <div className="w-20 h-20 gradient-bg triangle flex items-center justify-center mx-auto mb-6">
-                        <i className="fas fa-bullseye text-3xl text-white"></i>
+                    <div className="w-20 h-20 bg-white border-6 border-gradient triangle flex items-center justify-center mx-auto mb-6"
+                         style={{
+                           borderImage: 'linear-gradient(45deg, #202C5B, #23A0D0) 1'
+                         }}>
+                        <i className="fas fa-bullseye text-3xl"
+                           style={{
+                             background: 'linear-gradient(45deg, #202C5B, #23A0D0)',
+                             WebkitBackgroundClip: 'text',
+                             WebkitTextFillColor: 'transparent',
+                             backgroundClip: 'text'
+                           }}></i>
                     </div>
                     <h3 className="text-2xl font-bold text-dark-blue mb-4 text-center relative pb-3 gradient-text">
                         الرسالة
@@ -69,8 +87,17 @@ const VisionMission = () => {
                 {/* القيم */}
                 <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 transition-all-custom hover:shadow-2xl hover-lift relative overflow-hidden group animate-fadeInUp" style={{animationDelay: '0.3s'}}>
                     <div className="absolute top-0 right-0 w-full h-1 gradient-bg"></div>
-                    <div className="w-20 h-20 gradient-bg triangle flex items-center justify-center mx-auto mb-6">
-                        <i className="fas fa-heart text-3xl text-white"></i>
+                    <div className="w-20 h-20 bg-white border-6 border-gradient triangle flex items-center justify-center mx-auto mb-6"
+                         style={{
+                           borderImage: 'linear-gradient(45deg, #202C5B, #23A0D0) 1'
+                         }}>
+                        <i className="fas fa-gem text-3xl"
+                           style={{
+                             background: 'linear-gradient(45deg, #202C5B, #23A0D0)',
+                             WebkitBackgroundClip: 'text',
+                             WebkitTextFillColor: 'transparent',
+                             backgroundClip: 'text'
+                           }}></i>
                     </div>
                     <h3 className="text-2xl font-bold text-dark-blue mb-4 text-center relative pb-3 gradient-text">
                         القيم
@@ -85,7 +112,7 @@ const VisionMission = () => {
     </section>
 
     <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="mx-10 px-4 md:px-6">
             <div className="text-center mb-12 relative">
                 <h2 className="text-3xl md:text-4xl font-bold gradient-text inline-block px-6 relative">
                     قيمنا
@@ -94,7 +121,7 @@ const VisionMission = () => {
                 </h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                 {/* قيمة 1 */}
                 <div className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 transition-all-custom hover:shadow-lg hover-lift-small animate-fadeInUp" style={{animationDelay: '0.1s'}}>
                     <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">١</div>

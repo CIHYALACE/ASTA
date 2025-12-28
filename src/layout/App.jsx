@@ -3,8 +3,8 @@ import { Navigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SharedLayout from '../shared/SharedLayout';
 // Pages
-import HomeAr from '../pages/HomeAr';
-import AboutUsAr from '../pages/AboutUsAr';
+import Home from '../pages/Home';
+import AboutUs from '../pages/AboutUs';
 import TrainingPrograms from '../pages/TrainingPrograms';
 import ProgramDetails from '../pages/ProgramDetails';
 import Courses from '../pages/Courses';
@@ -23,9 +23,9 @@ export default function App() {
         <Route path="/" element={<Navigate to="/ar" />} />
 
         <Route path="/:lang" element={<SharedLayout />}>
-          <Route index element={<HomeAr />} />
+          <Route index element={<Home />} />
           <Route path="academic-integrity" element={<AcademicIntegrityPage />} />
-          <Route path="about-us-ar" element={<AboutUsAr />} />
+          <Route path="about-us" element={<AboutUs />} />
           <Route path="programs" element={<TrainingPrograms />} />
           <Route path="programs/:id" element={<ProgramDetails />} />
           <Route path="courses" element={<Courses />} />

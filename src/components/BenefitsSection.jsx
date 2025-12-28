@@ -13,7 +13,7 @@ const BenefitsSection = () => {
       ],
     },
     {
-      icon: 'fas fa-chalkboard-teacher',
+      icon: 'fas fa-chalkbod-teacher',
       title: 'مدربون خبراء',
       items: [
         'مدربون من أصحاب الخبرة العملية',
@@ -67,7 +67,7 @@ const BenefitsSection = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-dark_blue to-aqua bg-clip-text text-transparent">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-dk_blue to-aqua bg-clip-text text-transpent">
           مميزات الانضمام إلى عالم ASTA
         </h2>
         
@@ -77,7 +77,7 @@ const BenefitsSection = () => {
               key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
             >
-              <div className="bg-gradient-to-r from-dark_blue to-aqua text-white p-6 flex items-center gap-4">
+              <div className="bg-gradient-to-r from-dk_blue to-aqua text-white p-6 flex items-center gap-4">
                 <i className={`${benefit.icon} text-2xl`}></i>
                 <h3 className="text-xl font-bold">{benefit.title}</h3>
               </div>

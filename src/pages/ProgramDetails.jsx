@@ -9,11 +9,12 @@ import RequirementsSection from "../components/ProgramRequirementsSection";
 import ProgramFAQSection from "../components/ProgramFAQSection";
 import RelatedProgramsSection from "../components/RelatedProgramsSection";
 // data
-import Programs from "../api/Programs";
+import Programs, { getProgramData } from "../api/Programs";
 const ProgramDetails = () => {
-  const { id } = useParams();  
+  const { id, lang = 'ar' } = useParams();  
   const parsedId = parseInt(id);
   const program = Programs[parsedId - 1]; 
+  const localizedProgram = getProgramData(program, lang);
   if (!program || isNaN(parsedId) || parsedId < 1 || parsedId > Programs.length) {
     return <div>Program not found</div>;
   }
@@ -33,7 +34,7 @@ const ProgramDetails = () => {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">جاهز للانطلاق في رحلة التعلم؟</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            سجل الآن واحجز مقعدك في أفضل برنامج تدريبي في {program.title}
+            سجل الآن واحجز مقعدك في أفضل برنامج تدريبي في {localizedProgram.title}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-4 bg-gradient-to-r from-[#226796] to-[#23A0D0] text-white rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300">

@@ -1,7 +1,16 @@
 import { ArrowRightIcon, CheckCircleIcon, EnvelopeIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline';
-// import { additionalServices } from '../data/additionalServices';
- 
- function SummarySection({ selectedProgram, formData, calculateTotal, additionalServices, handleSubmit, submitError, submitSuccess, isSubmitting }) {
+import { useParams } from 'react-router-dom';
+import { getCourseData } from '../api/Courses';
+import { getProgramData } from '../api/Programs';
+
+function SummarySection({ selectedProgram, formData, calculateTotal, additionalServices, handleSubmit, submitError, submitSuccess, isSubmitting }) {
+  const { lang = 'ar' } = useParams();
+  
+  const localizedProgram = selectedProgram ? (
+    formData.programType === 'course' 
+      ? getCourseData(selectedProgram, lang)
+      : getProgramData(selectedProgram, lang)
+  ) : null;
   return (
     <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-4 md:p-8shadow-lg mb-8 sticky top-8">
       <h2 className="text-2xl font-bold text-gray-800 mb-6">ملخص التسجيل</h2>
@@ -9,7 +18,7 @@ import { ArrowRightIcon, CheckCircleIcon, EnvelopeIcon, ExclamationCircleIcon } 
       <div className="space-y-4 mb-6">
         <div className="flex justify-between items-center py-2 border-b border-gray-200">
           <span className="text-gray-600">البرنامج:</span>
-          <span className="font-bold text-gray-800 text-left max-w-[200px]">{selectedProgram?.title || 'لم يتم الاختيار'}</span>
+          <span className="font-bold text-gray-800 text-left max-w-[200px]">{localizedProgram?.title || 'لم يتم الاختيار'}</span>
         </div>
         
         <div className="flex justify-between items-center py-2 border-b border-gray-200">

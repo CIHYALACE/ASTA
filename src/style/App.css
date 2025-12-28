@@ -70,7 +70,7 @@ input:focus-within {
 
 @font-face {
   font-family: "GE";
-  src: url("/fonts/GE-Dinar-Two-Medium.otf")
+  src: url("/fonts/GE_Dinar_Two_Medium.otf")
     format("opentype");
   font-style: normal;
   font-display: swap;

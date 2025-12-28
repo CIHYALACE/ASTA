@@ -9,10 +9,15 @@ import {
   ArrowLeftIcon,
 } from "@heroicons/react/24/outline";
 import { useNavigate, useParams } from "react-router-dom";
+import { getCourseData } from "../api/Courses";
+import { getProgramData } from "../api/Programs";
 
-function ProgramCard({ program }) {
+function ProgramCard({ program, programType = 'course' }) {
   const navigate = useNavigate();
-  const { lang } = useParams();
+  const { lang = 'ar' } = useParams();
+  const localizedProgram = programType === 'course' 
+    ? getCourseData(program, lang) 
+    : getProgramData(program, lang);
   const IconComponent = program.icon;
   const statusColors = {
     "مفتوح للتسجيل": "bg-green-100 text-green-800",
@@ -36,10 +41,10 @@ function ProgramCard({ program }) {
             <IconComponent className="h-10 w-10 text-white" />
           </div>
           <h3 className="text-2xl font-bold text-center mb-2">
-            {program.title}
+            {localizedProgram.title}
           </h3>
           <p className="text-blue-100 text-center opacity-90">
-            {program.subtitle}
+            {localizedProgram.subtitle}
           </p>
         </div>
         <div className="w-full h-2 shadow-md" style={{ background: 'linear-gradient(to right, #202C5B, #226796, #23A0D0, #30AFC1, #3CBEB3)' }}></div>
@@ -51,11 +56,11 @@ function ProgramCard({ program }) {
         <div className="flex flex-wrap gap-2 mb-4">
           <span
             className={`px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1 ${
-              statusColors[program.status]
+              statusColors[localizedProgram.status]
             }`}
           >
             <TagIcon className="h-3 w-3" />
-            {program.status}
+            {localizedProgram.status}
           </span>
           <span
             className="px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1"
@@ -65,13 +70,13 @@ function ProgramCard({ program }) {
             }}
           >
             <CheckBadgeIcon className="h-3 w-3" />
-            {program.category}
+            {localizedProgram.category}
           </span>
         </div>
 
         {/* الوصف */}
         <p className="text-gray-600 mb-6 leading-relaxed text-right text-sm">
-          {program.description}
+          {localizedProgram.description}
         </p>
 
         {/* تفاصيل البرنامج */}
@@ -79,13 +84,13 @@ function ProgramCard({ program }) {
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
             <ClockIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {program.duration}
+              {localizedProgram.duration}
             </span>
           </div>
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
             <ChartBarIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {program.level}
+              {localizedProgram.level}
             </span>
           </div>
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">

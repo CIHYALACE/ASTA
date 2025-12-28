@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import emailjs from '@emailjs/browser';
-import Programs from '../api/Programs';
-import Courses from '../api/Courses';
+import Programs, { getProgramData } from '../api/Programs';
+import Courses, { getCourseData } from '../api/Courses';
 // components
 import RegistrationHeader from '../components/RegistrationHeader';
 import EmailConfirmationNotice from '../components/EmailConfirmationNotice';
@@ -175,6 +175,9 @@ const RegistrationPage = ({ programId = 2 }) => {
     try {
       const programList = formData.programType === 'course' ? courses : programs;
       const selectedProgram = programList.find(p => p.id === formData.selectedProgram);
+      const localizedProgram = formData.programType === 'course' 
+        ? getCourseData(selectedProgram, 'ar')
+        : getProgramData(selectedProgram, 'ar');
       
       let diplomaInfo = '';
       if (formData.programType === 'diploma') {
@@ -192,7 +195,7 @@ const RegistrationPage = ({ programId = 2 }) => {
         to_name: 'عبدالرحمن يوسف',
         from_name: data.fullName,
         from_email: data.email,
-        subject: `تسجيل جديد في ${formData.programType === 'diploma' ? 'برنامج دبلوم' : 'دورة'}: ${selectedProgram.title}`,
+        subject: `تسجيل جديد في ${formData.programType === 'diploma' ? 'برنامج دبلوم' : 'دورة'}: ${localizedProgram.title}`,
         message: `تسجيل جديد في ${formData.programType === 'diploma' ? 'برنامج الدبلوم' : 'الدورة'}
 
 المعلومات الشخصية:
@@ -205,8 +208,8 @@ const RegistrationPage = ({ programId = 2 }) => {
 
 تفاصيل التسجيل:
 نوع البرنامج: ${formData.programType === 'diploma' ? 'برنامج دبلوم' : 'دورة احترافية'}
-البرنامج: ${selectedProgram.title}
-الفئة: ${selectedProgram.category}
+البرنامج: ${localizedProgram.title}
+الفئة: ${localizedProgram.category}
 طريقة الدفع: ${data.paymentMethod === 'full' ? 'دفع كامل' : data.paymentMethod === 'installment' ? 'تقسيط' : 'تحويل بنكي'}
 
 ${diplomaInfo}
@@ -225,148 +228,163 @@ ${data.selectedServices.length > 0
 ملاحظات إضافية:
 ${data.notes || 'لا توجد ملاحظات'}
 
-تاريخ التسجيل: ${new Date().toLocaleString('ar-SA')}
-رقم المرجع: REG-${Date.now()}`,
-        reply_to: data.email
-      };
+تاريخ التسجيل: ${data.submissionDate}
+رقم المرجع: ${data.referenceNumber}`,
+      reply_to: data.email
+    };
 
-      const response = await emailjs.send(
-        'asta',
-        'template_qpi4g3m',
-        templateParams
-      );
+    const response = await emailjs.send(
+      'asta',
+      'template_qpi4g3m',
+      templateParams
+    );
 
-      return response;
-    } catch (error) {
-      console.error('Error sending email:', error);
-      throw new Error('فشل في إرسال البريد الإلكتروني. الرجاء المحاولة مرة أخرى.');
-    }
-  };
+    return response;
+  } catch (error) {
+    console.error('Error sending email:', error);
+    throw new Error('فشل في إرسال البريد الإلكتروني. الرجاء المحاولة مرة أخرى.');
+  }
+};
 
-  // معالجة إرسال النموذج
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+// معالجة إرسال النموذج
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  
+  const validationErrors = validateForm();
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+  
+  setIsSubmitting(true);
+  setSubmitError('');
+  
+  try {
+    const programList = formData.programType === 'course' ? courses : programs;
+    const selectedProgram = programList.find(p => p.id === formData.selectedProgram);
+    const localizedProgram = formData.programType === 'course' 
+      ? getCourseData(selectedProgram, 'ar')
+      : getProgramData(selectedProgram, 'ar');
+    const selectedServicesList = additionalServices.filter(service => 
+      formData.selectedServices.includes(service.id)
+    );
     
-    const validationErrors = validateForm();
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
-    }
+    const servicesTotal = selectedServicesList.reduce((sum, service) => sum + service.price, 0);
+    const programPrice = selectedProgram.price;
+    const totalAmount = programPrice + servicesTotal;
     
-    setIsSubmitting(true);
-    setSubmitError('');
+    const submissionData = {
+      ...formData,
+      programTitle: localizedProgram.title,
+      programCategory: localizedProgram.category,
+      programPrice: programPrice.toLocaleString(),
+      selectedServices: selectedServicesList,
+      servicesTotal: servicesTotal.toLocaleString(),
+      totalAmount: totalAmount.toLocaleString(),
+      submissionDate: new Date().toLocaleString('ar-SA'),
+      referenceNumber: `REG-${Date.now()}`
+    };
+    
+    await sendRegistrationEmail(submissionData);
+    
+    setSubmitSuccess(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     
     try {
-      const programList = formData.programType === 'course' ? courses : programs;
-      const selectedProgram = programList.find(p => p.id === formData.selectedProgram);
-      const selectedServicesList = additionalServices.filter(service => 
-        formData.selectedServices.includes(service.id)
+      await emailjs.send(
+        'asta',
+        'template_8ir9aeh',
+        {
+          to_email: formData.email,
+          to_name: formData.fullName,
+          program_name: localizedProgram.title,
+          reference_number: submissionData.referenceNumber,
+          total_amount: totalAmount.toLocaleString()
+        }
       );
-      
-      const servicesTotal = selectedServicesList.reduce((sum, service) => sum + service.price, 0);
-      const programPrice = selectedProgram.price;
-      const totalAmount = programPrice + servicesTotal;
-      
-      const submissionData = {
-        ...formData,
-        programTitle: selectedProgram.title,
-        programCategory: selectedProgram.category,
-        programPrice: programPrice.toLocaleString(),
-        selectedServices: selectedServicesList,
-        servicesTotal: servicesTotal.toLocaleString(),
-        totalAmount: totalAmount.toLocaleString(),
-        submissionDate: new Date().toLocaleString('ar-SA'),
-        referenceNumber: `REG-${Date.now()}`
-      };
-      
-      await sendRegistrationEmail(submissionData);
-      
-      setSubmitSuccess(true);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      
-      try {
-        await emailjs.send(
-          'asta',
-          'template_8ir9aeh',
-          {
-            to_email: formData.email,
-            to_name: formData.fullName,
-            program_name: selectedProgram.title,
-            reference_number: submissionData.referenceNumber,
-            total_amount: totalAmount.toLocaleString()
-          }
-        );
-      } catch (userEmailError) {
-        console.warn('Could not send confirmation to user:', userEmailError);
-      }
-      
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitError(error.message || 'حدث خطأ أثناء إرسال النموذج. الرجاء المحاولة مرة أخرى.');
-    } finally {
-      setIsSubmitting(false);
+    } catch (userEmailError) {
+      console.warn('Could not send confirmation to user:', userEmailError);
     }
-  };
-
-  // حساب المجموع الكلي
-  const calculateTotal = () => {
-    const programList = formData.programType === 'course' ? courses : programs;
-    const program = programList.find(p => parseInt(p.id) === parseInt(formData.selectedProgram));
-    const programPrice = program ? program.price : 0;
     
-    const servicesTotal = additionalServices
-      .filter(service => formData.selectedServices.includes(service.id))
-      .reduce((sum, service) => sum + service.price, 0);
-    
-    return programPrice + servicesTotal;
-  };
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    setSubmitError(error.message || 'حدث خطأ أثناء إرسال النموذج. الرجاء المحاولة مرة أخرى.');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
-  // الحصول على البرنامج المحدد
+// حساب المجموع الكلي
+const calculateTotal = () => {
   const programList = formData.programType === 'course' ? courses : programs;
-  const selectedProgram = useMemo(() => 
-    programList.find(p => parseInt(p.id) === parseInt(formData.selectedProgram)),
-    [formData.selectedProgram, formData.programType, programList]
-  );
+  const program = programList.find(p => parseInt(p.id) === parseInt(formData.selectedProgram));
+  const programPrice = program ? program.price : 0;
+  
+  const servicesTotal = additionalServices
+    .filter(service => formData.selectedServices.includes(service.id))
+    .reduce((sum, service) => sum + service.price, 0);
+  
+  return programPrice + servicesTotal;
+};
 
-  return (
-    <div className="bg-gray-50 min-h-screen" dir="rtl">
-      <RegistrationHeader selectedProgram={selectedProgram} />
-      <EmailConfirmationNotice formData={formData} />
-      
-      {submitSuccess ? (
-        <SuccessConfirmation formData={formData} selectedProgram={selectedProgram} calculateTotal={calculateTotal} />
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <div className="max-w-7xl mx-auto px-1 py-8">
-            <div className="grid lg:grid-cols-3 gap-8">
-              <div className="lg:col-span-2">
-                <ProgramTypeSelector programType={formData.programType} handleProgramTypeChange={handleProgramTypeChange} />
-                <PersonalInfoSection formData={formData} handleInputChange={handleInputChange} errors={errors} degrees={degrees} />
-                <ProgramSelectionSection 
-                  programs={programList} 
-                  formData={formData} 
-                  handleInputChange={handleInputChange} 
-                  handleServiceToggle={handleServiceToggle} 
-                  additionalServices={additionalServices} 
-                  errors={errors}
-                  programType={formData.programType}
-                />
-                {formData.programType === 'diploma' && (
-                  <DiplomaSpecificSection formData={formData} handleInputChange={handleInputChange} errors={errors} />
-                )}
-                <PaymentSection formData={formData} handleInputChange={handleInputChange} errors={errors} />
-              </div>
-              
-              <div className="lg:col-span-1">
-                <SummarySection selectedProgram={selectedProgram} formData={formData} calculateTotal={calculateTotal} additionalServices={additionalServices} handleSubmit={handleSubmit} submitError={submitError} submitSuccess={submitSuccess} isSubmitting={isSubmitting} />
-              </div>
+// الحصول على البرنامج المحدد
+const programList = formData.programType === 'course' ? courses : programs;
+const localizedProgramList = useMemo(() => 
+  programList.map(p => {
+    const localizedData = formData.programType === 'course' 
+      ? getCourseData(p, 'ar') 
+      : getProgramData(p, 'ar');
+    return {
+      ...p,
+      ...localizedData
+    };
+  }),
+  [formData.programType, programList]
+);
+const selectedProgram = useMemo(() => 
+  programList.find(p => parseInt(p.id) === parseInt(formData.selectedProgram)),
+  [formData.selectedProgram, formData.programType, programList]
+);
+
+return (
+  <div className="bg-gray-50 min-h-screen" dir="rtl">
+    <RegistrationHeader selectedProgram={selectedProgram} />
+    <EmailConfirmationNotice formData={formData} />
+    
+    {submitSuccess ? (
+      <SuccessConfirmation formData={formData} selectedProgram={selectedProgram} calculateTotal={calculateTotal} />
+    ) : (
+      <form onSubmit={handleSubmit}>
+        <div className="max-w-7xl mx-auto px-1 py-8">
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2">
+              <ProgramTypeSelector programType={formData.programType} handleProgramTypeChange={handleProgramTypeChange} />
+              <PersonalInfoSection formData={formData} handleInputChange={handleInputChange} errors={errors} degrees={degrees} />
+              <ProgramSelectionSection 
+                programs={localizedProgramList} 
+                formData={formData} 
+                handleInputChange={handleInputChange} 
+                handleServiceToggle={handleServiceToggle} 
+                additionalServices={additionalServices} 
+                errors={errors}
+                programType={formData.programType}
+              />
+              {formData.programType === 'diploma' && (
+                <DiplomaSpecificSection formData={formData} handleInputChange={handleInputChange} errors={errors} />
+              )}
+              <PaymentSection formData={formData} handleInputChange={handleInputChange} errors={errors} />
+            </div>
+            
+            <div className="lg:col-span-1">
+              <SummarySection selectedProgram={selectedProgram} formData={formData} calculateTotal={calculateTotal} additionalServices={additionalServices} handleSubmit={handleSubmit} submitError={submitError} submitSuccess={submitSuccess} isSubmitting={isSubmitting} />
             </div>
           </div>
-        </form>
-      )}
-    </div>
-  );
-};
+        </div>
+      </form>
+    )}
+  </div>
+);
+}
 
 export default RegistrationPage;

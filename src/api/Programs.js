@@ -741,6 +741,11 @@ const Programs = [
 export const getProgramData = (program, lang = 'ar') => {
   const getLocalizedField = (field) => {
     if (typeof field === 'object' && field !== null) {
+      // Handle arrays - don't localize them, return as-is
+      if (Array.isArray(field)) {
+        return field;
+      }
+      // Handle bilingual objects
       return field[lang] || field.ar || field.en || '';
     }
     return field;
@@ -759,7 +764,13 @@ export const getProgramData = (program, lang = 'ar') => {
     curriculum: getLocalizedField(program.curriculum),
     requirements: getLocalizedField(program.requirements),
     benefits: getLocalizedField(program.benefits),
-    schedule: getLocalizedField(program.schedule),
+    schedule: typeof program.schedule === 'object' && program.schedule !== null ? {
+      ...program.schedule,
+      days: Array.isArray(program.schedule.days) ? program.schedule.days : program.schedule.days,
+      time: getLocalizedField(program.schedule.time),
+      mode: getLocalizedField(program.schedule.mode),
+      location: getLocalizedField(program.schedule.location),
+    } : program.schedule,
     certifications: getLocalizedField(program.certifications),
     targetJobs: getLocalizedField(program.targetJobs),
     faqs: getLocalizedField(program.faqs),

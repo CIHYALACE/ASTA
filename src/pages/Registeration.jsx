@@ -174,7 +174,13 @@ const RegistrationPage = ({ programId = 2 }) => {
   const sendRegistrationEmail = async (data) => {
     try {
       const programList = formData.programType === 'course' ? courses : programs;
-      const selectedProgram = programList.find(p => p.id === formData.selectedProgram);
+      const selectedProgram = programList.find(p => p.id == formData.selectedProgram);
+      
+      // Safety check - if no program found, throw error
+      if (!selectedProgram) {
+        throw new Error('البرنامج المحدد غير موجود');
+      }
+      
       const localizedProgram = formData.programType === 'course' 
         ? getCourseData(selectedProgram, 'ar')
         : getProgramData(selectedProgram, 'ar');
@@ -262,7 +268,15 @@ const handleSubmit = async (e) => {
   
   try {
     const programList = formData.programType === 'course' ? courses : programs;
-    const selectedProgram = programList.find(p => p.id === formData.selectedProgram);
+    const selectedProgram = programList.find(p => p.id == formData.selectedProgram);
+    
+    // Safety check - if no program found, throw error
+    if (!selectedProgram) {
+      console.log('Debug - formData.selectedProgram:', formData.selectedProgram);
+      console.log('Debug - programList:', programList.map(p => ({ id: p.id, title: p.title })));
+      throw new Error('البرنامج المحدد غير موجود');
+    }
+    
     const localizedProgram = formData.programType === 'course' 
       ? getCourseData(selectedProgram, 'ar')
       : getProgramData(selectedProgram, 'ar');

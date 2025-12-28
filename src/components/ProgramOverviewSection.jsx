@@ -49,15 +49,19 @@ function OverviewSection({ program }) {
                 </div>
                 <div className="flex items-center justify-between py-3 border-b border-gray-200">
                   <span className="text-gray-600">أيام الدراسة</span>
-                  <span className="font-bold text-gray-800">{localizedProgram.schedule.days.join('، ')}</span>
+                  <span className="font-bold text-gray-800">
+                    {localizedProgram.schedule?.days ? 
+                      (Array.isArray(localizedProgram.schedule.days) ? localizedProgram.schedule.days.join('، ') : localizedProgram.schedule.days) 
+                      : 'غير محدد'}
+                  </span>
                 </div>
                 <div className="flex items-center justify-between py-3 border-b border-gray-200">
                   <span className="text-gray-600">التوقيت</span>
-                  <span className="font-bold text-gray-800">{localizedProgram.schedule.time}</span>
+                  <span className="font-bold text-gray-800">{localizedProgram.schedule?.time || 'غير محدد'}</span>
                 </div>
                 <div className="flex items-center justify-between py-3">
                   <span className="text-gray-600">نظام الدراسة</span>
-                  <span className="font-bold text-gray-800">{localizedProgram.schedule.mode}</span>
+                  <span className="font-bold text-gray-800">{localizedProgram.schedule?.mode || 'غير محدد'}</span>
                 </div>
               </div>
               

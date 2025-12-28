@@ -390,6 +390,11 @@ const Courses = [
 export const getCourseData = (course, lang = 'ar') => {
   const getLocalizedField = (field) => {
     if (typeof field === 'object' && field !== null) {
+      // Handle arrays - don't localize them, return as-is
+      if (Array.isArray(field)) {
+        return field;
+      }
+      // Handle bilingual objects
       return field[lang] || field.ar || field.en || '';
     }
     return field;
@@ -409,7 +414,16 @@ export const getCourseData = (course, lang = 'ar') => {
     curriculum: getLocalizedField(course.curriculum),
     requirements: getLocalizedField(course.requirements),
     benefits: getLocalizedField(course.benefits),
-    schedule: getLocalizedField(course.schedule),
+    schedule: typeof course.schedule === 'object' && course.schedule !== null ? (
+      (course.schedule.ar || course.schedule.en) ? getLocalizedField(course.schedule) :
+      {
+        ...course.schedule,
+        days: Array.isArray(course.schedule.days) ? course.schedule.days : course.schedule.days,
+        time: getLocalizedField(course.schedule.time),
+        mode: getLocalizedField(course.schedule.mode),
+        location: getLocalizedField(course.schedule.location),
+      }
+    ) : course.schedule,
     faqs: getLocalizedField(course.faqs),
     skills: getLocalizedField(course.skills),
     targetJobs: getLocalizedField(course.targetJobs),

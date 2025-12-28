@@ -1,7 +1,14 @@
 import { CheckCircleIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
-// import { formData, selectedProgram, calculateTotal } from '../utils/formData';
+import { getCourseData } from '../api/Courses';
+import { getProgramData } from '../api/Programs';
 
 function SuccessConfirmation ({ formData, selectedProgram, calculateTotal }) {
+    // Get localized program data
+    const localizedProgram = selectedProgram ? (
+        formData.programType === 'course'
+            ? getCourseData(selectedProgram, 'ar')
+            : getProgramData(selectedProgram, 'ar')
+    ) : null;
     return (
     <div className="max-w-3xl mx-auto px-4 py-12">
       <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
@@ -22,7 +29,7 @@ function SuccessConfirmation ({ formData, selectedProgram, calculateTotal }) {
             </div>
             <div className="flex justify-between items-center">
               <span className="text-gray-600">البرنامج:</span>
-              <span className="font-bold text-gray-800">{selectedProgram?.title}</span>
+              <span className="font-bold text-gray-800">{localizedProgram?.title || 'غير محدد'}</span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-gray-600">البريد الإلكتروني:</span>

@@ -309,7 +309,7 @@ const Programs = [
   },
 
   {
-    id: 5,
+    id: 4,
     icon: ComputerDesktopIcon,
     title: "دبلوم أمن وشبكات الحاسب",
     subtitle: "برنامج متخصص في تأمين الأنظمة والشبكات الرقمية",
@@ -390,7 +390,7 @@ const Programs = [
   },
 
   {
-    id: 6,
+    id: 5,
     icon: DevicePhoneMobileIcon,
     title: "دبلوم البرمجة وتطبيقات الأجهزة الذكية",
     subtitle: "برنامج متخصص في تطوير تطبيقات الهواتف الذكية",
@@ -471,7 +471,7 @@ const Programs = [
   },
 
   {
-    id: 7,
+    id: 6,
     icon: CircleStackIcon,
     title: "دبلوم قواعد البيانات وتطوير الويب",
     subtitle: "برنامج متخصص في قواعد البيانات وتطوير مواقع الويب",
@@ -552,7 +552,7 @@ const Programs = [
   },
 
   {
-    id: 8,
+    id: 7,
     icon: ShoppingCartIcon,
     title: "دبلوم التسويق الرقمي والتجارة الإلكترونية",
     subtitle: "برنامج متخصص في التسويق الرقمي وإدارة المتاجر الإلكترونية",
@@ -634,7 +634,7 @@ const Programs = [
   },
 
   {
-    id: 9,
+    id: 8,
     icon: BuildingOfficeIcon,
     title: "دبلوم تقنية السياحة والضيافة (الفندقة)",
     subtitle: "برنامج متخصص في إدارة الفنادق والخدمات الفندقية",

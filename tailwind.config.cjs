@@ -23,6 +23,8 @@ module.exports = {
       fontFamily: {
         'arabic-heading': ['GE Dinar Two Light Italic', 'serif'],
         'arabic-body': ['GE Dinar Two Light Italic', 'sans-serif'],
+        'english-heading': ['"Optima Medium"', 'serif'],
+        'english-body': ['"Optima Medium"', 'sans-serif'],
         'cairo': ['Cairo', 'sans-serif'],
       },
       backgroundImage: {

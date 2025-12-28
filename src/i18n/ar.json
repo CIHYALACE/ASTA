@@ -8,13 +8,31 @@
 
   "header": {
     "nav": {
-      "home": " الرئيسية",
+      "home": "الرئيسية",
       "courses": "الدورات الإحترافية",
+      "allCourses": "جميع الدورات الاحترافية",
       "student-services": "خدمات الطلاب",
+      "allServices": "جميع الخدمات",
       "diplomas": "البرامج التدريبية",
+      "allPrograms": "جميع البرامج التدريبية",
       "registration": "التسجيل",
-      "about": "عن الاكاديمية",
+      "about": "من نحن",
+      "aboutAcademy": "عن الأكاديمية",
+      "team": "فريق العمل",
       "contact": "اتصل بنا"
+    },
+    "mobile": {
+      "courses": "الدورات",
+      "careerPaths": "المسارات المهنية",
+      "trainers": "المدربين",
+      "about": "من نحن",
+      "changeLanguage": "تغيير اللغة"
+    },
+    "actions": {
+      "verifyCertificate": "فحص الشهادة"
+    },
+    "footer": {
+      "academyName": "أكاديمية المهارات التطبيقية للتدريب"
     }
   },
 
@@ -51,6 +69,7 @@
   "courses": {
     "title": "دوراتنا",
     "description": "استكشف دوراتنا الاحترافية لتحقيق نجاحك",
+    "targetJobs": "الوظائف المستهدفة",
     "card": {
       "duration": "المدة",
       "level": "المستوى"

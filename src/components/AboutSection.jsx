@@ -1,12 +1,14 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 
 const AboutSection = () => {
+    const { t } = useTranslation();
   return (
 <section className="py-16 bg-gray-50">
         <div className="mx-10 px-4 md:px-6">
             <div className="text-center mb-12 relative">
                 <h2 className="text-3xl md:text-4xl font-bold gradient-text inline-block px-6 relative py-3">
-                    من نحن؟
+                    {t("about.title")}
                     <div className="absolute top-1/2 right-full w-24 h-1 gradient-bg transform -translate-y-1/2 hidden md:block"></div>
                     <div className="absolute top-1/2 left-full w-24 h-1 gradient-bg transform -translate-y-1/2 hidden md:block"></div>
                 </h2>
@@ -16,24 +18,13 @@ const AboutSection = () => {
                 <div className="md:w-1/2">
                     <div className="space-y-6 text-lg text-gray-700">
                         <p className="leading-relaxed">
-                            أكاديمية المهارات التطبيقية ليست مجرد 
-                            أكاديمية تدريب؛ نحن مسار مهني تدريبي احترافي 
-                            يؤهل الى سوق العمل, ُ صمم ليحول المعرفة 
-                            ُ النظرية إلى مهارات عملية مطلوبة ومعتمدة 
-                            ومرخصة من المؤسسة العامة للتدريب التقني 
-                            والمهني . وتؤمن بأن الاحتراف المهني في العمل 
-                            يبدأ بالتدريب، ولذا تبنينا منهجية تطبيقية مرنة 
-                            تضمن لك اكتساب الخبرة الحقيقية.
+                            {t("about.description1")}
                         </p>
                         <p className="leading-relaxed">
-                            أكاديمية المهارات التطبيقية انطلاقة نحو 
-                            اكتساب المزيد من المهارات التي تضعك في 
-                            صدارة المنافسة.
+                            {t("about.description2")}
                         </p>
                         <p className="leading-relaxed">
-                            أكاديمية المهارات التطبيقية انطلاقة نحو 
-                            اكتساب المزيد من المهارات التي تضعك في 
-                            صدارة المنافسة.
+                            {t("about.description3")}
                         </p>
                     </div>
                 </div>

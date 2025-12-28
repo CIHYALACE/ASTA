@@ -191,7 +191,7 @@ export default function Navbar() {
                     : "text-[#202C5B]")
                 }
               >
-                الرئيسية
+                {t("header.nav.home")}
               </a>
               <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div>
 
@@ -211,7 +211,7 @@ export default function Navbar() {
                     : "text-[#202C5B]")
                   }
                 >
-                   الدورات الإحترافية
+                   {t("header.nav.courses")}
                   <svg
                     className={`w-3 h-3 transition-transform ${
                       coursesDropdown ? "rotate-180" : ""
@@ -235,7 +235,7 @@ export default function Navbar() {
                         href={`/${lang}/courses`}
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
-                        جميع الدورات الاحترافية
+                        {t("header.nav.allCourses")}
                       </a>
                       {/* map for every Course */}
                       {courses.map((course) => (
@@ -270,7 +270,7 @@ export default function Navbar() {
                       : "text-[#202C5B]")
                   }
                 >
-                   خدمات الطلاب
+                   {t("header.nav.student-services")}
                   <svg
                     className={`w-3 h-3 transition-transform ${
                       studnetServicesDropdown ? "rotate-180" : ""
@@ -294,7 +294,7 @@ export default function Navbar() {
                         href={`/${lang}/student-services`}
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
-                        جميع الخدمات 
+                        {t("header.nav.allServices")} 
                       </a>
                       {/* map for every dimploma */}
                       {/* diplomas.map((diploma) => (
@@ -327,7 +327,7 @@ export default function Navbar() {
                       : "text-[#202C5B]")
                   }
                 >
-                   البرامج التدريبية
+                   {t("header.nav.diplomas")}
                   <svg
                     className={`w-3 h-3 transition-transform ${
                       diplomasDropdown ? "rotate-180" : ""
@@ -351,7 +351,7 @@ export default function Navbar() {
                         href={`/${lang}/programs`}
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
-                        جميع البرامج التدريبية
+                        {t("header.nav.allPrograms")}
                       </a>
                       {/* map for every dimploma */}
                       {programs.map((program) => (
@@ -386,7 +386,7 @@ export default function Navbar() {
                       : "text-[#202C5B]")
                   }
                 >
-                  من نحن
+                  {t("header.nav.about")}
                   <svg
                     className={`w-3 h-3 transition-transform ${
                       aboutDropdown ? "rotate-180" : ""
@@ -410,19 +410,19 @@ export default function Navbar() {
                         href={`/${lang}/about-us`}
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
-                        عن الأكاديمية
+                        {t("header.nav.aboutAcademy")}
                       </a>
                       <a
                         href={`/${lang}/Team`}
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
-                        فريق العمل
+                        {t("header.nav.team")}
                       </a>
                       <a
                         href="#"
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
-                        اتصل بنا
+                        {t("header.nav.contact")}
                       </a>
                     </div>
                   </div>
@@ -441,12 +441,12 @@ export default function Navbar() {
                     : "text-[#202C5B]")
                 }
               >
-                التسجيل
+                {t("header.nav.registration")}
               </a>
             </div>
             <div>
               <button onClick={() => router.push("/")} className="mx-2 py-[12px] px-[12px] rounded-full! cursor-pointer hover:text-[#1a2555] text-white lg:text-[16px] sm:text-[14px] font-bold bg-gradient-to-r! from-[#23A0D0]! to-68% to-[#3CBEB3]! focus:outline-none! shadow-md! transition! hover:opacity-80! !leading-[1.25] duration-300">
-                فحص الشهادة
+                {t("header.actions.verifyCertificate")}
               </button>
               {/* <button onClick={() => router.push("/en")} className="mx-2 py-[12px] px-[12px] rounded-full! cursor-pointer hover:text-[#1a2555] text-white lg:text-[16px] sm:text-[14px] font-bold bg-gradient-to-r! from-[#23A0D0]! to-68% to-[#3CBEB3]! focus:outline-none! shadow-md! transition! hover:opacity-80! !leading-[1.25] duration-300">
                  EN
@@ -493,7 +493,7 @@ export default function Navbar() {
                     href={`/${lang}/Courses`}
                     className="text-black! font-medium! text-lg!"
                   >
-                    {"الدورات"}
+                    {t("header.mobile.courses")}
                   </a>
                 </div>
               </div>
@@ -508,7 +508,7 @@ export default function Navbar() {
                 <div className="flex! items-center! gap-3!">
                   <img src="/icons/1.svg" alt="paths" className="w-4! h-4!" />
                   <span className="text-black! font-medium! text-lg!">
-                    المسارات المهنية
+                    {t("header.mobile.careerPaths")}
                   </span>
                 </div>
               </div>
@@ -528,7 +528,7 @@ export default function Navbar() {
                     className="w-4! h-4!"
                   />
                   <span className="text-black! font-medium! text-lg!">
-                    المدربين
+                    {t("header.mobile.trainers")}
                   </span>
                 </div>
               </div>
@@ -538,7 +538,7 @@ export default function Navbar() {
                 <div className="flex! items-center! gap-3!">
                   <img src="/icons/4.svg" alt="about" className="w-4! h-4!" />
                   <span className="text-black! font-medium! text-lg!">
-                    من نحن
+                    {t("header.mobile.about")}
                   </span>
                 </div>
               </div>
@@ -551,14 +551,14 @@ export default function Navbar() {
                     className="w-4! h-4!"
                   />
                   <span className="text-black! font-medium! text-lg!">
-                    تغيير اللغة
+                    {t("header.mobile.changeLanguage")}
                   </span>
                 </div>
               </div>
             </div>
             <div className=" mt-auto p-3! text-center!">
               <div className="text-black! font-medium! mb-3! text-lg!">
-                أكاديمية المهارات التطبيقية للتدريب
+                {t("header.footer.academyName")}
               </div>
               <div className="flex! justify-center! gap-3!">
                 <a href="mailto:info@ASTA.EDU.SA">

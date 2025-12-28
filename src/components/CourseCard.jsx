@@ -9,10 +9,12 @@ import {
   ArrowLeftIcon,
 } from "@heroicons/react/24/outline";
 import { useNavigate, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function CourseCard({ course }) {
   const navigate = useNavigate();
   const { lang } = useParams();
+  const { t } = useTranslation();
   const IconComponent = course.icon;
   const statusColors = {
     "مفتوح للتسجيل": "bg-green-100 text-green-800",
@@ -104,10 +106,10 @@ function CourseCard({ course }) {
         {/* المهارات */}
         <div className="mb-6">
           <h4 className="text-gray-800 font-medium mb-3 text-right text-sm">
-            الوظائف المستهدفة:
+            {t("courses.targetJobs")}:
           </h4>
           <div className="flex flex-wrap gap-1.5">
-            {course.targetdJobs.map((target, index) => (
+            {course.targetJobs?.map((target, index) => (
               <span
                 key={index}
                 className="px-2.5 py-1 text-xs rounded-lg border"

@@ -10,11 +10,29 @@
     "nav": {
       "home": "Home",
       "courses": "Courses",
+      "allCourses": "All Courses",
       "student-services": "Student Services",
+      "allServices": "All Services",
       "diplomas": "Diplomas",
+      "allPrograms": "All Programs",
       "registration": "Registration",
-      "about": "About",
+      "about": "About Us",
+      "aboutAcademy": "About Academy",
+      "team": "Our Team",
       "contact": "Contact us"
+    },
+    "mobile": {
+      "courses": "Courses",
+      "careerPaths": "Career Paths",
+      "trainers": "Trainers",
+      "about": "About Us",
+      "changeLanguage": "Change Language"
+    },
+    "actions": {
+      "verifyCertificate": "Verify Certificate"
+    },
+    "footer": {
+      "academyName": "Applied Skills Training Academy"
     }
   },
 
@@ -51,6 +69,7 @@
   "courses": {
     "title": "Our Courses",
     "description": "Explore our professional courses",
+    "targetJobs": "Target Jobs",
     "card": {
       "duration": "Duration",
       "level": "Level"

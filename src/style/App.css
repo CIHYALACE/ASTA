@@ -70,16 +70,16 @@ input:focus-within {
 
 @font-face {
   font-family: "GE";
-  src: url("/fonts/arabic/GE_DINAR Font/GE_Dinar_Two_Light (1).otf")
+  src: url("/fonts/GE-Dinar-Two-Medium.otf")
     format("opentype");
   font-style: normal;
   font-display: swap;
 }
 
-/* English Font - Poppins */
+/* English Font - Optima */
 @font-face {
   font-family: "optima";
-  src: url("/fonts/english/OPTIMA.TTF") format("truetype");
+  src: url("/fonts/Optima Medium.ttf") format("truetype");
 
   font-style: normal;
   font-display: swap;

@@ -1,36 +1,24 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 
 const BenefitsSection = () => {
+  const { t } = useTranslation();
+  
   const benefits = [
     {
       icon: 'fas fa-certificate',
-      title: 'شهادات معتمدة',
-      items: [
-        'شهادات معترف بها محليًا ودوليًا',
-        'اعتماد من جهات مهنية متخصصة',
-        'شهادات رقمية يمكن التحقق منها',
-        'توثيق للمهارات المكتسبة',
-      ],
+      title: t("benefits.certificates.title"),
+      items: t("benefits.certificates.items"),
     },
     {
       icon: 'fas fa-chalkbod-teacher',
-      title: 'مدربون خبراء',
-      items: [
-        'مدربون من أصحاب الخبرة العملية',
-        'خبراء في مجالات تخصصهم',
-        'مهارات تدريبية متقدمة',
-        'دعم مستمر من المدربين',
-      ],
+      title: t("benefits.trainers.title"),
+      items: t("benefits.trainers.items"),
     },
     {
       icon: 'fas fa-laptop-code',
-      title: 'منصة تعليمية متطورة',
-      items: [
-        'منصة تعليمية تفاعلية',
-        'محتوى متاح على مدار الساعة',
-        'أدوات تعليمية مبتكرة',
-        'تجربة تعلم شخصية',
-      ],
+      title: t("benefits.platform.title"),
+      items: t("benefits.platform.items"),
     },
     {
       icon: 'fas fa-briefcase',

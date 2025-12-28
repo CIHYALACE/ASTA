@@ -1,21 +1,24 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 
 const VisionMission = () => {
+    const { t } = useTranslation();
+    
   const cards = [
     {
       icon: 'fas fa-search',
-      title: 'الرؤية',
-      description: 'الريادة في التأهيل المهني التطبيقي على المستوى الإقليمي، والتميز في إعداد كوادر مهنية قادرة على المنافسة العالمية والمساهمة في بناء الاقتصاد المعرفي.',
+      title: t("visionMission.vision.title"),
+      description: t("visionMission.vision.description"),
     },
     {
       icon: 'fas fa-bullseye',
-      title: 'الرسالة',
-      description: 'توفير بيئة تعليمية تطبيقية مبتكرة تلبي احتياجات سوق العمل المتغيرة، من خلال برامج تدريبية احترافية تدمج بين النظرية والتطبيق، وتطور المهارات القيادية والإبداعية للمتدربين.',
+      title: t("visionMission.mission.title"),
+      description: t("visionMission.mission.description"),
     },
     {
       icon: 'fas fa-gem',
-      title: 'القيم',
-      description: 'التميز المهني، الابتكار، النزاهة، العمل الجماعي، المسؤولية المجتمعية، والالتزام بجودة المخرجات. هذه القيم تشكل الأساس الذي تقوم عليه جميع برامجنا وأنشطتنا.',
+      title: t("visionMission.values.title"),
+      description: t("visionMission.values.description"),
     },
   ];
 
@@ -25,7 +28,7 @@ const VisionMission = () => {
         <div className="mx-10 px-4 md:px-6">
             <div className="text-center mb-12 relative">
                 <h2 className="text-3xl md:text-4xl font-bold gradient-text inline-block px-6 relative py-3">
-                    الرؤية والرسالة والقيم
+                    {t("visionMission.title")}
                     <div className="absolute top-1/2 right-full w-24 h-1 gradient-bg transform -translate-y-1/2 hidden md:block"></div>
                     <div className="absolute top-1/2 left-full w-24 h-1 gradient-bg transform -translate-y-1/2 hidden md:block"></div>
                 </h2>
@@ -115,7 +118,7 @@ const VisionMission = () => {
         <div className="mx-10 px-4 md:px-6">
             <div className="text-center mb-12 relative">
                 <h2 className="text-3xl md:text-4xl font-bold gradient-text inline-block px-6 relative">
-                    قيمنا
+                    {t("visionMission.ourValues.title")}
                     <div className="absolute top-1/2 right-full w-24 h-1 gradient-bg transform -translate-y-1/2 hidden md:block"></div>
                     <div className="absolute top-1/2 left-full w-24 h-1 gradient-bg transform -translate-y-1/2 hidden md:block"></div>
                 </h2>
@@ -126,8 +129,8 @@ const VisionMission = () => {
                 <div className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 transition-all-custom hover:shadow-lg hover-lift-small animate-fadeInUp" style={{animationDelay: '0.1s'}}>
                     <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">١</div>
                     <div>
-                        <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">التميز </h4>
-                        <p className="text-gray-600">نلتزم بأعلى معايير الجودة في تصميم وتنفيذ برامجنا التدريبية، ونسعى دائمًا لتحقيق التميز في كل ما نقدمه.</p>
+                        <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">{t("visionMission.ourValues.excellence.title")}</h4>
+                        <p className="text-gray-600">{t("visionMission.ourValues.excellence.description")}</p>
                     </div>
                 </div>
                 
@@ -135,8 +138,8 @@ const VisionMission = () => {
                 <div className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 transition-all-custom hover:shadow-lg hover-lift-small animate-fadeInUp" style={{animationDelay: '0.2s'}}>
                     <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">٢</div>
                     <div>
-                        <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">الابتكار </h4>
-                        <p className="text-gray-600">نتبنى أحدث الأساليب التعليمية والتقنيات التكنولوجية لضمان مواكبة التطورات المستمرة في سوق العمل.</p>
+                        <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">{t("visionMission.ourValues.innovation.title")}</h4>
+                        <p className="text-gray-600">{t("visionMission.ourValues.innovation.description")}</p>
                     </div>
                 </div>
                 
@@ -144,8 +147,8 @@ const VisionMission = () => {
                 <div className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 transition-all-custom hover:shadow-lg hover-lift-small animate-fadeInUp" style={{animationDelay: '0.3s'}}>
                     <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">٣</div>
                     <div>
-                        <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text"> الالتزام</h4>
-                        <p className="text-gray-600">نركز على الجانب التطبيقي في جميع برامجنا، لأننا نؤمن بأن المهارات الحقيقية تكتسب بالتطبيق والممارسة.</p>
+                        <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">{t("visionMission.ourValues.commitment.title")}</h4>
+                        <p className="text-gray-600">{t("visionMission.ourValues.commitment.description")}</p>
                     </div>
                 </div>
                 
@@ -153,8 +156,8 @@ const VisionMission = () => {
                 <div className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 transition-all-custom hover:shadow-lg hover-lift-small animate-fadeInUp" style={{animationDelay: '0.4s'}}>
                     <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">٤</div>
                     <div>
-                        <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">المرونة </h4>
-                        <p className="text-gray-600">نسعى لبناء شراكات استراتيجية مع القطاعين العام والخاص لتلبية احتياجات سوق العمل الحقيقية.</p>
+                        <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">{t("visionMission.ourValues.flexibility.title")}</h4>
+                        <p className="text-gray-600">{t("visionMission.ourValues.flexibility.description")}</p>
                     </div>
                 </div>
                 
@@ -162,8 +165,8 @@ const VisionMission = () => {
                 <div className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 transition-all-custom hover:shadow-lg hover-lift-small animate-fadeInUp" style={{animationDelay: '0.5s'}}>
                     <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">٥</div>
                     <div>
-                        <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text"> المصداقية</h4>
-                        <p className="text-gray-600">نعمل بالشفافية  في جميع تعاملاتنا ومع جميع شركائنا ومتدربينا، ونسعى دائمًا لتحقيق درجات النزاهة.</p>
+                        <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">{t("visionMission.ourValues.credibility.title")}</h4>
+                        <p className="text-gray-600">{t("visionMission.ourValues.credibility.description")}</p>
                     </div>
                 </div>
                 

@@ -2,7 +2,8 @@
   "global": {
     "academyName": "Applied Skills Training Academy",
     "loading": "Loading...",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "downloadProfile": "Profile File"
   },
 
   "header": {
@@ -22,6 +23,13 @@
     "address": "Dammam, Saudi Arabia"
   },
 
+  "hero": {
+    "title": "Applied Skills Training Academy",
+    "subtitle": "Your Path to Professional Excellence",
+    "downloadButton": "Profile File",
+    "registerButton": "Register"
+  },
+
   "home": {
     "hero": {
       "title": "Your Path to Professional Excellence",
@@ -31,6 +39,13 @@
       "students": "Students",
       "courses": "Courses"
     }
+  },
+
+  "about": {
+    "title": "About Us?",
+    "description1": "Applied Skills Training Academy is not just a training academy; we are a professional training career path that qualifies you for the job market, designed to transform theoretical knowledge into practical, required, accredited, and licensed skills by the General Organization for Technical and Vocational Training. We believe that professional excellence at work begins with training, so we have adopted a flexible applied methodology that ensures you gain real experience.",
+    "description2": "Applied Skills Training Academy is a launch towards acquiring more skills that put you at the forefront of competition.",
+    "description3": "Applied Skills Training Academy is a launch towards acquiring more skills that put you at the forefront of competition."
   },
 
   "courses": {
@@ -63,21 +78,187 @@
     }
   },
 
+  "visionMission": {
+    "title": "Vision, Mission, and Values",
+    "vision": {
+      "title": "Vision",
+      "description": "Applied Skills Training Academy is a launch towards acquiring more skills that put you at the forefront of competition."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "Applied Skills Training Academy is a launch towards acquiring more skills that put you at the forefront of competition."
+    },
+    "values": {
+      "title": "Values",
+      "description": "Innovation, Excellence, Credibility, Commitment, Flexibility."
+    },
+    "ourValues": {
+      "title": "Our Values",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We are committed to the highest quality standards in designing and implementing our training programs, and we always strive to achieve excellence in everything we offer."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We adopt the latest educational methods and technological technologies to keep up with continuous developments in the job market."
+      },
+      "credibility": {
+        "title": "Credibility",
+        "description": "We believe in transparency and credibility in all our dealings and results, and we seek to build long-term trust with our clients."
+      },
+      "commitment": {
+        "title": "Commitment",
+        "description": "We are committed to providing the best training services and support our trainees from beginning to end to ensure they achieve their goals."
+      },
+      "flexibility": {
+        "title": "Flexibility",
+        "description": "We provide flexible training programs that suit the different needs of trainees and are compatible with the changing requirements of the job market."
+      }
+    }
+  },
+
+  "benefits": {
+    "certificates": {
+      "title": "Accredited Certificates",
+      "items": [
+        "Certificates recognized locally and internationally",
+        "Accreditation from specialized professional bodies",
+        "Digital certificates that can be verified",
+        "Documentation of acquired skills"
+      ]
+    },
+    "trainers": {
+      "title": "Expert Trainers",
+      "items": [
+        "Trainers with practical experience",
+        "Experts in their fields of specialization",
+        "Advanced training skills",
+        "Continuous support from trainers"
+      ]
+    },
+    "platform": {
+      "title": "Advanced Educational Platform",
+      "items": [
+        "Interactive educational platform",
+        "Content available 24/7",
+        "Modern educational technologies",
+        "Comfortable learning experience"
+      ]
+    }
+  },
+
   "buttons": {
     "profile-file": "Profile file",
     "submit": "Submit",
     "send": "Send",
-    "register": "Register now"
+    "register": "Register now",
+    "next": "Next",
+    "previous": "Previous",
+    "complete": "Complete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort"
+  },
+
+  "programs": {
+    "hero": {
+      "title": "Our Training Programs",
+      "subtitle": "Professional Accredited Diplomas"
+    },
+    "selection": {
+      "title": "Choose the Right Program for You",
+      "description": "We offer a variety of training programs that suit different professional needs"
+    },
+    "overview": {
+      "title": "Program Overview",
+      "description": "Learn about program details and features"
+    },
+    "curriculum": {
+      "title": "Curriculum",
+      "description": "Subjects and skills you will learn"
+    },
+    "requirements": {
+      "title": "Program Requirements",
+      "description": "Conditions and qualifications required"
+    },
+    "instructor": {
+      "title": "Program Instructor",
+      "description": "Meet our expert trainers"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Answers to your inquiries"
+    }
+  },
+
+  "registration": {
+    "title": "Program Registration",
+    "subtitle": "Simple steps to join us",
+    "personalInfo": {
+      "title": "Personal Information",
+      "description": "Enter your basic data"
+    },
+    "programSelection": {
+      "title": "Program Selection",
+      "description": "Choose the program that suits you"
+    },
+    "payment": {
+      "title": "Payment",
+      "description": "Choose the appropriate payment method"
+    },
+    "confirmation": {
+      "title": "Registration Confirmation",
+      "description": "Your request has been successfully received"
+    }
+  },
+
+  "messages": {
+    "success": {
+      "registration": "Registration completed successfully",
+      "submission": "Request submitted successfully",
+      "payment": "Payment completed successfully",
+      "update": "Updated successfully"
+    },
+    "error": {
+      "general": "Something went wrong",
+      "network": "Internet connection problem",
+      "validation": "Please check the entered data",
+      "payment": "Payment failed"
+    },
+    "info": {
+      "loading": "Loading...",
+      "processing": "Processing...",
+      "noData": "No data available"
+    }
   },
 
   "seo": {
     "home": {
-      "title": "Future Academy | Professional Education",
-      "description": "Join Future Academy and build your future with accredited programs"
+      "title": "Home | Applied Skills Training Academy",
+      "description": "Join Applied Skills Training Academy and build your future with accredited programs"
     },
     "courses": {
-      "title": "Courses | Future Academy",
-      "description": "Browse professional courses at Future Academy"
+      "title": "Courses | Applied Skills Training Academy",
+      "description": "Browse professional courses at Applied Skills Training Academy"
+    },
+    "programs": {
+      "title": "Programs | Applied Skills Training Academy",
+      "description": "Explore accredited training programs at Applied Skills Training Academy"
+    },
+    "about": {
+      "title": "About Us | Applied Skills Training Academy",
+      "description": "Learn about Applied Skills Training Academy, our vision and mission"
+    },
+    "registration": {
+      "title": "Registration | Applied Skills Training Academy",
+      "description": "Register in our professional training programs now"
     }
   },
 
@@ -85,6 +266,14 @@
     "404": {
       "title": "Page not found",
       "message": "The page you are looking for does not exist"
+    },
+    "500": {
+      "title": "Server Error",
+      "message": "An internal error occurred, please try again"
+    },
+    "network": {
+      "title": "Connection Problem",
+      "message": "Please check your internet connection"
     }
   }
 }

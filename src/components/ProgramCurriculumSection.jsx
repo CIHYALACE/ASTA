@@ -14,26 +14,26 @@ import { ClockIcon, ChevronRightIcon, DocumentTextIcon, TrophyIcon, VideoCameraI
           </div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {program.curriculum.map((week, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+          {program.curriculum.map((semester, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex justify-between items-start mb-4">
                 <div className="bg-gradient-to-r from-[#226796] to-[#23A0D0] text-white px-4 py-1 rounded-full">
-                  الأسبوع {week.week}
+                  {semester.semester}
                 </div>
                 <div className="flex items-center gap-1 text-gray-500">
                   <ClockIcon className="h-4 w-4" />
-                  <span className="text-sm">{week.hours} ساعة</span>
+                  <span className="text-sm">{semester.courses.length} مواد</span>
                 </div>
               </div>
               
-              <h3 className="text-xl font-bold text-gray-800 mb-4">{week.title}</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">{semester.semester}</h3>
               
               <div className="space-y-2">
-                {week.topics.map((topic, i) => (
+                {semester.courses.map((course, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <ChevronRightIcon className="h-4 w-4 text-[#23A0D0]" />
-                    <span className="text-gray-600">{topic}</span>
+                    <span className="text-gray-600">{course}</span>
                   </div>
                 ))}
               </div>

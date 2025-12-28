@@ -1,21 +1,27 @@
 import { StarIcon, UserIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 
-  function InstructorSection({ program }) {
-    return (
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 border-r-4 border-[#23A0D0] pr-4">
-            المدرب
-          </h2>
+function InstructorSection({ program }) {
+  return (
+    <section className="py-12 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-gray-800 mb-8 border-r-4 border-[#23A0D0] pr-4">
+          المدرب
+        </h2>
         
         <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8">
           <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
             <div className="text-center">
-              <img 
-                src={program.instructor.image} 
-                alt={program.instructor.name}
-                className="w-40 h-40 rounded-2xl object-cover border-4 border-white shadow-lg mx-auto"
-              />
+              {program.instructor.image ? (
+                <img 
+                  src={program.instructor.image} 
+                  alt={program.instructor.name}
+                  className="w-40 h-40 rounded-2xl object-cover border-4 border-white shadow-lg mx-auto"
+                />
+              ) : (
+                <div className="w-40 h-40 rounded-2xl bg-gray-200 border-4 border-white shadow-lg mx-auto flex items-center justify-center">
+                  <UserIcon className="h-16 w-16 text-gray-400" />
+                </div>
+              )}
             </div>
             
             <div className="flex-1">

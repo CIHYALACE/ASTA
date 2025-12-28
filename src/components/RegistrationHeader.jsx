@@ -14,7 +14,7 @@ function RegistrationHeader({ selectedProgram }) {
           className="flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors"
         >
           <ArrowLeftIcon className="h-5 w-5" />
-          <span>العودة لتفاصيل البرنامج</span>
+          <span>العودة </span>
         </button>
         
         <div className="text-center max-w-3xl mx-auto">
@@ -27,7 +27,7 @@ function RegistrationHeader({ selectedProgram }) {
             <span className="block py-2 text-transparent bg-clip-text bg-gradient-to-r from-[#FFD166] to-[#FF9E6D]">
               سجل الآن
             </span>
-            في برنامج {selectedProgram?.title}
+            وابدأ طريقك إلى الإحتراف المهني
           </h1>
           
           <p className="text-xl text-blue-100 mb-8">

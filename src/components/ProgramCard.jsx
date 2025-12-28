@@ -108,7 +108,7 @@ function ProgramCard({ program }) {
             الوظائف المستهدفة:
           </h4>
           <div className="flex flex-wrap gap-1.5">
-            {program.targetdJobs.map((target, index) => (
+            {program.targetJobs.map((target, index) => (
               <span
                 key={index}
                 className="px-2.5 py-1 text-xs rounded-lg border"

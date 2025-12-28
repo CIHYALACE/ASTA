@@ -241,7 +241,7 @@ export default function Navbar() {
                       {courses.map((course) => (
                         <a
                           key={course.id}
-                          href={`${lang}/Courses/${course.id}`}
+                          href={`/${lang}/Courses/${course.id}`}
                           className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                         >
                           {course.title}
@@ -354,13 +354,15 @@ export default function Navbar() {
                         جميع البرامج التدريبية
                       </a>
                       {/* map for every dimploma */}
-                      {/* diplomas.map((diploma) => (
+                      {programs.map((program) => (
                         <a
-                          key={diploma.id}
-                          href={`/Diplomas/${diploma.id}`}>
-                          {diploma.name}
+                          key={program.id}
+                          href={`/${lang}/Programs/${program.id}`}
+                          className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                        >
+                          {program.title}
                         </a>
-                      )) */}
+                      ))}
                     </div>
                   </div>
                 )}

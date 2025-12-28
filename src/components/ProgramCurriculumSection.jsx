@@ -23,14 +23,14 @@ import { ClockIcon, ChevronRightIcon, DocumentTextIcon, TrophyIcon, VideoCameraI
                 </div>
                 <div className="flex items-center gap-1 text-gray-500">
                   <ClockIcon className="h-4 w-4" />
-                  <span className="text-sm">{semester.courses.length} مواد</span>
+                  <span className="text-sm">{semester.courses ? semester.courses.length : 0} مواد</span>
                 </div>
               </div>
               
               <h3 className="text-xl font-bold text-gray-800 mb-4">{semester.semester}</h3>
               
               <div className="space-y-2">
-                {semester.courses.map((course, i) => (
+                {semester.courses && semester.courses.map((course, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <ChevronRightIcon className="h-4 w-4 text-[#23A0D0]" />
                     <span className="text-gray-600">{course}</span>

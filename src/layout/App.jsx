@@ -13,6 +13,7 @@ import Registeration from '../pages/Registeration';
 import StudentServices from '../pages/StudentServices';
 import TermsAndConditions from '../pages/Terms&Conditions';
 import AcademicIntegrityPage from '../pages/AcademicIntegrityPage';
+import AdmissionAndRegistration from '../pages/AdmissionAndRegistration';
 
 // Styles
 import '../style/App.css';
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="registration" element={<Registeration />} />
           <Route path="student-services" element={<StudentServices />} />
           <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="admission&registration" element={<AdmissionAndRegistration />} />
         </Route>
       </Routes>
   );

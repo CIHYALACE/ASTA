@@ -10,16 +10,23 @@ import {
 } from "@heroicons/react/24/outline";
 import { useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { getCourseData } from "../api/Courses";
 
 function CourseCard({ course }) {
   const navigate = useNavigate();
   const { lang } = useParams();
   const { t } = useTranslation();
+  
+  // Get localized course data
+  const localizedCourse = getCourseData(course, lang);
   const IconComponent = course.icon;
   const statusColors = {
     "مفتوح للتسجيل": "bg-green-100 text-green-800",
-    قريبًا: "bg-yellow-100 text-yellow-800",
-    مكتمل: "bg-red-100 text-red-800",
+    "Open for Registration": "bg-green-100 text-green-800",
+    "قريبًا": "bg-yellow-100 text-yellow-800",
+    "Coming Soon": "bg-yellow-100 text-yellow-800",
+    "مكتمل": "bg-red-100 text-red-800",
+    "Completed": "bg-red-100 text-red-800",
   };
 
   return (
@@ -38,10 +45,10 @@ function CourseCard({ course }) {
             <IconComponent className="h-10 w-10 text-white" />
           </div>
           <h3 className="text-2xl font-bold text-center mb-2">
-            {course.title}
+            {localizedCourse.title}
           </h3>
           <p className="text-blue-100 text-center opacity-90">
-            {course.subtitle}
+            {localizedCourse.subtitle}
           </p>
         </div>
         <div className="w-full h-2 shadow-md" style={{ background: 'linear-gradient(to right, #202C5B, #226796, #23A0D0, #30AFC1, #3CBEB3)' }}></div>
@@ -53,11 +60,11 @@ function CourseCard({ course }) {
         <div className="flex flex-wrap gap-2 mb-4">
           <span
             className={`px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1 ${
-              statusColors[course.status]
+              statusColors[localizedCourse.status]
             }`}
           >
             <TagIcon className="h-3 w-3" />
-            {course.status}
+            {localizedCourse.status}
           </span>
           <span
             className="px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1"
@@ -67,26 +74,26 @@ function CourseCard({ course }) {
             }}
           >
             <CheckBadgeIcon className="h-3 w-3" />
-            {course.category}
+            {localizedCourse.category}
           </span>
         </div>
 
         {/* الوصف */}
         <p className="text-gray-600 mb-6 leading-relaxed text-right text-sm">
-          {course.description}
+          {localizedCourse.description}
         </p>
         {/* تفاصيل البرنامج */}
         <div className="grid grid-cols-2 gap-3 mb-6">
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
             <ClockIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {course.duration}
+              {localizedCourse.duration}
             </span>
           </div>
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
             <ChartBarIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {course.level}
+              {localizedCourse.level}
             </span>
           </div>
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
@@ -98,7 +105,7 @@ function CourseCard({ course }) {
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
             <UserGroupIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {course.seats} مقعد
+              {course.seats} {t("courses.seats")}
             </span>
           </div>
         </div>
@@ -109,7 +116,7 @@ function CourseCard({ course }) {
             {t("courses.targetJobs")}:
           </h4>
           <div className="flex flex-wrap gap-1.5">
-            {course.targetJobs?.map((target, index) => (
+            {localizedCourse.targetJobs?.map((target, index) => (
               <span
                 key={index}
                 className="px-2.5 py-1 text-xs rounded-lg border"

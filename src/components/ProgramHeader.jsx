@@ -1,14 +1,20 @@
   import { ArrowLeftIcon, BookOpenIcon, StarIcon, UserGroupIcon, CalendarIcon, ClockIcon, ShareIcon, BookmarkIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
-  import { useNavigate , useParams} from 'react-router-dom';
-  function ProgramHeader({ program }) {
-    const navigate = useNavigate();
-    const { lang } = useParams();
-    return (
-      <div className="relative bg-gradient-to-r from-[#202C5B] to-[#226796] text-white py-16">
-        <div className="absolute inset-0 overflow-hidden opacity-20">
-          <div className="absolute -top-20 -right-20 w-64 h-64 border-t-[120px] border-r-[120px] border-t-white border-r-transparent"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 border-b-[180px] border-l-[180px] border-b-white border-l-transparent"></div>
-        </div>
+import { useNavigate , useParams} from 'react-router-dom';
+import { getCourseData } from '../api/Courses';
+
+function ProgramHeader({ program }) {
+  const navigate = useNavigate();
+  const { lang } = useParams();
+  
+  // Get localized program data
+  const localizedProgram = getCourseData(program, lang);
+
+  return (
+    <div className="relative bg-gradient-to-r from-[#202C5B] to-[#226796] text-white py-16">
+      <div className="absolute inset-0 overflow-hidden opacity-20">
+        <div className="absolute -top-20 -right-20 w-64 h-64 border-t-[120px] border-r-[120px] border-t-white border-r-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 border-b-[180px] border-l-[180px] border-b-white border-l-transparent"></div>
+      </div>
       
       <div className="relative max-w-7xl mx-auto px-4">
         <button className="flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors">
@@ -20,15 +26,15 @@
           <div className="lg:w-2/3">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
               <BookOpenIcon className="h-4 w-4" />
-              <span className="text-sm font-medium">{program.category}</span>
+              <span className="text-sm font-medium">{localizedProgram.category}</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              {program.title}
+              {localizedProgram.title}
             </h1>
             
             <p className="text-xl text-blue-100 mb-8 max-w-3xl">
-              {program.subtitle}
+              {localizedProgram.subtitle}
             </p>
             
             <div className="flex flex-wrap gap-4 items-center">
@@ -67,7 +73,7 @@
                 </div>
                 <div className="flex items-center gap-3">
                   <ClockIcon className="h-5 w-5 text-blue-200" />
-                  <span>{program.duration}</span>
+                  <span>{localizedProgram.duration}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <UserGroupIcon className="h-5 w-5 text-blue-200" />

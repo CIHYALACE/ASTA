@@ -7,13 +7,12 @@ import {
   FunnelIcon,
   BookOpenIcon,
   ShieldCheckIcon,
-  BriefcaseIcon,
 } from '@heroicons/react/24/outline';
 // Components
 import ProgramCard from '../components/ProgramCard.jsx';
 import ProgramsHeroSection from '../components/ProgramsHeroSection';
 // data
-import Programs from '../api/Programs';
+import Programs, { getProgramData } from '../api/Programs';
 
 const TrainingProgramsPage = () => {
   const [filter, setFilter] = useState('all');
@@ -26,10 +25,11 @@ const TrainingProgramsPage = () => {
 
   // تصفية البرامج حسب الفئة ونتيجة البحث
   const filteredPrograms = programs.filter(program => {
-    const matchesCategory = filter === 'all' || program.category === filter;
-    const matchesSearch = (program.title && program.title.includes(searchTerm)) || 
-                         (program.description && program.description.includes(searchTerm)) ||
-                         (program.subtitle && program.subtitle.includes(searchTerm));
+    const localizedProgram = getProgramData(program, 'ar'); // Default to Arabic for filtering
+    const matchesCategory = filter === 'all' || localizedProgram.category === filter;
+    const matchesSearch = (localizedProgram.title && localizedProgram.title.includes(searchTerm)) || 
+                         (localizedProgram.description && localizedProgram.description.includes(searchTerm)) ||
+                         (localizedProgram.subtitle && localizedProgram.subtitle.includes(searchTerm));
     return matchesCategory && matchesSearch;
   });
 

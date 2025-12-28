@@ -14,7 +14,7 @@ import ProgramCard from '../components/ProgramCard.jsx';
 import ProgramsHeroSection from '../components/ProgramsHeroSection';
 import CourseCard from '../components/CourseCard';
 // data
-import Courses from '../api/Courses';
+import Courses, { getCourseData } from '../api/Courses';
 
 const CoursesPage = () => {
   const [filter, setFilter] = useState('all');
@@ -24,10 +24,11 @@ const CoursesPage = () => {
 
   // تصفية الدورات حسب الفئة ونتيجة البحث
   const filteredCourses = Courses.filter(course => {
-    const matchesCategory = filter === 'all' || course.category === filter;
-    const matchesSearch = (course.title && course.title.includes(searchTerm)) || 
-                         (course.description && course.description.includes(searchTerm)) ||
-                         (course.subtitle && course.subtitle.includes(searchTerm));
+    const localizedCourse = getCourseData(course, 'ar'); // Default to Arabic for filtering
+    const matchesCategory = filter === 'all' || localizedCourse.category === filter;
+    const matchesSearch = (localizedCourse.title && localizedCourse.title.includes(searchTerm)) || 
+                         (localizedCourse.description && localizedCourse.description.includes(searchTerm)) ||
+                         (localizedCourse.subtitle && localizedCourse.subtitle.includes(searchTerm));
     return matchesCategory && matchesSearch;
   });
 

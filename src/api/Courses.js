@@ -7,16 +7,34 @@ const Courses = [
   {
     id: 1,
     icon: ComputerDesktopIcon,
-    title: "كورس بايثون للمبتدئين",
-    subtitle: "تعلم أساسيات لغة البرمجة بايثون",
-    category: "دورات برمجة",
-    duration: "2 أشهر",
-    level: "مبتدئ",
+    title: {
+      ar: "كورس بايثون للمبتدئين",
+      en: "Python Course for Beginners"
+    },
+    subtitle: {
+      ar: "تعلم أساسيات لغة البرمجة بايثون",
+      en: "Learn the basics of Python programming language"
+    },
+    category: {
+      ar: "دورات برمجة",
+      en: "Programming Courses"
+    },
+    duration: {
+      ar: "2 أشهر",
+      en: "2 months"
+    },
+    level: {
+      ar: "مبتدئ",
+      en: "Beginner"
+    },
     startDate: "1 يناير 2025",
     endDate: "28 فبراير 2025",
     seats: 20,
     availableSeats: 8,
-    status: "مفتوح للتسجيل",
+    status: {
+      ar: "مفتوح للتسجيل",
+      en: "Open for Registration"
+    },
     price: 1500,
     originalPrice: "2,000 ر.س",
     discount: "25%",
@@ -26,60 +44,147 @@ const Courses = [
     enrolled: 12,
     instructor: {
       name: "م. يوسف سالم",
-      title: "مطور بايثون",
-      experience: "5 سنوات",
+      title: {
+        ar: "مطور بايثون",
+        en: "Python Developer"
+      },
+      experience: {
+        ar: "5 سنوات",
+        en: "5 years"
+      },
       image: "https://images.unsplash.com/photo-1634482273093-f3f1abe5a8ac?q=80&w=768&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      bio: "متخصص في تطوير البرامج باستخدام بايثون ولديه خبرة في تعليم المبتدئين."
+      bio: {
+        ar: "متخصص في تطوير البرامج باستخدام بايثون ولديه خبرة في تعليم المبتدئين.",
+        en: "Specialized in software development using Python with experience in teaching beginners."
+      }
     },
-    description: "كورس عملي لتعليم أساسيات بايثون مع تطبيقات عملية لتطوير مهارات البرمجة من الصفر.",
-    overview: "كورس عملي لتعليم أساسيات بايثون مع تطبيقات عملية لتطوير مهارات البرمجة من الصفر.",
-    objectives: [
-      "فهم أساسيات البرمجة",
-      "كتابة برامج بسيطة بلغة بايثون",
-      "استخدام المتغيرات والحلقات والشروط",
-      "تطبيق مشاريع عملية صغيرة"
-    ],
-    curriculum: [
-      { semester: "الأسبوع الأول", courses: ["المتغيرات", "العمليات الحسابية", "مقدمة في بايثون"] },
-      { semester: "الأسبوع الثاني", courses: ["if statements", "for & while loops", "الشروط والحلقات"] },
-      { semester: "الأسبوع الثالث", courses: ["Functions", "Importing Libraries", "الدوال والمكتبات"] },
-      { semester: "الأسبوع الرابع", courses: ["مشروع صغير باستخدام بايثون", "مشروع عملي"] }
-    ],
-    requirements: [
-      "شهادة الثانوية العامة",
-      "جهاز حاسوب وإتصال إنترنت"
-    ],
-    benefits: [
-      "شهادة معتمدة بعد الانتهاء",
-      "مشروع عملي لتطبيق المهارات",
-      "دعم من المدرس"
-    ],
+    description: {
+      ar: "كورس عملي لتعليم أساسيات بايثون مع تطبيقات عملية لتطوير مهارات البرمجة من الصفر.",
+      en: "Practical course for teaching Python basics with practical applications to develop programming skills from scratch."
+    },
+    overview: {
+      ar: "كورس عملي لتعليم أساسيات بايثون مع تطبيقات عملية لتطوير مهارات البرمجة من الصفر.",
+      en: "Practical course for teaching Python basics with practical applications to develop programming skills from scratch."
+    },
+    objectives: {
+      ar: [
+        "فهم أساسيات البرمجة",
+        "كتابة برامج بسيطة بلغة بايثون",
+        "استخدام المتغيرات والحلقات والشروط",
+        "تطبيق مشاريع عملية صغيرة"
+      ],
+      en: [
+        "Understand programming basics",
+        "Write simple programs in Python",
+        "Use variables, loops, and conditions",
+        "Apply small practical projects"
+      ]
+    },
+    curriculum: {
+      ar: [
+        { semester: "الأسبوع الأول", courses: ["المتغيرات", "العمليات الحسابية", "مقدمة في بايثون"] },
+        { semester: "الأسبوع الثاني", courses: ["if statements", "for & while loops", "الشروط والحلقات"] },
+        { semester: "الأسبوع الثالث", courses: ["Functions", "Importing Libraries", "الدوال والمكتبات"] },
+        { semester: "الأسبوع الرابع", courses: ["مشروع صغير باستخدام بايثون", "مشروع عملي"] }
+      ],
+      en: [
+        { semester: "Week 1", courses: ["Variables", "Arithmetic Operations", "Introduction to Python"] },
+        { semester: "Week 2", courses: ["if statements", "for & while loops", "Conditions and Loops"] },
+        { semester: "Week 3", courses: ["Functions", "Importing Libraries", "Functions and Libraries"] },
+        { semester: "Week 4", courses: ["Small project using Python", "Practical Project"] }
+      ]
+    },
+    requirements: {
+      ar: [
+        "شهادة الثانوية العامة",
+        "جهاز حاسوب وإتصال إنترنت"
+      ],
+      en: [
+        "High school diploma",
+        "Computer and internet connection"
+      ]
+    },
+    benefits: {
+      ar: [
+        "شهادة معتمدة بعد الانتهاء",
+        "مشروع عملي لتطبيق المهارات",
+        "دعم من المدرس"
+      ],
+      en: [
+        "Certified certificate upon completion",
+        "Practical project to apply skills",
+        "Instructor support"
+      ]
+    },
     schedule: {
-      days: ["السبت", "الأربعاء"],
-      time: "05:00 مساءً - 07:00 مساءً",
-      mode: "أونلاين",
-      location: "منصة التعليم الإلكتروني"
+      ar: {
+        days: ["السبت", "الأربعاء"],
+        time: "05:00 مساءً - 07:00 مساءً",
+        mode: "أونلاين",
+        location: "منصة التعليم الإلكتروني"
+      },
+      en: {
+        days: ["Saturday", "Wednesday"],
+        time: "05:00 PM - 07:00 PM",
+        mode: "Online",
+        location: "E-learning Platform"
+      }
     },
-    faqs: [
-      { question: "ما هي شروط القبول في الكورس؟", answer: "شهادة الثانوية العامة وجهاز حاسوب مع إتصال إنترنت" },
-      { question: "ما هي مدة الكورس؟", answer: "شهرين (8 أسابيع)" },
-      { question: "هل يوجد دعم مالي؟", answer: "يتوفر تقسيط على دفعتين" },
-      { question: "ما هي الشهادات التي سأحصل عليها؟", answer: "شهادة معتمدة من الأكاديمية" }
-    ],
-    skills: ["بايثون", "برمجة", "حل المشكلات", "دوال ومكتبات"],
-    targetJobs: ["مطور برمجيات", "مبرمج بايثون", "محلل برمجيات"],
-    employers: ["شركات التقنية", "شركات تطوير البرمجيات", "القطاع الحكومي", "مشاريعك الخاصة"],
-    exitPoints: "يمكن الخروج بعد 4 أسابيع والحصول على شهادة إتمام كورس بايثون الأساسي"
+    faqs: {
+      ar: [
+        { question: "ما هي شروط القبول في الكورس؟", answer: "شهادة الثانوية العامة وجهاز حاسوب مع إتصال إنترنت" },
+        { question: "ما هي مدة الكورس؟", answer: "شهرين (8 أسابيع)" },
+        { question: "هل يوجد دعم مالي؟", answer: "يتوفر تقسيط على دفعتين" },
+        { question: "ما هي الشهادات التي سأحصل عليها؟", answer: "شهادة معتمدة من الأكاديمية" }
+      ],
+      en: [
+        { question: "What are the admission requirements for the course?", answer: "High school diploma and computer with internet connection" },
+        { question: "What is the course duration?", answer: "Two months (8 weeks)" },
+        { question: "Is financial support available?", answer: "Installment payment in two installments is available" },
+        { question: "What certificates will I get?", answer: "Certified certificate from the Academy" }
+      ]
+    },
+    skills: {
+      ar: ["بايثون", "برمجة", "حل المشكلات", "دوال ومكتبات"],
+      en: ["Python", "Programming", "Problem Solving", "Functions and Libraries"]
+    },
+    targetJobs: {
+      ar: ["مطور برمجيات", "مبرمج بايثون", "محلل برمجيات"],
+      en: ["Software Developer", "Python Programmer", "Software Analyst"]
+    },
+    employers: {
+      ar: ["شركات التقنية", "شركات تطوير البرمجيات", "القطاع الحكومي", "مشاريعك الخاصة"],
+      en: ["Technology Companies", "Software Development Companies", "Government Sector", "Your Own Projects"]
+    },
+    exitPoints: {
+      ar: "يمكن الخروج بعد 4 أسابيع والحصول على شهادة إتمام كورس بايثون الأساسي",
+      en: "Can exit after 4 weeks and get a certificate of completion for basic Python course"
+    }
   },
 
   {
     id: 2,
     icon: AcademicCapIcon,
-    title: "كورس تطوير واجهات المستخدم UI",
-    subtitle: "تعلم تصميم واجهات تطبيقات ومواقع جذابة",
-    category: "دورات تصميم",
-    duration: "1.5 أشهر",
-    level: "مبتدئ - متوسط",
+    title: {
+      ar: "كورس تطوير واجهات المستخدم UI",
+      en: "UI Development Course"
+    },
+    subtitle: {
+      ar: "تعلم تصميم واجهات تطبيقات ومواقع جذابة",
+      en: "Learn to design attractive application and website interfaces"
+    },
+    category: {
+      ar: "دورات تصميم",
+      en: "Design Courses"
+    },
+    duration: {
+      ar: "1.5 أشهر",
+      en: "1.5 months"
+    },
+    level: {
+      ar: "مبتدئ - متوسط",
+      en: "Beginner - Intermediate"
+    },
     startDate: "10 فبراير 2025",
     endDate: "25 مارس 2025",
     seats: 15,
@@ -134,7 +239,10 @@ const Courses = [
       { question: "ما هي الشهادات التي سأحصل عليها؟", answer: "شهادة معتمدة في تصميم UI/UX" }
     ],
     skills: ["UX", "UI", "Wireframes", "Figma", "Adobe XD"],
-    targetJobs: ["مصمم UX/UI", "مصمم واجهات مستخدم", "مصمم تجربة مستخدم"],
+    targetJobs: {
+      ar: ["مصمم UX/UI", "مصمم واجهات مستخدم", "مصمم تجربة مستخدم"],
+      en: ["UX/UI Designer", "User Interface Designer", "User Experience Designer"]
+    },
     employers: ["شركات التقنية", "وكالات التصميم", "شركات تطوير التطبيقات", "العمل الحر"],
     exitPoints: "يمكن الخروج بعد أسبوعين والحصول على شهادة أساسيات التصميم"
   },
@@ -200,7 +308,10 @@ const Courses = [
       { question: "ما هي الشهادات التي سأحصل عليها؟", answer: "شهادة معتمدة في التسويق الرقمي" }
     ],
     skills: ["Digital Marketing", "Social Media", "تحليل الحملات", "SEO", "إعلانات Google"],
-    targetJobs: ["خبير تسويق رقمي", "خبير تسويق إلكتروني", "مدير حملات"],
+    targetJobs: {
+      ar: ["خبير تسويق رقمي", "خبير تسويق إلكتروني", "مدير حملات"],
+      en: ["Digital Marketing Expert", "E-commerce Marketing Specialist", "Campaign Manager"]
+    },
     employers: ["شركات التسويق", "الوكالات الإعلانية", "القطاع الخاص", "العمل الحر"],
     exitPoints: "يمكن الخروج بعد 4 أسابيع والحصول على شهادة أساسيات التسويق الرقمي"
   },
@@ -266,10 +377,51 @@ const Courses = [
       { question: "ما هي الشهادات التي سأحصل عليها؟", answer: "شهادة معتمدة في تحليل البيانات" }
     ],
     skills: ["Excel", "تحليل البيانات", "Charts", "Pivot Tables", "Reporting"],
-    targetJobs: ["محلل بيانات", "محلل بيانات أعمال", "أخصائي تقارير"],
+    targetJobs: {
+      ar: ["محلل بيانات", "محلل بيانات أعمال", "أخصائي تقارير"],
+      en: ["Data Analyst", "Business Data Analyst", "Reporting Specialist"]
+    },
     employers: ["الشركات المالية", "القطاع الحكومي", "شركات التقنية", "الاستشارات"],
     exitPoints: "يمكن الخروج بعد أسبوعين والحصول على شهادة أساسيات Excel"
   }
 ];
+
+// Helper function to get bilingual data
+export const getCourseData = (course, lang = 'ar') => {
+  const getLocalizedField = (field) => {
+    if (typeof field === 'object' && field !== null) {
+      return field[lang] || field.ar || field.en || '';
+    }
+    return field;
+  };
+
+  return {
+    ...course,
+    title: getLocalizedField(course.title),
+    subtitle: getLocalizedField(course.subtitle),
+    category: getLocalizedField(course.category),
+    duration: getLocalizedField(course.duration),
+    level: getLocalizedField(course.level),
+    status: getLocalizedField(course.status),
+    description: getLocalizedField(course.description),
+    overview: getLocalizedField(course.overview),
+    objectives: getLocalizedField(course.objectives),
+    curriculum: getLocalizedField(course.curriculum),
+    requirements: getLocalizedField(course.requirements),
+    benefits: getLocalizedField(course.benefits),
+    schedule: getLocalizedField(course.schedule),
+    faqs: getLocalizedField(course.faqs),
+    skills: getLocalizedField(course.skills),
+    targetJobs: getLocalizedField(course.targetJobs),
+    employers: getLocalizedField(course.employers),
+    exitPoints: getLocalizedField(course.exitPoints),
+    instructor: {
+      ...course.instructor,
+      title: getLocalizedField(course.instructor.title),
+      experience: getLocalizedField(course.instructor.experience),
+      bio: getLocalizedField(course.instructor.bio),
+    }
+  };
+};
 
 export default Courses;

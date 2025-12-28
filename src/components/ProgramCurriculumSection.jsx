@@ -1,12 +1,19 @@
 import { ClockIcon, ChevronRightIcon, DocumentTextIcon, TrophyIcon, VideoCameraIcon } from '@heroicons/react/24/outline';
+import { useParams } from 'react-router-dom';
+import { getCourseData } from '../api/Courses';
 
-  function CurriculumSection({ program }) {
-    return (
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800  border-r-4 border-[#226796] pr-4">
-              المنهج الدراسي
+function CurriculumSection({ program }) {
+  const { lang } = useParams();
+  
+  // Get localized program data
+  const localizedProgram = getCourseData(program, lang);
+
+  return (
+    <section className="py-12 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-3xl font-bold text-gray-800  border-r-4 border-[#226796] pr-4">
+            المنهج الدراسي
           </h2>
           <div className="flex items-center gap-2 text-[#226796]">
             <ClockIcon className="h-5 w-5" />
@@ -15,7 +22,7 @@ import { ClockIcon, ChevronRightIcon, DocumentTextIcon, TrophyIcon, VideoCameraI
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
-          {program.curriculum.map((semester, index) => (
+          {localizedProgram.curriculum.map((semester, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex justify-between items-start mb-4">
                 <div className="bg-gradient-to-r from-[#226796] to-[#23A0D0] text-white px-4 py-1 rounded-full">

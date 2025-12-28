@@ -1,15 +1,22 @@
 import { ChevronRightIcon } from '@heroicons/react/24/outline';
+import { useParams } from 'react-router-dom';
+import { getCourseData } from '../api/Courses';
 
-  function FAQSection({ program }) {
-    return (
-      <section className="py-12 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-            الأسئلة الشائعة
-          </h2>
+function FAQSection({ program }) {
+  const { lang } = useParams();
+  
+  // Get localized program data
+  const localizedProgram = getCourseData(program, lang);
+
+  return (
+    <section className="py-12 bg-white">
+      <div className="max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+          الأسئلة الشائعة
+        </h2>
         
         <div className="space-y-4">
-          {program.faqs.map((faq, index) => (
+          {localizedProgram.faqs.map((faq, index) => (
             <div key={index} className="border border-gray-200 rounded-2xl overflow-hidden">
               <button className="w-full text-right p-6 bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center">
                 <span className="text-lg font-medium text-gray-800">{faq.question}</span>
@@ -31,6 +38,6 @@ import { ChevronRightIcon } from '@heroicons/react/24/outline';
       </div>
     </section>
   );
-  }
-  
-  export default FAQSection;
+}
+
+export default FAQSection;

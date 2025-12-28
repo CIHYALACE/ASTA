@@ -14,16 +14,34 @@ const Programs = [
   {
     id: 1,
     icon: BuildingOfficeIcon,
-    title: "دبلوم ريادة الأعمال",
-    subtitle: "برنامج تأهيل رواد الأعمال والمديرين التنفيذيين",
-    category: "دبلومات مهنية",
-    duration: "سنتين (4 فصول دراسية + تدريب)",
-    level: "مستوى 5 - الإطار الوطني للمؤهلات",
+    title: {
+      ar: "دبلوم ريادة الأعمال",
+      en: "Business Entrepreneurship Diploma"
+    },
+    subtitle: {
+      ar: "برنامج تأهيل رواد الأعمال والمديرين التنفيذيين",
+      en: "Program for qualifying entrepreneurs and executive managers"
+    },
+    category: {
+      ar: "دبلومات مهنية",
+      en: "Professional Diplomas"
+    },
+    duration: {
+      ar: "سنتين (4 فصول دراسية + تدريب)",
+      en: "Two years (4 semesters + training)"
+    },
+    level: {
+      ar: "مستوى 5 - الإطار الوطني للمؤهلات",
+      en: "Level 5 - National Qualifications Framework"
+    },
     startDate: "مفتوح للتسجيل",
     endDate: "يحدد حسب الدفعة",
     seats: 30,
     availableSeats: 15,
-    status: "مفتوح للتسجيل",
+    status: {
+      ar: "مفتوح للتسجيل",
+      en: "Open for Registration"
+    },
     price: 0,
     originalPrice: "",
     discount: "",
@@ -718,5 +736,41 @@ const Programs = [
     ]
   }
 ];
+
+// Helper function to get bilingual program data
+export const getProgramData = (program, lang = 'ar') => {
+  const getLocalizedField = (field) => {
+    if (typeof field === 'object' && field !== null) {
+      return field[lang] || field.ar || field.en || '';
+    }
+    return field;
+  };
+
+  return {
+    ...program,
+    title: getLocalizedField(program.title),
+    subtitle: getLocalizedField(program.subtitle),
+    category: getLocalizedField(program.category),
+    duration: getLocalizedField(program.duration),
+    level: getLocalizedField(program.level),
+    status: getLocalizedField(program.status),
+    overview: getLocalizedField(program.overview),
+    objectives: getLocalizedField(program.objectives),
+    curriculum: getLocalizedField(program.curriculum),
+    requirements: getLocalizedField(program.requirements),
+    benefits: getLocalizedField(program.benefits),
+    schedule: getLocalizedField(program.schedule),
+    certifications: getLocalizedField(program.certifications),
+    targetJobs: getLocalizedField(program.targetJobs),
+    faqs: getLocalizedField(program.faqs),
+    exitPoints: getLocalizedField(program.exitPoints),
+    instructor: {
+      ...program.instructor,
+      title: getLocalizedField(program.instructor.title),
+      experience: getLocalizedField(program.instructor.experience),
+      bio: getLocalizedField(program.instructor.bio),
+    }
+  };
+};
 
 export default Programs;

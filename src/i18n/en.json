@@ -70,6 +70,7 @@
     "title": "Our Courses",
     "description": "Explore our professional courses",
     "targetJobs": "Target Jobs",
+    "seats": "seat",
     "card": {
       "duration": "Duration",
       "level": "Level"

@@ -4,8 +4,8 @@ import { useNavigate, useLocation, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "./LanguageToggle";
 // data
-import Courses from "../api/Courses";
-import Programs from "../api/Programs";
+import Courses, { getCourseData } from "../api/Courses";
+import Programs, { getProgramData } from "../api/Programs";
 
 
 export default function Navbar() {
@@ -18,15 +18,15 @@ export default function Navbar() {
   // const router = useRouter();
   const location = useLocation();
   const pathname = location.pathname;
-  const programsRef = useRef(null);
-  const programs = Programs
-  const aboutRef = useRef(null);
-  const coursesRef = useRef(null);
-  const courses = Courses
-
   const navigate = useNavigate();
   const { lang } = useParams();
   const { t } = useTranslation();
+  
+  const programsRef = useRef(null);
+  const programs = Programs.map(program => getProgramData(program, lang))
+  const aboutRef = useRef(null);
+  const coursesRef = useRef(null);
+  const courses = Courses.map(course => getCourseData(course, lang))
 
 
   const switchLang = (newLang) => {

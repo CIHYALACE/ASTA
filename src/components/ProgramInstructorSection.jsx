@@ -1,6 +1,13 @@
 import { StarIcon, UserIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
+import { useParams } from 'react-router-dom';
+import { getCourseData } from '../api/Courses';
 
 function InstructorSection({ program }) {
+  const { lang } = useParams();
+  
+  // Get localized program data
+  const localizedProgram = getCourseData(program, lang);
+
   return (
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4">
@@ -28,17 +35,17 @@ function InstructorSection({ program }) {
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
                 <div>
                   <h3 className="text-2xl font-bold text-gray-800">{program.instructor.name}</h3>
-                  <p className="text-[#23A0D0] font-medium">{program.instructor.title}</p>
+                  <p className="text-[#23A0D0] font-medium">{localizedProgram.instructor.title}</p>
                 </div>
                 <div className="flex items-center gap-2 mt-4 md:mt-0">
                   <span className="px-4 py-2 bg-[#23A0D0] text-white rounded-full text-sm">
-                    خبرة {program.instructor.experience}
+                    خبرة {localizedProgram.instructor.experience}
                   </span>
                 </div>
               </div>
               
               <p className="text-gray-600 leading-relaxed mb-8">
-                {program.instructor.bio}
+                {localizedProgram.instructor.bio}
               </p>
               
               <div className="flex flex-wrap gap-4">

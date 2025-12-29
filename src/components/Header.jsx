@@ -124,7 +124,6 @@ export default function Navbar() {
       {/* Main Nav */}
       <div className="md:hidden bg-white md:pt-8! pt-[8px]">
         <div className="mx-auto px-2">
-        <div className="mx-auto px-2">
           {/* Mobile Layout */}
           <div className="md:hidden">
             {/* Mobile Semi Header */}
@@ -169,7 +168,6 @@ export default function Navbar() {
           </div>
           {/* Desktop Menu */}
           <div className="bg-white">
-          <div className="mx-auto px-2">
           <div className="mx-auto px-2">
           <div className="hidden sm:flex justify-between items-center py-3 border-gray-200 bg-white top-0">
             <div className="flex-shrink-0">

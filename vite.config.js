@@ -12,7 +12,13 @@ export default defineConfig({
     
   },
   preview: {
-    port: 80,
-    host: true,
+    port: 10000,
+    host: true, // Accept connections from any hostname
+    cors: true,
+    strictPort: false,
+    allowedHosts: [
+      'asta.edu.sa',
+      '.asta.edu.sa', // Allow subdomains
+    ],
   },
 })

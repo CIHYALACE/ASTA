@@ -123,7 +123,7 @@ export default function Navbar() {
         </div>
       {/* Main Nav */}
       <div className="md:hidden bg-white md:pt-8! pt-[8px]">
-        <div className="md:w-[1400px] mx-auto px-2">
+        <div className="mx-auto px-2">
           {/* Mobile Layout */}
           <div className="md:hidden">
             {/* Mobile Semi Header */}
@@ -168,7 +168,7 @@ export default function Navbar() {
           </div>
           {/* Desktop Menu */}
           <div className="bg-white">
-          <div className=" w-[1400px] mx-auto px-2">
+          <div className="mx-auto px-2">
           <div className="hidden sm:flex justify-between items-center py-3 border-gray-200 bg-white top-0">
             <div className="flex-shrink-0">
               <a href={`/${lang}/`}>
@@ -413,10 +413,10 @@ export default function Navbar() {
                         {t("header.nav.aboutAcademy")}
                       </a>
                       <a
-                        href={`/${lang}/Team`}
+                        href={`/${lang}/academic-integrity`}
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
-                        {t("header.nav.team")}
+                        {t("header.nav.standarts")}
                       </a>
                       <a
                         href="#"

@@ -36,7 +36,7 @@ function SummarySection({ selectedProgram, formData, calculateTotal, additionalS
               .map(service => (
                 <div key={service.id} className="flex justify-between items-center text-sm mb-1">
                   <span className="text-gray-600">{service.name}</span>
-                  <span>{service.price.toLocaleString()} ر.س</span>
+                  <span>{service.price.toLocaleString() || 0} ر.س</span>
                 </div>
               ))
             }
@@ -56,16 +56,6 @@ function SummarySection({ selectedProgram, formData, calculateTotal, additionalS
           <span className="text-2xl font-bold text-[#202C5B]">
             {calculateTotal().toLocaleString()} ر.س
           </span>
-        </div>
-      </div>
-      
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
-        <div className="flex items-start gap-3">
-          <EnvelopeIcon className="h-5 w-5 text-[#202C5B] mt-0.5" />
-          <div>
-            <p className="text-blue-800 text-sm font-medium mb-1">سيتم إرسال البيانات إلى:</p>
-            <code className="text-[#202C5B] text-sm bg-white px-2 py-1 rounded">abdelRahman.youssef@asta.edu.sa</code>
-          </div>
         </div>
       </div>
       

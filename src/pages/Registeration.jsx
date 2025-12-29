@@ -4,7 +4,7 @@ import Programs, { getProgramData } from '../api/Programs';
 import Courses, { getCourseData } from '../api/Courses';
 // components
 import RegistrationHeader from '../components/RegistrationHeader';
-import EmailConfirmationNotice from '../components/EmailConfirmationNotice';
+// import EmailConfirmationNotice from '../components/EmailConfirmationNotice';
 import PersonalInfoSection from '../components/PersonalInfoSection';
 import ProgramTypeSelector from '../components/ProgramTypeSelector';
 import ProgramSelectionSection from '../components/ProgramSelectionSection';
@@ -30,10 +30,12 @@ const RegistrationPage = ({ programId = 2 }) => {
 
   // بيانات الخدمات الإضافية
   const additionalServices = [
-    { id: 1, name: "كتب ومراجع إضافية", price: 500 },
-    { id: 2, name: "جلسات إرشاد مهني", price: 1000 },
-    { id: 3, name: "شهادة معتمدة دولياً", price: 1500 },
-    { id: 4, name: "متابعة خاصة مع المدرب", price: 2000 }
+    { id: 1, name: "كتب ومراجع إضافية", price: "" },
+    { id: 2, name: "جلسات إرشاد تدريبي مهني احترافي", price: "" },
+    { id: 3, name: "شهادة معتمدة دولياً", price: "" },
+    { id: 4, name: "متابعة خاصة مع المدرب", price: "" },
+    { id: 5, name: "إستشاراة للحصول على الدورة", price: "" },
+    { id: 6, name: "حساب مجاني لمحتوى الدورة على منصة Cursera", price: "" }
   ];
 
   // حالة النموذج - initialize with first course by default
@@ -337,7 +339,7 @@ const calculateTotal = () => {
   
   const servicesTotal = additionalServices
     .filter(service => formData.selectedServices.includes(service.id))
-    .reduce((sum, service) => sum + service.price, 0);
+    .reduce((sum, service) => sum + service.price, "");
   
   return programPrice + servicesTotal;
 };
@@ -364,7 +366,7 @@ const selectedProgram = useMemo(() =>
 return (
   <div className="bg-gray-50 min-h-screen" dir="rtl">
     <RegistrationHeader selectedProgram={selectedProgram} />
-    <EmailConfirmationNotice formData={formData} />
+    {/* <EmailConfirmationNotice formData={formData} /> */}
     
     {submitSuccess ? (
       <SuccessConfirmation formData={formData} selectedProgram={selectedProgram} calculateTotal={calculateTotal} />

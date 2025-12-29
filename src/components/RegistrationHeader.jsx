@@ -31,8 +31,8 @@ function RegistrationHeader({ selectedProgram }) {
           </h1>
           
           <p className="text-xl text-blue-100 mb-8">
-            البيانات المرسلة سيتم إرسالها إلى: 
-            <span className="font-bold text-[#FFD166]"> abdelRahman.youssef@asta.edu.sa</span>
+            البيانات المرسلة سيتم إرسالها إلى 
+            <span className="font-bold text-[#FFD166]"> منسق التسجيل</span>
           </p>
           
           <div className="flex items-center justify-center gap-6 flex-wrap">

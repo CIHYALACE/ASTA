@@ -72,7 +72,7 @@ function ProgramSelectionSection({ programs, formData, handleInputChange, handle
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800">{service.name}</h3>
-                    <span className="text-sm text-gray-600">{service.price.toLocaleString()}</span>
+                    <span className="text-sm text-gray-600">{service.price.toLocaleString() || 'مجاني'}</span>
                   </div>
                 </div>
               </div>

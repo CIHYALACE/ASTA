@@ -5,8 +5,11 @@ import {
   ChartBarIcon,
   CalendarIcon,
   UserGroupIcon,
+  UserIcon,
   CurrencyDollarIcon,
   ArrowLeftIcon,
+  ComputerDesktopIcon,
+  StarIcon
 } from "@heroicons/react/24/outline";
 import { useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -19,7 +22,31 @@ function CourseCard({ course }) {
   
   // Get localized course data
   const localizedCourse = getCourseData(course, lang);
+  const courseForRender = localizedCourse || course;
+
+  const asText = (value) => {
+    if (typeof value === 'string' || typeof value === 'number') return value;
+    if (value && typeof value === 'object' && (value.ar || value.en)) {
+      const v = value[lang] ?? value.ar ?? value.en;
+      return typeof v === 'string' || typeof v === 'number' ? v : '';
+    }
+    return '';
+  };
+
+  const asTextArray = (value) => {
+    if (Array.isArray(value)) return value.map(asText).filter(Boolean);
+    if (value && typeof value === 'object' && (value.ar || value.en)) {
+      const v = value[lang] ?? value.ar ?? value.en;
+      if (Array.isArray(v)) return v.map(asText).filter(Boolean);
+    }
+    return [];
+  };
   const IconComponent = course.icon;
+  const SafeIconComponent =
+    typeof IconComponent === 'function' ||
+    (typeof IconComponent === 'object' && IconComponent?.$$typeof)
+      ? IconComponent
+      : ComputerDesktopIcon;
   const statusColors = {
     "مفتوح للتسجيل": "bg-green-100 text-green-800",
     "Open for Registration": "bg-green-100 text-green-800",
@@ -42,13 +69,13 @@ function CourseCard({ course }) {
 
         <div className="relative z-10 h-full flex flex-col items-center justify-center p-6 text-white">
           <div className="w-16 h-16 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-2xl mb-4">
-            <IconComponent className="h-10 w-10 text-white" />
+            <SafeIconComponent className="h-10 w-10 text-white" />
           </div>
           <h3 className="text-2xl font-bold text-center mb-2">
-            {localizedCourse.title}
+            {asText(courseForRender.title)}
           </h3>
           <p className="text-blue-100 text-center opacity-90">
-            {localizedCourse.subtitle}
+            {asText(courseForRender.subtitle)}
           </p>
         </div>
         <div className="w-full h-2 shadow-md" style={{ background: 'linear-gradient(to right, #202C5B, #226796, #23A0D0, #30AFC1, #3CBEB3)' }}></div>
@@ -64,7 +91,7 @@ function CourseCard({ course }) {
             }`}
           >
             <TagIcon className="h-3 w-3" />
-            {localizedCourse.status}
+            {asText(courseForRender.status)}
           </span>
           <span
             className="px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1"
@@ -74,38 +101,38 @@ function CourseCard({ course }) {
             }}
           >
             <CheckBadgeIcon className="h-3 w-3" />
-            {localizedCourse.category}
+            {asText(courseForRender.category)}
           </span>
         </div>
 
         {/* الوصف */}
         <p className="text-gray-600 mb-6 leading-relaxed text-right text-sm">
-          {localizedCourse.description}
+          {asText(courseForRender.description)}
         </p>
         {/* تفاصيل البرنامج */}
         <div className="grid grid-cols-2 gap-3 mb-6">
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
             <ClockIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {localizedCourse.duration}
+              {asText(courseForRender.duration)}
             </span>
           </div>
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
-            <ChartBarIcon className="h-4 w-4 text-gray-500" />
+            <StarIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {localizedCourse.level}
+              {asText(courseForRender.rating)}
             </span>
           </div>
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
             <CalendarIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {course.startDate}
+              {asText(courseForRender.startDate)}
             </span>
           </div>
           <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-lg">
-            <UserGroupIcon className="h-4 w-4 text-gray-500" />
+            <UserIcon className="h-4 w-4 text-gray-500" />
             <span className="text-gray-700 text-xs font-medium">
-              {course.seats} {t("courses.seats")}
+              {(courseForRender.instructor.name ?? '')}
             </span>
           </div>
         </div>
@@ -116,7 +143,7 @@ function CourseCard({ course }) {
             {t("courses.targetJobs")}:
           </h4>
           <div className="flex flex-wrap gap-1.5">
-            {localizedCourse.targetJobs?.map((target, index) => (
+            {asTextArray(courseForRender.targetJobs)?.map((target, index) => (
               <span
                 key={index}
                 className="px-2.5 py-1 text-xs rounded-lg border"

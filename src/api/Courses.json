@@ -1,0 +1,4772 @@
+[
+  {
+    "id": 1,
+    "icon": "UserGroupIcon",
+    "title": {
+      "ar": "مدرب سكروم معتمد (CSM)",
+      "en": "Certified Scrum Master (CSM)"
+    },
+    "subtitle": {
+      "ar": "شهادة سكروم المعتمدة من Scrum Alliance",
+      "en": "Scrum Alliance Certified Scrum Master"
+    },
+    "category": {
+      "ar": "إدارة المشاريع الرشيقة",
+      "en": "Agile Project Management"
+    },
+    "description": {
+      "ar": "كورس متكامل لإتقان مبادئ وإطار عمل سكروم وإدارة فرق رشيقة.",
+      "en": "Comprehensive course to master Scrum principles and agile team management."
+    },
+    "overview": {
+      "ar": "يتناول هذا الكورس أساسيات منهجية سكروم، أدوار الفريق، الأحداث، القطع الأثرية، والتطبيق العملي.",
+      "en": "Covers Scrum fundamentals, team roles, events, artifacts, and practical application."
+    },
+    "hours": 12,
+    "startDate": {
+      "ar": "21 يناير 2026",
+      "en": "January 21, 2026"
+    },
+    "endDate": {
+      "ar": "22 يناير 2026",
+      "en": "January 22, 2026"
+    },
+    "duration": {
+      "ar": "2 أيام",
+      "en": "2 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 6000,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.8,
+    "reviews": 120,
+    "instructor": {
+      "name": "Naveen Nanjundappa",
+      "title": {
+        "ar": "مدرب معتمد في سكروم",
+        "en": "Certified Scrum Trainer"
+      },
+      "experience": {
+        "ar": "10+ سنوات في التدريب على الرشاقة",
+        "en": "10+ years in Agile training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد من Scrum Alliance مع خبرة واسعة في تدريب فرق الرشاقة.",
+        "en": "Scrum Alliance certified trainer with extensive experience in agile team training."
+      }
+    },
+    "skills": {
+      "ar": ["سكروم", "إدارة الفرق", "الرشاقة", "التخطيط", "التقدير", "التتبع"],
+      "en": ["Scrum", "Team Management", "Agility", "Planning", "Estimation", "Tracking"]
+    },
+    "targetJobs": {
+      "ar": ["سكروم ماستر", "مدير مشروع رشيق", "مالك المنتج"],
+      "en": ["Scrum Master", "Agile Project Manager", "Product Owner"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم إطار عمل سكروم",
+        "تطبيق مبادئ الرشاقة",
+        "إدارة الفرق بكفاءة",
+        "تحسين تسليم المنتج"
+      ],
+      "en": [
+        "Understand Scrum framework",
+        "Apply Agile principles",
+        "Manage teams efficiently",
+        "Improve product delivery"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مديرو المشاريع، قادة الفرق، مطورو البرمجيات، وأصحاب المنتجات.",
+      "en": "Project managers, team leads, software developers, and product owners."
+    },
+    "requirements": {
+      "ar": [
+        "معرفة أساسية بإدارة المشاريع",
+        "اهتمام بتطوير البرمجيات"
+      ],
+      "en": [
+        "Basic understanding of project management",
+        "Interest in software development"
+      ]
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "لا توجد شروط صارمة، لكن المعرفة الأساسية بالمشاريع مفيدة."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "يومان (12 ساعة تدريبية)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "سكروم ماستر، مدير مشروع رشيق، مالك منتج."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "No strict prerequisites, but basic project knowledge is helpful."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "2 days (12 credit hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Scrum Master, Agile Project Manager, Product Owner."
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "icon": "LightningBoltIcon",
+    "title": {
+      "ar": "أساسيات سكروم الرشيقة",
+      "en": "Agile SCRUM Foundation"
+    },
+    "subtitle": {
+      "ar": "شهادة Exin Agile SCRUM Foundation",
+      "en": "Exin Agile SCRUM Foundation Certification"
+    },
+    "category": {
+      "ar": "الرشاقة وإدارة المشاريع",
+      "en": "Agile & Project Management"
+    },
+    "description": {
+      "ar": "مدخل شامل إلى منهجية سكروم والممارسات الرشيقة.",
+      "en": "Comprehensive introduction to Scrum methodology and agile practices."
+    },
+    "overview": {
+      "ar": "يغطي الكورس أساسيات الرشاقة، إطار سكروم، وأفضل الممارسات للتطبيق في المشاريع.",
+      "en": "Covers Agile fundamentals, Scrum framework, and best practices for project implementation."
+    },
+    "hours": 12,
+    "startDate": {
+      "ar": "17 ديسمبر 2025",
+      "en": "Dec 17, 2025"
+    },
+    "endDate": {
+      "ar": "18 ديسمبر 2025",
+      "en": "Dec 18, 2025"
+    },
+    "duration": {
+      "ar": "2 أيام",
+      "en": "2 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 825,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.7,
+    "reviews": 95,
+    "instructor": {
+      "name": "Gurunath Vellanki",
+      "title": {
+        "ar": "مدرب ومستشار رشيق",
+        "en": "Agile Trainer & Consultant"
+      },
+      "experience": {
+        "ar": "25+ سنة في التدريب والاستشارات",
+        "en": "25+ years in training and consulting"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في الرشاقة وسكروم مع خبرة واسعة في تحويل المؤسسات.",
+        "en": "Certified Agile and Scrum trainer with extensive experience in organizational transformation."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["الرشاقة", "سكروم", "التخطيط", "التقدير", "التتبع", "التواصل"],
+      "en": ["Agile", "Scrum", "Planning", "Estimation", "Tracking", "Communication"]
+    },
+    "targetJobs": {
+      "ar": ["مدير مشروع", "سكروم ماستر", "مالك المنتج", "مطور برمجيات"],
+      "en": ["Project Manager", "Scrum Master", "Product Owner", "Software Developer"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم مبادئ الرشاقة",
+        "تطبيق إطار سكروم",
+        "تحسين التعاون داخل الفريق",
+        "تسليم قيمة للمستخدم"
+      ],
+      "en": [
+        "Understand Agile principles",
+        "Apply Scrum framework",
+        "Improve team collaboration",
+        "Deliver user value"
+      ]
+    },
+    "targetAudience": {
+      "ar": "المهتمون بالرشاقة، مديرو المشاريع، المطورون، وفرق التسليم.",
+      "en": "Agile enthusiasts, project managers, developers, and delivery teams."
+    },
+    "requirements": {
+      "ar": [
+        "لا توجد متطلبات مسبقة"
+      ],
+      "en": [
+        "No prerequisites"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "لا توجد شروط مسبقة."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "يومان (12 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مدير مشروع، سكروم ماستر، مالك منتج."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "No prerequisites."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "2 days (12 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Project Manager, Scrum Master, Product Owner."
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "icon": "ShieldCheckIcon",
+    "title": {
+      "ar": "مدير أمن المعلومات المعتمد (CISM)",
+      "en": "Certified Information Security Manager (CISM)"
+    },
+    "subtitle": {
+      "ar": "شهادة ISACA CISM",
+      "en": "ISACA CISM Certification"
+    },
+    "category": {
+      "ar": "الأمن السيبراني والإدارة",
+      "en": "Cybersecurity & Management"
+    },
+    "description": {
+      "ar": "تدريب متقدم لإدارة أمن المعلومات والتحكم في المخاطر.",
+      "en": "Advanced training in information security management and risk control."
+    },
+    "overview": {
+      "ar": "يركز الكورس على إدارة أمن المعلومات، تقييم المخاطر، الاستجابة للحوادث، والحوكمة.",
+      "en": "Focuses on information security management, risk assessment, incident response, and governance."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "14 ديسمبر 2025",
+      "en": "Dec 14, 2025"
+    },
+    "endDate": {
+      "ar": "18 ديسمبر 2025",
+      "en": "Dec 18, 2025"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 604,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.9,
+    "reviews": 210,
+    "instructor": {
+      "name": "Swapna Thalla",
+      "title": {
+        "ar": "مدرب معتمد في أمن المعلومات",
+        "en": "Certified Information Security Trainer"
+      },
+      "experience": {
+        "ar": "15+ سنة في الأمن السيبراني",
+        "en": "15+ years in cybersecurity"
+      },
+      "image": "",
+      "bio": {
+        "ar": "خبيرة في أمن المعلومات مع شهادات متقدمة وخبرة في التدريب للشركات العالمية.",
+        "en": "Information security expert with advanced certifications and global corporate training experience."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["إدارة الأمن", "تقييم المخاطر", "الاستجابة للحوادث", "الحوكمة", "الامتثال", "المراجعة"],
+      "en": ["Security Management", "Risk Assessment", "Incident Response", "Governance", "Compliance", "Audit"]
+    },
+    "targetJobs": {
+      "ar": ["مدير أمن المعلومات", "مدير المخاطر", "مراجع أمني", "مستشار أمن"],
+      "en": ["CISO", "Risk Manager", "Security Auditor", "Security Consultant"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم إدارة أمن المعلومات",
+        "تقييم المخاطر والتحكم فيها",
+        "تصميم وتنفيذ ضوابط الأمن",
+        "الامتثال للمعايير الدولية"
+      ],
+      "en": [
+        "Understand information security management",
+        "Assess and control risks",
+        "Design and implement security controls",
+        "Comply with international standards"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مديرو الأمن، مراجعون، مستشارو المخاطر، ومتخصصو الامتثال.",
+      "en": "Security managers, auditors, risk consultants, and compliance professionals."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في أمن المعلومات",
+        "معرفة أساسية بإدارة المخاطر"
+      ],
+      "en": [
+        "Experience in information security",
+        "Basic knowledge of risk management"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة عمل في أمن المعلومات أو إدارة المخاطر."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مدير أمن المعلومات، مراجع أمني، مستشار مخاطر."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Work experience in information security or risk management."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "CISO, Security Auditor, Risk Consultant."
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "icon": "ExclamationTriangleIcon",
+    "title": {
+      "ar": "التحكم في مخاطر نظم المعلومات المعتمد (CRISC)",
+      "en": "Certified in Risk and Information Systems Control (CRISC)"
+    },
+    "subtitle": {
+      "ar": "شهادة ISACA CRISC",
+      "en": "ISACA CRISC Certification"
+    },
+    "category": {
+      "ar": "إدارة المخاطر والأمن",
+      "en": "Risk Management & Security"
+    },
+    "description": {
+      "ar": "تدريب متخصص في إدارة مخاطر تقنية المعلومات وضوابط النظم.",
+      "en": "Specialized training in IT risk management and system controls."
+    },
+    "overview": {
+      "ar": "يركز على تحديد وتقييم ومعالجة مخاطر تقنية المعلومات وضمان الامتثال.",
+      "en": "Focuses on identifying, assessing, and treating IT risks and ensuring compliance."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "25 يناير 2025",
+      "en": "Jan 25, 2025"
+    },
+    "endDate": {
+      "ar": "29 يناير 2025",
+      "en": "Jan 29, 2025"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مكتمل",
+      "en": "Completed"
+    },
+    "price": 604,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.8,
+    "reviews": 180,
+    "instructor": {
+      "name": "Saaz Rai",
+      "title": {
+        "ar": "مدرب أمن سيبراني معتمد",
+        "en": "Certified Cybersecurity Trainer"
+      },
+      "experience": {
+        "ar": "25+ سنة في الأمن والتدريب",
+        "en": "25+ years in security and training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد من ISACA وISC2 مع خبرة واسعة في تدريب المؤسسات العالمية.",
+        "en": "ISACA and ISC2 certified trainer with extensive experience in global corporate training."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["إدارة المخاطر", "ضوابط النظم", "الامتثال", "التقييم", "المعايير", "التقارير"],
+      "en": ["Risk Management", "System Controls", "Compliance", "Assessment", "Standards", "Reporting"]
+    },
+    "targetJobs": {
+      "ar": ["مدير المخاطر", "مراجع أمني", "مستشار الامتثال", "محلل المخاطر"],
+      "en": ["Risk Manager", "Security Auditor", "Compliance Consultant", "Risk Analyst"]
+    },
+    "objectives": {
+      "ar": [
+        "تحديد وتقييم مخاطر تقنية المعلومات",
+        "تصميم وتنفيذ ضوابط فعالة",
+        "رصد ومراجعة الضوابط",
+        "الامتثال للمعايير التنظيمية"
+      ],
+      "en": [
+        "Identify and assess IT risks",
+        "Design and implement effective controls",
+        "Monitor and review controls",
+        "Comply with regulatory standards"
+      ]
+    },
+    "targetAudience": {
+      "ar": "متخصصو إدارة المخاطر، المراجعون، مستشارو الامتثال، ومديرو الأمن.",
+      "en": "Risk management specialists, auditors, compliance consultants, and security managers."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في إدارة المخاطر أو المراجعة",
+        "معرفة بأمن المعلومات"
+      ],
+      "en": [
+        "Experience in risk management or auditing",
+        "Knowledge of information security"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في إدارة المخاطر أو المراجعة."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مدير المخاطر، مراجع أمني، مستشار امتثال."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in risk management or auditing."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Risk Manager, Security Auditor, Compliance Consultant."
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "icon": "MagnifyingGlassIcon",
+    "title": {
+      "ar": "مراجع نظم المعلومات المعتمد (CISA)",
+      "en": "Certified Information Systems Auditor (CISA)"
+    },
+    "subtitle": {
+      "ar": "شهادة ISACA CISA",
+      "en": "ISACA CISA Certification"
+    },
+    "category": {
+      "ar": "المراجعة والأمن",
+      "en": "Audit & Security"
+    },
+    "description": {
+      "ar": "تدريب متقدم في مراجعة نظم المعلومات وضمان الجودة والامتثال.",
+      "en": "Advanced training in information systems auditing, quality assurance, and compliance."
+    },
+    "overview": {
+      "ar": "يغطي عمليات المراجعة، تقييم الضوابط، إدارة الثغرات، والتقارير المطلوبة.",
+      "en": "Covers audit processes, control assessment, vulnerability management, and required reporting."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "21 ديسمبر 2025",
+      "en": "Dec 21, 2025"
+    },
+    "endDate": {
+      "ar": "25 ديسمبر 2025",
+      "en": "Dec 25, 2025"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 660,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.9,
+    "reviews": 220,
+    "instructor": {
+      "name": "Sachin Hissaria",
+      "title": {
+        "ar": "مدرب مراجعة نظم معلومات",
+        "en": "Information Systems Audit Trainer"
+      },
+      "experience": {
+        "ar": "18+ سنة في المراجعة والتدريب",
+        "en": "18+ years in auditing and training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد من ISACA مع خبرة في تدريب المراجعين على مستوى العالم.",
+        "en": "ISACA certified trainer with experience in training auditors worldwide."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["المراجعة", "تقييم الضوابط", "إدارة الثغرات", "الامتثال", "التقارير", "المعايير"],
+      "en": ["Auditing", "Control Assessment", "Vulnerability Management", "Compliance", "Reporting", "Standards"]
+    },
+    "targetJobs": {
+      "ar": ["مراجع نظم معلومات", "مدير المراجعة", "مستشار الامتثال", "محلل أمن"],
+      "en": ["IT Auditor", "Audit Manager", "Compliance Consultant", "Security Analyst"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم عمليات مراجعة نظم المعلومات",
+        "تقييم فعالية الضوابط",
+        "تحديد الثغرات وتحليلها",
+        "إعداد تقارير المراجعة"
+      ],
+      "en": [
+        "Understand information systems audit processes",
+        "Assess control effectiveness",
+        "Identify and analyze vulnerabilities",
+        "Prepare audit reports"
+      ]
+    },
+    "targetAudience": {
+      "ar": "المراجعون، مديرو المراجعة، مستشارو الامتثال، ومتخصصو الأمن.",
+      "en": "Auditors, audit managers, compliance consultants, and security professionals."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في المراجعة أو الأمن",
+        "معرفة بأنظمة المعلومات"
+      ],
+      "en": [
+        "Experience in auditing or security",
+        "Knowledge of information systems"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في المراجعة أو أمن المعلومات."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مراجع نظم معلومات، مدير مراجعة، مستشار امتثال."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in auditing or information security."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "IT Auditor, Audit Manager, Compliance Consultant."
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "icon": "LockClosedIcon",
+    "title": {
+      "ar": "CompTIA Security+",
+      "en": "CompTIA Security+"
+    },
+    "subtitle": {
+      "ar": "شهادة الأمن الأساسية من CompTIA",
+      "en": "CompTIA Foundational Security Certification"
+    },
+    "category": {
+      "ar": "الأمن السيبراني",
+      "en": "Cybersecurity"
+    },
+    "description": {
+      "ar": "كورس تأسيسي في مفاهيم الأمن السيبراني والتقنيات الأساسية.",
+      "en": "Foundational course in cybersecurity concepts and basic technologies."
+    },
+    "overview": {
+      "ar": "يغطي التهديدات، الثغرات، التشفير، إدارة الوصول، وتأمين الشبكات.",
+      "en": "Covers threats, vulnerabilities, cryptography, access management, and network security."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "28 ديسمبر 2025",
+      "en": "Dec 28, 2025"
+    },
+    "endDate": {
+      "ar": "1 يناير 2026",
+      "en": "Jan 1, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 1073,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.6,
+    "reviews": 300,
+    "instructor": {
+      "name": "Kuldeep Sonar",
+      "title": {
+        "ar": "مدرب أمن معتمد",
+        "en": "Certified Security Trainer"
+      },
+      "experience": {
+        "ar": "12+ سنة في التدريب على الأمن",
+        "en": "12+ years in security training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد من CompTIA مع خبرة في تدريب المهنيين على شهادات الأمن.",
+        "en": "CompTIA certified trainer with experience in training professionals for security certifications."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["أمن الشبكات", "التشفير", "إدارة الوصول", "الكشف عن التهديدات", "الاستجابة للحوادث", "التقنيات الأساسية"],
+      "en": ["Network Security", "Cryptography", "Access Management", "Threat Detection", "Incident Response", "Basic Technologies"]
+    },
+    "targetJobs": {
+      "ar": ["محلل أمن", "فني أمن", "مدير أمن", "مستشار أمن"],
+      "en": ["Security Analyst", "Security Technician", "Security Manager", "Security Consultant"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم أساسيات الأمن السيبراني",
+        "تطبيق تقنيات التشفير",
+        "تأمين الشبكات والأنظمة",
+        "الكشف عن التهديدات والاستجابة لها"
+      ],
+      "en": [
+        "Understand cybersecurity fundamentals",
+        "Apply encryption techniques",
+        "Secure networks and systems",
+        "Detect and respond to threats"
+      ]
+    },
+    "targetAudience": {
+      "ar": "المهتمون بالأمن، فنيو تكنولوجيا المعلومات، المحللون، والمبتدئون في المجال.",
+      "en": "Security enthusiasts, IT technicians, analysts, and beginners in the field."
+    },
+    "requirements": {
+      "ar": [
+        "معرفة أساسية بتكنولوجيا المعلومات",
+        "اهتمام بمجال الأمن"
+      ],
+      "en": [
+        "Basic IT knowledge",
+        "Interest in security field"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "معرفة أساسية بتكنولوجيا المعلومات."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "محلل أمن، فني أمن، مدير أمن مساعد."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Basic IT knowledge."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Security Analyst, Security Technician, Assistant Security Manager."
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "icon": "BugAntIcon",
+    "title": {
+      "ar": "CompTIA Cybersecurity Analyst (CySA+)",
+      "en": "CompTIA Cybersecurity Analyst (CySA+)"
+    },
+    "subtitle": {
+      "ar": "شهادة محلل الأمن السيبراني من CompTIA",
+      "en": "CompTIA Cybersecurity Analyst Certification"
+    },
+    "category": {
+      "ar": "الأمن السيبراني المتقدم",
+      "en": "Advanced Cybersecurity"
+    },
+    "description": {
+      "ar": "تدريب متقدم في تحليل التهديدات والاستجابة للحوادث والدفاع السيبراني.",
+      "en": "Advanced training in threat analysis, incident response, and cyber defense."
+    },
+    "overview": {
+      "ar": "يركز على أدوات وتحليل التهديدات، استجابة الحوادث، وأفضل ممارسات الدفاع.",
+      "en": "Focuses on threat tools and analysis, incident response, and defense best practices."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "4 يناير 2026",
+      "en": "Jan 4, 2026"
+    },
+    "endDate": {
+      "ar": "8 يناير 2026",
+      "en": "Jan 8, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 1125,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.7,
+    "reviews": 190,
+    "instructor": {
+      "name": "Kuldeep Sonar",
+      "title": {
+        "ar": "مدرب أمن سيبراني",
+        "en": "Cybersecurity Trainer"
+      },
+      "experience": {
+        "ar": "12+ سنة في التدريب على الأمن",
+        "en": "12+ years in security training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد من CompTIA متخصص في تحليل الأمن والاستجابة للحوادث.",
+        "en": "CompTIA certified trainer specializing in security analysis and incident response."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["تحليل التهديدات", "الاستجابة للحوادث", "أدوات الأمن", "الدفاع السيبراني", "المراقبة", "التقارير"],
+      "en": ["Threat Analysis", "Incident Response", "Security Tools", "Cyber Defense", "Monitoring", "Reporting"]
+    },
+    "targetJobs": {
+      "ar": ["محلل أمن", "محقق حوادث", "مدير استجابة", "مستشار أمن"],
+      "en": ["Security Analyst", "Incident Investigator", "Response Manager", "Security Consultant"]
+    },
+    "objectives": {
+      "ar": [
+        "تحليل التهديدات السيبرانية",
+        "تنفيذ استجابة فعالة للحوادث",
+        "استخدام أدوات الأمن المتقدمة",
+        "تحسين دفاعات الشبكة"
+      ],
+      "en": [
+        "Analyze cyber threats",
+        "Implement effective incident response",
+        "Use advanced security tools",
+        "Improve network defenses"
+      ]
+    },
+    "targetAudience": {
+      "ar": "محللو الأمن، مديرو الحوادث، فرق الدفاع السيبراني، والمستشارون.",
+      "en": "Security analysts, incident managers, cyber defense teams, and consultants."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في الأمن السيبراني",
+        "معرفة بـ Security+ مفضلة"
+      ],
+      "en": [
+        "Experience in cybersecurity",
+        "Knowledge of Security+ preferred"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في الأمن السيبراني أو شهادة Security+."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "محلل أمن سيبراني، محقق حوادث، مدير استجابة."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in cybersecurity or Security+ certification."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Cybersecurity Analyst, Incident Investigator, Response Manager."
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "icon": "BeakerIcon",
+    "title": {
+      "ar": "CompTIA Penetration Tester (PenTest+)",
+      "en": "CompTIA Penetration Tester (PenTest+)"
+    },
+    "subtitle": {
+      "ar": "شهادة اختبار الاختراق من CompTIA",
+      "en": "CompTIA Penetration Testing Certification"
+    },
+    "category": {
+      "ar": "اختبار الاختراق والأمن",
+      "en": "Penetration Testing & Security"
+    },
+    "description": {
+      "ar": "تدريب عملي في اختبار الاختراق وتقييم الثغرات وإعداد التقارير.",
+      "en": "Hands-on training in penetration testing, vulnerability assessment, and reporting."
+    },
+    "overview": {
+      "ar": "يغطي منهجيات اختبار الاختراق، أدوات القرصنة الأخلاقية، وتقييم الثغرات.",
+      "en": "Covers penetration testing methodologies, ethical hacking tools, and vulnerability assessment."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "8 فبراير 2026",
+      "en": "Feb 8, 2026"
+    },
+    "endDate": {
+      "ar": "12 فبراير 2026",
+      "en": "Feb 12, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 1500,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.8,
+    "reviews": 170,
+    "instructor": {
+      "name": "Mehraj Alam",
+      "title": {
+        "ar": "مدرب اختبار اختراق معتمد",
+        "en": "Certified Penetration Testing Trainer"
+      },
+      "experience": {
+        "ar": "17+ سنة في الشبكات والأمن",
+        "en": "17+ years in networking and security"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في الأمن والاختراق مع خبرة في تدريب الشركات العالمية.",
+        "en": "Certified security and penetration testing trainer with experience in global corporate training."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["اختبار الاختراق", "تقييم الثغرات", "أدوات القرصنة", "التقارير الأمنية", "المنهجيات", "الدفاع"],
+      "en": ["Penetration Testing", "Vulnerability Assessment", "Hacking Tools", "Security Reporting", "Methodologies", "Defense"]
+    },
+    "targetJobs": {
+      "ar": ["مختبر اختراق", "محلل ثغرات", "مستشار أمن", "مدير اختبار"],
+      "en": ["Penetration Tester", "Vulnerability Analyst", "Security Consultant", "Testing Manager"]
+    },
+    "objectives": {
+      "ar": [
+        "تعلم منهجيات اختبار الاختراق",
+        "استخدام أدوات القرصنة الأخلاقية",
+        "تقييم ثغرات الأنظمة",
+        "إعداد تقارير مفصلة"
+      ],
+      "en": [
+        "Learn penetration testing methodologies",
+        "Use ethical hacking tools",
+        "Assess system vulnerabilities",
+        "Prepare detailed reports"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مختبرو الاختراق، محللو الثغرات، مستشارو الأمن، وفرق الدفاع.",
+      "en": "Penetration testers, vulnerability analysts, security consultants, and defense teams."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في الأمن السيبراني",
+        "معرفة بـ Networking+ مفضلة"
+      ],
+      "en": [
+        "Experience in cybersecurity",
+        "Knowledge of Networking+ preferred"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في الأمن أو شهادة Network+."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مختبر اختراق، محلل ثغرات، مستشار أمن."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in security or Network+ certification."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Penetration Tester, Vulnerability Analyst, Security Consultant."
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "icon": "CommandLineIcon",
+    "title": {
+      "ar": "CompTIA Linux+",
+      "en": "CompTIA Linux+"
+    },
+    "subtitle": {
+      "ar": "شهادة إدارة Linux من CompTIA",
+      "en": "CompTIA Linux Administration Certification"
+    },
+    "category": {
+      "ar": "أنظمة التشغيل والإدارة",
+      "en": "Operating Systems & Administration"
+    },
+    "description": {
+      "ar": "تدريب متكامل في إدارة وتكوين واستكشاف أخطاء أنظمة Linux.",
+      "en": "Comprehensive training in Linux system administration, configuration, and troubleshooting."
+    },
+    "overview": {
+      "ar": "يغطي إدارة المستخدمين، الأذونات، الشبكات، الأمان، ونصوص Shell.",
+      "en": "Covers user management, permissions, networking, security, and shell scripting."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "",
+      "en": ""
+    },
+    "endDate": {
+      "ar": "",
+      "en": ""
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "قيد التخطيط",
+      "en": "Planning"
+    },
+    "price": 1333,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.5,
+    "reviews": 140,
+    "instructor": {
+      "name": "",
+      "title": {
+        "ar": "",
+        "en": ""
+      },
+      "experience": {
+        "ar": "",
+        "en": ""
+      },
+      "image": "",
+      "bio": {
+        "ar": "",
+        "en": ""
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["إدارة Linux", "نصوص Shell", "الشبكات", "الأمان", "استكشاف الأخطاء", "التكوين"],
+      "en": ["Linux Administration", "Shell Scripting", "Networking", "Security", "Troubleshooting", "Configuration"]
+    },
+    "targetJobs": {
+      "ar": ["مدير Linux", "مطور أنظمة", "فني دعم", "مهندس DevOps"],
+      "en": ["Linux Administrator", "Systems Developer", "Support Technician", "DevOps Engineer"]
+    },
+    "objectives": {
+      "ar": [
+        "إدارة أنظمة Linux بفعالية",
+        "كتابة نصوص Shell لأتمتة المهام",
+        "تأمين وتكوين شبكات Linux",
+        "استكشاف أخطاء الأنظمة"
+      ],
+      "en": [
+        "Manage Linux systems effectively",
+        "Write shell scripts for automation",
+        "Secure and configure Linux networks",
+        "Troubleshoot system issues"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مديرو الأنظمة، مطورو البرمجيات، فنيو الدعم، ومسؤولو الخوادم.",
+      "en": "System administrators, software developers, support technicians, and server administrators."
+    },
+    "requirements": {
+      "ar": [
+        "معرفة أساسية بـ Linux",
+        "خبرة في سطر الأوامر"
+      ],
+      "en": [
+        "Basic Linux knowledge",
+        "Command line experience"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "معرفة أساسية بـ Linux وسطر الأوامر."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مدير Linux، مهندس أنظمة، فني دعم."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Basic Linux and command line knowledge."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Linux Administrator, Systems Engineer, Support Technician."
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "icon": "ServerIcon",
+    "title": {
+      "ar": "CompTIA Server+",
+      "en": "CompTIA Server+"
+    },
+    "subtitle": {
+      "ar": "شهادة إدارة الخوادم من CompTIA",
+      "en": "CompTIA Server Administration Certification"
+    },
+    "category": {
+      "ar": "إدارة الخوادم والبنية التحتية",
+      "en": "Server & Infrastructure Management"
+    },
+    "description": {
+      "ar": "تدريب في إدارة وصيانة واستكشاف أخطاء خوادم البيانات المركزية.",
+      "en": "Training in managing, maintaining, and troubleshooting data center servers."
+    },
+    "overview": {
+      "ar": "يغطي تركيب الخوادم، التخزين، الشبكات، الأمان، والاسترداد من الكوارث.",
+      "en": "Covers server installation, storage, networking, security, and disaster recovery."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "1 فبراير 2026",
+      "en": "Feb 1, 2026"
+    },
+    "endDate": {
+      "ar": "5 فبراير 2026",
+      "en": "Feb 5, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 1333,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.6,
+    "reviews": 110,
+    "instructor": {
+      "name": "Mehraj Alam",
+      "title": {
+        "ar": "مدرب شبكات وخوادم",
+        "en": "Networking & Server Trainer"
+      },
+      "experience": {
+        "ar": "17+ سنة في الشبكات والخوادم",
+        "en": "17+ years in networking and servers"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في CompTIA مع خبرة في تدريب إدارة الخوادم والشبكات.",
+        "en": "CompTIA certified trainer with experience in server and network administration training."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["إدارة الخوادم", "التخزين", "الشبكات", "الأمان", "الاسترداد", "الصيانة"],
+      "en": ["Server Management", "Storage", "Networking", "Security", "Recovery", "Maintenance"]
+    },
+    "targetJobs": {
+      "ar": ["مدير الخوادم", "مهندس البنية التحتية", "فني مركز البيانات", "مدير الأنظمة"],
+      "en": ["Server Administrator", "Infrastructure Engineer", "Data Center Technician", "Systems Manager"]
+    },
+    "objectives": {
+      "ar": [
+        "تركيب وتكوين الخوادم",
+        "إدارة التخزين والشبكات",
+        "تأمين الخوادم من التهديدات",
+        "تنفيذ خطط الاسترداد من الكوارث"
+      ],
+      "en": [
+        "Install and configure servers",
+        "Manage storage and networking",
+        "Secure servers from threats",
+        "Implement disaster recovery plans"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مديرو الخوادم، فنيو مراكز البيانات، مهندسو البنية التحتية، ومديرو الأنظمة.",
+      "en": "Server administrators, data center technicians, infrastructure engineers, and systems managers."
+    },
+    "requirements": {
+      "ar": [
+        "معرفة أساسية بالخوادم والشبكات",
+        "خبرة في بيئات البيانات المركزية"
+      ],
+      "en": [
+        "Basic knowledge of servers and networking",
+        "Experience in data center environments"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "معرفة أساسية بالخوادم والشبكات."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مدير خوادم، مهندس بنية تحتية، فني مركز بيانات."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Basic knowledge of servers and networking."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Server Administrator, Infrastructure Engineer, Data Center Technician."
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "icon": "GlobeAltIcon",
+    "title": {
+      "ar": "CompTIA Network+",
+      "en": "CompTIA Network+"
+    },
+    "subtitle": {
+      "ar": "شهادة الشبكات الأساسية من CompTIA",
+      "en": "CompTIA Foundational Networking Certification"
+    },
+    "category": {
+      "ar": "الشبكات والاتصالات",
+      "en": "Networking & Communications"
+    },
+    "description": {
+      "ar": "كورس تأسيسي في تصميم وإدارة واستكشاف أخطاء الشبكات.",
+      "en": "Foundational course in network design, management, and troubleshooting."
+    },
+    "overview": {
+      "ar": "يغطي بروتوكولات الشبكة، التوجيه، التبديل، الأمان، والأدوات الأساسية.",
+      "en": "Covers network protocols, routing, switching, security, and essential tools."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "25 يناير 2026",
+      "en": "Jan 25, 2026"
+    },
+    "endDate": {
+      "ar": "29 يناير 2026",
+      "en": "Jan 29, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 1333,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.7,
+    "reviews": 250,
+    "instructor": {
+      "name": "Mehraj Alam",
+      "title": {
+        "ar": "مدرب شبكات معتمد",
+        "en": "Certified Networking Trainer"
+      },
+      "experience": {
+        "ar": "17+ سنة في تصميم وتنفيذ الشبكات",
+        "en": "17+ years in network design and implementation"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في CompTيا Network+ مع خبرة في تدريب المهنيين على الشبكات.",
+        "en": "CompTIA Network+ certified trainer with experience in training networking professionals."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["تصميم الشبكات", "التوجيه والتبديل", "بروتوكولات الشبكة", "أمن الشبكات", "استكشاف الأخطاء", "الأدوات"],
+      "en": ["Network Design", "Routing & Switching", "Network Protocols", "Network Security", "Troubleshooting", "Tools"]
+    },
+    "targetJobs": {
+      "ar": ["مهندس شبكات", "فني شبكات", "مدير الشبكات", "مستشار اتصالات"],
+      "en": ["Network Engineer", "Network Technician", "Network Manager", "Communications Consultant"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم أساسيات الشبكات",
+        "تصميم وتنفيذ شبكات فعالة",
+        "تأمين الشبكات من التهديدات",
+        "استكشاف أخطاء الشبكات وحلها"
+      ],
+      "en": [
+        "Understand networking fundamentals",
+        "Design and implement effective networks",
+        "Secure networks from threats",
+        "Troubleshoot and resolve network issues"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مهندسو الشبكات، فنيو تكنولوجيا المعلومات، مديرو البنية التحتية، والمبتدئون في المجال.",
+      "en": "Network engineers, IT technicians, infrastructure managers, and beginners in the field."
+    },
+    "requirements": {
+      "ar": [
+        "معرفة أساسية بتكنولوجيا المعلومات",
+        "اهتمام بمجال الشبكات"
+      ],
+      "en": [
+        "Basic IT knowledge",
+        "Interest in networking field"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "معرفة أساسية بتكنولوجيا المعلومات."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مهندس شبكات، فني شبكات، مدير شبكات مساعد."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Basic IT knowledge."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Network Engineer, Network Technician, Assistant Network Manager."
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "icon": "CpuChipIcon",
+    "title": {
+      "ar": "CompTIA A+",
+      "en": "CompTIA A+"
+    },
+    "subtitle": {
+      "ar": "شهادة تقنية المعلومات الأساسية من CompTIA",
+      "en": "CompTIA Foundational IT Certification"
+    },
+    "category": {
+      "ar": "دعم تكنولوجيا المعلومات",
+      "en": "IT Support"
+    },
+    "description": {
+      "ar": "كورس تأسيسي في دعم الأجهزة، البرمجيات، واستكشاف الأخطاء.",
+      "en": "Foundational course in hardware, software support, and troubleshooting."
+    },
+    "overview": {
+      "ar": "يغطي صيانة الحواسيب، أنظمة التشغيل، الشبكات الأساسية، والأمان.",
+      "en": "Covers computer maintenance, operating systems, basic networking, and security."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "11 يناير 2026",
+      "en": "Jan 11, 2026"
+    },
+    "endDate": {
+      "ar": "15 يناير 2026",
+      "en": "Jan 15, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 1342,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.5,
+    "reviews": 400,
+    "instructor": {
+      "name": "Mehraj Alam",
+      "title": {
+        "ar": "مدرب دعم تكنولوجيا المعلومات",
+        "en": "IT Support Trainer"
+      },
+      "experience": {
+        "ar": "17+ سنة في التدريب على دعم تكنولوجيا المعلومات",
+        "en": "17+ years in IT support training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في CompTIA A+ مع خبرة في تدريب الدعم الفني للمبتدئين.",
+        "en": "CompTIA A+ certified trainer with experience in training beginners in technical support."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["صيانة الحواسيب", "أنظمة التشغيل", "الشبكات الأساسية", "الأمان", "استكشاف الأخطاء", "الدعم الفني"],
+      "en": ["Computer Maintenance", "Operating Systems", "Basic Networking", "Security", "Troubleshooting", "Technical Support"]
+    },
+    "targetJobs": {
+      "ar": ["فني دعم تكنولوجيا المعلومات", "مساعد مكتب مساعدة", "مدير نظم مبتدئ", "فني صيانة"],
+      "en": ["IT Support Technician", "Help Desk Assistant", "Junior Systems Administrator", "Maintenance Technician"]
+    },
+    "objectives": {
+      "ar": [
+        "صيانة وإصلاح الحواسيب",
+        "تثبيت وتكوين أنظمة التشغيل",
+        "فهم أساسيات الشبكات والأمان",
+        "تقديم دعم فني فعال"
+      ],
+      "en": [
+        "Maintain and repair computers",
+        "Install and configure operating systems",
+        "Understand networking and security basics",
+        "Provide effective technical support"
+      ]
+    },
+    "targetAudience": {
+      "ar": "المبتدئون في تكنولوجيا المعلومات، طلاب الحاسوب، فنيو الدعم، وموظفو المكتب المساعد.",
+      "en": "IT beginners, computer students, support technicians, and help desk staff."
+    },
+    "requirements": {
+      "ar": [
+        "لا توجد متطلبات مسبقة",
+        "اهتمام بمجال تكنولوجيا المعلومات"
+      ],
+      "en": [
+        "No prerequisites",
+        "Interest in IT field"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "لا توجد شروط مسبقة."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "فني دعم تكنولوجيا المعلومات، مساعد مكتب مساعدة، فني صيانة."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "No prerequisites."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "IT Support Technician, Help Desk Assistant, Maintenance Technician."
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "icon": "InformationCircleIcon",
+    "title": {
+      "ar": "CompTIA IT Fundamentals (ITF+)",
+      "en": "CompTIA IT Fundamentals (ITF+)"
+    },
+    "subtitle": {
+      "ar": "مدخل إلى تكنولوجيا المعلومات من CompTIA",
+      "en": "CompTIA Introduction to IT"
+    },
+    "category": {
+      "ar": "مقدمة في تكنولوجيا المعلومات",
+      "en": "IT Introduction"
+    },
+    "description": {
+      "ar": "مدخل مبسط إلى عالم تكنولوجيا المعلومات والأساسيات التقنية.",
+      "en": "Simplified introduction to the world of information technology and technical basics."
+    },
+    "overview": {
+      "ar": "يغطي المفاهيم الأساسية للأجهزة، البرمجيات، الشبكات، والأمان.",
+      "en": "Covers basic concepts of hardware, software, networking, and security."
+    },
+    "hours": 18,
+    "startDate": {
+      "ar": "4 يناير 2026",
+      "en": "Jan 4, 2026"
+    },
+    "endDate": {
+      "ar": "8 يناير 2026",
+      "en": "Jan 8, 2026"
+    },
+    "duration": {
+      "ar": "3 أيام",
+      "en": "3 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 750,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.4,
+    "reviews": 180,
+    "instructor": {
+      "name": "Mehraj Alam",
+      "title": {
+        "ar": "مدرب أساسيات تكنولوجيا المعلومات",
+        "en": "IT Fundamentals Trainer"
+      },
+      "experience": {
+        "ar": "17+ سنة في تدريب أساسيات تكنولوجيا المعلومات",
+        "en": "17+ years in IT fundamentals training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في CompTIA ITF+ مع خبرة في تدريب المبتدئين.",
+        "en": "CompTIA ITF+ certified trainer with experience in training beginners."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["أساسيات الحاسوب", "البرمجيات", "الشبكات", "الأمان", "استكشاف الأخطاء", "المفاهيم التقنية"],
+      "en": ["Computer Basics", "Software", "Networking", "Security", "Troubleshooting", "Technical Concepts"]
+    },
+    "targetJobs": {
+      "ar": ["مساعد تكنولوجيا المعلومات", "متدرب دعم", "طالب حاسوب", "موظف مكتب"],
+      "en": ["IT Assistant", "Support Trainee", "Computer Student", "Office Staff"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم أساسيات تكنولوجيا المعلومات",
+        "التعرف على مكونات الحاسوب والبرمجيات",
+        "استيعاب مفاهيم الشبكات والأمان",
+        "استكشاف الأخطاء البسيطة"
+      ],
+      "en": [
+        "Understand IT fundamentals",
+        "Identify computer components and software",
+        "Grasp networking and security concepts",
+        "Troubleshoot simple issues"
+      ]
+    },
+    "targetAudience": {
+      "ar": "المبتدئون تماماً في تكنولوجيا المعلومات، الطلاب، الموظفون غير التقنيون.",
+      "en": "Complete beginners in IT, students, non-technical staff."
+    },
+    "requirements": {
+      "ar": [
+        "لا توجد متطلبات مسبقة"
+      ],
+      "en": [
+        "No prerequisites"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "لا توجد شروط مسبقة."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "3 أيام (18 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مساعد تكنولوجيا المعلومات، متدرب دعم، طالب حاسوب."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "No prerequisites."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "3 days (18 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "IT Assistant, Support Trainee, Computer Student."
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "icon": "PaintBrushIcon",
+    "title": {
+      "ar": "Autodesk Certified User certification in Maya",
+      "en": "Autodesk Certified User certification in Maya"
+    },
+    "subtitle": {
+      "ar": "شهادة Autodesk في نمذجة وتحريك Maya",
+      "en": "Autodesk Certification in Maya Modeling & Animation"
+    },
+    "category": {
+      "ar": "التصميم والرسومات",
+      "en": "Design & Graphics"
+    },
+    "description": {
+      "ar": "تدريب عملي في النمذجة ثلاثية الأبعاد والتحريك باستخدام Autodesk Maya.",
+      "en": "Hands-on training in 3D modeling and animation using Autodesk Maya."
+    },
+    "overview": {
+      "ar": "يغطي أدوات النمذجة، المواد، الإضاءة، التحريك، والتقديم في Maya.",
+      "en": "Covers modeling tools, materials, lighting, animation, and rendering in Maya."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "",
+      "en": ""
+    },
+    "endDate": {
+      "ar": "",
+      "en": ""
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "قيد التخطيط",
+      "en": "Planning"
+    },
+    "price": 1050,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.6,
+    "reviews": 90,
+    "instructor": {
+      "name": "",
+      "title": {
+        "ar": "",
+        "en": ""
+      },
+      "experience": {
+        "ar": "",
+        "en": ""
+      },
+      "image": "",
+      "bio": {
+        "ar": "",
+        "en": ""
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["النمذجة ثلاثية الأبعاد", "التحريك", "المواد والإضاءة", "التقديم", "أدوات Maya", "التصميم المرئي"],
+      "en": ["3D Modeling", "Animation", "Materials & Lighting", "Rendering", "Maya Tools", "Visual Design"]
+    },
+    "targetJobs": {
+      "ar": ["مصمم ثلاثي الأبعاد", "محرف", "فنان مرئي", "مطور ألعاب"],
+      "en": ["3D Designer", "Animator", "Visual Artist", "Game Developer"]
+    },
+    "objectives": {
+      "ar": [
+        "إتقان أدوات النمذجة في Maya",
+        "إنشاء مشاهد متحركة واقعية",
+        "تطبيق المواد والإضاءة المناسبة",
+        "تقديم مشاريع احترافية"
+      ],
+      "en": [
+        "Master Maya modeling tools",
+        "Create realistic animated scenes",
+        "Apply appropriate materials and lighting",
+        "Render professional projects"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مصممو الرسومات، المحرفون، مطورو الألعاب، وطلاب الفنون الرقمية.",
+      "en": "Graphics designers, animators, game developers, and digital arts students."
+    },
+    "requirements": {
+      "ar": [
+        "معرفة أساسية بالحاسوب",
+        "اهتمام بالتصميم ثلاثي الأبعاد"
+      ],
+      "en": [
+        "Basic computer knowledge",
+        "Interest in 3D design"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "معرفة أساسية بالحاسوب واهتمام بالتصميم ثلاثي الأبعاد."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مصمم ثلاثي الأبعاد، محرف، فنان مرئي."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Basic computer knowledge and interest in 3D design."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "3D Designer, Animator, Visual Artist."
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "icon": "CloudIcon",
+    "title": {
+      "ar": "AWS Certified Cloud Practitioner",
+      "en": "AWS Certified Cloud Practitioner"
+    },
+    "subtitle": {
+      "ar": "شهادة AWS الأساسية في الحوسبة السحابية",
+      "en": "AWS Foundational Cloud Computing Certification"
+    },
+    "category": {
+      "ar": "الحوسبة السحابية",
+      "en": "Cloud Computing"
+    },
+    "description": {
+      "ar": "مدخل إلى مفاهيم AWS السحابية والخدمات الأساسية.",
+      "en": "Introduction to AWS cloud concepts and core services."
+    },
+    "overview": {
+      "ar": "يغطي أساسيات AWS، النماذج السحابية، التسعير، الأمان، والامتثال.",
+      "en": "Covers AWS fundamentals, cloud models, pricing, security, and compliance."
+    },
+    "hours": 18,
+    "startDate": {
+      "ar": "28 ديسمبر 2025",
+      "en": "Dec 28, 2025"
+    },
+    "endDate": {
+      "ar": "30 ديسمبر 2025",
+      "en": "Dec 30, 2025"
+    },
+    "duration": {
+      "ar": "3 أيام",
+      "en": "3 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 831,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.7,
+    "reviews": 320,
+    "instructor": {
+      "name": "Chaitanya Gaajula",
+      "title": {
+        "ar": "مدرب AWS معتمد",
+        "en": "AWS Certified Trainer"
+      },
+      "experience": {
+        "ar": "24+ سنة في البنية التحتية والتدريب",
+        "en": "24+ years in infrastructure and training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في AWS مع خبرة واسعة في تدريب الحوسبة السحابية.",
+        "en": "AWS certified trainer with extensive experience in cloud computing training."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["أساسيات AWS", "النماذج السحابية", "التسعير", "الأمان", "الامتثال", "الخدمات الأساسية"],
+      "en": ["AWS Fundamentals", "Cloud Models", "Pricing", "Security", "Compliance", "Core Services"]
+    },
+    "targetJobs": {
+      "ar": ["متدرب سحابة", "مسؤول سحابة", "مستشار سحابة", "مدير تقني"],
+      "en": ["Cloud Trainee", "Cloud Administrator", "Cloud Consultant", "Technical Manager"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم مفاهيم الحوسبة السحابية",
+        "التعرف على خدمات AWS الأساسية",
+        "استيعاب نماذج التسعير والأمان",
+        "التحضير لامتحان AWS Cloud Practitioner"
+      ],
+      "en": [
+        "Understand cloud computing concepts",
+        "Identify core AWS services",
+        "Grasp pricing and security models",
+        "Prepare for AWS Cloud Practitioner exam"
+      ]
+    },
+    "targetAudience": {
+      "ar": "المبتدئون في السحابة، مديرو تكنولوجيا المعلومات، الطلاب، والمهتمون بالتحول السحابي.",
+      "en": "Cloud beginners, IT managers, students, and those interested in cloud transformation."
+    },
+    "requirements": {
+      "ar": [
+        "لا توجد متطلبات مسبقة",
+        "اهتمام بالحوسبة السحابية"
+      ],
+      "en": [
+        "No prerequisites",
+        "Interest in cloud computing"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "لا توجد شروط مسبقة."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "3 أيام (18 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "متدرب سحابة، مساعد مسؤول سحابة، مستشار سحابة مبتدئ."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "No prerequisites."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "3 days (18 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Cloud Trainee, Assistant Cloud Administrator, Junior Cloud Consultant."
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "icon": "BuildingLibraryIcon",
+    "title": {
+      "ar": "AWS Certified Solutions Architect – Associate",
+      "en": "AWS Certified Solutions Architect – Associate"
+    },
+    "subtitle": {
+      "ar": "شهادة AWS لمهندسي الحلول السحابية",
+      "en": "AWS Cloud Solutions Architect Certification"
+    },
+    "category": {
+      "ar": "هندسة الحلول السحابية",
+      "en": "Cloud Solutions Engineering"
+    },
+    "description": {
+      "ar": "تدريب متقدم في تصميم وتنفيذ الحلول السحابية على AWS.",
+      "en": "Advanced training in designing and implementing cloud solutions on AWS."
+    },
+    "overview": {
+      "ar": "يغطي الهندسة المعمارية، الأمان، الموثوقية، الكفاءة التكلفة، والنشر على AWS.",
+      "en": "Covers architecture, security, reliability, cost efficiency, and deployment on AWS."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "4 يناير 2026",
+      "en": "Jan 4, 2026"
+    },
+    "endDate": {
+      "ar": "8 يناير 2026",
+      "en": "Jan 8, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 788,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.8,
+    "reviews": 400,
+    "instructor": {
+      "name": "Chaitanya Gaajula",
+      "title": {
+        "ar": "مهندس حلول AWS معتمد",
+        "en": "AWS Certified Solutions Architect"
+      },
+      "experience": {
+        "ar": "24+ سنة في البنية التحتية والتدريب",
+        "en": "24+ years in infrastructure and training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في AWS Solutions Architect مع خبرة في تصميم الحلول السحابية.",
+        "en": "AWS Solutions Architect certified trainer with experience in designing cloud solutions."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["تصميم الهندسة المعمارية", "أمان AWS", "الموثوقية", "كفاءة التكلفة", "النشر", "أفضل الممارسات"],
+      "en": ["Architecture Design", "AWS Security", "Reliability", "Cost Efficiency", "Deployment", "Best Practices"]
+    },
+    "targetJobs": {
+      "ar": ["مهندس حلول سحابية", "مهندس معماري سحابي", "مستشار AWS", "مدير بنية تحتية"],
+      "en": ["Cloud Solutions Engineer", "Cloud Architect", "AWS Consultant", "Infrastructure Manager"]
+    },
+    "objectives": {
+      "ar": [
+        "تصميم هياكل سحابية قابلة للتطوير",
+        "تطبيق مبادئ الأمان والامتثال",
+        "تحسين الأداء والتكلفة",
+        "النشر الفعال على AWS"
+      ],
+      "en": [
+        "Design scalable cloud architectures",
+        "Apply security and compliance principles",
+        "Optimize performance and cost",
+        "Deploy effectively on AWS"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مهندسو الحلول، مهندسو البنية التحتية، مطورو البرمجيات، ومديرو تكنولوجيا المعلومات.",
+      "en": "Solutions engineers, infrastructure engineers, software developers, and IT managers."
+    },
+    "requirements": {
+      "ar": [
+        "معرفة أساسية بـ AWS",
+        "خبرة في تكنولوجيا المعلومات"
+      ],
+      "en": [
+        "Basic AWS knowledge",
+        "IT experience"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "معرفة أساسية بـ AWS وخبرة في تكنولوجيا المعلومات."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مهندس حلول سحابية، مهندس معماري سحابي، مستشار AWS."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Basic AWS knowledge and IT experience."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Cloud Solutions Engineer, Cloud Architect, AWS Consultant."
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "icon": "WrenchScrewdriverIcon",
+    "title": {
+      "ar": "AWS Certified DevOps Engineer – Professional",
+      "en": "AWS Certified DevOps Engineer – Professional"
+    },
+    "subtitle": {
+      "ar": "شهادة AWS المهنية لمهندسي DevOps",
+      "en": "AWS Professional DevOps Engineer Certification"
+    },
+    "category": {
+      "ar": "DevOps والهندسة السحابية",
+      "en": "DevOps & Cloud Engineering"
+    },
+    "description": {
+      "ar": "تدريب متقدم في أدوات وممارسات DevOps على منصة AWS.",
+      "en": "Advanced training in DevOps tools and practices on the AWS platform."
+    },
+    "overview": {
+      "ar": "يركز على النشر المستمر، المراقبة، الأتمتة، والأمان في بيئات AWS.",
+      "en": "Focuses on continuous deployment, monitoring, automation, and security in AWS environments."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "11 يناير 2026",
+      "en": "Jan 11, 2026"
+    },
+    "endDate": {
+      "ar": "15 يناير 2026",
+      "en": "Jan 15, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 950,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.9,
+    "reviews": 280,
+    "instructor": {
+      "name": "Chaitanya Gaajula",
+      "title": {
+        "ar": "مدرب DevOps على AWS",
+        "en": "AWS DevOps Trainer"
+      },
+      "experience": {
+        "ar": "24+ سنة في DevOps والتدريب السحابي",
+        "en": "24+ years in DevOps and cloud training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في AWS DevOps مع خبرة في تنفيذ خطوط أنابيب CI/CD.",
+        "en": "AWS DevOps certified trainer with experience in implementing CI/CD pipelines."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["النشر المستمر", "المراقبة", "الأتمتة", "أمان DevOps", "إدارة التكوين", "أدوات AWS"],
+      "en": ["Continuous Deployment", "Monitoring", "Automation", "DevOps Security", "Configuration Management", "AWS Tools"]
+    },
+    "targetJobs": {
+      "ar": ["مهندس DevOps", "مهندس سحابي", "مدير إصدارات", "مهندس أتمتة"],
+      "en": ["DevOps Engineer", "Cloud Engineer", "Release Manager", "Automation Engineer"]
+    },
+    "objectives": {
+      "ar": [
+        "تنفيذ ممارسات DevOps على AWS",
+        "أتمتة عمليات النشر والمراقبة",
+        "تحسين الأمان والامتثال",
+        "بناء خطوط أنابيب CI/CD قوية"
+      ],
+      "en": [
+        "Implement DevOps practices on AWS",
+        "Automate deployment and monitoring processes",
+        "Enhance security and compliance",
+        "Build robust CI/CD pipelines"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مهندسو DevOps، مطورو البرمجيات، مهندسو السحابة، ومديرو العمليات.",
+      "en": "DevOps engineers, software developers, cloud engineers, and operations managers."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في AWS وDevOps",
+        "معرفة بـ CI/CD"
+      ],
+      "en": [
+        "Experience in AWS and DevOps",
+        "Knowledge of CI/CD"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في AWS وDevOps ومعرفة بـ CI/CD."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مهندس DevOps، مهندس سحابي، مدير إصدارات."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in AWS and DevOps, knowledge of CI/CD."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "DevOps Engineer, Cloud Engineer, Release Manager."
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "icon": "BrainIcon",
+    "title": {
+      "ar": "AWS Certified Machine Learning – Specialty",
+      "en": "AWS Certified Machine Learning – Specialty"
+    },
+    "subtitle": {
+      "ar": "شهادة AWS المتخصصة في تعلم الآلة",
+      "en": "AWS Specialty Certification in Machine Learning"
+    },
+    "category": {
+      "ar": "تعلم الآلة والذكاء الاصطناعي",
+      "en": "Machine Learning & AI"
+    },
+    "description": {
+      "ar": "تدعم متقدم في بناء وتنفيذ نماذج تعلم الآلة على AWS.",
+      "en": "Advanced training in building and deploying machine learning models on AWS."
+    },
+    "overview": {
+      "ar": "يغطي الخوارزميات، معالجة البيانات، النمذجة، النشر، والمراقبة على AWS.",
+      "en": "Covers algorithms, data processing, modeling, deployment, and monitoring on AWS."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "11 يناير 2026",
+      "en": "Jan 11, 2026"
+    },
+    "endDate": {
+      "ar": "15 يناير 2026",
+      "en": "Jan 15, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 375,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.8,
+    "reviews": 150,
+    "instructor": {
+      "name": "Shivam Sharma",
+      "title": {
+        "ar": "مدرب تعلم الآلة على AWS",
+        "en": "AWS Machine Learning Trainer"
+      },
+      "experience": {
+        "ar": "10+ سنة في تعلم الآلة والذكاء الاصطناعي",
+        "en": "10+ years in machine learning and AI"
+      },
+      "image": "",
+      "bio": {
+        "ar": "خبير في تعلم الآلة على AWS مع خبرة في تدريب المهندسين والعلماء.",
+        "en": "AWS machine learning expert with experience in training engineers and scientists."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["خوارزميات تعلم الآلة", "معالجة البيانات", "النمذجة", "النشر", "المراقبة", "أدوات AWS ML"],
+      "en": ["ML Algorithms", "Data Processing", "Modeling", "Deployment", "Monitoring", "AWS ML Tools"]
+    },
+    "targetJobs": {
+      "ar": ["مهندس تعلم آلة", "عالم بيانات", "مطور ذكاء اصطناعي", "مستشار ML"],
+      "en": ["Machine Learning Engineer", "Data Scientist", "AI Developer", "ML Consultant"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم خوارزميات تعلم الآلة",
+        "معالجة البيانات وإعدادها",
+        "بناء ونشر نماذج على AWS",
+        "مراقبة وتحسين النماذج"
+      ],
+      "en": [
+        "Understand machine learning algorithms",
+        "Process and prepare data",
+        "Build and deploy models on AWS",
+        "Monitor and improve models"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مهندسو تعلم الآلة، علماء البيانات، مطورو الذكاء الاصطناعي، والباحثون.",
+      "en": "Machine learning engineers, data scientists, AI developers, and researchers."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في تعلم الآلة",
+        "معرفة بـ Python وAWS"
+      ],
+      "en": [
+        "Experience in machine learning",
+        "Knowledge of Python and AWS"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في تعلم الآلة ومعرفة بـ Python وAWS."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مهندس تعلم آلة، عالم بيانات، مطور ذكاء اصطناعي."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in machine learning and knowledge of Python and AWS."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Machine Learning Engineer, Data Scientist, AI Developer."
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "icon": "BuildingOfficeIcon",
+    "title": {
+      "ar": "Google Professional Cloud Architect",
+      "en": "Google Professional Cloud Architect"
+    },
+    "subtitle": {
+      "ar": "شهادة Google لمهندسي الهندسة المعمارية السحابية",
+      "en": "Google Cloud Architecture Certification"
+    },
+    "category": {
+      "ar": "هندسة السحابة العامة",
+      "en": "Public Cloud Engineering"
+    },
+    "description": {
+      "ar": "تدريب متقدم في تصميم وإدارة الحلول السحابية على Google Cloud.",
+      "en": "Advanced training in designing and managing cloud solutions on Google Cloud."
+    },
+    "overview": {
+      "ar": "يغطي الهندسة المعمارية، الأمان، الامتثال، التكلفة، والتحسين على GCP.",
+      "en": "Covers architecture, security, compliance, cost, and optimization on GCP."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "18 يناير 2026",
+      "en": "Jan 18, 2026"
+    },
+    "endDate": {
+      "ar": "22 يناير 2026",
+      "en": "Jan 22, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 1006,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.8,
+    "reviews": 310,
+    "instructor": {
+      "name": "Vishwanath MS",
+      "title": {
+        "ar": "مهندس معماري سحابي معتمد",
+        "en": "Certified Cloud Architect"
+      },
+      "experience": {
+        "ar": "15+ سنة في الهندسة المعمارية السحابية",
+        "en": "15+ years in cloud architecture"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في Google Cloud مع خبرة في تصميم حلول سحابية معقدة.",
+        "en": "Google Cloud certified trainer with experience in designing complex cloud solutions."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["تصميم الهندسة المعمارية", "أمان GCP", "الامتثال", "إدارة التكلفة", "التحسين", "النشر"],
+      "en": ["Architecture Design", "GCP Security", "Compliance", "Cost Management", "Optimization", "Deployment"]
+    },
+    "targetJobs": {
+      "ar": ["مهندس معماري سحابي", "مهندس حلول GCP", "مستشار سحابة", "مدير بنية تحتية"],
+      "en": ["Cloud Architect", "GCP Solutions Engineer", "Cloud Consultant", "Infrastructure Manager"]
+    },
+    "objectives": {
+      "ar": [
+        "تصميم هياكل سحابية على GCP",
+        "تطبيق ضوابط الأمان والامتثال",
+        "تحسين التكلفة والأداء",
+        "نشر حلول سحابية فعالة"
+      ],
+      "en": [
+        "Design cloud structures on GCP",
+        "Apply security and compliance controls",
+        "Optimize cost and performance",
+        "Deploy effective cloud solutions"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مهندسو الهندسة المعمارية، مهندسو الحلول، مديرو البنية التحتية، ومستشارو السحابة.",
+      "en": "Architecture engineers, solutions engineers, infrastructure managers, and cloud consultants."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في Google Cloud",
+        "معرفة بالهندسة المعمارية السحابية"
+      ],
+      "en": [
+        "Experience in Google Cloud",
+        "Knowledge of cloud architecture"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في Google Cloud ومعرفة بالهندسة المعمارية السحابية."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+            "answer": "شهادة Google Professional Cloud Architect بعد النجاح في الامتحان."
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مهندس معماري سحابي، مهندس حلول GCP، مستشار سحابة."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in Google Cloud and knowledge of cloud architecture."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Cloud Architect, GCP Solutions Engineer, Cloud Consultant."
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "icon": "CogIcon",
+    "title": {
+      "ar": "Google Cloud Professional Machine Learning Engineer",
+      "en": "Google Cloud Professional Machine Learning Engineer"
+    },
+    "subtitle": {
+      "ar": "شهادة Google لمهندسي تعلم الآلة",
+      "en": "Google Cloud Machine Learning Engineer Certification"
+    },
+    "category": {
+      "ar": "تعلم الآلة والهندسة السحابية",
+      "en": "Machine Learning & Cloud Engineering"
+    },
+    "description": {
+      "ar": "تدريب متقدم في هندسة نماذج تعلم الآلة على Google Cloud.",
+      "en": "Advanced training in engineering machine learning models on Google Cloud."
+    },
+    "overview": {
+      "ar": "يركز على بناء، تدريب، نشر، ومراقبة نماذج ML على GCP.",
+      "en": "Focuses on building, training, deploying, and monitoring ML models on GCP."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "25 يناير 2026",
+      "en": "Jan 25, 2026"
+    },
+    "endDate": {
+      "ar": "29 يناير 2026",
+      "en": "Jan 29, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 1150,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.9,
+    "reviews": 200,
+    "instructor": {
+      "name": "Vishwanath MS",
+      "title": {
+        "ar": "مدرب هندسة تعلم الآلة",
+        "en": "Machine Learning Engineering Trainer"
+      },
+      "experience": {
+        "ar": "15+ سنة في الهندسة السحابية والتعلم الآلي",
+        "en": "15+ years in cloud engineering and machine learning"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في GCP ML مع خبرة في تدريب مهندسي تعلم الآلة.",
+        "en": "GCP ML certified trainer with experience in training machine learning engineers."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["هندسة نماذج ML", "التدريب", "النشر", "المراقبة", "أدوات GCP ML", "التكامل"],
+      "en": ["ML Model Engineering", "Training", "Deployment", "Monitoring", "GCP ML Tools", "Integration"]
+    },
+    "targetJobs": {
+      "ar": ["مهندس تعلم آلة", "عالم بيانات", "مهندس سحابي", "مطور ذكاء اصطناعي"],
+      "en": ["Machine Learning Engineer", "Data Scientist", "Cloud Engineer", "AI Developer"]
+    },
+    "objectives": {
+      "ar": [
+        "هندسة نماذج تعلم الآلة على GCP",
+        "تدريب النماذج باستخدام بيانات كبيرة",
+        "نشر النماذج في بيئات الإنتاج",
+        "مراقبة وتحسين أداء النماذج"
+      ],
+      "en": [
+        "Engineer machine learning models on GCP",
+        "Train models using big data",
+        "Deploy models in production environments",
+        "Monitor and improve model performance"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مهندسو تعلم الآلة، علماء البيانات، مهندسو السحابة، والباحثون.",
+      "en": "Machine learning engineers, data scientists, cloud engineers, and researchers."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في تعلم الآلة",
+        "معرفة بـ Google Cloud وPython"
+      ],
+      "en": [
+        "Experience in machine learning",
+        "Knowledge of Google Cloud and Python"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في تعلم الآلة ومعرفة بـ Google Cloud وPython."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مهندس تعلم آلة، عالم بيانات، مهندس سحابي."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in machine learning and knowledge of Google Cloud and Python."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Machine Learning Engineer, Data Scientist, Cloud Engineer."
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "icon": "ServerIcon",
+    "title": {
+      "ar": "Microsoft Certified: Azure Administrator Associate (AZ-104)",
+      "en": "Microsoft Certified: Azure Administrator Associate (AZ-104)"
+    },
+    "subtitle": {
+      "ar": "شهادة إدارة Azure من Microsoft",
+      "en": "Microsoft Azure Administration Certification"
+    },
+    "category": {
+      "ar": "إدارة السحابة العامة",
+      "en": "Public Cloud Administration"
+    },
+    "description": {
+      "ar": "تدريب في إدارة وتنفيذ ومراقبة بيئات Microsoft Azure.",
+      "en": "Training in managing, implementing, and monitoring Microsoft Azure environments."
+    },
+    "overview": {
+      "ar": "يغطي الشبكات، التخزين، الحساب، الأمان، والمراقبة على Azure.",
+      "en": "Covers networking, storage, compute, security, and monitoring on Azure."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "25 يناير 2026",
+      "en": "Jan 25, 2026"
+    },
+    "endDate": {
+      "ar": "29 يناير 2026",
+      "en": "Jan 29, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 945,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.8,
+    "reviews": 350,
+    "instructor": {
+      "name": "Chaitanya Gaajula",
+      "title": {
+        "ar": "مدرب إدارة Azure معتمد",
+        "en": "Azure Administration Certified Trainer"
+      },
+      "experience": {
+        "ar": "24+ سنة في البنية التحتية والتدريب السحابي",
+        "en": "24+ years in infrastructure and cloud training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في Azure مع خبرة في تدريب مسؤولي السحابة.",
+        "en": "Azure certified trainer with experience in training cloud administrators."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["إدارة Azure", "الشبكات", "التخزين", "الحساب", "الأمان", "المراقبة"],
+      "en": ["Azure Administration", "Networking", "Storage", "Compute", "Security", "Monitoring"]
+    },
+    "targetJobs": {
+      "ar": ["مسؤول Azure", "مهندس سحابي", "مدير بنية تحتية", "فني سحابة"],
+      "en": ["Azure Administrator", "Cloud Engineer", "Infrastructure Manager", "Cloud Technician"]
+    },
+    "objectives": {
+      "ar": [
+        "إدارة موارد Azure بفعالية",
+        "تنفيذ شبكات وتخزين آمنين",
+        "مراقبة الأداء والتكاليف",
+        "تأمين بيئات Azure"
+      ],
+      "en": [
+        "Manage Azure resources effectively",
+        "Implement secure networking and storage",
+        "Monitor performance and costs",
+        "Secure Azure environments"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مسؤولو تكنولوجيا المعلومات، مهندسو السحابة، فنيو الدعم، ومديرو البنية التحتية.",
+      "en": "IT administrators, cloud engineers, support technicians, and infrastructure managers."
+    },
+    "requirements": {
+      "ar": [
+        "معرفة أساسية بـ Azure",
+        "خبرة في إدارة الأنظمة"
+      ],
+      "en": [
+        "Basic Azure knowledge",
+        "System administration experience"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "معرفة أساسية بـ Azure وخبرة في إدارة الأنظمة."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مسؤول Azure، مهندس سحابي، مدير بنية تحتية."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Basic Azure knowledge and system administration experience."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Azure Administrator, Cloud Engineer, Infrastructure Manager."
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "icon": "BuildingLibraryIcon",
+    "title": {
+      "ar": "Microsoft Certified: Azure Solutions Architect Expert",
+      "en": "Microsoft Certified: Azure Solutions Architect Expert"
+    },
+    "subtitle": {
+      "ar": "شهادة Microsoft لمهندسي حلول Azure",
+      "en": "Microsoft Azure Solutions Architect Certification"
+    },
+    "category": {
+      "ar": "هندسة حلول السحابة",
+      "en": "Cloud Solutions Engineering"
+    },
+    "description": {
+      "ar": "تدريب متقدم في تصميم وتنفيذ حلول سحابية على Microsoft Azure.",
+      "en": "Advanced training in designing and implementing cloud solutions on Microsoft Azure."
+    },
+    "overview": {
+      "ar": "يركز على الهندسة المعمارية، الأمان، التكلفة، والامتثال في Azure.",
+      "en": "Focuses on architecture, security, cost, and compliance in Azure."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "1 فبراير 2026",
+      "en": "Feb 1, 2026"
+    },
+    "endDate": {
+      "ar": "5 فبراير 2026",
+      "en": "Feb 5, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 1215,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.9,
+    "reviews": 290,
+    "instructor": {
+      "name": "Chaitanya Gaajula",
+      "title": {
+        "ar": "مهندس حلول Azure معتمد",
+        "en": "Azure Solutions Architect Certified Trainer"
+      },
+      "experience": {
+        "ar": "24+ سنة في الهندسة المعمارية السحابية",
+        "en": "24+ years in cloud architecture"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في Azure Solutions Architect مع خبرة في تصميم الحلول السحابية.",
+        "en": "Azure Solutions Architect certified trainer with experience in designing cloud solutions."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["تصميم الهندسة المعمارية", "أمان Azure", "إدارة التكلفة", "الامتثال", "النشر", "التحسين"],
+      "en": ["Architecture Design", "Azure Security", "Cost Management", "Compliance", "Deployment", "Optimization"]
+    },
+    "targetJobs": {
+      "ar": ["مهندس حلول Azure", "مهندس معماري سحابي", "مستشار Azure", "مدير بنية تحتية"],
+      "en": ["Azure Solutions Engineer", "Cloud Architect", "Azure Consultant", "Infrastructure Manager"]
+    },
+    "objectives": {
+      "ar": [
+        "تصميم هياكل سحابية على Azure",
+        "تطبيق مبادئ الأمان والامتثال",
+        "تحسين الأداء والتكلفة",
+        "نشر حلول معقدة بكفاءة"
+      ],
+      "en": [
+        "Design cloud structures on Azure",
+        "Apply security and compliance principles",
+        "Optimize performance and cost",
+        "Deploy complex solutions efficiently"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مهندسو الحلول، مهندسو الهندسة المعمارية، مديرو البنية التحتية، ومستشارو السحابة.",
+      "en": "Solutions engineers, architecture engineers, infrastructure managers, and cloud consultants."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في Azure",
+        "معرفة بالهندسة المعمارية السحابية"
+      ],
+      "en": [
+        "Experience in Azure",
+        "Knowledge of cloud architecture"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في Azure ومعرفة بالهندسة المعمارية السحابية."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مهندس حلول Azure، مهندس معماري سحابي، مستشار Azure."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in Azure and knowledge of cloud architecture."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Azure Solutions Engineer, Cloud Architect, Azure Consultant."
+        }
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "icon": "LightBulbIcon",
+    "title": {
+      "ar": "Microsoft Certified: Azure AI Fundamentals",
+      "en": "Microsoft Certified: Azure AI Fundamentals"
+    },
+    "subtitle": {
+      "ar": "مدخل إلى الذكاء الاصطناعي على Azure",
+      "en": "Introduction to AI on Azure"
+    },
+    "category": {
+      "ar": "الذكاء الاصطناعي والتعلم الآلي",
+      "en": "Artificial Intelligence & Machine Learning"
+    },
+    "description": {
+      "ar": "مدخل إلى مفاهيم الذكاء الاصطناعي وخدمات Azure AI.",
+      "en": "Introduction to AI concepts and Azure AI services."
+    },
+    "overview": {
+      "ar": "يغطي أساسيات الذكاء الاصطناعي، رؤية الحاسوب، معالجة اللغة، والنماذج على Azure.",
+      "en": "Covers AI fundamentals, computer vision, language processing, and models on Azure."
+    },
+    "hours": 12,
+    "startDate": {
+      "ar": "8 فبراير 2026",
+      "en": "Feb 8, 2026"
+    },
+    "endDate": {
+      "ar": "9 فبراير 2026",
+      "en": "Feb 9, 2026"
+    },
+    "duration": {
+      "ar": "2 أيام",
+      "en": "2 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 438,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.6,
+    "reviews": 180,
+    "instructor": {
+      "name": "Chaitanya Gaajula",
+      "title": {
+        "ar": "مدرب ذكاء اصطناعي على Azure",
+        "en": "Azure AI Trainer"
+      },
+      "experience": {
+        "ar": "24+ سنة في التدريب على الذكاء الاصطناعي والسحابة",
+        "en": "24+ years in AI and cloud training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في Azure AI مع خبرة في تدريب المبتدئين على مفاهيم الذكاء الاصطناعي.",
+        "en": "Azure AI certified trainer with experience in training beginners in AI concepts."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["أساسيات الذكاء الاصطناعي", "رؤية الحاسوب", "معالجة اللغة", "نماذج Azure AI", "التطبيقات", "الأدوات"],
+      "en": ["AI Fundamentals", "Computer Vision", "Language Processing", "Azure AI Models", "Applications", "Tools"]
+    },
+    "targetJobs": {
+      "ar": ["مطور ذكاء اصطناعي", "عالم بيانات مبتدئ", "مستشار AI", "مهندس برمجيات"],
+      "en": ["AI Developer", "Junior Data Scientist", "AI Consultant", "Software Engineer"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم أساسيات الذكاء الاصطناعي",
+        "التعرف على خدمات Azure AI",
+        "بناء تطبيقات بسيطة باستخدام AI",
+        "التحضير لامتحان Azure AI Fundamentals"
+      ],
+      "en": [
+        "Understand AI fundamentals",
+        "Identify Azure AI services",
+        "Build simple applications using AI",
+        "Prepare for Azure AI Fundamentals exam"
+      ]
+    },
+    "targetAudience": {
+      "ar": "المبتدئون في الذكاء الاصطناعي، المطورون، علماء البيانات، وطلاب الحاسوب.",
+      "en": "AI beginners, developers, data scientists, and computer students."
+    },
+    "requirements": {
+      "ar": [
+        "لا توجد متطلبات مسبقة",
+        "اهتمام بالذكاء الاصطناعي"
+      ],
+      "en": [
+        "No prerequisites",
+        "Interest in AI"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "لا توجد شروط مسبقة."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "2 أيام (12 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مطور ذكاء اصطناعي، عالم بيانات مبتدئ، مستشار AI."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "No prerequisites."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "2 days (12 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "AI Developer, Junior Data Scientist, AI Consultant."
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "icon": "PhotoIcon",
+    "title": {
+      "ar": "Adobe Certified Professional: Visual Design using Adobe Photoshop",
+      "en": "Adobe Certified Professional: Visual Design using Adobe Photoshop"
+    },
+    "subtitle": {
+      "ar": "شهادة Adobe في التصميم المرئي باستخدام Photoshop",
+      "en": "Adobe Certification in Visual Design using Photoshop"
+    },
+    "category": {
+      "ar": "التصميم الجرافيكي",
+      "en": "Graphic Design"
+    },
+    "description": {
+      "ar": "تدريب عملي في التصميم المرئي وتحرير الصور باستخدام Adobe Photoshop.",
+      "en": "Hands-on training in visual design and image editing using Adobe Photoshop."
+    },
+    "overview": {
+      "ar": "يغطي أدوات Photoshop، الطبقات، الأقنعة، التصحيح، والتأثيرات.",
+      "en": "Covers Photoshop tools, layers, masks, corrections, and effects."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "11 يناير 2026",
+      "en": "Jan 11, 2026"
+    },
+    "endDate": {
+      "ar": "15 يناير 2026",
+      "en": "Jan 15, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 525,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.7,
+    "reviews": 220,
+    "instructor": {
+      "name": "Vishu Aggarwal",
+      "title": {
+        "ar": "مدرب تصميم مرئي معتمد",
+        "en": "Certified Visual Design Trainer"
+      },
+      "experience": {
+        "ar": "10+ سنة في التدريب على Adobe Photoshop",
+        "en": "10+ years in Adobe Photoshop training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في Adobe Photoshop مع خبرة في تدريب المصممين.",
+        "en": "Adobe Photoshop certified trainer with experience in training designers."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["أدوات Photoshop", "الطبقات والأقنعة", "التصحيح اللوني", "التأثيرات", "التصميم المرئي", "التصدير"],
+      "en": ["Photoshop Tools", "Layers & Masks", "Color Correction", "Effects", "Visual Design", "Exporting"]
+    },
+    "targetJobs": {
+      "ar": ["مصمم جرافيك", "محرر صور", "فنان مرئي", "مصمم ويب"],
+      "en": ["Graphic Designer", "Image Editor", "Visual Artist", "Web Designer"]
+    },
+    "objectives": {
+      "ar": [
+        "إتقان أدوات Photoshop الأساسية والمتقدمة",
+        "إنشاء تصاميم مرئية جذابة",
+        "تحرير الصور وتحسينها",
+        "إعداد ملفات للطباعة والويب"
+      ],
+      "en": [
+        "Master basic and advanced Photoshop tools",
+        "Create attractive visual designs",
+        "Edit and enhance images",
+        "Prepare files for print and web"
+      ]
+    },
+    "targetAudience": {
+      "ar": "المصممون الجرافيكيون، مصممو الويب، مصورو الفوتوغرافيا، وطلاب الفنون.",
+      "en": "Graphic designers, web designers, photographers, and arts students."
+    },
+    "requirements": {
+      "ar": [
+        "معرفة أساسية بالحاسوب",
+        "اهتمام بالتصميم الجرافيكي"
+      ],
+      "en": [
+        "Basic computer knowledge",
+        "Interest in graphic design"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "معرفة أساسية بالحاسوب واهتمام بالتصميم الجرافيكي."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مصمم جرافيك، محرر صور، فنان مرئي."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Basic computer knowledge and interest in graphic design."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Graphic Designer, Image Editor, Visual Artist."
+        }
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "icon": "BuildingOffice2Icon",
+    "title": {
+      "ar": "TOGAF 10 Foundation",
+      "en": "TOGAF 10 Foundation"
+    },
+    "subtitle": {
+      "ar": "شهادة مؤسسة TOGAF 10 في هندسة المؤسسات",
+      "en": "TOGAF 10 Foundation Certification in Enterprise Architecture"
+    },
+    "category": {
+      "ar": "هندسة المؤسسات",
+      "en": "Enterprise Architecture"
+    },
+    "description": {
+      "ar": "مدخل إلى إطار عمل TOGAF 10 ومفاهيم هندسة المؤسسات.",
+      "en": "Introduction to TOGAF 10 framework and enterprise architecture concepts."
+    },
+    "overview": {
+      "ar": "يغطي مكونات TOGAF، دورة حياة الهندسة المعمارية، والمنهجيات.",
+      "en": "Covers TOGAF components, architecture development lifecycle, and methodologies."
+    },
+    "hours": 12,
+    "startDate": {
+      "ar": "14 ديسمبر 2025",
+      "en": "Dec 14, 2025"
+    },
+    "endDate": {
+      "ar": "15 ديسمبر 2025",
+      "en": "Dec 15, 2025"
+    },
+    "duration": {
+      "ar": "2 أيام",
+      "en": "2 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 800,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.7,
+    "reviews": 160,
+    "instructor": {
+      "name": "Kanwal Rai",
+      "title": {
+        "ar": "مدرب هندسة مؤسسات",
+        "en": "Enterprise Architecture Trainer"
+      },
+      "experience": {
+        "ar": "15+ سنة في هندسة المؤسسات والتدريب",
+        "en": "15+ years in enterprise architecture and training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في TOGAF مع خبرة في تدريب المهندسين المعماريين.",
+        "en": "TOGAF certified trainer with experience in training architects."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["إطار TOGAF", "دورة حياة الهندسة المعمارية", "منهجيات الهندسة", "النمذجة", "التوثيق", "الحوكمة"],
+      "en": ["TOGAF Framework", "Architecture Development Lifecycle", "Architecture Methodologies", "Modeling", "Documentation", "Governance"]
+    },
+    "targetJobs": {
+      "ar": ["مهندس مؤسسات", "مهندس معماري", "مدير هندسة", "مستشار مؤسسات"],
+      "en": ["Enterprise Architect", "Solution Architect", "Architecture Manager", "Enterprise Consultant"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم مكونات TOGAF 10",
+        "تطبيق دورة حياة الهندسة المعمارية",
+        "نمذجة هياكل المؤسسات",
+        "التحضير لامتحان TOGAF Foundation"
+      ],
+      "en": [
+        "Understand TOGAF 10 components",
+        "Apply architecture development lifecycle",
+        "Model enterprise structures",
+        "Prepare for TOGAF Foundation exam"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مهندسو المؤسسات، المهندسون المعماريون، مديرو تكنولوجيا المعلومات، والمستشارون.",
+      "en": "Enterprise architects, solution architects, IT managers, and consultants."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في هندسة الأنظمة",
+        "معرفة بمفاهيم المؤسسات"
+      ],
+      "en": [
+        "Experience in system architecture",
+        "Knowledge of enterprise concepts"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في هندسة الأنظمة ومعرفة بمفاهيم المؤسسات."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "2 أيام (12 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مهندس مؤسسات، مهندس معماري، مدير هندسة."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in system architecture and knowledge of enterprise concepts."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "2 days (12 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Enterprise Architect, Solution Architect, Architecture Manager."
+        }
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "icon": "UserIcon",
+    "title": {
+      "ar": "Agile Scrum Product Owner",
+      "en": "Agile Scrum Product Owner"
+    },
+    "subtitle": {
+      "ar": "شهادة Exin في ملكية المنتج السريع",
+      "en": "Exin Agile Scrum Product Owner Certification"
+    },
+    "category": {
+      "ar": "إدارة المنتجات الرشيقة",
+      "en": "Agile Product Management"
+    },
+    "description": {
+      "ar": "تدريب في دور مالك المنتج في فرق سكروم الرشيقة.",
+      "en": "Training in the role of Product Owner in Agile Scrum teams."
+    },
+    "overview": {
+      "ar": "يغطي إدارة المنتج، كتابة قصص المستخدم، تحديد الأولويات، وتعظيم القيمة.",
+      "en": "Covers product management, user story writing, prioritization, and value maximization."
+    },
+    "hours": 12,
+    "startDate": {
+      "ar": "21 ديسمبر 2025",
+      "en": "Dec 21, 2025"
+    },
+    "endDate": {
+      "ar": "22 ديسمبر 2025",
+      "en": "Dec 22, 2025"
+    },
+    "duration": {
+      "ar": "2 أيام",
+      "en": "2 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 660,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.7,
+    "reviews": 140,
+    "instructor": {
+      "name": "Vishal Kulkarni",
+      "title": {
+        "ar": "مدرب مالك منتج رشيق",
+        "en": "Agile Product Owner Trainer"
+      },
+      "experience": {
+        "ar": "12+ سنة في إدارة المنتجات والتدريب",
+        "en": "12+ years in product management and training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في Agile Product Owner مع خبرة في تدريب فرق المنتجات.",
+        "en": "Agile Product Owner certified trainer with experience in training product teams."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["إدارة المنتج", "كتابة قصص المستخدم", "تحديد الأولويات", "تعظيم القيمة", "التخطيط", "التواصل"],
+      "en": ["Product Management", "User Story Writing", "Prioritization", "Value Maximization", "Planning", "Communication"]
+    },
+    "targetJobs": {
+      "ar": ["مالك المنتج", "مدير منتج", "محلل أعمال", "مدير مشروع"],
+      "en": ["Product Owner", "Product Manager", "Business Analyst", "Project Manager"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم دور مالك المنتج في سكروم",
+        "كتابة قصص مستخدم فعالة",
+        "إدارة وتحديد أولويات المنتج",
+        "تعظيم قيمة المنتج للعملاء"
+      ],
+      "en": [
+        "Understand Product Owner role in Scrum",
+        "Write effective user stories",
+        "Manage and prioritize product backlog",
+        "Maximize product value for customers"
+      ]
+    },
+    "targetAudience": {
+      "ar": "أصحاب المنتجات، مديرو المنتجات، محللو الأعمال، وقادة الفرق.",
+      "en": "Product owners, product managers, business analysts, and team leaders."
+    },
+    "requirements": {
+      "ar": [
+        "معرفة أساسية بسكروم",
+        "خبرة في إدارة المنتجات"
+      ],
+      "en": [
+        "Basic Scrum knowledge",
+        "Product management experience"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "معرفة أساسية بسكروم وخبرة في إدارة المنتجات."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "2 أيام (12 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مالك منتج، مدير منتج، محلل أعمال."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Basic Scrum knowledge and product management experience."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "2 days (12 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Product Owner, Product Manager, Business Analyst."
+        }
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "icon": "BuildingLibraryIcon",
+    "title": {
+      "ar": "Certified in the Governance of Enterprise IT® (CGEIT®)",
+      "en": "Certified in the Governance of Enterprise IT® (CGEIT®)"
+    },
+    "subtitle": {
+      "ar": "شهادة ISACA في حوكمة تكنولوجيا معلومات المؤسسات",
+      "en": "ISACA Certification in Enterprise IT Governance"
+    },
+    "category": {
+      "ar": "حوكمة تكنولوجيا المعلومات",
+      "en": "IT Governance"
+    },
+    "description": {
+      "ar": "تدريب متقدم في حوكمة وإدارة تكنولوجيا المعلومات في المؤسسات.",
+      "en": "Advanced training in IT governance and management within enterprises."
+    },
+    "overview": {
+      "ar": "يركز على إطار الحوكمة، إدارة المخاطر، الامتثال، وقيمة تكنولوجيا المعلومات.",
+      "en": "Focuses on governance framework, risk management, compliance, and IT value."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "1 فبراير 2026",
+      "en": "Feb 1, 2026"
+    },
+    "endDate": {
+      "ar": "5 فبراير 2026",
+      "en": "Feb 5, 2026"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 1252,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.8,
+    "reviews": 190,
+    "instructor": {
+      "name": "Saaz Rai",
+      "title": {
+        "ar": "مدرب حوكمة تكنولوجيا المعلومات",
+        "en": "IT Governance Trainer"
+      },
+      "experience": {
+        "ar": "25+ سنة في الحوكمة والتدريب",
+        "en": "25+ years in governance and training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد من ISACA في حوكمة تكنولوجيا المعلومات مع خبرة عالمية.",
+        "en": "ISACA certified IT governance trainer with global experience."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["حوكمة تكنولوجيا المعلومات", "إدارة المخاطر", "الامتثال", "إطار الحوكمة", "قياس القيمة", "الإستراتيجية"],
+      "en": ["IT Governance", "Risk Management", "Compliance", "Governance Framework", "Value Measurement", "Strategy"]
+    },
+    "targetJobs": {
+      "ar": ["مدير حوكمة تكنولوجيا المعلومات", "مدير مخاطر", "مدير الامتثال", "مستشار حوكمة"],
+      "en": ["IT Governance Manager", "Risk Manager", "Compliance Manager", "Governance Consultant"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم إطار حوكمة تكنولوجيا المعلومات",
+        "تطبيق مبادئ إدارة المخاطر والامتثال",
+        "قياس وإثبات قيمة تكنولوجيا المعلومات",
+        "التحضير لامتحان CGEIT"
+      ],
+      "en": [
+        "Understand IT governance framework",
+        "Apply risk management and compliance principles",
+        "Measure and demonstrate IT value",
+        "Prepare for CGEIT exam"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مديرو الحوكمة، مديرو المخاطر، مديرو الامتثال، ومستشارو تكنولوجيا المعلومات.",
+      "en": "Governance managers, risk managers, compliance managers, and IT consultants."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في حوكمة تكنولوجيا المعلومات",
+        "معرفة بإدارة المخاطر"
+      ],
+      "en": [
+        "Experience in IT governance",
+        "Knowledge of risk management"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في حوكمة تكنولوجيا المعلومات ومعرفة بإدارة المخاطر."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مدير حوكمة تكنولوجيا المعلومات، مدير مخاطر، مستشار حوكمة."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in IT governance and knowledge of risk management."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "IT Governance Manager, Risk Manager, Governance Consultant."
+        }
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "icon": "Cog6ToothIcon",
+    "title": {
+      "ar": "DASA DevOps Fundamentals",
+      "en": "DASA DevOps Fundamentals"
+    },
+    "subtitle": {
+      "ar": "شهادة DASA في أساسيات DevOps",
+      "en": "DASA DevOps Fundamentals Certification"
+    },
+    "category": {
+      "ar": "DevOps والتكامل المستمر",
+      "en": "DevOps & Continuous Integration"
+    },
+    "description": {
+      "ar": "مدخل إلى مبادئ DevOps والممارسات الأساسية.",
+      "en": "Introduction to DevOps principles and foundational practices."
+    },
+    "overview": {
+      "ar": "يغطي ثقافة DevOps، الأتمتة، القياس، ومبادئ التحسين المستمر.",
+      "en": "Covers DevOps culture, automation, measurement, and continuous improvement principles."
+    },
+    "hours": 12,
+    "startDate": {
+      "ar": "4 يناير 2026",
+      "en": "Jan 4, 2026"
+    },
+    "endDate": {
+      "ar": "5 يناير 2026",
+      "en": "Jan 5, 2026"
+    },
+    "duration": {
+      "ar": "2 أيام",
+      "en": "2 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 1313,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.7,
+    "reviews": 170,
+    "instructor": {
+      "name": "Nitin Gaur",
+      "title": {
+        "ar": "مدرب DevOps",
+        "en": "DevOps Trainer"
+      },
+      "experience": {
+        "ar": "10+ سنة في التدريب على DevOps",
+        "en": "10+ years in DevOps training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في DASA DevOps مع خبرة في تدريب فرق التطوير والعمليات.",
+        "en": "DASA DevOps certified trainer with experience in training development and operations teams."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["ثقافة DevOps", "الأتمتة", "القياس", "التحسين المستمر", "التكامل", "النشر"],
+      "en": ["DevOps Culture", "Automation", "Measurement", "Continuous Improvement", "Integration", "Deployment"]
+    },
+    "targetJobs": {
+      "ar": ["مهندس DevOps", "مطور برمجيات", "مدير عمليات", "مهندس جودة"],
+      "en": ["DevOps Engineer", "Software Developer", "Operations Manager", "Quality Engineer"]
+    },
+    "objectives": {
+      "ar": [
+        "فهم مبادئ DevOps الأساسية",
+        "تطبيق الأتمتة في خطوط الأنابيب",
+        "قياس وتحسين أداء الأنظمة",
+        "التحضير لامتحان DASA DevOps Fundamentals"
+      ],
+      "en": [
+        "Understand fundamental DevOps principles",
+        "Apply automation in pipelines",
+        "Measure and improve system performance",
+        "Prepare for DASA DevOps Fundamentals exam"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مهندسو DevOps، المطورون، مديرو العمليات، وفرق الجودة.",
+      "en": "DevOps engineers, developers, operations managers, and quality teams."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في تطوير البرمجيات أو العمليات",
+        "اهتمام بـ DevOps"
+      ],
+      "en": [
+        "Experience in software development or operations",
+        "Interest in DevOps"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في تطوير البرمجيات أو العمليات واهتمام بـ DevOps."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "2 أيام (12 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مهندس DevOps، مطور برمجيات، مدير عمليات."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in software development or operations and interest in DevOps."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "2 days (12 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "DevOps Engineer, Software Developer, Operations Manager."
+        }
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "icon": "WrenchIcon",
+    "title": {
+      "ar": "Designing and Implementing Microsoft DevOps Solutions (AZ-400)",
+      "en": "Designing and Implementing Microsoft DevOps Solutions (AZ-400)"
+    },
+    "subtitle": {
+      "ar": "شهادة Microsoft في تصميم وتنفيذ حلول DevOps",
+      "en": "Microsoft DevOps Solutions Design & Implementation Certification"
+    },
+    "category": {
+      "ar": "DevOps على Azure",
+      "en": "DevOps on Azure"
+    },
+    "description": {
+      "ar": "تدريب متقدم في تصميم وتنفيذ حلول DevOps باستخدام أدوات Microsoft.",
+      "en": "Advanced training in designing and implementing DevOps solutions using Microsoft tools."
+    },
+    "overview": {
+      "ar": "يغطي Azure DevOps، CI/CD، البنية التحتية ككود، المراقبة، والتعاون.",
+      "en": "Covers Azure DevOps, CI/CD, infrastructure as code, monitoring, and collaboration."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "14 ديسمبر 2025",
+      "en": "Dec 14, 2025"
+    },
+    "endDate": {
+      "ar": "18 ديسمبر 2025",
+      "en": "Dec 18, 2025"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 984,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.8,
+    "reviews": 210,
+    "instructor": {
+      "name": "Arun C",
+      "title": {
+        "ar": "مدرب DevOps على Azure",
+        "en": "Azure DevOps Trainer"
+      },
+      "experience": {
+        "ar": "12+ سنة في DevOps والتدريب السحابي",
+        "en": "12+ years in DevOps and cloud training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في Azure DevOps مع خبرة في تنفيذ خطوط أنابيب CI/CD.",
+        "en": "Azure DevOps certified trainer with experience in implementing CI/CD pipelines."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["Azure DevOps", "CI/CD", "البنية التحتية ككود", "المراقبة", "التعاون", "الأتمتة"],
+      "en": ["Azure DevOps", "CI/CD", "Infrastructure as Code", "Monitoring", "Collaboration", "Automation"]
+    },
+    "targetJobs": {
+      "ar": ["مهندس DevOps", "مهندس سحابي", "مدير إصدارات", "مهندس أتمتة"],
+      "en": ["DevOps Engineer", "Cloud Engineer", "Release Manager", "Automation Engineer"]
+    },
+    "objectives": {
+      "ar": [
+        "تصميم حلول DevOps على Azure",
+        "تنفيذ خطوط أنابيب CI/CD متكاملة",
+        "أتمتة البنية التحتية والتكوين",
+        "تحسين التعاون بين الفرق"
+      ],
+      "en": [
+        "Design DevOps solutions on Azure",
+        "Implement integrated CI/CD pipelines",
+        "Automate infrastructure and configuration",
+        "Enhance team collaboration"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مهندسو DevOps، مطورو البرمجيات، مهندسو السحابة، ومديرو العمليات.",
+      "en": "DevOps engineers, software developers, cloud engineers, and operations managers."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في Azure وDevOps",
+        "معرفة بـ CI/CD"
+      ],
+      "en": [
+        "Experience in Azure and DevOps",
+        "Knowledge of CI/CD"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في Azure وDevOps ومعرفة بـ CI/CD."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "مهندس DevOps، مهندس سحابي، مدير إصدارات."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in Azure and DevOps, knowledge of CI/CD."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "DevOps Engineer, Cloud Engineer, Release Manager."
+        }
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "icon": "ChartBarIcon",
+    "title": {
+      "ar": "Power BI Analyst (PL-300)",
+      "en": "Power BI Analyst (PL-300)"
+    },
+    "subtitle": {
+      "ar": "شهادة Microsoft في تحليل البيانات باستخدام Power BI",
+      "en": "Microsoft Data Analysis Certification using Power BI"
+    },
+    "category": {
+      "ar": "تحليل البيانات والتقارير",
+      "en": "Data Analysis & Reporting"
+    },
+    "description": {
+      "ar": "تدريب في تحليل البيانات وإنشاء التقارير باستخدام Microsoft Power BI.",
+      "en": "Training in data analysis and report creation using Microsoft Power BI."
+    },
+    "overview": {
+      "ar": "يغطي استيراد البيانات، النمذجة، التصور، لوحات المعلومات، والمشاركة.",
+      "en": "Covers data import, modeling, visualization, dashboards, and sharing."
+    },
+    "hours": 18,
+    "startDate": {
+      "ar": "14 ديسمبر 2025",
+      "en": "Dec 14, 2025"
+    },
+    "endDate": {
+      "ar": "16 ديسمبر 2025",
+      "en": "Dec 16, 2025"
+    },
+    "duration": {
+      "ar": "3 أيام",
+      "en": "3 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 802,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.7,
+    "reviews": 240,
+    "instructor": {
+      "name": "Vaibhav",
+      "title": {
+        "ar": "مدرب تحليل بيانات معتمد",
+        "en": "Certified Data Analysis Trainer"
+      },
+      "experience": {
+        "ar": "9+ سنة في هندسة البيانات والتدريب",
+        "en": "9+ years in data engineering and training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في Power BI مع خبرة في تحليل البيانات وتدريب المحللين.",
+        "en": "Power BI certified trainer with experience in data analysis and training analysts."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["استيراد البيانات", "النمذجة", "التصور", "لوحات المعلومات", "DAX", "المشاركة"],
+      "en": ["Data Import", "Modeling", "Visualization", "Dashboards", "DAX", "Sharing"]
+    },
+    "targetJobs": {
+      "ar": ["محلل بيانات", "مطور Power BI", "مدير تقارير", "مهندس بيانات"],
+      "en": ["Data Analyst", "Power BI Developer", "Reports Manager", "Data Engineer"]
+    },
+    "objectives": {
+      "ar": [
+        "استيراد وتحويل البيانات في Power BI",
+        "إنشاء نماذج بيانات فعالة",
+        "تصميم لوحات معلومات تفاعلية",
+        "مشاركة التقارير وتحليلها"
+      ],
+      "en": [
+        "Import and transform data in Power BI",
+        "Create effective data models",
+        "Design interactive dashboards",
+        "Share and analyze reports"
+      ]
+    },
+    "targetAudience": {
+      "ar": "محللو البيانات، مطورو التقارير، مديرو الأعمال، وطلاب التحليل.",
+      "en": "Data analysts, report developers, business managers, and analysis students."
+    },
+    "requirements": {
+      "ar": [
+        "معرفة أساسية بتحليل البيانات",
+        "اهتمام بأدوات التصور"
+      ],
+      "en": [
+        "Basic data analysis knowledge",
+        "Interest in visualization tools"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "معرفة أساسية بتحليل البيانات واهتمام بأدوات التصور."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "3 أيام (18 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "محلل بيانات، مطور Power BI، مدير تقارير."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Basic data analysis knowledge and interest in visualization tools."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "3 days (18 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Data Analyst, Power BI Developer, Reports Manager."
+        }
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "icon": "ShieldExclamationIcon",
+    "title": {
+      "ar": "Certified Ethical Hacker (CEH)",
+      "en": "Certified Ethical Hacker (CEH)"
+    },
+    "subtitle": {
+      "ar": "شهادة القرصنة الأخلاقية من EC-Council",
+      "en": "EC-Council Ethical Hacking Certification"
+    },
+    "category": {
+      "ar": "الأمن السيبراني والقرصنة الأخلاقية",
+      "en": "Cybersecurity & Ethical Hacking"
+    },
+    "description": {
+      "ar": "تدريب في تقنيات القرصنة الأخلاقية لتقييم وحماية الأنظمة.",
+      "en": "Training in ethical hacking techniques to assess and protect systems."
+    },
+    "overview": {
+      "ar": "يغطي المسح، الاختراق، التقييم، وأدوات القرصنة الأخلاقية.",
+      "en": "Covers scanning, hacking, assessment, and ethical hacking tools."
+    },
+    "hours": 30,
+    "startDate": {
+      "ar": "21 ديسمبر 2025",
+      "en": "Dec 21, 2025"
+    },
+    "endDate": {
+      "ar": "25 ديسمبر 2025",
+      "en": "Dec 25, 2025"
+    },
+    "duration": {
+      "ar": "5 أيام",
+      "en": "5 Days"
+    },
+    "status": {
+      "ar": "مفتوح للتسجيل",
+      "en": "Open for Registration"
+    },
+    "price": 675,
+    "sponsore": {
+      "ar": "صندوق تنمية الموارد البشرية (هدف)",
+      "en": "Human Resources Development Fund (Hadaf)"
+    },
+    "rating": 4.8,
+    "reviews": 380,
+    "instructor": {
+      "name": "Tapan Kumar Jha",
+      "title": {
+        "ar": "مدرب قرصنة أخلاقية معتمد",
+        "en": "Certified Ethical Hacking Trainer"
+      },
+      "experience": {
+        "ar": "14+ سنة في الأمن السيبراني والتدريب",
+        "en": "14+ years in cybersecurity and training"
+      },
+      "image": "",
+      "bio": {
+        "ar": "مدرب معتمد في القرصنة الأخلاقية مع خبرة عالمية.",
+        "en": "EC-Council certified IT governance trainer with global experience."
+      }
+    },
+    "admission_requirements": {
+      "ar": [
+        "لا شروط مسبقة، فقط رغبة في التعلم"
+      ],
+      "en": [
+        "No prerequisites, only a desire to learn"
+      ]
+    },
+    "skills": {
+      "ar": ["المسح", "الاختراق", "التقييم", "أدوات القرصنة", "الدفاع", "التقارير"],
+      "en": ["Scanning", "Hacking", "Assessment", "Hacking Tools", "Defense", "Reporting"]
+    },
+    "targetJobs": {
+      "ar": ["قرصان أخلاقي", "محلل أمن", "مختبر اختراق", "مستشار أمن"],
+      "en": ["Ethical Hacker", "Security Analyst", "Penetration Tester", "Security Consultant"]
+    },
+    "objectives": {
+      "ar": [
+        "تعلم تقنيات القرصنة الأخلاقية",
+        "تقييم ثغرات الأنظمة والشبكات",
+        "استخدام أدوات القرصنة بشكل قانوني",
+        "إعداد تقارير التقييم الأمني"
+      ],
+      "en": [
+        "Learn ethical hacking techniques",
+        "Assess system and network vulnerabilities",
+        "Use hacking tools legally",
+        "Prepare security assessment reports"
+      ]
+    },
+    "targetAudience": {
+      "ar": "مختبرو الاختراق، محللو الأمن، مستشارو الأمن، وفرق الدفاع.",
+      "en": "Penetration testers, security analysts, security consultants, and defense teams."
+    },
+    "requirements": {
+      "ar": [
+        "خبرة في الأمن السيبراني",
+        "معرفة بالشبكات والأنظمة"
+      ],
+      "en": [
+        "Experience in cybersecurity",
+        "Knowledge of networking and systems"
+      ]
+    },
+    "faqs": {
+      "ar": [
+        {
+          "question": "ما هي شروط القبول في الكورس؟",
+          "answer": "خبرة في الأمن السيبراني ومعرفة بالشبكات والأنظمة."
+        },
+        {
+          "question": "ما هي مدة الكورس؟",
+          "answer": "5 أيام (30 ساعة)."
+        },
+        {
+          "question": "هل يوجد دعم مالي؟",
+          "answer": "يمكنك التقسيط على دفعات عن طريق تابي أو تمارا كما تقوم هيئة دعم الموارد البشرية (هدف) بدعم هذه الدورة"
+        },
+        {
+          "question": "ما هي الشهادات التي سأحصل عليها؟",
+          "answer": "شهادة معتمدة عالمية ومن صندوق تنمية الموارد البشرية"
+        },
+        {
+          "question": "ما هي الوظائف التي يمكنني الاتحاق بها بعد اجتياز الاختبار؟",
+          "answer": "قرصان أخلاقي، محلل أمن، مختبر اختراق."
+        }
+      ],
+      "en": [
+        {
+          "question": "What are the admission requirements for the course?",
+          "answer": "Experience in cybersecurity and knowledge of networking and systems."
+        },
+        {
+          "question": "What is the course duration?",
+          "answer": "5 days (30 hours)."
+        },
+        {
+          "question": "Is financial support available?",
+          "answer": "You can finance the course in installments through Tabi or Tamar as the Human Resources Development Box (Hadaf) supports this course"
+        },
+        {
+          "question": "What certificates will I get?",
+          "answer": "Certified certificate from the Academy & A certificate from the Human Resources Development Box (Hadaf)"
+        },
+        {
+          "question": "What jobs can I apply for after passing the exam?",
+          "answer": "Ethical Hacker, Security Analyst, Penetration Tester."
+        }
+      ]
+    }
+  }
+]

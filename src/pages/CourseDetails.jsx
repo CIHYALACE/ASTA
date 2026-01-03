@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 // Components
 import ProgramHeader from "../components/ProgramHeader";
 import OverviewSection from "../components/ProgramOverviewSection";
-import CurriculumSection from "../components/ProgramCurriculumSection";
+// import CurriculumSection from "../components/ProgramCurriculumSection";
 import InstructorSection from "../components/ProgramInstructorSection";
 import RequirementsSection from "../components/ProgramRequirementsSection";
 import ProgramFAQSection from "../components/ProgramFAQSection";
@@ -23,7 +23,7 @@ const CourseDetails = () => {
     <div dir="rtl">
       <ProgramHeader program={course} />
       <OverviewSection program={course} />
-      <CurriculumSection program={course} />
+      {/* <CurriculumSection program={course} /> */}
       <InstructorSection program={course} />
       <RequirementsSection program={course} />
       <ProgramFAQSection program={course} />

@@ -7,6 +7,12 @@ function RequirementsSection({ program }) {
   
   // Get localized program data
   const localizedProgram = getCourseData(program, lang);
+  const requirements = Array.isArray(localizedProgram?.requirements)
+    ? localizedProgram.requirements
+    : [];
+  const benefits = Array.isArray(localizedProgram?.benefits)
+    ? localizedProgram.benefits
+    : [];
 
   return (
     <section className="py-12 bg-gray-50">
@@ -18,7 +24,7 @@ function RequirementsSection({ program }) {
             </h2>
             
             <div className="space-y-4">
-              {localizedProgram.requirements.map((req, index) => (
+              {requirements.map((req, index) => (
                 <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm">
                   <div className="w-8 h-8 rounded-full bg-[#30AFC1] text-white flex items-center justify-center flex-shrink-0">
                     {index + 1}
@@ -35,7 +41,7 @@ function RequirementsSection({ program }) {
             </h2>
             
             <div className="space-y-4">
-              {localizedProgram.benefits.map((benefit, index) => (
+              {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm">
                   <CheckCircleIcon className="h-6 w-6 text-[#3CBEB3] flex-shrink-0" />
                   <span className="text-gray-700">{benefit}</span>

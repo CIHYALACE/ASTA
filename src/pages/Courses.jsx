@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect, useMemo } from 'react';
+import { useLocation, useParams } from 'react-router-dom';
+
 import {
   ComputerDesktopIcon,
   AcademicCapIcon,
@@ -15,16 +17,40 @@ import ProgramsHeroSection from '../components/ProgramsHeroSection';
 import CourseCard from '../components/CourseCard';
 // data
 import Courses, { getCourseData } from '../api/Courses';
+import CategoriesData from '../api/Categories.json';
 
 const CoursesPage = () => {
+  const location = useLocation();
+  const { lang } = useParams();
   const [filter, setFilter] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
 
-  const categories = ["all", "دورات تسويق", "دورات برمجة", "دورات تحليل البيانات", "دورات تصميم"];
+  const localizeLabel = (value) => {
+    if (!value) return '';
+    if (typeof value === 'string') return value;
+    if (typeof value === 'object') return value?.[lang] ?? value?.ar ?? value?.en ?? '';
+    return String(value);
+  };
+
+  const categories = useMemo(() => {
+    const values = Object.values(CategoriesData?.categories || {}).map((label) =>
+      localizeLabel(label)
+    );
+    return ['all', ...values];
+  }, [lang]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const categoryId = params.get('category');
+    if (!categoryId) return;
+
+    const label = localizeLabel(CategoriesData?.categories?.[categoryId]);
+    if (label) setFilter(label);
+  }, [location.search, lang]);
 
   // تصفية الدورات حسب الفئة ونتيجة البحث
   const filteredCourses = Courses.filter(course => {
-    const localizedCourse = getCourseData(course, 'ar'); // Default to Arabic for filtering
+    const localizedCourse = getCourseData(course, lang || 'ar');
     const matchesCategory = filter === 'all' || localizedCourse.category === filter;
     const matchesSearch = (localizedCourse.title && localizedCourse.title.includes(searchTerm)) || 
                          (localizedCourse.description && localizedCourse.description.includes(searchTerm)) ||

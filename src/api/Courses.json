@@ -11,8 +11,12 @@
       "en": "Scrum Alliance Certified Scrum Master"
     },
     "category": {
-      "ar": "إدارة المشاريع الرشيقة",
-      "en": "Agile Project Management"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "إدارة المشاريع وتحسين العمليات",
+      "en": "Project Management & Process Improvement"
     },
     "description": {
       "ar": "كورس متكامل لإتقان مبادئ وإطار عمل سكروم وإدارة فرق رشيقة.",
@@ -24,12 +28,12 @@
     },
     "hours": 12,
     "startDate": {
-      "ar": "21 يناير 2026",
-      "en": "January 21, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "22 يناير 2026",
-      "en": "January 22, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "2 أيام",
@@ -165,8 +169,12 @@
       "en": "Exin Agile SCRUM Foundation Certification"
     },
     "category": {
-      "ar": "الرشاقة وإدارة المشاريع",
-      "en": "Agile & Project Management"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "إدارة المشاريع وتحسين العمليات",
+      "en": "Project Management & Process Improvement"
     },
     "description": {
       "ar": "مدخل شامل إلى منهجية سكروم والممارسات الرشيقة.",
@@ -178,12 +186,12 @@
     },
     "hours": 12,
     "startDate": {
-      "ar": "17 ديسمبر 2025",
-      "en": "Dec 17, 2025"
+      "ar": "21 ياير 2026",
+      "en": "21 Jan 2026"
     },
     "endDate": {
-      "ar": "18 ديسمبر 2025",
-      "en": "Dec 18, 2025"
+      "ar": "22 يناير 2026",
+      "en": "22 Jan 2026"
     },
     "duration": {
       "ar": "2 أيام",
@@ -193,7 +201,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 825,
+    "price": 6000,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -203,17 +211,17 @@
     "instructor": {
       "name": "Gurunath Vellanki",
       "title": {
-        "ar": "مدرب ومستشار رشيق",
-        "en": "Agile Trainer & Consultant"
+        "ar": "مستشار تقنية معلومات كبير، مدرب رشيق ومدرّب مؤسسي",
+        "en": "Senior IT Consultant, Agile Coach and Corporate Trainer"
       },
       "experience": {
-        "ar": "25+ سنة في التدريب والاستشارات",
-        "en": "25+ years in training and consulting"
+        "ar": "أكثر من 12 سنة في التدريب (أكثر من 750 دورة تدريبية). أكثر من 25 سنة في تدريب المهارات الناعمة. مدرب محترف معتمد، مدرب مؤسسي، مدرب حياة محترف.",
+        "en": "Conducted more than 750 trainings in last 12 years. More than 250+ Agile trainings. Trained more than 10000 professionals. Over 25 years of soft skills training experience. Certified Professional Trainer, Corporate Trainer, and Professional Life Coach."
       },
       "image": "",
       "bio": {
-        "ar": "مدرب معتمد في الرشاقة وسكروم مع خبرة واسعة في تحويل المؤسسات.",
-        "en": "Certified Agile and Scrum trainer with extensive experience in organizational transformation."
+        "ar": "مدرب ومعلم رشيق معتمد (ICP-ACC، CSP، CSM، SAFe Agilist). حاصل على شهادات في Prince2، ITIL، Six Sigma GB، Lean، إدارة المشاريع من Google. متخصص في التحول الرشيق، إدارة البرامج/المشاريع/المخاطر، Agile/SCRUM/Scaled Agile/Kanban/XP، التطوير الموجه بالاختبار والسلوك، البرمجة النظيفة.",
+        "en": "Certified Agile Coach (ICP-ACC), Certified Scrum Professional (CSP), Certified Scrum Master (CSM), SAFe Agilist. Certified in Prince2, ITIL, Six Sigma GB, Lean, Google Project Management. Specialized in Agile transformations, Program/Project/Risk Management, Agile/SCRUM/Scaled Agile/Kanban/XP, TDD/BDD, Clean Coding."
       }
     },
     "admission_requirements": {
@@ -317,8 +325,12 @@
       "en": "ISACA CISM Certification"
     },
     "category": {
-      "ar": "الأمن السيبراني والإدارة",
-      "en": "Cybersecurity & Management"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوكمة والمخاطر والمراجعة التقنية",
+      "en": "IT Governance, Risk, & Audit"
     },
     "description": {
       "ar": "تدريب متقدم لإدارة أمن المعلومات والتحكم في المخاطر.",
@@ -330,12 +342,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "14 ديسمبر 2025",
-      "en": "Dec 14, 2025"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "18 ديسمبر 2025",
-      "en": "Dec 18, 2025"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -345,7 +357,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 604,
+    "price": 4398.75,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -471,8 +483,12 @@
       "en": "ISACA CRISC Certification"
     },
     "category": {
-      "ar": "إدارة المخاطر والأمن",
-      "en": "Risk Management & Security"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوكمة والمخاطر والمراجعة التقنية",
+      "en": "IT Governance, Risk, & Audit"
     },
     "description": {
       "ar": "تدريب متخصص في إدارة مخاطر تقنية المعلومات وضوابط النظم.",
@@ -484,12 +500,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "25 يناير 2025",
-      "en": "Jan 25, 2025"
+      "ar": "25 يناير 2026",
+      "en": "25 Jan 2026"
     },
     "endDate": {
-      "ar": "29 يناير 2025",
-      "en": "Jan 29, 2025"
+      "ar": "29 يناير 2026",
+      "en": "29 Jan 2026"
     },
     "duration": {
       "ar": "5 أيام",
@@ -499,7 +515,7 @@
       "ar": "مكتمل",
       "en": "Completed"
     },
-    "price": 604,
+    "price": 4398.75,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -509,17 +525,17 @@
     "instructor": {
       "name": "Saaz Rai",
       "title": {
-        "ar": "مدرب أمن سيبراني معتمد",
-        "en": "Certified Cybersecurity Trainer"
+        "ar": "مُدرّب معتمد | متخصص في الأمن السيبراني وإدارة المخاطر والحوكمة",
+        "en": "Certified Instructor | Cybersecurity, Risk & IT Governance Specialist"
       },
       "experience": {
-        "ar": "25+ سنة في الأمن والتدريب",
-        "en": "25+ years in security and training"
+        "ar": "أكثر من 25+ سنة خبرة في تكنولوجيا المعلومات وأكثر من 12 سنة خبرة في التدريب المؤسسي للشركات العالمية.",
+        "en": "Globally certified instructor with 25+ years of IT experience and more than 12 years of corporate training expertise."
       },
       "image": "",
       "bio": {
-        "ar": "مدرب معتمد من ISACA وISC2 مع خبرة واسعة في تدريب المؤسسات العالمية.",
-        "en": "ISACA and ISC2 certified trainer with extensive experience in global corporate training."
+        "ar": "مدرب معتمد من ISC2 (CISSP، CCSP، CSSLP)، ISACA (CISM، CISA، CRISC)، CompTIA (CTT+، Security+)، Cloud Security Alliance (CCSK). متخصص في الأمن السيبراني، إدارة المخاطر، حوكمة تكنولوجيا المعلومات، والتقنيات الناشئة. درب شركات Fortune 500 والوكالات الدفاعية والاستشارات العالمية.",
+        "en": "Authorized Instructor for ISC2 (CISSP, CCSP, CSSLP), ISACA (CISM, CISA, CRISC), CompTIA (CTT+, Security+), Cloud Security Alliance (CCSK). Specialized in Cybersecurity, Risk Management, IT Governance, and Emerging Tech. Trained Fortune 500 companies, defense agencies, and global consultancies."
       }
     },
     "admission_requirements": {
@@ -625,8 +641,12 @@
       "en": "ISACA CISA Certification"
     },
     "category": {
-      "ar": "المراجعة والأمن",
-      "en": "Audit & Security"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوكمة والمخاطر والمراجعة التقنية",
+      "en": "IT Governance, Risk, & Audit"
     },
     "description": {
       "ar": "تدريب متقدم في مراجعة نظم المعلومات وضمان الجودة والامتثال.",
@@ -638,12 +658,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "21 ديسمبر 2025",
-      "en": "Dec 21, 2025"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "25 ديسمبر 2025",
-      "en": "Dec 25, 2025"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -653,7 +673,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 660,
+    "price": 4800,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -779,8 +799,12 @@
       "en": "CompTIA Foundational Security Certification"
     },
     "category": {
-      "ar": "الأمن السيبراني",
-      "en": "Cybersecurity"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "أمن المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & IT Security"
     },
     "description": {
       "ar": "كورس تأسيسي في مفاهيم الأمن السيبراني والتقنيات الأساسية.",
@@ -792,12 +816,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "28 ديسمبر 2025",
-      "en": "Dec 28, 2025"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "1 يناير 2026",
-      "en": "Jan 1, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -807,7 +831,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 1073,
+    "price": 9997.5,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -933,8 +957,12 @@
       "en": "CompTIA Cybersecurity Analyst Certification"
     },
     "category": {
-      "ar": "الأمن السيبراني المتقدم",
-      "en": "Advanced Cybersecurity"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "أمن المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & IT Security"
     },
     "description": {
       "ar": "تدريب متقدم في تحليل التهديدات والاستجابة للحوادث والدفاع السيبراني.",
@@ -946,12 +974,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "4 يناير 2026",
-      "en": "Jan 4, 2026"
+      "ar": "8 فبراير 2026",
+      "en": "8 Feb 2026"
     },
     "endDate": {
-      "ar": "8 يناير 2026",
-      "en": "Jan 8, 2026"
+      "ar": "12 فبراير 2026",
+      "en": "12 Feb 2026"
     },
     "duration": {
       "ar": "5 أيام",
@@ -961,7 +989,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 1125,
+    "price": 12348.75,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -969,19 +997,19 @@
     "rating": 4.7,
     "reviews": 190,
     "instructor": {
-      "name": "Kuldeep Sonar",
+      "name": "Mehraj",
       "title": {
-        "ar": "مدرب أمن سيبراني",
-        "en": "Cybersecurity Trainer"
+        "ar": "مُدرّب تقنية معلومات مستقل ومستشار شبكات",
+        "en": "Freelance IT Trainer & Network Consultant"
       },
       "experience": {
-        "ar": "12+ سنة في التدريب على الأمن",
-        "en": "12+ years in security training"
+        "ar": "أكثر من 17+ سنة خبرة في التدريب، وتصميم الشبكات، والتنفيذ في القطاعين الخاص والحكومي.",
+        "en": "Having 17+ Years of Experience in Training, Network designing and implementation in Private companies and Govt. Sector as well."
       },
       "image": "",
       "bio": {
-        "ar": "مدرب معتمد من CompTIA متخصص في تحليل الأمن والاستجابة للحوادث.",
-        "en": "CompTIA certified trainer specializing in security analysis and incident response."
+        "ar": "مدرب معتمد في ISC2 (CISSP، CCSP، SSCP)، AWS (Solution Architect، Security specialty)، Microsoft (MCT، Azure certifications)، CompTIA (متعددة الشهادات)، EC-Council (CEH، معتمد مدرب). متخصص في الأمن السيبراني، الشبكات، الحوسبة السحابية، والبنية التحتية لتكنولوجيا المعلومات.",
+        "en": "Certified in ISC2 (CISSP, CCSP, SSCP), AWS (Solution Architect, Security specialty), Microsoft (MCT, Azure certifications), CompTIA (multiple certifications), EC-Council (CEH, Certified Instructor). Specialized in Cybersecurity, Networking, Cloud Computing, and IT Infrastructure."
       }
     },
     "admission_requirements": {
@@ -1087,12 +1115,16 @@
       "en": "CompTIA Penetration Testing Certification"
     },
     "category": {
-      "ar": "اختبار الاختراق والأمن",
-      "en": "Penetration Testing & Security"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "أمن المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & IT Security"
     },
     "description": {
       "ar": "تدريب عملي في اختبار الاختراق وتقييم الثغرات وإعداد التقارير.",
-      "en": "Hands-on training in penetration testing, vulnerability assessment, and reporting."
+      "en": "Practical training in penetration testing, vulnerability assessment, and reporting."
     },
     "overview": {
       "ar": "يغطي منهجيات اختبار الاختراق، أدوات القرصنة الأخلاقية، وتقييم الثغرات.",
@@ -1100,12 +1132,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "8 فبراير 2026",
-      "en": "Feb 8, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "12 فبراير 2026",
-      "en": "Feb 12, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -1241,8 +1273,12 @@
       "en": "CompTIA Linux Administration Certification"
     },
     "category": {
-      "ar": "أنظمة التشغيل والإدارة",
-      "en": "Operating Systems & Administration"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "أساسيات تقنية المعلومات و الهاردوير",
+      "en": "IT Fundamentals & Hardware"
     },
     "description": {
       "ar": "تدريب متكامل في إدارة وتكوين واستكشاف أخطاء أنظمة Linux.",
@@ -1254,12 +1290,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "",
-      "en": ""
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "",
-      "en": ""
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -1395,8 +1431,12 @@
       "en": "CompTIA Server Administration Certification"
     },
     "category": {
-      "ar": "إدارة الخوادم والبنية التحتية",
-      "en": "Server & Infrastructure Management"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "en": "IT Fundamentals & Hardware"
     },
     "description": {
       "ar": "تدريب في إدارة وصيانة واستكشاف أخطاء خوادم البيانات المركزية.",
@@ -1408,12 +1448,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "1 فبراير 2026",
-      "en": "Feb 1, 2026"
+      "ar": "25 يناير 2026",
+      "en": "25 Jan 2026"
     },
     "endDate": {
-      "ar": "5 فبراير 2026",
-      "en": "Feb 5, 2026"
+      "ar": "29 يناير 2026",
+      "en": "29 Jan 2026"
     },
     "duration": {
       "ar": "5 أيام",
@@ -1431,19 +1471,19 @@
     "rating": 4.6,
     "reviews": 110,
     "instructor": {
-      "name": "Mehraj Alam",
+      "name": "Mehraj",
       "title": {
-        "ar": "مدرب شبكات وخوادم",
-        "en": "Networking & Server Trainer"
+        "ar": "مُدرّب تقنية معلومات مستقل ومستشار شبكات",
+        "en": "Freelance IT Trainer & Network Consultant"
       },
       "experience": {
-        "ar": "17+ سنة في الشبكات والخوادم",
-        "en": "17+ years in networking and servers"
+        "ar": "أكثر من 17+ سنة خبرة في التدريب، وتصميم الشبكات، والتنفيذ في القطاعين الخاص والحكومي.",
+        "en": "Having 17+ Years of Experience in Training, Network designing and implementation in Private companies and Govt. Sector as well."
       },
       "image": "",
       "bio": {
-        "ar": "مدرب معتمد في CompTIA مع خبرة في تدريب إدارة الخوادم والشبكات.",
-        "en": "CompTIA certified trainer with experience in server and network administration training."
+        "ar": "مدرب معتمد في ISC2 (CISSP، CCSP، SSCP)، AWS (Solution Architect، Security specialty)، Microsoft (MCT، Azure certifications)، CompTIA (متعددة الشهادات)، EC-Council (CEH، معتمد مدرب). متخصص في الأمن السيبراني، الشبكات، الحوسبة السحابية، والبنية التحتية لتكنولوجيا المعلومات.",
+        "en": "Certified in ISC2 (CISSP, CCSP, SSCP), AWS (Solution Architect, Security specialty), Microsoft (MCT, Azure certifications), CompTIA (multiple certifications), EC-Council (CEH, Certified Instructor). Specialized in Cybersecurity, Networking, Cloud Computing, and IT Infrastructure."
       }
     },
     "admission_requirements": {
@@ -1549,8 +1589,12 @@
       "en": "CompTIA Foundational Networking Certification"
     },
     "category": {
-      "ar": "الشبكات والاتصالات",
-      "en": "Networking & Communications"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "en": "IT Fundamentals & Hardware"
     },
     "description": {
       "ar": "كورس تأسيسي في تصميم وإدارة واستكشاف أخطاء الشبكات.",
@@ -1562,12 +1606,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "25 يناير 2026",
-      "en": "Jan 25, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "29 يناير 2026",
-      "en": "Jan 29, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -1703,8 +1747,12 @@
       "en": "CompTIA Foundational IT Certification"
     },
     "category": {
-      "ar": "دعم تكنولوجيا المعلومات",
-      "en": "IT Support"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "en": "IT Fundamentals & Hardware"
     },
     "description": {
       "ar": "كورس تأسيسي في دعم الأجهزة، البرمجيات، واستكشاف الأخطاء.",
@@ -1716,12 +1764,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "11 يناير 2026",
-      "en": "Jan 11, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "15 يناير 2026",
-      "en": "Jan 15, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -1857,12 +1905,16 @@
       "en": "CompTIA Introduction to IT"
     },
     "category": {
-      "ar": "مقدمة في تكنولوجيا المعلومات",
-      "en": "IT Introduction"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "en": "IT Fundamentals & Hardware"
     },
     "description": {
       "ar": "مدخل مبسط إلى عالم تكنولوجيا المعلومات والأساسيات التقنية.",
-      "en": "Simplified introduction to the world of information technology and technical basics."
+      "en": "A simplified introduction to the world of information technology and technical basics."
     },
     "overview": {
       "ar": "يغطي المفاهيم الأساسية للأجهزة، البرمجيات، الشبكات، والأمان.",
@@ -1870,12 +1922,12 @@
     },
     "hours": 18,
     "startDate": {
-      "ar": "4 يناير 2026",
-      "en": "Jan 4, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "8 يناير 2026",
-      "en": "Jan 8, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "3 أيام",
@@ -2001,16 +2053,20 @@
     "id": 14,
     "icon": "PaintBrushIcon",
     "title": {
-      "ar": "Autodesk Certified User certification in Maya",
-      "en": "Autodesk Certified User certification in Maya"
+      "ar": "شهادة مستخدم Autodesk Maya",
+      "en": "Autodesk Maya Certified User"
     },
     "subtitle": {
       "ar": "شهادة Autodesk في نمذجة وتحريك Maya",
-      "en": "Autodesk Certification in Maya Modeling & Animation"
+      "en": "Autodesk Maya Modeling & Animation Certification"
     },
     "category": {
-      "ar": "التصميم والرسومات",
-      "en": "Design & Graphics"
+      "ar": "التصميم والفنون الإبداعية",
+      "en": "Design & Creative Arts"
+    },
+    "sup_category": {
+      "ar": "التصميم والفنون الإبداعية",
+      "en": "Design & Creative Arts"
     },
     "description": {
       "ar": "تدريب عملي في النمذجة ثلاثية الأبعاد والتحريك باستخدام Autodesk Maya.",
@@ -2022,12 +2078,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "",
-      "en": ""
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "",
-      "en": ""
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -2163,8 +2219,12 @@
       "en": "AWS Foundational Cloud Computing Certification"
     },
     "category": {
-      "ar": "الحوسبة السحابية",
-      "en": "Cloud Computing"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوسبة السحابية و المنصات",
+      "en": "Cloud Computing & Platforms"
     },
     "description": {
       "ar": "مدخل إلى مفاهيم AWS السحابية والخدمات الأساسية.",
@@ -2176,12 +2236,12 @@
     },
     "hours": 18,
     "startDate": {
-      "ar": "28 ديسمبر 2025",
-      "en": "Dec 28, 2025"
+      "ar": "20 يناير 2026",
+      "en": "20 Jan 2026"
     },
     "endDate": {
-      "ar": "30 ديسمبر 2025",
-      "en": "Dec 30, 2025"
+      "ar": "22 يناير 2026",
+      "en": "22 Jan 2026"
     },
     "duration": {
       "ar": "3 أيام",
@@ -2191,7 +2251,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 831,
+    "price": 6000,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -2201,17 +2261,17 @@
     "instructor": {
       "name": "Chaitanya Gaajula",
       "title": {
-        "ar": "مدرب AWS معتمد",
-        "en": "AWS Certified Trainer"
+        "ar": "مُدرّب / مستشار / مُستشار / كاتب محتوى",
+        "en": "Trainer / Consultant / Advisor / Content-Writer"
       },
       "experience": {
-        "ar": "24+ سنة في البنية التحتية والتدريب",
-        "en": "24+ years in infrastructure and training"
+        "ar": "أكثر من 24+ سنة خبرة في البنية التحتية لتكنولوجيا المعلومات. 8+ سنوات خبرة في التدريب الفني على GenAI، الذكاء الاصطناعي، التعلم الآلي، AIOps، علم البيانات، Python، الحوسبة السحابية، أمان السحابة، أدوات DevOps.",
+        "en": "IT Infrastructure Professional with 24+ years of experience. 8+ years technical training experience on GenAI, AI, ML, AIOps, Data Science, Python, Cloud Computing, Cloud Security, DevOps Tools."
       },
       "image": "",
       "bio": {
-        "ar": "مدرب معتمد في AWS مع خبرة واسعة في تدريب الحوسبة السحابية.",
-        "en": "AWS certified trainer with extensive experience in cloud computing training."
+        "ar": "سفير معهد DevOps. متخصص في الذكاء الاصطناعي التوليدي، ChatGPT، هندسة المطالبات، AWS، Azure، Google و Oracle Cloud Computing، أمان السحابة، أدوات DevOps، علم البيانات في AWS، استراتيجية هجرة ودمج مراكز البيانات، إدارة خوادم Linux.",
+        "en": "DevOps Institute Ambassador. Expertise in Generative AI, ChatGPT, Prompt Engineering, AWS, Azure, Google and Oracle Cloud Computing, Cloud Security, DevOps Tools, AWS Data Science, Data Center Migration and Consolidation strategy, Linux Server Administration."
       }
     },
     "admission_requirements": {
@@ -2317,8 +2377,12 @@
       "en": "AWS Cloud Solutions Architect Certification"
     },
     "category": {
-      "ar": "هندسة الحلول السحابية",
-      "en": "Cloud Solutions Engineering"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوسبة السحابية و المنصات",
+      "en": "Cloud Computing & Platforms"
     },
     "description": {
       "ar": "تدريب متقدم في تصميم وتنفيذ الحلول السحابية على AWS.",
@@ -2330,12 +2394,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "4 يناير 2026",
-      "en": "Jan 4, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "8 يناير 2026",
-      "en": "Jan 8, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -2345,7 +2409,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 788,
+    "price": 5898.75,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -2471,8 +2535,12 @@
       "en": "AWS Professional DevOps Engineer Certification"
     },
     "category": {
-      "ar": "DevOps والهندسة السحابية",
-      "en": "DevOps & Cloud Engineering"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوسبة السحابية و المنصات",
+      "en": "Cloud Computing & Platforms"
     },
     "description": {
       "ar": "تدريب متقدم في أدوات وممارسات DevOps على منصة AWS.",
@@ -2484,12 +2552,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "11 يناير 2026",
-      "en": "Jan 11, 2026"
+      "ar": "25 يناير 2026",
+      "en": "25 Jan 2026"
     },
     "endDate": {
-      "ar": "15 يناير 2026",
-      "en": "Jan 15, 2026"
+      "ar": "29 يناير 2026",
+      "en": "29 Jan 2026"
     },
     "duration": {
       "ar": "5 أيام",
@@ -2499,7 +2567,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 950,
+    "price": 6798.75,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -2509,17 +2577,17 @@
     "instructor": {
       "name": "Chaitanya Gaajula",
       "title": {
-        "ar": "مدرب DevOps على AWS",
-        "en": "AWS DevOps Trainer"
+        "ar": "مُدرّب / مستشار / مُستشار / كاتب محتوى",
+        "en": "Trainer / Consultant / Advisor / Content-Writer"
       },
       "experience": {
-        "ar": "24+ سنة في DevOps والتدريب السحابي",
-        "en": "24+ years in DevOps and cloud training"
+        "ar": "أكثر من 24+ سنة خبرة في البنية التحتية لتكنولوجيا المعلومات. 8+ سنوات خبرة في التدريب الفني على GenAI، الذكاء الاصطناعي، التعلم الآلي، AIOps، علم البيانات، Python، الحوسبة السحابية، أمان السحابة، أدوات DevOps.",
+        "en": "IT Infrastructure Professional with 24+ years of experience. 8+ years technical training experience on GenAI, AI, ML, AIOps, Data Science, Python, Cloud Computing, Cloud Security, DevOps Tools."
       },
       "image": "",
       "bio": {
-        "ar": "مدرب معتمد في AWS DevOps مع خبرة في تنفيذ خطوط أنابيب CI/CD.",
-        "en": "AWS DevOps certified trainer with experience in implementing CI/CD pipelines."
+        "ar": "سفير معهد DevOps. متخصص في الذكاء الاصطناعي التوليدي، ChatGPT، هندسة المطالبات، AWS، Azure، Google و Oracle Cloud Computing، أمان السحابة، أدوات DevOps، علم البيانات في AWS، استراتيجية هجرة ودمج مراكز البيانات، إدارة خوادم Linux.",
+        "en": "DevOps Institute Ambassador. Expertise in Generative AI, ChatGPT, Prompt Engineering, AWS, Azure, Google and Oracle Cloud Computing, Cloud Security, DevOps Tools, AWS Data Science, Data Center Migration and Consolidation strategy, Linux Server Administration."
       }
     },
     "admission_requirements": {
@@ -2625,8 +2693,12 @@
       "en": "AWS Specialty Certification in Machine Learning"
     },
     "category": {
-      "ar": "تعلم الآلة والذكاء الاصطناعي",
-      "en": "Machine Learning & AI"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوسبة السحابية و المنصات",
+      "en": "Cloud Computing & Platforms"
     },
     "description": {
       "ar": "تدعم متقدم في بناء وتنفيذ نماذج تعلم الآلة على AWS.",
@@ -2638,12 +2710,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "11 يناير 2026",
-      "en": "Jan 11, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "15 يناير 2026",
-      "en": "Jan 15, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -2653,7 +2725,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 375,
+    "price": 3000,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -2779,8 +2851,12 @@
       "en": "Google Cloud Architecture Certification"
     },
     "category": {
-      "ar": "هندسة السحابة العامة",
-      "en": "Public Cloud Engineering"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوسبة السحابية و المنصات",
+      "en": "Cloud Computing & Platforms"
     },
     "description": {
       "ar": "تدريب متقدم في تصميم وإدارة الحلول السحابية على Google Cloud.",
@@ -2792,12 +2868,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "18 يناير 2026",
-      "en": "Jan 18, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "22 يناير 2026",
-      "en": "Jan 22, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -2807,7 +2883,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 1006,
+    "price": 7725,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -2933,8 +3009,12 @@
       "en": "Google Cloud Machine Learning Engineer Certification"
     },
     "category": {
-      "ar": "تعلم الآلة والهندسة السحابية",
-      "en": "Machine Learning & Cloud Engineering"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الذكاء الاصطناعي والتعلم الآلي وعلوم البيانات",
+      "en": "AI/ML/DATA SCIENCES"
     },
     "description": {
       "ar": "تدريب متقدم في هندسة نماذج تعلم الآلة على Google Cloud.",
@@ -2946,12 +3026,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "25 يناير 2026",
-      "en": "Jan 25, 2026"
+      "ar": "18 يناير 2026",
+      "en": "18 Jan 2026"
     },
     "endDate": {
-      "ar": "29 يناير 2026",
-      "en": "Jan 29, 2026"
+      "ar": "22 يناير 2026",
+      "en": "22 Jan 2026"
     },
     "duration": {
       "ar": "5 أيام",
@@ -2961,7 +3041,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 1150,
+    "price": 8797.5,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -2969,19 +3049,19 @@
     "rating": 4.9,
     "reviews": 200,
     "instructor": {
-      "name": "Vishwanath MS",
+      "name": "Vishwanath M S",
       "title": {
-        "ar": "مدرب هندسة تعلم الآلة",
-        "en": "Machine Learning Engineering Trainer"
+        "ar": "مهندس حلول ومُدرّب مستقل",
+        "en": "Solution Architect cum Freelance Trainer"
       },
       "experience": {
-        "ar": "15+ سنة في الهندسة السحابية والتعلم الآلي",
-        "en": "15+ years in cloud engineering and machine learning"
+        "ar": "أكثر من 15+ سنة في بناء وتنفيذ الحلول للمشاريع المؤسسية المعقدة عبر البنية التحتية (الشبكات والأمان والخوادم) والتكوير. 6+ سنوات خبرة في التدريب.",
+        "en": "Over 15+ years in Building & Implementing Solutions for Complex Enterprise Projects across Infrastructure (Networking, Security and Servers) and Virtualization. 6+ Years of experience in Training."
       },
       "image": "",
       "bio": {
-        "ar": "مدرب معتمد في GCP ML مع خبرة في تدريب مهندسي تعلم الآلة.",
-        "en": "GCP ML certified trainer with experience in training machine learning engineers."
+        "ar": "متخصص في الحوسبة السحابية، AWS، Azure، Google Cloud، Docker، Kubernetes، أدوات DEVOPS، Cisco Routing & Switching، الأمان، Cisco Nexus، Cisco MDS، VMware، SDN، Linux. حاصل على شهادات VCP5.0، EMC VNX SA، ITIL Foundation، Azure Administrator، AWS Solution Architect Professional، GCP Certified Professional، AWS Certified Security Specialty.",
+        "en": "Specialized in Cloud Computing, AWS, Azure, Google Cloud, Docker, Kubernetes, DEVOPS tools, Cisco Routing & Switching, Security, Cisco Nexus, Cisco MDS, VMware, SDN, Linux. Certified in VCP5.0, EMC VNX SA, ITIL Foundation, Azure Administrator, AWS Solution Architect Professional, GCP Certified Professional, AWS Certified Security Specialty."
       }
     },
     "admission_requirements": {
@@ -3087,8 +3167,12 @@
       "en": "Microsoft Azure Administration Certification"
     },
     "category": {
-      "ar": "إدارة السحابة العامة",
-      "en": "Public Cloud Administration"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوسبة السحابية و المنصات",
+      "en": "Cloud Computing & Platforms"
     },
     "description": {
       "ar": "تدريب في إدارة وتنفيذ ومراقبة بيئات Microsoft Azure.",
@@ -3100,12 +3184,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "25 يناير 2026",
-      "en": "Jan 25, 2026"
+      "ar": "1 فبراير 2026",
+      "en": "1 Feb 2026"
     },
     "endDate": {
-      "ar": "29 يناير 2026",
-      "en": "Jan 29, 2026"
+      "ar": "5 فبراير 2026",
+      "en": "5 Feb 2026"
     },
     "duration": {
       "ar": "5 أيام",
@@ -3115,7 +3199,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 945,
+    "price": 7098.75,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -3125,17 +3209,17 @@
     "instructor": {
       "name": "Chaitanya Gaajula",
       "title": {
-        "ar": "مدرب إدارة Azure معتمد",
-        "en": "Azure Administration Certified Trainer"
+        "ar": "مُدرّب / مستشار / مُستشار / كاتب محتوى",
+        "en": "Trainer / Consultant / Advisor / Content-Writer"
       },
       "experience": {
-        "ar": "24+ سنة في البنية التحتية والتدريب السحابي",
-        "en": "24+ years in infrastructure and cloud training"
+        "ar": "أكثر من 24+ سنة خبرة في البنية التحتية لتكنولوجيا المعلومات. 8+ سنوات خبرة في التدريب الفني على GenAI، الذكاء الاصطناعي، التعلم الآلي، AIOps، علم البيانات، Python، الحوسبة السحابية، أمان السحابة، أدوات DevOps.",
+        "en": "IT Infrastructure Professional with 24+ years of experience. 8+ years technical training experience on GenAI, AI, ML, AIOps, Data Science, Python, Cloud Computing, Cloud Security, DevOps Tools."
       },
       "image": "",
       "bio": {
-        "ar": "مدرب معتمد في Azure مع خبرة في تدريب مسؤولي السحابة.",
-        "en": "Azure certified trainer with experience in training cloud administrators."
+        "ar": "سفير معهد DevOps. متخصص في الذكاء الاصطناعي التوليدي، ChatGPT، هندسة المطالبات، AWS، Azure، Google و Oracle Cloud Computing، أمان السحابة، أدوات DevOps، علم البيانات في AWS، استراتيجية هجرة ودمج مراكز البيانات، إدارة خوادم Linux.",
+        "en": "DevOps Institute Ambassador. Expertise in Generative AI, ChatGPT, Prompt Engineering, AWS, Azure, Google and Oracle Cloud Computing, Cloud Security, DevOps Tools, AWS Data Science, Data Center Migration and Consolidation strategy, Linux Server Administration."
       }
     },
     "admission_requirements": {
@@ -3241,8 +3325,12 @@
       "en": "Microsoft Azure Solutions Architect Certification"
     },
     "category": {
-      "ar": "هندسة حلول السحابة",
-      "en": "Cloud Solutions Engineering"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوسبة السحابية و المنصات",
+      "en": "Cloud Computing & Platforms"
     },
     "description": {
       "ar": "تدريب متقدم في تصميم وتنفيذ حلول سحابية على Microsoft Azure.",
@@ -3254,12 +3342,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "1 فبراير 2026",
-      "en": "Feb 1, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "5 فبراير 2026",
-      "en": "Feb 5, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -3269,7 +3357,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 1215,
+    "price": 9997.5,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -3395,8 +3483,12 @@
       "en": "Introduction to AI on Azure"
     },
     "category": {
-      "ar": "الذكاء الاصطناعي والتعلم الآلي",
-      "en": "Artificial Intelligence & Machine Learning"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوسبة السحابية و المنصات",
+      "en": "Cloud Computing & Platforms"
     },
     "description": {
       "ar": "مدخل إلى مفاهيم الذكاء الاصطناعي وخدمات Azure AI.",
@@ -3408,12 +3500,12 @@
     },
     "hours": 12,
     "startDate": {
-      "ar": "8 فبراير 2026",
-      "en": "Feb 8, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "9 فبراير 2026",
-      "en": "Feb 9, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "2 أيام",
@@ -3423,7 +3515,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 438,
+    "price": 3000,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -3549,8 +3641,12 @@
       "en": "Adobe Certification in Visual Design using Photoshop"
     },
     "category": {
-      "ar": "التصميم الجرافيكي",
-      "en": "Graphic Design"
+      "ar": "التصميم والفنون الإبداعية",
+      "en": "Design & Creative Arts"
+    },
+    "sup_category": {
+      "ar": "التصميم والفنون الإبداعية",
+      "en": "Design & Creative Arts"
     },
     "description": {
       "ar": "تدريب عملي في التصميم المرئي وتحرير الصور باستخدام Adobe Photoshop.",
@@ -3562,12 +3658,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "11 يناير 2026",
-      "en": "Jan 11, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "15 يناير 2026",
-      "en": "Jan 15, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -3577,7 +3673,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 525,
+    "price": 3498.75,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -3703,8 +3799,12 @@
       "en": "TOGAF 10 Foundation Certification in Enterprise Architecture"
     },
     "category": {
-      "ar": "هندسة المؤسسات",
-      "en": "Enterprise Architecture"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الحوسبة السحابية و المنصات",
+      "en": "Cloud Computing & Platforms"
     },
     "description": {
       "ar": "مدخل إلى إطار عمل TOGAF 10 ومفاهيم هندسة المؤسسات.",
@@ -3716,12 +3816,12 @@
     },
     "hours": 12,
     "startDate": {
-      "ar": "14 ديسمبر 2025",
-      "en": "Dec 14, 2025"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "15 ديسمبر 2025",
-      "en": "Dec 15, 2025"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "2 أيام",
@@ -3731,7 +3831,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 800,
+    "price": 6000,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -3857,8 +3957,12 @@
       "en": "Exin Agile Scrum Product Owner Certification"
     },
     "category": {
-      "ar": "إدارة المنتجات الرشيقة",
-      "en": "Agile Product Management"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "إدارة المشاريع والأساليب المرنّة",
+      "en": "Agile & Project Management"
     },
     "description": {
       "ar": "تدريب في دور مالك المنتج في فرق سكروم الرشيقة.",
@@ -3870,12 +3974,12 @@
     },
     "hours": 12,
     "startDate": {
-      "ar": "21 ديسمبر 2025",
-      "en": "Dec 21, 2025"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "22 ديسمبر 2025",
-      "en": "Dec 22, 2025"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "2 أيام",
@@ -3885,7 +3989,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 660,
+    "price": 4991.25,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -4011,8 +4115,12 @@
       "en": "ISACA Certification in Enterprise IT Governance"
     },
     "category": {
-      "ar": "حوكمة تكنولوجيا المعلومات",
-      "en": "IT Governance"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "حوكمة وتخطيط تقنية المعلومات",
+      "en": "IT Governance, Risk, & Audit"
     },
     "description": {
       "ar": "تدريب متقدم في حوكمة وإدارة تكنولوجيا المعلومات في المؤسسات.",
@@ -4024,12 +4132,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "1 فبراير 2026",
-      "en": "Feb 1, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "5 فبراير 2026",
-      "en": "Feb 5, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -4039,7 +4147,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 1252,
+    "price": 8797.5,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -4165,8 +4273,12 @@
       "en": "DASA DevOps Fundamentals Certification"
     },
     "category": {
-      "ar": "DevOps والتكامل المستمر",
-      "en": "DevOps & Continuous Integration"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "تشغيل المعلومات وإدارة المعلومات",
+      "en": "IT Operations & Management"
     },
     "description": {
       "ar": "مدخل إلى مبادئ DevOps والممارسات الأساسية.",
@@ -4178,12 +4290,12 @@
     },
     "hours": 12,
     "startDate": {
-      "ar": "4 يناير 2026",
-      "en": "Jan 4, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "5 يناير 2026",
-      "en": "Jan 5, 2026"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "2 أيام",
@@ -4193,7 +4305,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 1313,
+    "price": 8497.5,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -4319,8 +4431,12 @@
       "en": "Microsoft DevOps Solutions Design & Implementation Certification"
     },
     "category": {
-      "ar": "DevOps على Azure",
-      "en": "DevOps on Azure"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "تشغيل المعلومات وإدارة المعلومات",
+      "en": "IT Operations & Management"
     },
     "description": {
       "ar": "تدريب متقدم في تصميم وتنفيذ حلول DevOps باستخدام أدوات Microsoft.",
@@ -4332,12 +4448,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "14 ديسمبر 2025",
-      "en": "Dec 14, 2025"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "endDate": {
-      "ar": "18 ديسمبر 2025",
-      "en": "Dec 18, 2025"
+      "ar": "قريبا",
+      "en": "soon"
     },
     "duration": {
       "ar": "5 أيام",
@@ -4347,7 +4463,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 984,
+    "price": 7500,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -4473,8 +4589,12 @@
       "en": "Microsoft Data Analysis Certification using Power BI"
     },
     "category": {
-      "ar": "تحليل البيانات والتقارير",
-      "en": "Data Analysis & Reporting"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "الذكاء الاصطناعي والتعلم الآلي وعلوم البيانات",
+      "en": "AI/ML/DATA SCIENCES"
     },
     "description": {
       "ar": "تدريب في تحليل البيانات وإنشاء التقارير باستخدام Microsoft Power BI.",
@@ -4486,12 +4606,12 @@
     },
     "hours": 18,
     "startDate": {
-      "ar": "14 ديسمبر 2025",
-      "en": "Dec 14, 2025"
+      "ar": "18 يناير 2026",
+      "en": "18 Jan 2026"
     },
     "endDate": {
-      "ar": "16 ديسمبر 2025",
-      "en": "Dec 16, 2025"
+      "ar": "20 يناير 2026",
+      "en": "20 jan 2026"
     },
     "duration": {
       "ar": "3 أيام",
@@ -4501,7 +4621,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 802,
+    "price": 5898.75,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -4509,19 +4629,19 @@
     "rating": 4.7,
     "reviews": 240,
     "instructor": {
-      "name": "Vaibhav",
+      "name": "Vaibhav Pratap Singh",
       "title": {
-        "ar": "مدرب تحليل بيانات معتمد",
-        "en": "Certified Data Analysis Trainer"
+        "ar": "مهندس بيانات سحابي ومستشار الذكاء الاصطناعي التوليدي",
+        "en": "Cloud Data Engineer and GenAI Consultant"
       },
       "experience": {
-        "ar": "9+ سنة في هندسة البيانات والتدريب",
-        "en": "9+ years in data engineering and training"
+        "ar": "9 سنوات في صناعة تكنولوجيا المعلومات. مدرب معتمد من Microsoft (MCT) مع خبرة واسعة في حلول البيانات السحابية والذكاء الاصطناعي التوليدي.",
+        "en": "9 years in IT industry. Microsoft Certified Trainer (MCT) with extensive background in cloud-based solutions and GenAI innovation."
       },
       "image": "",
       "bio": {
-        "ar": "مدرب معتمد في Power BI مع خبرة في تحليل البيانات وتدريب المحللين.",
-        "en": "Power BI certified trainer with experience in data analysis and training analysts."
+        "ar": "مدرب معتمد من Microsoft (MCT)، مهندس بيانات معتمد في AWS وAzure وGCP، مطور ذكاء اصطناعي توليدي معتمد في Azure وAWS. متخصص في هندسة البيانات السحابية، الذكاء الاصطناعي التوليدي، والحلول التحليلية. درب شركات عالمية مثل TCS، Accenture، E&Y، Infosys، Capgemini.",
+        "en": "Microsoft Certified Trainer (MCT), AWS/Azure/GCP Certified Data Engineer, Certified Gen AI Engineer in Azure and AWS. Specialized in cloud data engineering, Generative AI, and analytical solutions. Trained global companies including TCS, Accenture, E&Y, Infosys, Capgemini."
       }
     },
     "admission_requirements": {
@@ -4627,8 +4747,12 @@
       "en": "EC-Council Ethical Hacking Certification"
     },
     "category": {
-      "ar": "الأمن السيبراني والقرصنة الأخلاقية",
-      "en": "Cybersecurity & Ethical Hacking"
+      "ar": "تقنية المعلومات وأمن الشبكات",
+      "en": "Information Technology & Network Security"
+    },
+    "sup_category": {
+      "ar": "أمن المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & IT Security"
     },
     "description": {
       "ar": "تدريب في تقنيات القرصنة الأخلاقية لتقييم وحماية الأنظمة.",
@@ -4640,12 +4764,12 @@
     },
     "hours": 30,
     "startDate": {
-      "ar": "21 ديسمبر 2025",
-      "en": "Dec 21, 2025"
+      "ar": "18 يناير 2026",
+      "en": "18 Jan 2026"
     },
     "endDate": {
-      "ar": "25 ديسمبر 2025",
-      "en": "Dec 25, 2025"
+      "ar": "22 يناير",
+      "en": "22 Jan 2026"
     },
     "duration": {
       "ar": "5 أيام",
@@ -4655,7 +4779,7 @@
       "ar": "مفتوح للتسجيل",
       "en": "Open for Registration"
     },
-    "price": 675,
+    "price": 4998.75,
     "sponsore": {
       "ar": "صندوق تنمية الموارد البشرية (هدف)",
       "en": "Human Resources Development Fund (Hadaf)"
@@ -4665,17 +4789,17 @@
     "instructor": {
       "name": "Tapan Kumar Jha",
       "title": {
-        "ar": "مدرب قرصنة أخلاقية معتمد",
-        "en": "Certified Ethical Hacking Trainer"
+        "ar": "خبير أمن سيبراني ومُدرّب اختبار الاختراق الأخلاقي",
+        "en": "Cybersecurity Expert & Ethical Hacking Trainer"
       },
       "experience": {
-        "ar": "14+ سنة في الأمن السيبراني والتدريب",
-        "en": "14+ years in cybersecurity and training"
+        "ar": "خبرة 14 سنة في مجال الاختراق الأخلاقي، أمن الشبكات، تقييم الثغرات واختبار الاختراق، الطب الشرعي الرقمي، وأمن الخوادم.",
+        "en": "Expertise of 14 years in the field of ethical hacking, network security, vulnerability assessment & penetration testing, computer forensic, and server security."
       },
       "image": "",
       "bio": {
-        "ar": "مدرب معتمد في القرصنة الأخلاقية مع خبرة عالمية.",
-        "en": "EC-Council certified IT governance trainer with global experience."
+        "ar": "مدرب معتمد من EC-Council (CEH، CHFI، ECSA/LPT)، حاصل على شهادات ISO 27001 Lead Auditor/Implementor، CompTIA Security+، Microsoft Cybersecurity Architect، AWS Cloud Practitioner. متخصص في تقييم الثغرات، اختبار الجدران النارية، الطب الشرعي على Linux/Windows، اختبار تطبيقات الهاتف المحمول، تحليل البرامج الضارة، اختبار أمان السحابة.",
+        "en": "Certified Ethical Hacker (CEH), Certified EC-Council Instructor, ISO 27001 Lead Auditor/Implementor, CompTIA Security+, Microsoft Cybersecurity Architect, AWS Cloud Practitioner. Specialized in vulnerability assessment, firewall testing, Linux/Windows forensics, mobile app testing, malware analysis, cloud security testing."
       }
     },
     "admission_requirements": {

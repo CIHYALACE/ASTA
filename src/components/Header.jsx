@@ -4,7 +4,7 @@ import { useNavigate, useLocation, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "./LanguageToggle";
 // data
-import Courses, { getCourseData } from "../api/Courses";
+import CategoriesData from "../api/Categories.json";
 import Programs, { getProgramData } from "../api/Programs";
 
 
@@ -26,7 +26,17 @@ export default function Navbar() {
   const programs = Programs.map(program => getProgramData(program, lang))
   const aboutRef = useRef(null);
   const coursesRef = useRef(null);
-  const courses = Courses.map(course => getCourseData(course, lang))
+  const localizeLabel = (value) => {
+    if (!value) return "";
+    if (typeof value === "string") return value;
+    if (typeof value === "object") return value?.[lang] ?? value?.ar ?? value?.en ?? "";
+    return String(value);
+  };
+
+  const categories = Object.entries(CategoriesData?.categories || {}).map(([id, label]) => ({
+    id,
+    label: localizeLabel(label),
+  }));
 
 
   const switchLang = (newLang) => {
@@ -237,14 +247,13 @@ export default function Navbar() {
                       >
                         {t("header.nav.allCourses")}
                       </a>
-                      {/* map for every Course */}
-                      {courses.map((course) => (
+                      {categories.map((category) => (
                         <a
-                          key={course.id}
-                          href={`/${lang}/Courses/${course.id}`}
+                          key={category.id}
+                          href={`/${lang}/courses?category=${encodeURIComponent(category.id)}`}
                           className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                         >
-                          {course.title}
+                          {category.label}
                         </a>
                       ))}
                     </div>

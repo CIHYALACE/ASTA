@@ -81,9 +81,8 @@ const VisionMission = () => {
                         <div className="absolute bottom-0 right-1/2 w-12 h-1 gradient-bg transform translate-x-1/2"></div>
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-center">
-                        أكاديمية المهارات التطبيقية انطلاقة نحو 
-                        اكتساب المزيد من المهارات التي تضعك في 
-                        صدارة المنافسة.
+                        اكاديمية المهارات التطبيقية تهدف إلى توفير 
+                        موارد تدريبية متكاملة للمهنيين في مجال التكنولوجيا.
                     </p>
                 </div>
                 

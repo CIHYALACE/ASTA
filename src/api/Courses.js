@@ -77,6 +77,7 @@ const normalizeCourse = (course, lang = 'ar') => {
     title: localizeValueDeep(c.title, lang) || '',
     subtitle: localizeValueDeep(c.subtitle, lang) || '',
     category: localizeValueDeep(c.category, lang) || '',
+    sup_category: localizeValueDeep(c.sup_category, lang) || '',
     description: localizeValueDeep(c.description, lang) || '',
     overview: localizeValueDeep(c.overview, lang) || '',
     hours: c.hours,

@@ -12,6 +12,7 @@ import {
   BeakerIcon,
 } from '@heroicons/react/24/outline';
 import CoursesData from './Courses.json';
+import CategoriesData from './Categories.json';
 
 // Map icon names to actual icon components
 const iconMap = {
@@ -68,16 +69,34 @@ const normalizeIcon = (icon) => {
   return ComputerDesktopIcon;
 };
 
+const resolveBilingualFromCatalog = (value, catalog) => {
+  if (!value) return value;
+
+  if (isBilingualObject(value)) return value;
+
+  if (typeof value === 'string') {
+    const fromCatalog = catalog?.[value];
+    if (isBilingualObject(fromCatalog)) return fromCatalog;
+  }
+
+  return value;
+};
+
 const normalizeCourse = (course, lang = 'ar') => {
   const c = course || {};
+  const category = resolveBilingualFromCatalog(c.category, CategoriesData?.categories);
+  const supCategory = resolveBilingualFromCatalog(
+    c.sup_category,
+    CategoriesData?.sup_categories
+  );
 
   return {
     id: c.id,
     icon: normalizeIcon(c.icon),
     title: localizeValueDeep(c.title, lang) || '',
     subtitle: localizeValueDeep(c.subtitle, lang) || '',
-    category: localizeValueDeep(c.category, lang) || '',
-    sup_category: localizeValueDeep(c.sup_category, lang) || '',
+    category: localizeValueDeep(category, lang) || '',
+    sup_category: localizeValueDeep(supCategory, lang) || '',
     description: localizeValueDeep(c.description, lang) || '',
     overview: localizeValueDeep(c.overview, lang) || '',
     hours: c.hours,

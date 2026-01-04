@@ -96,7 +96,7 @@ export default function Navbar() {
                   className="text-white no-underline flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
                   <PhoneIcon className="w-4 h-4 text-white" />
-                  <span>+966 920016205</span>
+                  <span>966920016205+</span>
                 </a>
                 <a
                   href="mailto:info@asta.edu.sa"

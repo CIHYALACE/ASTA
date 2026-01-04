@@ -7,7 +7,8 @@ import {
   DevicePhoneMobileIcon,
   CircleStackIcon,
   ShoppingCartIcon,
-  BuildingOfficeIcon
+  BuildingOfficeIcon,
+  DocumentTextIcon
 } from '@heroicons/react/24/outline';
 
 const Programs = [
@@ -738,7 +739,7 @@ const Programs = [
 
   {
   "id": 9,
-  "icon": "DocumentTextIcon",
+  "icon": DocumentTextIcon,
   "title": "دبلوم السكرتير القانوني",
   "subtitle": "برنامج متخصص في الأعمال السكرتارية القانونية والإدارية بالمكاتب القانونية",
   "category": "دبلومات قانونية وإدارية",

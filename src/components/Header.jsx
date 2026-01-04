@@ -115,25 +115,33 @@ export default function Navbar() {
               </div>
               <div className="social-links flex gap-4">
                 <a
-                  href="#"
+                  href="https://x.com/astaacademysa"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white text-lg hover:-translate-y-0.5 transition-transform"
                 >
                   <i className="fa-brands fa-x-twitter"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/school/asta-academy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white text-lg hover:-translate-y-0.5 transition-transform"
                 >
                   <i className="fab fa-linkedin"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.youtube.com/@astaacademysa"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white text-lg hover:-translate-y-0.5 transition-transform"
                 >
                   <i className="fab fa-youtube"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/astaacademysa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white text-lg hover:-translate-y-0.5 transition-transform"
                 >
                   <i className="fab fa-instagram"></i>
@@ -275,7 +283,7 @@ export default function Navbar() {
               <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div>
 
               {/* Student services dropdown */}
-              <div className="relative" ref={aboutRef}>
+              {/* <div className="relative" ref={aboutRef}>
                 <button
                   onClick={() => {
                     setStudentServicesDropdown(!studnetServicesDropdown);
@@ -316,20 +324,12 @@ export default function Navbar() {
                       >
                         {t("header.nav.allServices")} 
                       </a>
-                      {/* map for every dimploma */}
-                      {/* diplomas.map((diploma) => (
-                        <a
-                          key={diploma.id}
-                          href={`/Diplomas/${diploma.id}`}>
-                          {diploma.name}
-                        </a>
-                      )) */}
                     </div>
                   </div>
                 )}
-              </div>
+              </div> */}
 
-              <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div>
+              {/* <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div> */}
 
               {/* Diplomas dropdown */}
               <div className="relative" ref={aboutRef}>

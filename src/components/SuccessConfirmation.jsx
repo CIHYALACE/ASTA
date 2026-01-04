@@ -52,11 +52,9 @@ function SuccessConfirmation ({ formData, selectedProgram, calculateTotal }) {
             <h3 className="font-bold text-gray-800">تفاصيل الإرسال:</h3>
           </div>
           <p className="text-gray-600 mb-3">
-            تم إرسال بيانات تسجيلك إلى:
+            تم إرسال بيانات تسجيلك إلى قسم التسجيل
           </p>
-          <code className="block bg-white p-3 rounded-lg text-[#202C5B] font-bold mb-3">
-            abdelRahman.youssef@asta.edu.sa
-          </code>
+          
           <p className="text-gray-600">
             وسيصلك نسخة تأكيدية على بريدك: <span className="font-bold">{formData.email}</span>
           </p>
@@ -68,12 +66,6 @@ function SuccessConfirmation ({ formData, selectedProgram, calculateTotal }) {
             className="px-8 py-3 bg-[#202C5B] text-white rounded-xl font-bold hover:bg-[#1a2448] transition-colors"
           >
             تسجيل جديد
-          </button>
-          <button
-            onClick={() => window.print()}
-            className="px-8 py-3 border-2 border-[#202C5B] text-[#202C5B] rounded-xl font-bold hover:bg-gray-50 transition-colors"
-          >
-            طباعة التأكيد
           </button>
         </div>
       </div>

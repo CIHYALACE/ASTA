@@ -141,8 +141,8 @@ const RegistrationPage = ({ programId = 2 }) => {
     
     if (!formData.nationalId) {
       newErrors.nationalId = 'رقم الهوية مطلوب';
-    } else if (!/^1\d{9}$/.test(formData.nationalId)) {
-      newErrors.nationalId = 'رقم الهوية يجب أن يتكون من 10 أرقام ويبدأ بـ 1';
+    } else if (!/^[12]\d{9}$/.test(formData.nationalId)) {
+      newErrors.nationalId = 'رقم الهوية يجب أن يتكون من 10 أرقام ويبدأ بـ 1 أو 2';
     }
     
     if (!formData.degree) {
@@ -286,8 +286,11 @@ const handleSubmit = async (e) => {
       formData.selectedServices.includes(service.id)
     );
     
-    const servicesTotal = selectedServicesList.reduce((sum, service) => sum + service.price, 0);
-    const programPrice = selectedProgram.price;
+    const servicesTotal = selectedServicesList.reduce(
+      (sum, service) => sum + (Number(service.price) || 0),
+      0
+    );
+    const programPrice = Number(selectedProgram.price) || 0;
     const totalAmount = programPrice + servicesTotal;
     
     const submissionData = {
@@ -335,11 +338,11 @@ const handleSubmit = async (e) => {
 const calculateTotal = () => {
   const programList = formData.programType === 'course' ? courses : programs;
   const program = programList.find(p => parseInt(p.id) === parseInt(formData.selectedProgram));
-  const programPrice = program ? program.price : 0;
+  const programPrice = program ? (Number(program.price) || 0) : 0;
   
   const servicesTotal = additionalServices
     .filter(service => formData.selectedServices.includes(service.id))
-    .reduce((sum, service) => sum + service.price, "");
+    .reduce((sum, service) => sum + (Number(service.price) || 0), 0);
   
   return programPrice + servicesTotal;
 };

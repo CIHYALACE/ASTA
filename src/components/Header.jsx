@@ -3,6 +3,17 @@ import React, { useState, useRef, useEffect } from "react";
 import { useNavigate, useLocation, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "./LanguageToggle";
+import {
+  AcademicCapIcon,
+  BookOpenIcon,
+  ClipboardDocumentCheckIcon,
+  EnvelopeIcon,
+  GlobeAltIcon,
+  InformationCircleIcon,
+  MapPinIcon,
+  PhoneIcon,
+  UserGroupIcon,
+} from "@heroicons/react/24/outline";
 // data
 import CategoriesData from "../api/Categories.json";
 import Programs, { getProgramData } from "../api/Programs";
@@ -50,7 +61,7 @@ export default function Navbar() {
   const handleSearch = (e) => {
     e.preventDefault();
     console.log(e.currentTarget.elements[0].value);
-    router.replace(`/search?q=${e.currentTarget.elements[0].value}`);
+    navigate(`/${lang}/search?q=${encodeURIComponent(e.currentTarget.elements[0].value)}`);
   };
 
   useEffect(() => {
@@ -81,48 +92,58 @@ export default function Navbar() {
             <div className="header-top-content flex justify-between items-center gap-5 text-sm">
               <div className="contact-info flex gap-5">
                 <a
-                  href="tel:+966112345678"
+                  href="https://wa.me/966920016205"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white no-underline flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
-                  <i className="fas fa-phone"></i>
-                  <span>966112345678+</span>
+                  <PhoneIcon className="w-4 h-4 text-white" />
+                  <span>966920016205+</span>
                 </a>
                 <a
                   href="mailto:info@asta.edu.sa"
                   className="text-white no-underline flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
-                  <i className="fas fa-envelope"></i>
+                  <EnvelopeIcon className="w-4 h-4 text-white" />
                   <span>info@asta.edu.sa</span>
                 </a>
                 <a
                   href="#"
                   className="text-white no-underline flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
-                  <i className="fas fa-map-marker-alt"></i>
+                  <MapPinIcon className="w-4 h-4 text-white" />
                   <span>{t("footer.address")}</span>
                 </a>
               </div>
               <div className="social-links flex gap-4">
                 <a
-                  href="#"
+                  href="https://x.com/astaacademysa"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white text-lg hover:-translate-y-0.5 transition-transform"
                 >
                   <i className="fa-brands fa-x-twitter"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/school/asta-academy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white text-lg hover:-translate-y-0.5 transition-transform"
                 >
                   <i className="fab fa-linkedin"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.youtube.com/@astaacademysa"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white text-lg hover:-translate-y-0.5 transition-transform"
                 >
                   <i className="fab fa-youtube"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/astaacademysa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white text-lg hover:-translate-y-0.5 transition-transform"
                 >
                   <i className="fab fa-instagram"></i>
@@ -264,7 +285,7 @@ export default function Navbar() {
               <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div>
 
               {/* Student services dropdown */}
-              <div className="relative" ref={aboutRef}>
+              {/* <div className="relative" ref={aboutRef}>
                 <button
                   onClick={() => {
                     setStudentServicesDropdown(!studnetServicesDropdown);
@@ -305,20 +326,12 @@ export default function Navbar() {
                       >
                         {t("header.nav.allServices")} 
                       </a>
-                      {/* map for every dimploma */}
-                      {/* diplomas.map((diploma) => (
-                        <a
-                          key={diploma.id}
-                          href={`/Diplomas/${diploma.id}`}>
-                          {diploma.name}
-                        </a>
-                      )) */}
                     </div>
                   </div>
                 )}
-              </div>
+              </div> */}
 
-              <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div>
+              {/* <div className="min-h-[37px] w-[1px] mx-[2px] bg-[#1a2555]"></div> */}
 
               {/* Diplomas dropdown */}
               <div className="relative" ref={aboutRef}>
@@ -427,12 +440,12 @@ export default function Navbar() {
                       >
                         {t("header.nav.standarts")}
                       </a>
-                      <a
+                      {/* <a
                         href="#"
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         {t("header.nav.contact")}
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 )}
@@ -454,7 +467,7 @@ export default function Navbar() {
               </a>
             </div>
             <div>
-              <button onClick={() => router.push("/")} className="mx-2 py-[12px] px-[12px] rounded-full! cursor-pointer hover:text-[#1a2555] text-white lg:text-[16px] sm:text-[14px] font-bold bg-gradient-to-r! from-[#23A0D0]! to-68% to-[#3CBEB3]! focus:outline-none! shadow-md! transition! hover:opacity-80! !leading-[1.25] duration-300">
+              <button onClick={() => navigate(`/${lang}/`)} className="mx-2 py-[12px] px-[12px] rounded-full! cursor-pointer hover:text-[#1a2555] text-white lg:text-[16px] sm:text-[14px] font-bold bg-gradient-to-r! from-[#23A0D0]! to-68% to-[#3CBEB3]! focus:outline-none! shadow-md! transition! hover:opacity-80! !leading-[1.25] duration-300">
                 {t("header.actions.verifyCertificate")}
               </button>
               {/* <button onClick={() => router.push("/en")} className="mx-2 py-[12px] px-[12px] rounded-full! cursor-pointer hover:text-[#1a2555] text-white lg:text-[16px] sm:text-[14px] font-bold bg-gradient-to-r! from-[#23A0D0]! to-68% to-[#3CBEB3]! focus:outline-none! shadow-md! transition! hover:opacity-80! !leading-[1.25] duration-300">
@@ -489,81 +502,99 @@ export default function Navbar() {
         >
           {/* Mobile menu header */}
           <div className="p-3! space-y-3! flex flex-col grow">
+            <div className="flex items-center justify-between px-3! py-2!">
+              <a href={`/${lang}/`} onClick={() => setOpen(false)} className="flex items-center gap-2">
+                <img
+                  src="/svgs/ASTA_Nav_Logo.svg"
+                  alt="ASTA Logo"
+                  width={63}
+                  height={17}
+                  className="h-auto"
+                />
+              </a>
+              <button
+                type="button"
+                onClick={() => setOpen(false)}
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-white text-[#23A0D0]"
+                aria-label="Close menu"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
             {/* Menu items */}
             <div className="space-y-2!">
-              <div className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!">
-                <div className="flex! items-center! gap-3!">
-                  <img
-                    src="/icons/Vector.svg "
-                    alt="courses"
-                    className="w-4! h-4!"
-                  />
-                  <a
-                    href={`/${lang}/Courses`}
-                    className="text-black! font-medium! text-lg!"
-                  >
-                    {t("header.mobile.courses")}
-                  </a>
-                </div>
-              </div>
-              <div
+              <a
+                href={`/${lang}/courses`}
+                onClick={() => setOpen(false)}
                 className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!"
-                onClick={(e) => {
-                  e.preventDefault();
-                  router.push("/Degrees");
-                  setOpen(false);
-                }}
               >
                 <div className="flex! items-center! gap-3!">
-                  <img src="/icons/1.svg" alt="paths" className="w-4! h-4!" />
-                  <span className="text-black! font-medium! text-lg!">
-                    {t("header.mobile.careerPaths")}
-                  </span>
+                  <BookOpenIcon className="w-5 h-5 text-[#202C5B]" />
+                  <span className="text-black! font-medium! text-lg!">{t("header.mobile.courses")}</span>
                 </div>
-              </div>
+              </a>
 
-              <div
+              <a
+                href={`/${lang}/programs`}
+                onClick={() => setOpen(false)}
                 className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!"
-                onClick={(e) => {
-                  e.preventDefault();
-                  router.push("/Trainers");
-                  setOpen(false);
-                }}
               >
                 <div className="flex! items-center! gap-3!">
-                  <img
-                    src="/icons/2.svg"
-                    alt="trainers"
-                    className="w-4! h-4!"
-                  />
-                  <span className="text-black! font-medium! text-lg!">
-                    {t("header.mobile.trainers")}
-                  </span>
+                  <AcademicCapIcon className="w-5 h-5 text-[#202C5B]" />
+                  <span className="text-black! font-medium! text-lg!">{t("header.nav.diplomas")}</span>
                 </div>
-              </div>
+              </a>
 
-
-              <div className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!">
+              <a
+                href={`/${lang}/student-services`}
+                onClick={() => setOpen(false)}
+                className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!"
+              >
                 <div className="flex! items-center! gap-3!">
-                  <img src="/icons/4.svg" alt="about" className="w-4! h-4!" />
-                  <span className="text-black! font-medium! text-lg!">
-                    {t("header.mobile.about")}
-                  </span>
+                  <UserGroupIcon className="w-5 h-5 text-[#202C5B]" />
+                  <span className="text-black! font-medium! text-lg!">{t("header.nav.student-services")}</span>
                 </div>
-              </div>
+              </a>
 
-              <div className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!">
+              <a
+                href={`/${lang}/about-us`}
+                onClick={() => setOpen(false)}
+                className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!"
+              >
                 <div className="flex! items-center! gap-3!">
-                  <img
-                    src="/icons/5.svg"
-                    alt="language"
-                    className="w-4! h-4!"
-                  />
-                  <span className="text-black! font-medium! text-lg!">
-                    {t("header.mobile.changeLanguage")}
-                  </span>
+                  <InformationCircleIcon className="w-5 h-5 text-[#202C5B]" />
+                  <span className="text-black! font-medium! text-lg!">{t("header.nav.about")}</span>
                 </div>
-              </div>
+              </a>
+
+              <a
+                href={`/${lang}/registration`}
+                onClick={() => setOpen(false)}
+                className="px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!"
+              >
+                <div className="flex! items-center! gap-3!">
+                  <ClipboardDocumentCheckIcon className="w-5 h-5 text-[#202C5B]" />
+                  <span className="text-black! font-medium! text-lg!">{t("header.nav.registration")}</span>
+                </div>
+              </a>
+
+              <button
+                type="button"
+                onClick={() => {
+                  switchLang(lang === "en" ? "ar" : "en");
+                  setOpen(false);
+                }}
+                className="w-full px-3! py-[12px]! flex! items-center! justify-between! border-b border-[#2FAFC2]!"
+              >
+                <div className="flex! items-center! gap-3!">
+                  <GlobeAltIcon className="w-5 h-5 text-[#202C5B]" />
+                  <span className="text-black! font-medium! text-lg!">{t("header.mobile.changeLanguage")}</span>
+                </div>
+                <span className="text-[#202C5B] font-bold!">{lang === "en" ? "AR" : "EN"}</span>
+              </button>
             </div>
             <div className=" mt-auto p-3! text-center!">
               <div className="text-black! font-medium! mb-3! text-lg!">
@@ -573,7 +604,7 @@ export default function Navbar() {
                 <a href="mailto:info@ASTA.EDU.SA">
                   <img src="/icons/7.svg" alt="email" className="w-6! h-6!" />
                 </a>
-                <a href="https://wa.me/+996558919492" target="_blank">
+                <a href="https://wa.me/966920016205" target="_blank">
                   <img
                     src="/icons/6.svg"
                     alt="whatsapp"

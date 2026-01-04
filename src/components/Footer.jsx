@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import Programs, { getProgramData } from '../api/Programs';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
+  const { lang = 'ar' } = useParams();
 
   const handleNewsletterSubmit = (e) => {
     e.preventDefault();
@@ -13,36 +16,31 @@ export default function Footer() {
   const footerData = {
     contactInfo: [
       { icon: 'fa-map-marker-alt', text: 'الدمام، المملكة العربية السعودية' },
-      { icon: 'fa-phone', text: '966112345678+', href: 'tel:+966112345678' },
-      { icon: 'fa-envelope', text: 'info@asta.edu.sa', href: 'mailto:info@asta.edu.sa' }
+      { icon: 'fa-phone', text: '966920016205+', href: 'https://wa.me/966920016205', target: '_blank' },
+      { icon: 'fa-envelope', text: 'info@asta.edu.sa', href: 'mailto:info@asta.edu.sa', target: '_blank' }
     ],
     
-    programs: [
-      'دبلوم إدارة الفنادق والمنتجعات السياحية',
-      'دبلوم إدارة سلاسل الإمداد والخدمات اللوجستية',
-      'برامج تقنية المعلومات',
-      'برامج الإدارة والأعمال'
-    ],
+    programs: Programs.map((program) => ({
+      id: program.id,
+      title: getProgramData(program, lang)?.title
+    })).filter(program => program.title),
     
     quickLinks: [
-      { label: 'الرئيسية', href: '#' },
-      { label: 'عن الأكاديمية', href: '#' },
-      { label: 'البرامج التدريبية', href: '#' },
-      { label: 'الدورات الاحترافية', href: '#' },
-      { label: 'مراكزنا', href: '#' },
-      { label: 'أخبارنا', href: '#' },
-      { label: 'اتصل بنا', href: '#' }
+      { label: 'الرئيسية', href: `/${lang}/` },
+      { label: 'عن الأكاديمية', href: `/${lang}/about-us` },
+      { label: 'البرامج التدريبية', href: `/${lang}/programs` },
+      { label: 'الدورات الاحترافية', href: `/${lang}/courses` },
+      { label: 'التسجيل', href: `/${lang}/registration` },
     ],
     
     socialLinks: [
-      { platform: 'twitter', href: '#', icon: 'fa-brands fa-x-twitter', color: 'hover:bg-[#1DA1F2]' },
+      { platform: 'twitter', href: 'https://x.com/astaacademysa', icon: 'fa-brands fa-x-twitter', color: 'hover:bg-[#1DA1F2]' },
       { platform: 'linkedin', href: '#', icon: 'fab fa-linkedin', color: 'hover:bg-[#0077B5]' },
-      { platform: 'youtube', href: '#', icon: 'fab fa-youtube', color: 'hover:bg-[#FF0000]' },
-      { platform: 'instagram', href: '#', icon: 'fab fa-instagram', color: 'hover:bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45]' },
-      { platform: 'facebook', href: '#', icon: 'fab fa-facebook', color: 'hover:bg-[#3B5998]' },
-      { platform: 'linkedin-in', href: '#', icon: 'fab fa-linkedin-in', color: 'hover:bg-[#0077B5]' },
-      { platform: 'snapchat', href: '#', icon: 'fab fa-snapchat', color: 'hover:bg-[#FFD700]' },
-      { platform: 'tiktok', href: '#', icon: 'fab fa-tiktok', color: 'hover:bg-[#3B5998]' },
+      { platform: 'youtube', href: 'https://www.youtube.com/@astaacademysa', icon: 'fab fa-youtube', color: 'hover:bg-[#FF0000]' },
+      { platform: 'instagram', href: 'https://www.instagram.com/astaacademysa/', icon: 'fab fa-instagram', color: 'hover:bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45]' },
+      { platform: 'facebook', href: 'https://www.facebook.com/asta.academysa/', icon: 'fab fa-facebook', color: 'hover:bg-[#3B5998]' },
+      { platform: 'snapchat', href: 'https://www.snapchat.com/@astaacademysa', icon: 'fab fa-snapchat', color: 'hover:bg-[#FFD700]' },
+      { platform: 'tiktok', href: 'https://www.tiktok.com/@asta.academeysa', icon: 'fab fa-tiktok', color: 'hover:bg-[#3B5998]' },
     ],
     
     partners: [
@@ -62,7 +60,7 @@ export default function Footer() {
           {/* Column 1: Logo and Contact Info */}
           <div>
             <div className="mb-8">
-              <a href="#" className="no-underline inline-block mb-6">
+              <a href="/" className="no-underline inline-block mb-6">
                 <img
                   src="/svgs/ASTA_Logo.svg"
                   alt="أكاديمية المهارات التطبيقية"
@@ -83,6 +81,8 @@ export default function Footer() {
                     {contact.href ? (
                       <a
                         href={contact.href}
+                        target={contact.target || '_self'}
+                        rel={contact.target === '_blank' ? 'noopener noreferrer' : ''}
                         className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                       >
                         {contact.text}
@@ -134,14 +134,14 @@ export default function Footer() {
                 برامجنا
               </h3>
               <ul className="space-y-3">
-                {footerData.programs.map((program, index) => (
-                  <li key={index}>
+                {footerData.programs.map((program) => (
+                  <li key={program.id}>
                     <a
-                      href="#"
+                      href={`/${lang}/programs/${program.id}`}
                       className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-2 group text-sm"
                     >
                       <i className="fas fa-graduation-cap text-xs text-[#23a0d0]"></i>
-                      {program}
+                      {program.title}
                     </a>
                   </li>
                 ))}

@@ -31,7 +31,7 @@ import {
 import standardsData from '../api/Standarts';
 
 const StandardsPage = () => {
-  const [activeStandard, setActiveStandard] = useState('attendance');
+  const [activeStandard, setActiveStandard] = useState('integrity');
   const [isBookmarked, setIsBookmarked] = useState({});
   const standardsdata = standardsData;
 

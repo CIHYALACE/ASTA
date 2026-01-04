@@ -141,8 +141,8 @@ const RegistrationPage = ({ programId = 2 }) => {
     
     if (!formData.nationalId) {
       newErrors.nationalId = 'رقم الهوية مطلوب';
-    } else if (!/^1\d{9}$/.test(formData.nationalId)) {
-      newErrors.nationalId = 'رقم الهوية يجب أن يتكون من 10 أرقام ويبدأ بـ 1';
+    } else if (!/^[12]\d{9}$/.test(formData.nationalId)) {
+      newErrors.nationalId = 'رقم الهوية يجب أن يتكون من 10 أرقام ويبدأ بـ 1 أو 2';
     }
     
     if (!formData.degree) {

@@ -16,8 +16,8 @@ export default function Footer() {
   const footerData = {
     contactInfo: [
       { icon: 'fa-map-marker-alt', text: 'الدمام، المملكة العربية السعودية' },
-      { icon: 'fa-phone', text: '966920016205+', href: 'tel:+966920016205' },
-      { icon: 'fa-envelope', text: 'info@asta.edu.sa', href: 'mailto:info@asta.edu.sa' }
+      { icon: 'fa-phone', text: '966920016205+', href: 'https://wa.me/966920016205', target: '_blank' },
+      { icon: 'fa-envelope', text: 'info@asta.edu.sa', href: 'mailto:info@asta.edu.sa', target: '_blank' }
     ],
     
     programs: Programs.map((program) => ({
@@ -26,13 +26,11 @@ export default function Footer() {
     })).filter(program => program.title),
     
     quickLinks: [
-      { label: 'الرئيسية', href: '#' },
-      { label: 'عن الأكاديمية', href: '#' },
-      { label: 'البرامج التدريبية', href: '#' },
-      { label: 'الدورات الاحترافية', href: '#' },
-      { label: 'مراكزنا', href: '#' },
-      { label: 'أخبارنا', href: '#' },
-      { label: 'اتصل بنا', href: '#' }
+      { label: 'الرئيسية', href: `/${lang}/` },
+      { label: 'عن الأكاديمية', href: `/${lang}/about-us` },
+      { label: 'البرامج التدريبية', href: `/${lang}/programs` },
+      { label: 'الدورات الاحترافية', href: `/${lang}/courses` },
+      { label: 'التسجيل', href: `/${lang}/registration` },
     ],
     
     socialLinks: [
@@ -62,7 +60,7 @@ export default function Footer() {
           {/* Column 1: Logo and Contact Info */}
           <div>
             <div className="mb-8">
-              <a href="#" className="no-underline inline-block mb-6">
+              <a href="/" className="no-underline inline-block mb-6">
                 <img
                   src="/svgs/ASTA_Logo.svg"
                   alt="أكاديمية المهارات التطبيقية"
@@ -83,6 +81,8 @@ export default function Footer() {
                     {contact.href ? (
                       <a
                         href={contact.href}
+                        target={contact.target || '_self'}
+                        rel={contact.target === '_blank' ? 'noopener noreferrer' : ''}
                         className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                       >
                         {contact.text}

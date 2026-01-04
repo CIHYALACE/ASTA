@@ -92,7 +92,9 @@ export default function Navbar() {
             <div className="header-top-content flex justify-between items-center gap-5 text-sm">
               <div className="contact-info flex gap-5">
                 <a
-                  href="tel:+966920016205"
+                  href="https://wa.me/966920016205"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white no-underline flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
                   <PhoneIcon className="w-4 h-4 text-white" />
@@ -438,12 +440,12 @@ export default function Navbar() {
                       >
                         {t("header.nav.standarts")}
                       </a>
-                      <a
+                      {/* <a
                         href="#"
                         className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         {t("header.nav.contact")}
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 )}

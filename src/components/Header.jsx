@@ -282,7 +282,6 @@ export default function Navbar() {
                               setOpenCategoryId((prev) =>
                                 prev === category.id ? null : category.id
                               )
-                              
                             }
                             className="w-full flex gap-2 px-4 py-2 md:text-sm lg:text-base hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors font-medium"
                           >
@@ -297,14 +296,14 @@ export default function Navbar() {
                             category.sup_categories.length > 0 &&
                             openCategoryId === category.id && (
                               <div className="pl-4">
-                                <a href={`/${lang}/courses?category=${encodeURIComponent(category.id)}`} className="block px-4 py-2 md:text-sm lg:text-sm hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                                <a href={`/${lang}/categories/${category.id}`} className="block px-4 py-2 md:text-sm lg:text-sm hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                                 >
                                   - {t("courses.certificates")}
                                 </a>
                                 {category.sup_categories.map((supCategory) => (
                                   <a
                                     key={supCategory.id}
-                                    href={`/${lang}/courses?sup_category=${encodeURIComponent(
+                                    href={`/${lang}/categories/${category.id}?sup_category=${encodeURIComponent(
                                       supCategory.id
                                     )}`}
                                     className="block px-4 py-2 md:text-sm lg:text-sm hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"

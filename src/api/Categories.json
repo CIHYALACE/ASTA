@@ -6,7 +6,7 @@
       "sup_categories": [
         {
           "id": "cybersecurity_it_security",
-          "ar": "تقنية المعلومات و الأمن السيبراني",
+          "ar": "أمن المعلومات و الأمن السيبراني",
           "en": "Cybersecurity & IT Security"
         },
         {
@@ -31,7 +31,7 @@
         }, 
         {
           "id": "it_cloud_computing",
-          "ar": "الحوسبة السحابية والمنصات",
+          "ar": "الحوسبة السحابية و المنصات",
           "en": "Cloud Computing & Platforms"
         },
         {
@@ -43,15 +43,9 @@
           "id": "ai_ml_data_sciences",
           "ar": "الذكاء الاصطناعي والتعلم الآلي وعلوم البيانات",
           "en": "AI/ML/DATA SCIENCES"
-        }
-      ]
-    },
-    "design": {
-      "ar": "التصميم والفنون الإبداعية",
-      "en": "Design & Creative Arts",
-      "sup_categories": [
+        },
         {
-          "id": "design_creative_arts",
+          "id":"design_creative_arts",
           "ar": "التصميم والفنون الإبداعية",
           "en": "Design & Creative Arts"
         }

@@ -11,8 +11,8 @@
       "en": "Scrum Alliance Certified Scrum Master"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "إدارة المشاريع وتحسين العمليات",
@@ -169,8 +169,8 @@
       "en": "Exin Agile SCRUM Foundation Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "إدارة المشاريع وتحسين العمليات",
@@ -325,8 +325,8 @@
       "en": "ISACA CISM Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوكمة والمخاطر والمراجعة التقنية",
@@ -483,8 +483,8 @@
       "en": "ISACA CRISC Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوكمة والمخاطر والمراجعة التقنية",
@@ -641,8 +641,8 @@
       "en": "ISACA CISA Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوكمة والمخاطر والمراجعة التقنية",
@@ -799,8 +799,8 @@
       "en": "CompTIA Foundational Security Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "أمن المعلومات و الأمن السيبراني",
@@ -957,8 +957,8 @@
       "en": "CompTIA Cybersecurity Analyst Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "أمن المعلومات و الأمن السيبراني",
@@ -1115,8 +1115,8 @@
       "en": "CompTIA Penetration Testing Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "أمن المعلومات و الأمن السيبراني",
@@ -1273,11 +1273,11 @@
       "en": "CompTIA Linux Administration Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
-      "ar": "أساسيات تقنية المعلومات و الهاردوير",
+      "ar": "أساسيات تقنية المعلومات و الأجهزة",
       "en": "IT Fundamentals & Hardware"
     },
     "description": {
@@ -1431,11 +1431,11 @@
       "en": "CompTIA Server Administration Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
-      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "ar": "أساسيات تقنية المعلومات و الأجهزة",
       "en": "IT Fundamentals & Hardware"
     },
     "description": {
@@ -1589,11 +1589,11 @@
       "en": "CompTIA Foundational Networking Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
-      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "ar": "أساسيات تقنية المعلومات و الأجهزة",
       "en": "IT Fundamentals & Hardware"
     },
     "description": {
@@ -1747,11 +1747,11 @@
       "en": "CompTIA Foundational IT Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
-      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "ar": "أساسيات تقنية المعلومات و الأجهزة",
       "en": "IT Fundamentals & Hardware"
     },
     "description": {
@@ -1905,11 +1905,11 @@
       "en": "CompTIA Introduction to IT"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
-      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "ar": "أساسيات تقنية المعلومات و الأجهزة",
       "en": "IT Fundamentals & Hardware"
     },
     "description": {
@@ -2061,8 +2061,8 @@
       "en": "Autodesk Maya Modeling & Animation Certification"
     },
     "category": {
-      "ar": "التصميم والفنون الإبداعية",
-      "en": "Design & Creative Arts"
+      "ar":"تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "التصميم والفنون الإبداعية",
@@ -2219,8 +2219,8 @@
       "en": "AWS Foundational Cloud Computing Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوسبة السحابية و المنصات",
@@ -2377,8 +2377,8 @@
       "en": "AWS Cloud Solutions Architect Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوسبة السحابية و المنصات",
@@ -2535,8 +2535,8 @@
       "en": "AWS Professional DevOps Engineer Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوسبة السحابية و المنصات",
@@ -2693,8 +2693,8 @@
       "en": "AWS Specialty Certification in Machine Learning"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوسبة السحابية و المنصات",
@@ -2851,8 +2851,8 @@
       "en": "Google Cloud Architecture Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوسبة السحابية و المنصات",
@@ -3009,8 +3009,8 @@
       "en": "Google Cloud Machine Learning Engineer Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الذكاء الاصطناعي والتعلم الآلي وعلوم البيانات",
@@ -3167,8 +3167,8 @@
       "en": "Microsoft Azure Administration Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوسبة السحابية و المنصات",
@@ -3325,8 +3325,8 @@
       "en": "Microsoft Azure Solutions Architect Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوسبة السحابية و المنصات",
@@ -3483,8 +3483,8 @@
       "en": "Introduction to AI on Azure"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوسبة السحابية و المنصات",
@@ -3641,8 +3641,8 @@
       "en": "Adobe Certification in Visual Design using Photoshop"
     },
     "category": {
-      "ar": "التصميم والفنون الإبداعية",
-      "en": "Design & Creative Arts"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "التصميم والفنون الإبداعية",
@@ -3799,8 +3799,8 @@
       "en": "TOGAF 10 Foundation Certification in Enterprise Architecture"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الحوسبة السحابية و المنصات",
@@ -3957,8 +3957,8 @@
       "en": "Exin Agile Scrum Product Owner Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "إدارة المشاريع والأساليب المرنّة",
@@ -4115,8 +4115,8 @@
       "en": "ISACA Certification in Enterprise IT Governance"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "حوكمة وتخطيط تقنية المعلومات",
@@ -4273,8 +4273,8 @@
       "en": "DASA DevOps Fundamentals Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "تشغيل المعلومات وإدارة المعلومات",
@@ -4431,8 +4431,8 @@
       "en": "Microsoft DevOps Solutions Design & Implementation Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "تشغيل المعلومات وإدارة المعلومات",
@@ -4589,8 +4589,8 @@
       "en": "Microsoft Data Analysis Certification using Power BI"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "الذكاء الاصطناعي والتعلم الآلي وعلوم البيانات",
@@ -4747,8 +4747,8 @@
       "en": "EC-Council Ethical Hacking Certification"
     },
     "category": {
-      "ar": "تقنية المعلومات وأمن الشبكات",
-      "en": "Information Technology & Network Security"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "أمن المعلومات و الأمن السيبراني",

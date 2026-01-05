@@ -3,7 +3,8 @@
     "academyName": "Applied Skills Training Academy",
     "loading": "Loading...",
     "readMore": "Read more",
-    "downloadProfile": "Profile File"
+    "downloadProfile": "Profile File",
+    "phoneNumber": "+966920016205"
   },
 
   "header": {
@@ -38,7 +39,7 @@
 
   "footer": {
     "copyright": "All rights reserved to Applied Skills Training Academy © 2025",
-    "address": "Dammam, Saudi Arabia"
+    "address": "East Region, Dammam, Saudi Arabia"
   },
 
   "hero": {

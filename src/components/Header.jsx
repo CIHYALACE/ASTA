@@ -13,6 +13,7 @@ import {
   MapPinIcon,
   PhoneIcon,
   UserGroupIcon,
+  ChevronDownIcon,
 } from "@heroicons/react/24/outline";
 // data
 import CategoriesData from "../api/Categories.json";
@@ -26,6 +27,7 @@ export default function Navbar() {
   const [diplomasDropdown, setDiplomasDropdown] = useState(false);
   const [coursesDropdown, setCoursesDropdown] = useState(false);
   const [studnetServicesDropdown, setStudentServicesDropdown] = useState(false);
+  const [openCategoryId, setOpenCategoryId] = useState(null);
   // const router = useRouter();
   const location = useLocation();
   const pathname = location.pathname;
@@ -44,9 +46,13 @@ export default function Navbar() {
     return String(value);
   };
 
-  const categories = Object.entries(CategoriesData?.categories || {}).map(([id, label]) => ({
+  const categories = Object.entries(CategoriesData?.categories || {}).map(([id, categoryData]) => ({
     id,
-    label: localizeLabel(label),
+    label: localizeLabel(categoryData),
+    sup_categories: (categoryData?.sup_categories || []).map((supCat) => ({
+      id: supCat.id,
+      label: localizeLabel(supCat),
+    })),
   }));
 
 
@@ -98,7 +104,7 @@ export default function Navbar() {
                   className="text-white no-underline flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
                   <PhoneIcon className="w-4 h-4 text-white" />
-                  <span>966920016205+</span>
+                  <span>{t('global.phoneNumber')}</span>
                 </a>
                 <a
                   href="mailto:info@asta.edu.sa"
@@ -260,22 +266,56 @@ export default function Navbar() {
                   </svg>
                 </button>
                 {coursesDropdown && (
-                  <div className="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
+                  <div className="absolute top-full right-0 mt-1 w-56 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
                     <div className="py-1">
                       <a
                         href={`/${lang}/courses`}
-                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                        className="block px-4 py-2 md:text-sm lg:text-base hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         {t("header.nav.allCourses")}
                       </a>
                       {categories.map((category) => (
-                        <a
-                          key={category.id}
-                          href={`/${lang}/courses?category=${encodeURIComponent(category.id)}`}
-                          className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
-                        >
-                          {category.label}
-                        </a>
+                        <div key={category.id} className="group" style={{ textAlign: "unset" }}>
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setOpenCategoryId((prev) =>
+                                prev === category.id ? null : category.id
+                              )
+                            }
+                            className="w-full flex gap-2 px-4 py-2 md:text-sm lg:text-base hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors font-medium"
+                          >
+                            <span style={{ textAlign: "initial" }}>{category.label}</span>
+                            <ChevronDownIcon
+                              className={`w-4 h-4 transition-transform ${
+                                openCategoryId === category.id ? "rotate-180" : ""
+                              }`}
+                            />
+                          </button>
+                          {category.sup_categories &&
+                            category.sup_categories.length > 0 &&
+                            openCategoryId === category.id && (
+                              <div className="pl-4">
+                                <a href={`/${lang}/categories/${category.id}`} className="block px-4 py-2 md:text-sm lg:text-sm hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                                >
+                                  - {t("courses.certificates")}
+                                </a>
+                                {category.sup_categories.map((supCategory) => (
+                                  <a
+                                    key={supCategory.id}
+                                    href={`/${lang}/categories/${category.id}?sup_category=${encodeURIComponent(
+                                      supCategory.id
+                                    )}`}
+                                    className="block px-4 py-2 md:text-sm lg:text-sm hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                                  >
+                                    - {supCategory.label}
+                                  </a>
+                                ))}
+                                <div className="min-h-[1px] w-full bg-[#1a2555] my-2"></div>
+
+                              </div>
+                            )}
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -367,11 +407,11 @@ export default function Navbar() {
                   </svg>
                 </button>
                 {diplomasDropdown && (
-                  <div className="absolute top-full right-0 mt-1 w-44 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
+                  <div className="absolute top-full right-0 mt-1 w-56 bg-white rounded-lg shadow-[0px_2px_6px_2px_rgba(0,0,0,0.1)] z-20">
                     <div className="py-1">
                       <a
                         href={`/${lang}/programs`}
-                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                        className="block px-4 py-2 md:text-sm lg:text-base hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         {t("header.nav.allPrograms")}
                       </a>
@@ -380,7 +420,7 @@ export default function Navbar() {
                         <a
                           key={program.id}
                           href={`/${lang}/Programs/${program.id}`}
-                          className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                          className="block px-4 py-2 md:text-sm lg:text-base hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                         >
                           {program.title}
                         </a>
@@ -430,13 +470,13 @@ export default function Navbar() {
                     <div className="py-1">
                       <a
                         href={`/${lang}/about-us`}
-                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                        className="block px-4 py-2 md:text-sm lg:text-base hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         {t("header.nav.aboutAcademy")}
                       </a>
                       <a
                         href={`/${lang}/academic-integrity`}
-                        className="block px-4 py-2 md:text-sm lg:text-lg hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
+                        className="block px-4 py-2 md:text-sm lg:text-base hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                       >
                         {t("header.nav.standarts")}
                       </a>

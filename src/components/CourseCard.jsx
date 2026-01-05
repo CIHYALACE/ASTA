@@ -101,7 +101,7 @@ function CourseCard({ course }) {
             }}
           >
             <CheckBadgeIcon className="h-3 w-3" />
-            {asText(courseForRender.category)}
+            {asText(courseForRender.sup_category) || asText(courseForRender.category)}
           </span>
         </div>
 

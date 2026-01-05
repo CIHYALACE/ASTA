@@ -1277,7 +1277,7 @@
       "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
-      "ar": "أساسيات تقنية المعلومات و الهاردوير",
+      "ar": "أساسيات تقنية المعلومات و الأجهزة",
       "en": "IT Fundamentals & Hardware"
     },
     "description": {
@@ -1435,7 +1435,7 @@
       "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
-      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "ar": "أساسيات تقنية المعلومات و الأجهزة",
       "en": "IT Fundamentals & Hardware"
     },
     "description": {
@@ -1593,7 +1593,7 @@
       "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
-      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "ar": "أساسيات تقنية المعلومات و الأجهزة",
       "en": "IT Fundamentals & Hardware"
     },
     "description": {
@@ -1751,7 +1751,7 @@
       "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
-      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "ar": "أساسيات تقنية المعلومات و الأجهزة",
       "en": "IT Fundamentals & Hardware"
     },
     "description": {
@@ -1909,7 +1909,7 @@
       "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
-      "ar": "أساسيات تقنية المعلومات والهاردوير",
+      "ar": "أساسيات تقنية المعلومات و الأجهزة",
       "en": "IT Fundamentals & Hardware"
     },
     "description": {
@@ -2061,8 +2061,8 @@
       "en": "Autodesk Maya Modeling & Animation Certification"
     },
     "category": {
-      "ar": "التصميم والفنون الإبداعية",
-      "en": "Design & Creative Arts"
+      "ar":"تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "التصميم والفنون الإبداعية",
@@ -3641,8 +3641,8 @@
       "en": "Adobe Certification in Visual Design using Photoshop"
     },
     "category": {
-      "ar": "التصميم والفنون الإبداعية",
-      "en": "Design & Creative Arts"
+      "ar": "تقنية المعلومات و الأمن السيبراني",
+      "en": "Cybersecurity & Information Technology"
     },
     "sup_category": {
       "ar": "التصميم والفنون الإبداعية",

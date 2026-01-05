@@ -68,6 +68,7 @@
 
   "courses": {
     "title": "Our Courses",
+    "certificates": "All Certificates",
     "description": "Explore our professional courses",
     "targetJobs": "Target Jobs",
     "seats": "seat",

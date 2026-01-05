@@ -2,49 +2,60 @@
   "categories": {
     "it_network_security": {
       "ar": "تقنية المعلومات و الأمن السيبراني",
-      "en": "Cybersecurity & Information Technology"
+      "en": "Cybersecurity & Information Technology",
+      "sup_categories": [
+        {
+          "id": "cybersecurity_it_security",
+          "ar": "تقنية المعلومات و الأمن السيبراني",
+          "en": "Cybersecurity & IT Security"
+        },
+        {
+          "id": "project_management_process_improvement",
+          "ar": "إدارة المشاريع وتحسين العمليات",
+          "en": "Project Management & Process Improvement"
+        },
+        {
+          "id": "it_governance_risk_audit",
+          "ar": "الحوكمة والمخاطر والمراجعة التقنية",
+          "en": "IT Governance, Risk, & Audit"
+        },
+        {
+          "id": "it_operations_management",
+          "ar": "تشغيل المعلومات وإدارة المعلومات",
+          "en": "IT Operations & Management"
+        },
+        {
+          "id": "it_fundamentals_hardware",
+          "ar": "أساسيات تقنية المعلومات و الأجهزة",
+          "en": "IT Fundamentals & Hardware"
+        }, 
+        {
+          "id": "it_cloud_computing",
+          "ar": "الحوسبة السحابية والمنصات",
+          "en": "Cloud Computing & Platforms"
+        },
+        {
+          "id": "agile_project_managemen",
+          "ar": "إدارة المشاريع والأساليب المرنّة",
+          "en": "Agile & Project Management"
+        },
+        {
+          "id": "ai_ml_data_sciences",
+          "ar": "الذكاء الاصطناعي والتعلم الآلي وعلوم البيانات",
+          "en": "AI/ML/DATA SCIENCES"
+        }
+      ]
     },
     "design": {
       "ar": "التصميم والفنون الإبداعية",
-      "en": "Design & Creative Arts"
-    }
-  },
-  "sup_categories": {
-    "project_management_process_improvement": {
-      "ar": "إدارة المشاريع وتحسين العمليات",
-      "en": "Project Management & Process Improvement"
-    },
-    "it_governance_risk_audit": {
-      "ar": "الحوكمة والمخاطر والمراجعة التقنية",
-      "en": "IT Governance, Risk, & Audit"
-    },
-    "cybersecurity_it_security": {
-      "ar": "أمن المعلومات و الأمن السيبراني",
-      "en": "Cybersecurity & IT Security"
-    },
-    "it_fundamentals_hardware": {
-      "ar": "أساسيات تقنية المعلومات و الأجهزة",
-      "en": "IT Fundamentals & Hardware"
-    },
-    "design_creative_arts": {
-      "ar": "التصميم والفنون الإبداعية",
-      "en": "Design & Creative Arts"
-    },
-    "cloud_computing_platforms": {
-      "ar": "الحوسبة السحابية و المنصات",
-      "en": "Cloud Computing & Platforms"
-    },
-    "ai_ml_data_sciences": {
-      "ar": "الذكاء الاصطناعي والتعلم الآلي وعلوم البيانات",
-      "en": "AI/ML/DATA SCIENCES"
-    },
-    "agile_project_management": {
-      "ar": "إدارة المشاريع والأساليب المرنّة",
-      "en": "Agile & Project Management"
-    },
-    "it_operations_management": {
-      "ar": "تشغيل المعلومات وإدارة المعلومات",
-      "en": "IT Operations & Management"
+      "en": "Design & Creative Arts",
+      "sup_categories": [
+        {
+          "id": "design_creative_arts",
+          "ar": "التصميم والفنون الإبداعية",
+          "en": "Design & Creative Arts"
+        }
+      ]
     }
   }
 }

@@ -10,7 +10,8 @@ function ProgramHeader({ program }) {
   const localizedProgram = getCourseData(program, lang);
 
   return (
-    <div className="relative bg-gradient-to-r from-[#202C5B] to-[#226796] text-white py-16">
+    <div className="relative bg-gradient-to-r from-[#202C5B] to-[#226796] text-white py-16 bg-no-repeat bg-cover" style={{ backgroundImage: localizedProgram.image ? `url(${localizedProgram.image})` : 'none' }}>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#202C5B]/90 to-[#226796]/20"></div>
       <div className="absolute inset-0 overflow-hidden opacity-20">
         <div className="absolute -top-20 -right-20 w-64 h-64 border-t-[120px] border-r-[120px] border-t-white border-r-transparent"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 border-b-[180px] border-l-[180px] border-b-white border-l-transparent"></div>

@@ -93,6 +93,7 @@ const normalizeCourse = (course, lang = 'ar') => {
   return {
     id: c.id,
     icon: normalizeIcon(c.icon),
+    image: c.image,
     title: localizeValueDeep(c.title, lang) || '',
     subtitle: localizeValueDeep(c.subtitle, lang) || '',
     category: localizeValueDeep(category, lang) || '',

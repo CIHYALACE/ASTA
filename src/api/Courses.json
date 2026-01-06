@@ -2,6 +2,7 @@
   {
     "id": 1,
     "icon": "UserGroupIcon",
+    "image": "",
     "title": {
       "ar": "مدرب سكروم معتمد (CSM)",
       "en": "Certified Scrum Master (CSM)"
@@ -1264,6 +1265,7 @@
   {
     "id": 9,
     "icon": "CommandLineIcon",
+    "image": "https://images.unsplash.com/photo-1589779255718-3c459da9ffeb?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "title": {
       "ar": "CompTIA Linux+",
       "en": "CompTIA Linux+"

@@ -135,6 +135,8 @@ const CategoryPage = () => {
     <>
       <CategoryHeroSection 
         categoryName={categoryName} 
+        categoryImage={categoryData.image}
+        categoryPNG={categoryData.png}
         lang={lang}
       />
       <div className={`min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-8 px-4`} dir={isRTL ? 'rtl' : 'ltr'}>

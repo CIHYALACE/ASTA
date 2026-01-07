@@ -1,16 +1,12 @@
 import { useState } from 'react';
 import {
-  ComputerDesktopIcon,
-  AcademicCapIcon,
-  UserGroupIcon,
   MagnifyingGlassIcon,
   FunnelIcon,
   BookOpenIcon,
-  ShieldCheckIcon,
 } from '@heroicons/react/24/outline';
 // Components
-import ProgramCard from '../components/ProgramCard.jsx';
-import ProgramsHeroSection from '../components/ProgramsHeroSection';
+import ProgramCard from '../components/Diplomas/ProgramCard.jsx';
+import ProgramsHeroSection from '../components/Diplomas/ProgramsHeroSection';
 // data
 import Programs, { getProgramData } from '../api/Programs';
 

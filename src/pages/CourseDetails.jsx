@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 // Components
-import CourseHeader from "../components/CourseHeader";
-import CourseOverviewSection from "../components/CourseOverviewSection";
-import CourseInstructorSection from "../components/CourseInstructorSection";
-import CourseRequirementsSection from "../components/CourseRequirementsSection";
-import CourseFAQSection from "../components/CourseFAQSection";
-import RelatedCoursesSection from "../components/RelatedCoursesSection";
+import CourseHeader from "../components/Courses/CourseHeader";
+import CourseOverviewSection from "../components/Courses/CourseOverviewSection";
+import CourseInstructorSection from "../components/Courses/CourseInstructorSection";
+import CourseRequirementsSection from "../components/Courses/CourseRequirementsSection";
+import CourseFAQSection from "../components/Courses/CourseFAQSection";
+import RelatedCoursesSection from "../components/Courses/RelatedCoursesSection";
 // data
 import Courses, { getCourseData } from "../api/Courses";
 const CourseDetails = () => {

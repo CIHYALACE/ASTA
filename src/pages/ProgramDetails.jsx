@@ -1,13 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 // Components
-import ProgramHeader from "../components/ProgramHeader";
-import OverviewSection from "../components/ProgramOverviewSection";
-import CurriculumSection from "../components/ProgramCurriculumSection";
-import InstructorSection from "../components/ProgramInstructorSection";
-import RequirementsSection from "../components/ProgramRequirementsSection";
-import ProgramFAQSection from "../components/ProgramFAQSection";
-import RelatedProgramsSection from "../components/RelatedProgramsSection";
+import ProgramHeader from "../components/Diplomas/ProgramHeader";
+import OverviewSection from "../components/Diplomas/ProgramOverviewSection";
+import CurriculumSection from "../components/Diplomas/ProgramCurriculumSection";
+import InstructorSection from "../components/Diplomas/ProgramInstructorSection";
+import RequirementsSection from "../components/Diplomas/ProgramRequirementsSection";
+import ProgramFAQSection from "../components/Diplomas/ProgramFAQSection";
+import RelatedProgramsSection from "../components/Diplomas/RelatedProgramsSection";
 // data
 import Programs, { getProgramData } from "../api/Programs";
 const ProgramDetails = () => {

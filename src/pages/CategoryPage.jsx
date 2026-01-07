@@ -7,8 +7,8 @@ import {
   BookOpenIcon,
 } from '@heroicons/react/24/outline';
 // Components
-import CategoryHeroSection from '../components/CategoryHeroSection';
-import CourseCard from '../components/CourseCard';
+import CategoryHeroSection from '../components/Courses/CategoryHeroSection';
+import CourseCard from '../components/Courses/CourseCard';
 // data
 import Courses, { getCourseData } from '../api/Courses';
 import CategoriesData from '../api/Categories.json';

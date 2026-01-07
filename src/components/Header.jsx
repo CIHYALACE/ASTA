@@ -303,7 +303,7 @@ export default function Navbar() {
                                 {category.sup_categories.map((supCategory) => (
                                   <a
                                     key={supCategory.id}
-                                    href={`/${lang}/categories/${category.id}?sup_category=${encodeURIComponent(
+                                    href={`/${lang}/courses?sup_category=${encodeURIComponent(
                                       supCategory.id
                                     )}`}
                                     className="block px-4 py-2 md:text-sm lg:text-sm hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
@@ -419,7 +419,7 @@ export default function Navbar() {
                       {programs.map((program) => (
                         <a
                           key={program.id}
-                          href={`/${lang}/Programs/${program.id}`}
+                          href={`/${lang}/programs/${program.id}`}
                           className="block px-4 py-2 md:text-sm lg:text-base hover:text-[#4fd1c5] duration-300 text-[#202C5B] bg-gradient-to-r from-[#ffffff] to-[#ffffff] transition-colors"
                         >
                           {program.title}

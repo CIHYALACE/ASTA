@@ -8,6 +8,7 @@ import {
   UserIcon,
   CurrencyDollarIcon,
   ArrowLeftIcon,
+  ArrowRightIcon,
   ComputerDesktopIcon,
   StarIcon
 } from "@heroicons/react/24/outline";
@@ -175,8 +176,8 @@ function CourseCard({ course }) {
               e.currentTarget.style.transform = "translateX(0)";
             }}
           >
-            <span className="text-sm">تفاصيل</span>
-            <ArrowLeftIcon className="h-4 w-4" />
+            <span className="text-sm">{t("global.details")}</span>
+            {lang === 'en' ? <ArrowRightIcon className="h-4 w-4" /> : <ArrowLeftIcon className="h-4 w-4" />}
           </button>
         </div>
       </div>

@@ -7,7 +7,7 @@ import {
   CheckCircleIcon
 } from '@heroicons/react/24/outline';
 
-const CategoryHeroSection = ({ categoryName, categoryDescription, lang = 'ar' }) => {
+const CategoryHeroSection = ({ categoryName, categoryDescription, categoryImage, categoryPNG, lang = 'ar' }) => {
   const features = lang === 'ar' 
     ? [
         "دورات معتمدة عالمياً",
@@ -25,8 +25,14 @@ const CategoryHeroSection = ({ categoryName, categoryDescription, lang = 'ar' })
   const isRTL = lang === 'ar';
 
   return (
-    <div className={`relative overflow-hidden bg-gradient-to-r from-[#202C5B] to-[#226796] text-white`} dir={isRTL ? 'rtl' : 'ltr'}>
+    <div className={`relative overflow-hidden bg-gradient-to-r from-[#202C5B] to-[#226796] text-white` } style={{ 
+      backgroundImage: categoryImage ? `url(${categoryImage})` : `url('https://images.pexels.com/photos/5439470/pexels-photo-5439470.jpeg?_gl=1*1izvuqu*_ga*MTE4Mjk4NTMxMS4xNzYzNzkyNjQ2*_ga_8JE65Q40S6*czE3Njc2ODg5ODkkbzQkZzEkdDE3Njc2ODk2ODgkajM1JGwwJGgw')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }} dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Background with geometric shapes */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#202C5B]/90 to-[#226796]/90"></div>
       <div className="absolute inset-0 overflow-hidden opacity-20">
         <div className={`absolute -top-20 ${isRTL ? '-right-20' : '-left-20'} w-64 h-64 ${isRTL ? 'border-t-[120px] border-r-[120px] border-t-white border-r-transparent' : 'border-t-[120px] border-l-[120px] border-t-white border-l-transparent'}`}></div>
         <div className={`absolute bottom-0 ${isRTL ? 'left-0' : 'right-0'} w-96 h-96 ${isRTL ? 'border-b-[180px] border-l-[180px] border-b-white border-l-transparent' : 'border-b-[180px] border-r-[180px] border-b-white border-r-transparent'}`}></div>
@@ -82,7 +88,7 @@ const CategoryHeroSection = ({ categoryName, categoryDescription, lang = 'ar' })
 
           {/* Image */}
           <div className="relative">
-            <img src="/images/Student.png" alt={categoryName} className="rounded-2xl shadow-lg w-full h-auto object-cover col-span-2 lg:col-span-1" />
+            <img src={categoryPNG || '/images/IT_lock.png'} alt={categoryName} className="rounded-2xl shadow-lg w-full h-auto object-cover col-span-2 lg:col-span-1" />
 
             {/* Floating Cards */}
             <div className={`absolute -top-6 ${isRTL ? '-left-6' : '-right-6'} w-64 bg-gradient-to-r from-[#23A0D0] to-[#30AFC1] rounded-2xl p-6 shadow-2xl transform ${isRTL ? 'rotate-3' : '-rotate-3'}`}>

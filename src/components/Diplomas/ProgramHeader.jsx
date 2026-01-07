@@ -1,6 +1,6 @@
   import { ArrowLeftIcon, BookOpenIcon, StarIcon, UserGroupIcon, CalendarIcon, ClockIcon, ShareIcon, BookmarkIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
 import { useNavigate , useParams} from 'react-router-dom';
-import { getProgramData } from '../api/Programs';
+import { getProgramData } from '../../api/Programs';
 
 function ProgramHeader({ program }) {
   const navigate = useNavigate();

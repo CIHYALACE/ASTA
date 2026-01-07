@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Courses from "../api/Courses";
+import Courses from "../../api/Courses";
 
 const RelatedCoursesSection = ({ currentCourseId }) => {
   const navigate = useNavigate();

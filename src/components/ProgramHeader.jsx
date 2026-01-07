@@ -1,13 +1,13 @@
   import { ArrowLeftIcon, BookOpenIcon, StarIcon, UserGroupIcon, CalendarIcon, ClockIcon, ShareIcon, BookmarkIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
 import { useNavigate , useParams} from 'react-router-dom';
-import { getCourseData } from '../api/Courses';
+import { getProgramData } from '../api/Programs';
 
 function ProgramHeader({ program }) {
   const navigate = useNavigate();
   const { lang } = useParams();
   
   // Get localized program data
-  const localizedProgram = getCourseData(program, lang);
+  const localizedProgram = getProgramData(program, lang);
 
   return (
     <div className="relative bg-gradient-to-r from-[#202C5B] to-[#226796] text-white py-16 bg-no-repeat bg-cover" style={{ backgroundImage: localizedProgram.image ? `url(${localizedProgram.image})` : 'none' }}>

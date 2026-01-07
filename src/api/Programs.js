@@ -97,7 +97,7 @@ const normalizeProgram = (program, lang = 'ar') => {
     reviews: p.reviews,
     instructor: p.instructor
       ? {
-          name: p.instructor.name,
+          name: localizeValueDeep(p.instructor.name, lang) || '',
           title: localizeValueDeep(p.instructor.title, lang) || '',
           experience: localizeValueDeep(p.instructor.experience, lang) || '',
           image: p.instructor.image,

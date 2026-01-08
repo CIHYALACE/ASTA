@@ -2,19 +2,13 @@ import { useState, useEffect, useMemo } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
 import {
-  ComputerDesktopIcon,
-  AcademicCapIcon,
-  UserGroupIcon,
   MagnifyingGlassIcon,
   FunnelIcon,
   BookOpenIcon,
-  ShieldCheckIcon,
-  BriefcaseIcon,
 } from '@heroicons/react/24/outline';
 // Components
-import ProgramCard from '../components/ProgramCard.jsx';
-import ProgramsHeroSection from '../components/ProgramsHeroSection';
-import CourseCard from '../components/CourseCard';
+import ProgramsHeroSection from '../components/Diplomas/ProgramsHeroSection';
+import CourseCard from '../components/Courses/CourseCard';
 // data
 import Courses, { getCourseData } from '../api/Courses';
 import CategoriesData from '../api/Categories.json';
@@ -22,6 +16,7 @@ import CategoriesData from '../api/Categories.json';
 const CoursesPage = () => {
   const location = useLocation();
   const { lang } = useParams();
+  // filter holds main category ID or 'all'
   const [filter, setFilter] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -32,31 +27,64 @@ const CoursesPage = () => {
     return String(value);
   };
 
-  const categories = useMemo(() => {
-    const values = Object.values(CategoriesData?.categories || {}).map((label) =>
-      localizeLabel(label)
-    );
-    return ['all', ...values];
+  // Build category options as { id, label } so filtering works in all languages
+  const categoryOptions = useMemo(() => {
+    const entries = Object.entries(CategoriesData?.categories || {});
+    return [
+      { id: 'all', label: lang === 'en' ? 'All Courses' : 'جميع الدورات' },
+      ...entries.map(([id, cat]) => ({
+        id,
+        label: localizeLabel(cat),
+      })),
+    ];
   }, [lang]);
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const categoryId = params.get('category');
-    if (!categoryId) return;
+    if (!categoryId) {
+      setFilter('all');
+      return;
+    }
 
-    const label = localizeLabel(CategoriesData?.categories?.[categoryId]);
-    if (label) setFilter(label);
-  }, [location.search, lang]);
+    // Ensure the category exists
+    if (CategoriesData?.categories?.[categoryId]) {
+      setFilter(categoryId);
+    } else {
+      setFilter('all');
+    }
+  }, [location.search]);
 
-  // تصفية الدورات حسب الفئة ونتيجة البحث
-  const filteredCourses = Courses.filter(course => {
-    const localizedCourse = getCourseData(course, lang || 'ar');
-    const matchesCategory = filter === 'all' || localizedCourse.category === filter;
-    const matchesSearch = (localizedCourse.title && localizedCourse.title.includes(searchTerm)) || 
-                         (localizedCourse.description && localizedCourse.description.includes(searchTerm)) ||
-                         (localizedCourse.subtitle && localizedCourse.subtitle.includes(searchTerm));
-    return matchesCategory && matchesSearch;
-  });
+  // Filter courses by main category (using IDs) and search term
+  const filteredCourses = useMemo(() => {
+    return Courses.filter(course => {
+      const localizedCourse = getCourseData(course, lang || 'ar');
+
+      // Resolve this course's main category ID by matching against Categories.json
+      let courseCategoryId = null;
+      const catEntries = Object.entries(CategoriesData.categories || {});
+      const catMatch = catEntries.find(([, cat]) =>
+        cat.ar === localizedCourse.category || cat.en === localizedCourse.category
+      );
+      if (catMatch) {
+        courseCategoryId = catMatch[0];
+      }
+
+      const matchesCategory =
+        filter === 'all' || (courseCategoryId !== null && courseCategoryId === filter);
+
+      const matchesSearch =
+        !searchTerm ||
+        (localizedCourse.title &&
+          localizedCourse.title.toLowerCase().includes(searchTerm.toLowerCase())) ||
+        (localizedCourse.description &&
+          localizedCourse.description.toLowerCase().includes(searchTerm.toLowerCase())) ||
+        (localizedCourse.subtitle &&
+          localizedCourse.subtitle.toLowerCase().includes(searchTerm.toLowerCase()));
+
+      return matchesCategory && matchesSearch;
+    });
+  }, [filter, searchTerm, lang]);
 
   return (
     <>
@@ -66,7 +94,7 @@ const CoursesPage = () => {
         {/* عنوان الصفحة */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            الدورات الاحترافية  
+            {lang === 'en' ? 'Professional Courses' : 'الدورات الاحترافية'}
           </h1>
           <div className="h-1.5 w-48 bg-gradient-to-r from-[#202C5B] via-[#23A0D0] to-[#3CBEB3] mx-auto rounded-full mb-6"></div>
         </div>
@@ -78,7 +106,7 @@ const CoursesPage = () => {
             <div className="relative w-full lg:w-96">
               <input
                 type="text"
-                placeholder="ابحث عن دورة احترافية..."
+                placeholder={lang === 'en' ? 'Search for professional courses...' : 'ابحث عن دورة احترافية...'}
                 className="w-full pr-10 pl-10 py-3.5 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent bg-white text-gray-800 shadow-sm"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
@@ -90,25 +118,28 @@ const CoursesPage = () => {
             <div className="flex items-center gap-2 text-gray-700 bg-white px-4 py-2.5 rounded-xl shadow-sm border border-gray-200">
               <FunnelIcon className="h-5 w-5 text-gray-500" />
               <span className="font-medium">
-                عرض <span className="text-[#202C5B]">{filteredCourses.length}</span> من <span className="text-[#202C5B]">{Courses.length}</span> دورة
+                {lang === 'en' 
+                  ? `Showing ${filteredCourses.length} of ${Courses.length} courses`
+                  : `عرض ${filteredCourses.length} من ${Courses.length} دورة`
+                }
               </span>
             </div>
           </div>
 
           {/* أزرار التصفية */}
           <div className="flex flex-wrap gap-3 justify-center">
-            {categories.map((category) => (
+            {categoryOptions.map((option) => (
               <button
-                key={category}
+                key={option.id}
                 className={`px-5 py-2.5 rounded-xl font-medium transition-all duration-300 flex items-center gap-2 ${
-                  filter === category 
-                    ? 'bg-gradient-to-r from-[#202C5B] to-[#226796] text-white shadow-lg' 
+                  filter === option.id
+                    ? 'bg-gradient-to-r from-[#202C5B] to-[#226796] text-white shadow-lg'
                     : 'bg-white text-gray-700 hover:bg-gray-50 shadow-sm hover:shadow-md border border-gray-200'
                 }`}
-                onClick={() => setFilter(category)}
+                onClick={() => setFilter(option.id)}
               >
                 <FunnelIcon className="h-4 w-4" />
-                {category === 'all' ? 'جميع الدورات' : category}
+                {option.label}
               </button>
             ))}
           </div>
@@ -127,10 +158,13 @@ const CoursesPage = () => {
               <BookOpenIcon className="h-12 w-12 text-gray-400" />
             </div>
             <h3 className="text-2xl font-bold text-gray-700 mb-4">
-              لا توجد دورات تطابق بحثك
+              {lang === 'en' ? 'No courses match your search' : 'لا توجد دورات تطابق بحثك'}
             </h3>
             <p className="text-gray-500 mb-8 max-w-md mx-auto">
-              حاول استخدام مصطلحات بحث مختلفة أو قم بتغيير الفلتر للعثور على الدورة المناسب
+              {lang === 'en' 
+                ? 'Try using different search terms or change the filter to find the right course'
+                : 'حاول استخدام مصطلحات بحث مختلفة أو قم بتغيير الفلتر للعثور على الدورة المناسب'
+              }
             </p>
             <button 
               className="px-6 py-3 bg-gradient-to-r from-[#202C5B] to-[#226796] text-white rounded-xl font-medium hover:shadow-lg transition-all duration-300 flex items-center gap-2 mx-auto"
@@ -140,7 +174,7 @@ const CoursesPage = () => {
               }}
             >
               <FunnelIcon className="h-5 w-5" />
-              عرض جميع الدورات
+              {lang === 'en' ? 'Show All Courses' : 'عرض جميع الدورات'}
             </button>
           </div>
         )}

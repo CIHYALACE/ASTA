@@ -7,8 +7,8 @@ import {
   BookOpenIcon,
 } from '@heroicons/react/24/outline';
 // Components
-import CategoryHeroSection from '../components/CategoryHeroSection';
-import CourseCard from '../components/CourseCard';
+import CategoryHeroSection from '../components/Courses/CategoryHeroSection';
+import CourseCard from '../components/Courses/CourseCard';
 // data
 import Courses, { getCourseData } from '../api/Courses';
 import CategoriesData from '../api/Categories.json';
@@ -46,9 +46,9 @@ const CategoryPage = () => {
     }));
   }, [categoryData, lang]);
 
-  // Build filter options (all + sub-categories)
+  // Build filter options (all + sub-categories by ID)
   const filterOptions = useMemo(() => {
-    return ['all', ...subCategories.map(sc => sc.label)];
+    return ['all', ...subCategories.map(sc => sc.id)];
   }, [subCategories]);
 
   // Handle URL query params for sup_category filter
@@ -60,23 +60,49 @@ const CategoryPage = () => {
       return;
     }
 
-    // Find the sub-category label by ID
+    // Ensure the sub-category exists for this main category
     const supCategory = subCategories.find(sc => sc.id === supCategoryId);
     if (supCategory) {
-      setFilter(supCategory.label);
+      setFilter(supCategory.id);
+    } else {
+      setFilter('all');
     }
   }, [location.search, subCategories]);
 
-  // Filter courses by main category first, then by sub-category
+  // Filter courses by main category (by ID) first, then by sub-category (by ID), then search
   const filteredCourses = useMemo(() => {
     return Courses.filter(course => {
       const localizedCourse = getCourseData(course, lang || 'ar');
-      
-      // First, match the main category
-      const matchesMainCategory = localizedCourse.category === categoryName;
-      
-      // Then, match sub-category filter (if not 'all')
-      const matchesSubCategory = filter === 'all' || localizedCourse.sup_category === filter;
+
+      // Resolve this course's main category ID by matching against Categories.json
+      let courseCategoryId = null;
+      const catEntries = Object.entries(CategoriesData.categories || {});
+      const catMatch = catEntries.find(([id, cat]) =>
+        cat.ar === localizedCourse.category || cat.en === localizedCourse.category
+      );
+      if (catMatch) {
+        courseCategoryId = catMatch[0];
+      }
+      const matchesMainCategory = courseCategoryId === categoryId;
+
+      // Then, match sub-category filter (if not 'all'), using IDs
+      let matchesSubCategory = true;
+      if (filter !== 'all') {
+        // Resolve this course's sub-category ID by matching against current category's sup_categories
+        let courseSupCategoryId = null;
+        if (localizedCourse.sup_category && categoryData?.sup_categories) {
+          const supMatch = categoryData.sup_categories.find(
+            (sup) =>
+              sup.ar === localizedCourse.sup_category ||
+              sup.en === localizedCourse.sup_category
+          );
+          if (supMatch) {
+            courseSupCategoryId = supMatch.id;
+          }
+        }
+        matchesSubCategory =
+          courseSupCategoryId !== null && courseSupCategoryId === filter;
+      }
       
       // Match search term
       const matchesSearch = !searchTerm || 
@@ -86,7 +112,7 @@ const CategoryPage = () => {
       
       return matchesMainCategory && matchesSubCategory && matchesSearch;
     });
-  }, [filter, searchTerm, lang, categoryName]);
+  }, [filter, searchTerm, lang, categoryId, categoryData]);
 
   const isRTL = lang === 'ar';
 
@@ -109,6 +135,8 @@ const CategoryPage = () => {
     <>
       <CategoryHeroSection 
         categoryName={categoryName} 
+        categoryImage={categoryData.image}
+        categoryPNG={categoryData.png}
         lang={lang}
       />
       <div className={`min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-8 px-4`} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -149,25 +177,32 @@ const CategoryPage = () => {
               </div>
             </div>
 
-            {/* Filter Buttons */}
+            {/* Filter Buttons (by sub-category ID) */}
             <div className="flex flex-wrap gap-3 justify-center">
-              {filterOptions.map((option) => (
-                <button
-                  key={option}
-                  className={`px-5 py-2.5 rounded-xl font-medium transition-all duration-300 flex items-center gap-2 ${
-                    filter === option 
-                      ? 'bg-gradient-to-r from-[#202C5B] to-[#226796] text-white shadow-lg' 
-                      : 'bg-white text-gray-700 hover:bg-gray-50 shadow-sm hover:shadow-md border border-gray-200'
-                  }`}
-                  onClick={() => setFilter(option)}
-                >
-                  <FunnelIcon className="h-4 w-4" />
-                  {option === 'all' 
-                    ? (lang === 'ar' ? 'جميع الدورات' : 'All Courses')
-                    : option
-                  }
-                </button>
-              ))}
+              {filterOptions.map((option) => {
+                const isAll = option === 'all';
+                const supCategory = isAll
+                  ? null
+                  : subCategories.find(sc => sc.id === option);
+                const label = isAll
+                  ? (lang === 'ar' ? 'جميع الدورات' : 'All Courses')
+                  : (supCategory ? supCategory.label : option);
+
+                return (
+                  <button
+                    key={option}
+                    className={`px-5 py-2.5 rounded-xl font-medium transition-all duration-300 flex items-center gap-2 ${
+                      filter === option
+                        ? 'bg-gradient-to-r from-[#202C5B] to-[#226796] text-white shadow-lg'
+                        : 'bg-white text-gray-700 hover:bg-gray-50 shadow-sm hover:shadow-md border border-gray-200'
+                    }`}
+                    onClick={() => setFilter(option)}
+                  >
+                    <FunnelIcon className="h-4 w-4" />
+                    {label}
+                  </button>
+                );
+              })}
             </div>
           </div>
 

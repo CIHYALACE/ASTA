@@ -3,15 +3,14 @@ import emailjs from '@emailjs/browser';
 import Programs, { getProgramData } from '../api/Programs';
 import Courses, { getCourseData } from '../api/Courses';
 // components
-import RegistrationHeader from '../components/RegistrationHeader';
-// import EmailConfirmationNotice from '../components/EmailConfirmationNotice';
-import PersonalInfoSection from '../components/PersonalInfoSection';
-import ProgramTypeSelector from '../components/ProgramTypeSelector';
-import ProgramSelectionSection from '../components/ProgramSelectionSection';
-import DiplomaSpecificSection from '../components/DiplomaSpecificSection';
-import PaymentSection from '../components/PaymentSection';
-import SummarySection from '../components/SummarySection';
-import SuccessConfirmation from '../components/SuccessConfirmation';
+import RegistrationHeader from '../components/Registration/RegistrationHeader';
+import PersonalInfoSection from '../components/Registration/PersonalInfoSection';
+import ProgramTypeSelector from '../components/Registration/ProgramTypeSelector';
+import ProgramSelectionSection from '../components/Registration/ProgramSelectionSection';
+import DiplomaSpecificSection from '../components/Registration/DiplomaSpecificSection';
+import PaymentSection from '../components/Registration/PaymentSection';
+import SummarySection from '../components/Registration/SummarySection';
+import SuccessConfirmation from '../components/Registration/SuccessConfirmation';
 
 // prepare EmailJS
 emailjs.init("k62cRdPnAvAsP_96b");

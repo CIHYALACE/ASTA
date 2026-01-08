@@ -93,6 +93,7 @@ const normalizeCourse = (course, lang = 'ar') => {
   return {
     id: c.id,
     icon: normalizeIcon(c.icon),
+    image: c.image,
     title: localizeValueDeep(c.title, lang) || '',
     subtitle: localizeValueDeep(c.subtitle, lang) || '',
     category: localizeValueDeep(category, lang) || '',
@@ -130,8 +131,30 @@ const normalizeCourse = (course, lang = 'ar') => {
 
 const Courses = CoursesData.map((course) => normalizeCourse(course, 'ar'));
 
-export const getCourseData = (course, lang = 'ar') => {
-  return normalizeCourse(course, lang);
+// Return localized course data in Arabic or English based on the original JSON,
+// so we don't lose bilingual fields even if the caller passes an already-localized object.
+// - Accepts either a full course object or a numeric/string ID.
+// - Any lang other than 'en' falls back to 'ar'.
+export const getCourseData = (courseOrId, lang = 'ar') => {
+  const safeLang = lang === 'en' ? 'en' : 'ar';
+
+  // Try to resolve the course ID
+  const id =
+    typeof courseOrId === 'number' || typeof courseOrId === 'string'
+      ? Number(courseOrId)
+      : courseOrId && typeof courseOrId === 'object'
+      ? courseOrId.id
+      : undefined;
+
+  // Always localize from the original bilingual JSON when possible
+  const sourceFromJson =
+    typeof id === 'number'
+      ? CoursesData.find((c) => c.id === id)
+      : undefined;
+
+  const source = sourceFromJson || courseOrId || {};
+
+  return normalizeCourse(source, safeLang);
 };
 
 export default Courses;

@@ -1,7 +1,7 @@
 import React from "react";
-import JourneyTimeline from "../components/JourneyTimeline";
-import AboutSection from "../components/AboutSection";
-import VisionMission from "../components/VisionMission";
+import JourneyTimeline from "../components/AboutUs/JourneyTimeline";
+import AboutSection from "../components/AboutUs/AboutSection";
+import VisionMission from "../components/AboutUs/VisionMission";
 
 function AboutUs() {
   return (

@@ -107,7 +107,7 @@ const normalizeProgram = (program, lang = 'ar') => {
     overview: localizeValueDeep(p.overview, lang) || '',
     objectives: localizeValueDeep(p.objectives, lang),
     curriculum: localizeValueDeep(p.curriculum, lang),
-    targetAudience: localizeValueDeep(p.targetAudience, lang),
+    targetJobs: localizeValueDeep(p.targetJobs, lang),
     requirements: localizeValueDeep(p.requirements, lang),
     admission_requirements: localizeValueDeep(p.admission_requirements, lang),
     faqs: localizeValueDeep(p.faqs, lang),

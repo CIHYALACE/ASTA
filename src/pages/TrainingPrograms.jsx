@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import {
   MagnifyingGlassIcon,
   FunnelIcon,
@@ -17,14 +17,24 @@ const TrainingProgramsPage = () => {
   // بيانات برامج التدريب
   const programs = Programs;
 
-  const categories = ["all", "برامج أكاديمية", "برامج تقنية", "برامج إدارية", "برامج متقدمة"];
+  // Extract unique categories from programs data
+  const categories = useMemo(() => {
+    const uniqueCategories = new Set();
+    programs.forEach(program => {
+      const localizedProgram = getProgramData(program, 'ar');
+      if (localizedProgram.category) {
+        uniqueCategories.add(localizedProgram.category);
+      }
+    });
+    return ['all', ...Array.from(uniqueCategories)];
+  }, [programs]);
 
   // تصفية البرامج حسب الفئة ونتيجة البحث
   const filteredPrograms = programs.filter(program => {
     const localizedProgram = getProgramData(program, 'ar'); // Default to Arabic for filtering
     const matchesCategory = filter === 'all' || localizedProgram.category === filter;
     const matchesSearch = (localizedProgram.title && localizedProgram.title.includes(searchTerm)) || 
-                         (localizedProgram.description && localizedProgram.description.includes(searchTerm)) ||
+                         (localizedProgram.overview && localizedProgram.overview.includes(searchTerm)) ||
                          (localizedProgram.subtitle && localizedProgram.subtitle.includes(searchTerm));
     return matchesCategory && matchesSearch;
   });

@@ -1,4 +1,4 @@
-  import { ArrowLeftIcon, BookOpenIcon, StarIcon, UserGroupIcon, CalendarIcon, ClockIcon, ShareIcon, BookmarkIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
+  import { ArrowLeftIcon, BookOpenIcon, StarIcon, UserIcon, CalendarIcon, ClockIcon, ShareIcon, BookmarkIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
 import { useNavigate , useParams} from 'react-router-dom';
 import { getProgramData } from '../../api/Programs';
 
@@ -52,8 +52,8 @@ function ProgramHeader({ program }) {
               </div>
               
               <div className="flex items-center gap-2 text-blue-100">
-                <UserGroupIcon className="h-5 w-5" />
-                <span>{program.enrolled} مسجل بالفعل</span>
+                <UserIcon className="h-5 w-5" />
+                <span>{program.instructor.name}</span>
               </div>
             </div>
           </div>
@@ -70,15 +70,15 @@ function ProgramHeader({ program }) {
               <div className="space-y-4 mb-6">
                 <div className="flex items-center gap-3">
                   <CalendarIcon className="h-5 w-5 text-blue-200" />
-                  <span>يبدأ {program.startDate}</span>
+                  <span>يبدأ {program.startDate || 'قريبا'}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <ClockIcon className="h-5 w-5 text-blue-200" />
                   <span>{localizedProgram.duration}</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <UserGroupIcon className="h-5 w-5 text-blue-200" />
-                  <span>{program.availableSeats} مقاعد متبقية من {program.seats}</span>
+                  <UserIcon className="h-5 w-5 text-blue-200" />
+                  <span>{program.instructor.name}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <img src="/images/tabby-logo-1.png" className='w-15' alt="" />
@@ -99,13 +99,6 @@ function ProgramHeader({ program }) {
                   <BookmarkIcon className="h-5 w-5" />
                   <span>حفظ</span>
                 </button>
-              </div>
-              
-              <div className="mt-6 text-center text-blue-100 text-sm">
-                <div className="flex items-center justify-center gap-2">
-                  <CurrencyDollarIcon className="h-4 w-4" />
-                  <span>التقسيط: {program.installment}</span>
-                </div>
               </div>
             </div>
           </div>

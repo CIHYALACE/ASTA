@@ -1,12 +1,12 @@
 import { CheckCircleIcon, BuildingOfficeIcon, PhoneIcon } from '@heroicons/react/24/solid';
 import { useParams } from 'react-router-dom';
-import { getCourseData } from '../../api/Courses';
+import { getProgramData } from '../../api/Programs';
 
 function RequirementsSection({ program }) {
   const { lang } = useParams();
   
   // Get localized program data
-  const localizedProgram = getCourseData(program, lang);
+  const localizedProgram = getProgramData(program, lang);
   const requirements = Array.isArray(localizedProgram?.requirements)
     ? localizedProgram.requirements
     : [];

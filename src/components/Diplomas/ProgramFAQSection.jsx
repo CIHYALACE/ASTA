@@ -1,12 +1,12 @@
 import { ChevronRightIcon } from '@heroicons/react/24/outline';
 import { useParams } from 'react-router-dom';
-import { getCourseData } from '../../api/Courses';
+import { getProgramData } from '../../api/Programs';
 
 function FAQSection({ program }) {
   const { lang } = useParams();
   
   // Get localized program data
-  const localizedProgram = getCourseData(program, lang);
+  const localizedProgram = getProgramData(program, lang);
 
   return (
     <section className="py-12 bg-white">

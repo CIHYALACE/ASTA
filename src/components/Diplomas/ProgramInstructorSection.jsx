@@ -1,12 +1,12 @@
 import { StarIcon, UserIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 import { useParams } from 'react-router-dom';
-import { getCourseData } from '../../api/Courses';
+import { getProgramData } from '../../api/Programs';
 
 function InstructorSection({ program }) {
   const { lang } = useParams();
   
   // Get localized program data
-  const localizedProgram = getCourseData(program, lang);
+  const localizedProgram = getProgramData(program, lang);
 
   return (
     <section className="py-12 bg-white">

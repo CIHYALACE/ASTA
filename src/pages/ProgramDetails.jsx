@@ -31,7 +31,7 @@ const ProgramDetails = () => {
       <InstructorSection program={program} />
       <RequirementsSection program={program} />
       <ProgramFAQSection program={program} />
-      <RelatedProgramsSection />
+      <RelatedProgramsSection currentProgramId={id} />
       
       {/* CTA Bottom */}
       <div className="bg-gradient-to-r from-[#202C5B] to-[#226796] text-white py-12">

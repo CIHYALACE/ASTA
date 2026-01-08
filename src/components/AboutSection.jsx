@@ -29,7 +29,7 @@ const AboutSection = () => {
                     </div>
                 </div>
                 <div className="md:w-1/2">
-                <video autoPlay muted loop playsInline className="w-full h-full object-cover rounded-2xl">
+                <video autoPlay muted loop playsInline preload="metadata" className="w-full h-full object-cover rounded-2xl">
                     <source src="/videos/Asta_AI.mp4" type="video/mp4" />
                 </video>
                 </div>

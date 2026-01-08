@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 // Components
 import ProgramHeader from "../components/Diplomas/ProgramHeader";
@@ -12,6 +12,10 @@ import RelatedProgramsSection from "../components/Diplomas/RelatedProgramsSectio
 import Programs, { getProgramData } from "../api/Programs";
 const ProgramDetails = () => {
   const { id, lang = 'ar' } = useParams();  
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);  
   const parsedId = parseInt(id);
   const program = Programs[parsedId - 1]; 
   const localizedProgram = getProgramData(program, lang);

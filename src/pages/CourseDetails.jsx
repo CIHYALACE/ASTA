@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 // Components
 import CourseHeader from "../components/Courses/CourseHeader";
@@ -11,6 +11,10 @@ import RelatedCoursesSection from "../components/Courses/RelatedCoursesSection";
 import Courses, { getCourseData } from "../api/Courses";
 const CourseDetails = () => {
   const { id, lang = 'ar' } = useParams();  
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);  
   const parsedId = parseInt(id);
   const course = Courses[parsedId - 1]; 
   const localizedCourse = getCourseData(course, lang);

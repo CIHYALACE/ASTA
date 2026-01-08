@@ -2,19 +2,13 @@ import { useState, useEffect, useMemo } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
 import {
-  ComputerDesktopIcon,
-  AcademicCapIcon,
-  UserGroupIcon,
   MagnifyingGlassIcon,
   FunnelIcon,
   BookOpenIcon,
-  ShieldCheckIcon,
-  BriefcaseIcon,
 } from '@heroicons/react/24/outline';
 // Components
-import ProgramCard from '../components/ProgramCard.jsx';
-import ProgramsHeroSection from '../components/ProgramsHeroSection';
-import CourseCard from '../components/CourseCard';
+import ProgramsHeroSection from '../components/Diplomas/ProgramsHeroSection';
+import CourseCard from '../components/Courses/CourseCard';
 // data
 import Courses, { getCourseData } from '../api/Courses';
 import CategoriesData from '../api/Categories.json';

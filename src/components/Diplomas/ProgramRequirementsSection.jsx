@@ -32,6 +32,7 @@ function RequirementsSection({ program }) {
                   <span className="text-gray-700">{req}</span>
                 </div>
               ))}
+              {requirements.length === 0 && <p className="text-gray-500"> - لا توجد متطلبات</p>}
             </div>
           </div>
           

@@ -1,5 +1,7 @@
 import { useState, useMemo } from 'react';
 import emailjs from '@emailjs/browser';
+import { useParams } from 'react-router-dom';
+// api
 import Programs, { getProgramData } from '../api/Programs';
 import Courses, { getCourseData } from '../api/Courses';
 // components
@@ -15,7 +17,8 @@ import SuccessConfirmation from '../components/Registration/SuccessConfirmation'
 // prepare EmailJS
 emailjs.init("k62cRdPnAvAsP_96b");
 
-const RegistrationPage = ({ programId = 2 }) => {
+const RegistrationPage = () => {
+  const { programId, lang } = useParams();
   const programs = Programs;
   const courses = Courses;
   // بيانات الشهادات المتاحة
@@ -285,6 +288,11 @@ const handleSubmit = async (e) => {
       formData.selectedServices.includes(service.id)
     );
     
+    // Format selected services for email display
+    const selectedServicesText = selectedServicesList
+      .map(service => `${service.name}`)
+      .join(', ');
+    
     const servicesTotal = selectedServicesList.reduce(
       (sum, service) => sum + (Number(service.price) || 0),
       0
@@ -317,6 +325,7 @@ const handleSubmit = async (e) => {
           to_email: formData.email,
           to_name: formData.fullName,
           program_name: localizedProgram.title,
+          selected_services: selectedServicesText,
           reference_number: submissionData.referenceNumber,
           total_amount: totalAmount.toLocaleString()
         }

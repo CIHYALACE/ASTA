@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Programs, { getProgramData } from '../api/Programs';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
   const { lang = 'ar' } = useParams();
+  const { t } = useTranslation();
 
   const handleNewsletterSubmit = (e) => {
     e.preventDefault();
@@ -15,8 +17,8 @@ export default function Footer() {
   // Data based on AOL footer structure
   const footerData = {
     contactInfo: [
-      { icon: 'fa-map-marker-alt', text: 'الدمام، المملكة العربية السعودية' },
-      { icon: 'fa-phone', text: '966920016205+', href: 'https://wa.me/966920016205', target: '_blank' },
+      { icon: 'fa-map-marker-alt', text: t('footer.address') },
+      { icon: 'fa-phone', text: t('global.phoneNumber'), href: 'https://wa.me/966920016205', target: '_blank' },
       { icon: 'fa-envelope', text: 'info@asta.edu.sa', href: 'mailto:info@asta.edu.sa', target: '_blank' }
     ],
     
@@ -26,11 +28,11 @@ export default function Footer() {
     })).filter(program => program.title),
     
     quickLinks: [
-      { label: 'الرئيسية', href: `/${lang}/` },
-      { label: 'عن الأكاديمية', href: `/${lang}/about-us` },
-      { label: 'البرامج التدريبية', href: `/${lang}/programs` },
-      { label: 'الدورات الاحترافية', href: `/${lang}/courses` },
-      { label: 'التسجيل', href: `/${lang}/registration` },
+      { label: t('header.nav.home'), href: `/${lang}/` },
+      { label: t('header.nav.about'), href: `/${lang}/about-us` },
+      { label: t('header.nav.diplomas'), href: `/${lang}/programs` },
+      { label: t('header.nav.courses'), href: `/${lang}/courses` },
+      { label: t('header.nav.registration'), href: `/${lang}/registration` },
     ],
     
     socialLinks: [
@@ -70,7 +72,7 @@ export default function Footer() {
                 />
               </a>
               <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                نقدم تعليمًا أكاديميًا وتدريبًا تقنيًا معتمدًا لتأهيل الكوادر الوطنية لسوق العمل بما يتوافق مع رؤية المملكة 2030
+                {t('footer.message')}
               </p>
               
               {/* Contact Information */}
@@ -97,7 +99,7 @@ export default function Footer() {
             
             {/* Social Media */}
             <div className="mb-8">
-              <h4 className="font-semibold mb-4 text-lg">تابعنا على</h4>
+              <h4 className="font-semibold mb-4 text-lg">{t('footer.followUs')}</h4>
               <div className="flex gap-3">
                 {footerData.socialLinks.map((social) => (
                   <a
@@ -130,8 +132,8 @@ export default function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {/* Programs */}
             <div>
-              <h3 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-12 after:h-1 after:bg-gradient-to-r after:from-[#23a0d0] after:to-[#3cbeb3]">
-                برامجنا
+              <h3 className={`text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 ${lang === 'ar' ? 'after:right-0' : 'after:left-0'} after:w-12 after:h-1 after:bg-gradient-to-r after:from-[#23a0d0] after:to-[#3cbeb3]`}>
+                {t('footer.ourDiplomas')}
               </h3>
               <ul className="space-y-3">
                 {footerData.programs.map((program) => (
@@ -150,8 +152,8 @@ export default function Footer() {
             
             {/* Quick Links */}
             <div>
-              <h3 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-12 after:h-1 after:bg-gradient-to-r after:from-[#23a0d0] after:to-[#3cbeb3]">
-                روابط سريعة
+              <h3 className={`text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 ${lang === 'ar' ? 'after:right-0' : 'after:left-0'} after:w-12 after:h-1 after:bg-gradient-to-r after:from-[#23a0d0] after:to-[#3cbeb3]`}>
+                {t('footer.quickLinks')}
               </h3>
               <ul className="space-y-3">
                 {footerData.quickLinks.map((link, index) => (
@@ -160,7 +162,7 @@ export default function Footer() {
                       href={link.href}
                       className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center gap-2 group text-sm"
                     >
-                      <i className="fas fa-chevron-left text-xs text-[#23a0d0] group-hover:translate-x-[-2px] transition-transform"></i>
+                      <i className={`${lang === 'ar' ? 'fas fa-chevron-left' : 'fas fa-chevron-right'} text-xs text-[#23a0d0] group-hover:translate-x-[-2px] transition-transform mr-2`}></i>
                       {link.label}
                     </a>
                   </li>
@@ -173,16 +175,16 @@ export default function Footer() {
           <div>
             {/* Newsletter */}
             <div className="mb-8">
-              <h3 className="text-xl font-bold mb-4">النشرة الإخبارية</h3>
+              <h3 className={`text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 ${lang === 'ar' ? 'after:right-0' : 'after:left-0'} after:w-12 after:h-1 after:bg-gradient-to-r after:from-[#23a0d0] after:to-[#3cbeb3]`}>{t('footer.newsLetter')}</h3>
               <p className="text-gray-300 text-sm mb-4">
-                اشترك في نشرتنا الإخبارية لتصلك آخر أخبارنا وعروضنا
+                {t('footer.newsLetterDescription')}
               </p>
               <form onSubmit={handleNewsletterSubmit} className="space-y-3">
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="بريدك الإلكتروني"
+                  placeholder={t('forms.placeholders.email')}
                   className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#23a0d0] focus:border-transparent text-sm"
                   required
                 />

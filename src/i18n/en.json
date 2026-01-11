@@ -40,7 +40,13 @@
 
   "footer": {
     "copyright": "All rights reserved to Applied Skills Training Academy © 2025",
-    "address": "East Region, Dammam, Saudi Arabia"
+    "address": "East Region, Dammam, Saudi Arabia",
+    "ourDiplomas": "Our Diplomas",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "message": "We offer academic and technical training programs based on the General Organization for Technical and Vocational Training to prepare national cadres for the job market in line with Vision 2030",
+    "newsLetter": "Subscribe to our newsletter",
+    "newsLetterDescription": "Subscribe to our newsletter to get the latest news and offers that suit you and help you achieve your professional excellence."
   },
 
   "hero": {

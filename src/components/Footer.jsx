@@ -192,7 +192,7 @@ export default function Footer() {
                   type="submit"
                   className="w-full bg-gradient-to-r from-[#226796] to-[#3cbeb3] text-white py-3 rounded-lg font-semibold transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
                 >
-                  اشتراك
+                 {lang === 'ar' ? 'اشتراك' : 'Subscribe'}
                 </button>
               </form>
             </div>

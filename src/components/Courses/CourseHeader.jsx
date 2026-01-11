@@ -5,12 +5,13 @@ import { getCourseData } from '../../api/Courses';
 function CourseHeader({ course }) {
   const navigate = useNavigate();
   const { lang } = useParams();
+  const isRTL = lang === 'ar';
   
   // Get localized program data
   const localizedCourse = getCourseData(course, lang);
 
   return (
-    <div className="relative bg-gradient-to-r from-[#202C5B] to-[#226796] text-white py-16 bg-no-repeat bg-cover" style={{ backgroundImage: localizedCourse.image ? `url(${localizedCourse.image})` : 'none' }}>
+    <div className={isRTL ? "relative bg-gradient-to-l from-[#202C5B] to-[#226796] text-white py-16 bg-no-repeat bg-cover" : "relative bg-gradient-to-r from-[#202C5B] to-[#226796] text-white py-16 bg-no-repeat bg-cover"} style={{ backgroundImage: localizedCourse.image ? `url(${localizedCourse.image})` : 'none' }}>
       <div className="absolute inset-0 bg-gradient-to-r from-[#202C5B]/90 to-[#226796]/20"></div>
       <div className="absolute inset-0 overflow-hidden opacity-20">
         <div className="absolute -top-20 -right-20 w-64 h-64 border-t-[120px] border-r-[120px] border-t-white border-r-transparent"></div>
@@ -20,7 +21,7 @@ function CourseHeader({ course }) {
       <div className="relative max-w-7xl mx-auto px-4">
         <button className="flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors">
           <ArrowLeftIcon className="h-5 w-5" />
-          <span>العودة للبرامج</span>
+          <span>{isRTL ? 'العودة للبرامج' : 'Back to programs'}</span>
         </button>
         
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
@@ -47,13 +48,13 @@ function CourseHeader({ course }) {
                 </div>
                 <div>
                   <div className="font-bold text-lg">{localizedCourse.rating}</div>
-                  <div className="text-sm text-blue-100">({localizedCourse.reviews} تقييم)</div>
+                  <div className="text-sm text-blue-100">({localizedCourse.reviews}{isRTL ? ' تقييم' : ' Reviews'})</div>
                 </div>
               </div>
               
               <div className="flex items-center gap-2 text-blue-100">
                 <UserIcon className="h-5 w-5" />
-                <span>د. {localizedCourse.instructor.name}</span>
+                <span>{isRTL ? 'د.' : 'Dr.'} {localizedCourse.instructor.name}</span>
               </div>
             </div>
           </div>
@@ -70,15 +71,15 @@ function CourseHeader({ course }) {
               <div className="space-y-4 mb-6">
                 <div className="flex items-center gap-3">
                   <CalendarIcon className="h-5 w-5 text-blue-200" />
-                  <span>يبدأ {localizedCourse.startDate || 'قريبا'}</span>
+                  <span>{isRTL ? 'يبدأ' : 'Starts'} {localizedCourse.startDate || 'قريبا'}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <ClockIcon className="h-5 w-5 text-blue-200" />
-                  <span>{localizedCourse.duration}</span>
+                  <span>{isRTL ? 'مدة' : 'Duration'} {localizedCourse.duration}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <UserIcon className="h-5 w-5 text-blue-200" />
-                  <span>د. {localizedCourse.instructor.name}</span>
+                  <span>{isRTL ? 'د.' : 'Dr.'} {localizedCourse.instructor.name}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <img src="/images/tabby-logo-1.png" className='w-15' alt="" />
@@ -87,17 +88,17 @@ function CourseHeader({ course }) {
               </div>
               
               <button onClick={() => navigate(`/${lang}/registration`)} className="w-full bg-gradient-to-r from-[#226796] to-[#23A0D0] text-white py-4 rounded-xl font-bold text-lg mb-4 hover:shadow-2xl transition-all duration-300">
-                سجل الآن
+                {isRTL ? 'سجل الآن' : 'Register now'}
               </button>
               
               <div className="flex gap-3">
                 <button className="flex-1 flex items-center justify-center gap-2 bg-white/10 py-3 rounded-xl hover:bg-white/20 transition-colors">
                   <ShareIcon className="h-5 w-5" />
-                  <span>مشاركة</span>
+                  <span>{isRTL ? 'مشاركة' : 'Share'}</span>
                 </button>
                 <button className="flex-1 flex items-center justify-center gap-2 bg-white/10 py-3 rounded-xl hover:bg-white/20 transition-colors">
                   <BookmarkIcon className="h-5 w-5" />
-                  <span>حفظ</span>
+                  <span>{isRTL ? 'حفظ' : 'Save'}</span>
                 </button>
               </div>
             </div>

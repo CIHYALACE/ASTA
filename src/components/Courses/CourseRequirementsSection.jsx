@@ -4,6 +4,7 @@ import { getCourseData } from '../../api/Courses';
 
 function RequirementsSection({ course }) {
   const { lang } = useParams();
+  const isRTL = lang === 'ar';
   
   // Get localized program data
   const localizedCourse = getCourseData(course, lang);
@@ -19,8 +20,8 @@ function RequirementsSection({ course }) {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 border-r-4 border-[#30AFC1] pr-4">
-              متطلبات القبول
+            <h2 className={`text-3xl font-bold text-gray-800 mb-8 ${isRTL ? 'border-r-4 border-[#30AFC1] pr-4' : 'border-l-4 border-[#30AFC1] pl-4'}`}>
+              {isRTL ? 'متطلبات القبول' : 'Requirements'}
             </h2>
             
             <div className="space-y-4">
@@ -36,8 +37,8 @@ function RequirementsSection({ course }) {
           </div>
           
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 border-r-4 border-[#3CBEB3] pr-4">
-              مزايا البرنامج
+            <h2 className={`text-3xl font-bold text-gray-800 mb-8 ${isRTL ? 'border-r-4 border-[#3CBEB3] pr-4' : 'border-l-4 border-[#3CBEB3] pl-4'}`}>
+              {isRTL ? 'مزايا البرنامج' : 'Program Benefits'}
             </h2>
             
             <div className="space-y-4">
@@ -50,14 +51,14 @@ function RequirementsSection({ course }) {
             </div>
             
             <div className="mt-8 bg-gradient-to-r from-[#30AFC1] to-[#3CBEB3] rounded-2xl p-6 text-white">
-              <div className="flex items-center gap-3 mb-4">
+              <div className={`flex items-center gap-3 mb-4 ${isRTL ? 'flex-row-reverse' : 'flex-row'}`}>
                 <BuildingOfficeIcon className="h-8 w-8" />
-                <h3 className="text-xl font-bold">دعم التوظيف</h3>
+                <h3 className="text-xl font-bold">{isRTL ? 'دعم التوظيف' : 'Employment Support'}</h3>
               </div>
-              <p className="mb-4">نوفر لك دعم كامل في إعداد السيرة الذاتية، التدريب على المقابلات الشخصية، وتوصيلك بشركات رائدة في المجال.</p>
+              <p className="mb-4">{isRTL ? 'نوفر لك دعم كامل في إعداد السيرة الذاتية، التدريب على المقابلات الشخصية، وتوصيلك بشركات رائدة في المجال.' : 'We offer you full support in preparing your resume, training for personal interviews, and connecting you with leading companies in the field.'}</p>
               <button className="flex items-center gap-2 text-white hover:text-gray-100">
                 <PhoneIcon className="h-5 w-5" />
-                <span>تواصل مع مستشار التوظيف</span>
+                <span>{isRTL ? 'تواصل مع مستشار التوظيف' : 'Contact employment advisor'}</span>
               </button>
             </div>
           </div>

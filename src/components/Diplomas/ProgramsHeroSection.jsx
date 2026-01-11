@@ -8,17 +8,29 @@ import {
   PlayCircleIcon,
   CheckCircleIcon
 } from '@heroicons/react/24/outline';
+import { useParams } from 'react-router-dom';
 
 const ProgramsHeroSection = () => {
-  const features = [
+  const features = {
+    ar:[
     "شهادات معتمدة عالمياً",
     "مدربون خبراء في المجال",
     "تدريب عملي وتطبيقي",
     "دعم وظيفي بعد التخرج"
-  ];
+    ],
+    en:[
+      "Internationally Approved Certificates",
+      "Expert Trainers in the Field",
+      "Practical and Applied Training",
+      "Job Support After Graduation"
+    ]
+  };
+
+  const { lang } = useParams();
+  const isRTL = lang === 'ar';
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-r from-[#202C5B] to-[#226796] text-white" dir="rtl">
+    <div className="relative overflow-hidden bg-gradient-to-r from-[#202C5B] to-[#226796] text-white" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* خلفية مع مثلثات هندسية */}
       <div className="absolute inset-0 overflow-hidden opacity-20">
         <div className="absolute -top-20 -right-20 w-64 h-64 border-t-[120px] border-r-[120px] border-t-white border-r-transparent"></div>
@@ -30,26 +42,26 @@ const ProgramsHeroSection = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* النص الرئيسي */}
-          <div className="text-right">
+          <div className="text-left">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <span className="text-sm font-medium"> برامج معتمدة دولياً</span>
+              <span className="text-sm font-medium">{isRTL ? 'برامج معتمدة دولياً' : 'Programs Approved Internationally'}</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              طور مهاراتك مع
+            <h1 className={`text-4xl ${isRTL ? 'md:text-5xl lg:text-6xl' : 'md:text-5xl lg:text-5xl'} font-bold mb-6 leading-tight`}>
+              {isRTL ? 'طور مهاراتك مع' : 'Develop Your Skills With'}
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#23A0D0] to-[#30AFC1] mt-2">
-                أفضل برامج التدريب
+                {isRTL ? 'أفضل برامج التدريب' : 'Best Training Programs'}
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              انطلق في رحلة التعلم والتطوير مع برامجنا التدريبية المصممة خصيصاً لتواكب متطلبات سوق العمل الحديث وتساعدك على تحقيق أهدافك المهنية.
+              {isRTL ? 'انطلق في رحلة التعلم والتطوير مع برامجنا التدريبية المصممة خصيصاً لتواكب متطلبات سوق العمل الحديث وتساعدك على تحقيق أهدافك المهنية.' : 'Launch your journey of learning and development with our training programs designed specifically to keep up with the latest job market requirements and help you achieve your professional goals.'}
             </p>
 
             {/* الميزات */}
             <div className="mb-10">
               <div className="grid grid-cols-2 gap-4">
-                {features.map((feature, index) => (
+                {features[lang].map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#23A0D0] to-[#30AFC1] flex items-center justify-center">
                       <CheckCircleIcon className="h-4 w-4 text-white" />
@@ -63,13 +75,13 @@ const ProgramsHeroSection = () => {
             {/* أزرار التحكم */}
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="px-8 py-4 bg-gradient-to-r from-[#23A0D0] to-[#30AFC1] text-gray-900 rounded-xl font-bold text-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3">
-                <span>استكشاف البرامج</span>
+                <span>{isRTL ? 'استكشاف البرامج' : 'Explore Programs'}</span>
                 <ArrowDownIcon className="h-5 w-5" />
               </button>
               
               <button className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl font-bold text-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3">
                 <PlayCircleIcon className="h-6 w-6" />
-                <span>شاهد فيديو التعريف</span>
+                <span>{isRTL ? 'شاهد فيديو التعريف' : 'Watch Introduction Video'}</span>
               </button>
             </div>
           </div>
@@ -85,11 +97,11 @@ const ProgramsHeroSection = () => {
                   <AcademicCapIcon className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <div className="font-bold text-lg">برامج مكثفة</div>
-                  <div className="text-sm text-blue-100">6-12 أسبوع</div>
+                  <div className="font-bold text-lg"> {isRTL ? 'برامج مكثفة' : 'Programs Intensive'}</div>
+                  <div className="text-sm text-blue-100">{isRTL ? '6-12 أسبوع' : '6-12 weeks'}</div>
                 </div>
               </div>
-              <div className="text-sm">تعلم المهارات المطلوبة في سوق العمل</div>
+              <div className="text-sm"> {isRTL ? 'تعلم المهارات المطلوبة في سوق العمل' : 'Learn the skills needed in the job market'}</div>
             </div>
 
             <div className="absolute -bottom-6 -right-6 w-56 bg-gradient-to-r from-[#3CBEB3] to-[#23A0D0] rounded-2xl p-6 shadow-2xl transform -rotate-3">
@@ -98,11 +110,11 @@ const ProgramsHeroSection = () => {
                   <ChartBarIcon className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <div className="font-bold text-lg">ضمان التوظيف</div>
-                  <div className="text-sm text-blue-100">90% توظيف</div>
+                  <div className="font-bold text-lg"> {isRTL ? 'ضمان التوظيف' : 'Job Guarantee'}</div>
+                  <div className="text-sm text-blue-100">{isRTL ? '90% توظيف' : '90% Employment'}</div>
                 </div>
               </div>
-              <div className="text-sm">دعم كامل للحصول على وظيفة</div>
+              <div className="text-sm"> {isRTL ? 'دعم كامل للحصول على وظيفة' : 'Full support for job placement'}</div>
             </div>
           </div>
         </div>
@@ -112,7 +124,7 @@ const ProgramsHeroSection = () => {
           <div className="animate-bounce">
             <ArrowDownIcon className="h-8 w-8 mx-auto text-white/60" />
           </div>
-          <p className="text-blue-100 mt-2">قم بالتمرير لاكتشاف البرامج</p>
+          <p className="text-blue-100 mt-2"> {isRTL ? 'قم بالتمرير لاكتشاف البرامج' : 'Scroll to explore programs'}</p>
         </div>
       </div>
     </div>

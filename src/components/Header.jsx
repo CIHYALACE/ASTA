@@ -114,7 +114,9 @@ export default function Navbar() {
                   <span>info@asta.edu.sa</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://maps.app.goo.gl/rz5CqRh3B1XkF3pC9"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white no-underline flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
                   <MapPinIcon className="w-4 h-4 text-white" />

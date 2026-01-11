@@ -75,9 +75,13 @@
   },
 
   "courses": {
-    "title": "Our Courses",
+    "title": "Professional training courses",
     "certificates": "All Certificates",
-    "description": "Explore our professional courses",
+    "description":{
+      "1": "Develop your skills",
+      "2": "with the best professional training courses"
+
+    },
     "targetJobs": "Target Jobs",
     "seats": "seat",
     "card": {

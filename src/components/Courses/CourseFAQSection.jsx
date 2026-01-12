@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-
+import { useParams } from "react-router-dom";
+import { getCourseData } from "../../api/Courses";
 const CourseFAQSection = ({ course }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-
+  const { lang } = useParams();
+  const isRTL = lang === 'ar';
+  const localizedCourse = getCourseData(course, lang);
   if (!course.faqs || course.faqs.length === 0) return null;
 
   const toggleFAQ = (index) => {
@@ -13,10 +16,10 @@ const CourseFAQSection = ({ course }) => {
     <section className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          الأسئلة الشائعة
+         {isRTL ? 'الأسئلة الشائعة' : 'Frequently Asked Questions'}
         </h2>
         <div className="space-y-4">
-          {course.faqs.map((faq, index) => (
+          {localizedCourse.faqs.map((faq, index) => (
             <div
               key={index}
               className="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-200"

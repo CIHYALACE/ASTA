@@ -1,8 +1,9 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 
-const VisionMission = () => {
+const VisionMission = ({lang}) => {
     const { t } = useTranslation();
+    const isRTL = lang === 'ar';
     
   const cards = [
     {
@@ -51,13 +52,15 @@ const VisionMission = () => {
                            }}></i>
                     </div>
                     <h3 className="text-2xl font-bold text-dark-blue mb-4 text-center relative pb-3 gradient-text">
-                        الرؤية
+                        {isRTL ? "الرؤية" : "Vision"}
                         <div className="absolute bottom-0 right-1/2 w-12 h-1 gradient-bg transform translate-x-1/2"></div>
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-center">
-                        أكاديمية المهارات التطبيقية انطلاقة نحو 
+                        {isRTL ? `أكاديمية المهارات التطبيقية انطلاقة نحو 
                         اكتساب المزيد من المهارات التي تضعك في 
-                        صدارة المنافسة.
+                        صدارة المنافسة.` 
+                        : `Academy of Applied Skills aims to provide comprehensive training
+                         resources for professionals in the field of technology.`}
                     </p>
                 </div>
                 
@@ -77,12 +80,14 @@ const VisionMission = () => {
                            }}></i>
                     </div>
                     <h3 className="text-2xl font-bold text-dark-blue mb-4 text-center relative pb-3 gradient-text">
-                        الرسالة
+                        {isRTL ? "الرسالة" : "Mission"}
                         <div className="absolute bottom-0 right-1/2 w-12 h-1 gradient-bg transform translate-x-1/2"></div>
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-center">
-                        اكاديمية المهارات التطبيقية تهدف إلى توفير 
-                        موارد تدريبية متكاملة للمهنيين في مجال التكنولوجيا.
+                        {isRTL ? `أكاديمية المهارات التطبيقية تهدف إلى توفير 
+                        موارد تدريبية متكاملة للمهنيين في مجال التكنولوجيا.` 
+                        : `Academy of Applied Skills aims to provide comprehensive training
+                         resources for professionals in the field of technology.`}
                     </p>
                 </div>
                 
@@ -102,11 +107,11 @@ const VisionMission = () => {
                            }}></i>
                     </div>
                     <h3 className="text-2xl font-bold text-dark-blue mb-4 text-center relative pb-3 gradient-text">
-                        القيم
+                        {isRTL ? "القيم" : "Values"}
                         <div className="absolute bottom-0 right-1/2 w-12 h-1 gradient-bg transform translate-x-1/2"></div>
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-center">
-                        الابتكار، التميز، المصداقية، الالتزام، المرونة.
+                        {isRTL ? "الابتكار، التميز، المصداقية، الالتزام، المرونة." : "Innovation, excellence, credibility, commitment, flexibility."}
                     </p>
                 </div>
             </div>
@@ -126,7 +131,7 @@ const VisionMission = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                 {/* قيمة 1 */}
                 <div className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 transition-all-custom hover:shadow-lg hover-lift-small animate-fadeInUp" style={{animationDelay: '0.1s'}}>
-                    <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">١</div>
+                    <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">1</div>
                     <div>
                         <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">{t("visionMission.ourValues.excellence.title")}</h4>
                         <p className="text-gray-600">{t("visionMission.ourValues.excellence.description")}</p>
@@ -135,7 +140,7 @@ const VisionMission = () => {
                 
                 {/* قيمة 2 */}
                 <div className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 transition-all-custom hover:shadow-lg hover-lift-small animate-fadeInUp" style={{animationDelay: '0.2s'}}>
-                    <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">٢</div>
+                    <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">2</div>
                     <div>
                         <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">{t("visionMission.ourValues.innovation.title")}</h4>
                         <p className="text-gray-600">{t("visionMission.ourValues.innovation.description")}</p>
@@ -144,7 +149,7 @@ const VisionMission = () => {
                 
                 {/* قيمة 3 */}
                 <div className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 transition-all-custom hover:shadow-lg hover-lift-small animate-fadeInUp" style={{animationDelay: '0.3s'}}>
-                    <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">٣</div>
+                    <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">3</div>
                     <div>
                         <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">{t("visionMission.ourValues.commitment.title")}</h4>
                         <p className="text-gray-600">{t("visionMission.ourValues.commitment.description")}</p>
@@ -153,7 +158,7 @@ const VisionMission = () => {
                 
                 {/* قيمة 4 */}
                 <div className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 transition-all-custom hover:shadow-lg hover-lift-small animate-fadeInUp" style={{animationDelay: '0.4s'}}>
-                    <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">٤</div>
+                    <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">4</div>
                     <div>
                         <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">{t("visionMission.ourValues.flexibility.title")}</h4>
                         <p className="text-gray-600">{t("visionMission.ourValues.flexibility.description")}</p>
@@ -162,7 +167,7 @@ const VisionMission = () => {
                 
                 {/* قيمة 5 */}
                 <div className="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 transition-all-custom hover:shadow-lg hover-lift-small animate-fadeInUp" style={{animationDelay: '0.5s'}}>
-                    <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">٥</div>
+                    <div className="w-12 h-12 gradient-bg text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">5</div>
                     <div>
                         <h4 className="text-xl font-bold text-dark-blue mb-2 gradient-text">{t("visionMission.ourValues.credibility.title")}</h4>
                         <p className="text-gray-600">{t("visionMission.ourValues.credibility.description")}</p>

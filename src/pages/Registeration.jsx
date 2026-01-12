@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import emailjs from '@emailjs/browser';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 // api
 import Programs, { getProgramData } from '../api/Programs';
 import Courses, { getCourseData } from '../api/Courses';
@@ -19,25 +20,35 @@ emailjs.init("k62cRdPnAvAsP_96b");
 
 const RegistrationPage = () => {
   const { programId, lang } = useParams();
+  const { t } = useTranslation();
   const programs = Programs;
   const courses = Courses;
   // بيانات الشهادات المتاحة
-  const degrees = [
+  const degrees = {
+    ar: [
     "ثانوية عامة",
     "دبلوم",
     "بكالوريوس",
     "ماجستير",
     "دكتوراه"
-  ];
+  ],
+  en: [
+    "High School",
+    "Diploma",
+    "Bachelor",
+    "Master",
+    "PhD"
+  ]
+  };
 
   // بيانات الخدمات الإضافية
   const additionalServices = [
-    { id: 1, name: "كتب ومراجع إضافية", price: "" },
-    { id: 2, name: "جلسات إرشاد تدريبي مهني احترافي", price: "" },
-    { id: 3, name: "شهادة معتمدة دولياً", price: "" },
-    { id: 4, name: "متابعة خاصة مع المدرب", price: "" },
-    { id: 5, name: "إستشاراة للحصول على الدورة", price: "" },
-    { id: 6, name: "حساب مجاني لمحتوى الدورة على منصة Cursera", price: "" }
+    { id: 1, name: {ar: "كتب ومراجع إضافية", en: "Additional Books and References"}, price: "" },
+    { id: 2, name: {ar: "جلسات إرشاد تدريبي مهني احترافي", en: "Professional Training Guidance Sessions"}, price: "" },
+    { id: 3, name: {ar: "شهادة معتمدة دولياً", en: "Internationally Recognized Certificate"}, price: "" },
+    { id: 4, name: {ar: "متابعة خاصة مع المدرب", en: "Personal Follow-up with the Trainer"}, price: "" },
+    { id: 5, name: {ar: "إستشاراة للحصول على الدورة", en: "Consultation for Obtaining the Course"}, price: "" },
+    { id: 6, name: {ar: "حساب مجاني لمحتوى الدورة على منصة Cursera", en: "Free Account for Course Content on Coursera Platform"}, price: "" }
   ];
 
   // حالة النموذج - initialize with first course by default
@@ -124,51 +135,51 @@ const RegistrationPage = () => {
     const newErrors = {};
     
     if (!formData.fullName.trim()) {
-      newErrors.fullName = 'الاسم الكامل مطلوب';
+      newErrors.fullName = lang === 'ar' ? 'الاسم الكامل مطلوب' : 'Full name is required';
     } else if (formData.fullName.trim().length < 3) {
-      newErrors.fullName = 'الاسم يجب أن يكون 3 أحرف على الأقل';
+      newErrors.fullName = lang === 'ar' ? 'الاسم يجب أن يكون 3 أحرف على الأقل' : 'Full name must be at least 3 characters';
     }
     
     if (!formData.email) {
-      newErrors.email = 'البريد الإلكتروني مطلوب';
+      newErrors.email = lang === 'ar' ? 'البريد الإلكتروني مطلوب' : 'Email is required';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'البريد الإلكتروني غير صحيح';
+      newErrors.email = lang === 'ar' ? 'البريد الإلكتروني غير صحيح' : 'Invalid email format';
     }
     
     if (!formData.phone) {
-      newErrors.phone = 'رقم الهاتف مطلوب';
+      newErrors.phone = lang === 'ar' ? 'رقم الهاتف مطلوب' : 'Phone number is required';
     } else if (!/^05\d{8}$/.test(formData.phone.replace(/[^0-9]/g, ''))) {
-      newErrors.phone = 'رقم الهاتف يجب أن يبدأ بـ 05 ويتكون من 10 أرقام';
+      newErrors.phone = lang === 'ar' ? 'رقم الهاتف يجب أن يبدأ بـ 05 ويتكون من 10 أرقام' : 'Phone number must start with 05 and be 10 digits';
     }
     
     if (!formData.nationalId) {
-      newErrors.nationalId = 'رقم الهوية مطلوب';
+      newErrors.nationalId = lang === 'ar' ? 'رقم الهوية مطلوب' : 'National ID is required';
     } else if (!/^[12]\d{9}$/.test(formData.nationalId)) {
-      newErrors.nationalId = 'رقم الهوية يجب أن يتكون من 10 أرقام ويبدأ بـ 1 أو 2';
+      newErrors.nationalId = lang === 'ar' ? 'رقم الهوية يجب أن يتكون من 10 أرقام ويبدأ بـ 1 أو 2' : 'National ID must be 10 digits starting with 1 or 2';
     }
     
     if (!formData.degree) {
-      newErrors.degree = 'الرجاء اختيار المؤهل العلمي';
+      newErrors.degree = lang === 'ar' ? 'الرجاء اختيار المؤهل العلمي' : 'Please select your educational degree';
     }
 
     // Diploma specific validation
     if (formData.programType === 'diploma') {
       if (!formData.priorExperience) {
-        newErrors.priorExperience = 'الرجاء تحديد خبرتك السابقة';
+        newErrors.priorExperience = lang === 'ar' ? 'الرجاء تحديد خبرتك السابقة' : 'Please select your prior experience';
       }
       if (!formData.careerGoals.trim()) {
-        newErrors.careerGoals = 'الرجاء شرح أهدافك المهنية';
+        newErrors.careerGoals = lang === 'ar' ? 'الرجاء شرح أهدافك المهنية' : 'Please explain your career goals';
       }
       if (!formData.studySchedule) {
-        newErrors.studySchedule = 'الرجاء اختيار الجدول الدراسي المفضل';
+        newErrors.studySchedule = lang === 'ar' ? 'الرجاء اختيار الجدول الدراسي المفضل' : 'Please select your preferred study schedule';
       }
       if (!formData.financialSupport) {
-        newErrors.financialSupport = 'الرجاء تحديد احتياجاتك المالية';
+        newErrors.financialSupport = lang === 'ar' ? 'الرجاء تحديد احتياجاتك المالية' : 'Please select your financial support needs';
       }
     }
     
     if (!formData.agreeToTerms) {
-      newErrors.agreeToTerms = 'يجب الموافقة على الشروط والأحكام';
+      newErrors.agreeToTerms = lang === 'ar' ? 'يجب الموافقة على الشروط والأحكام' : 'You must agree to the terms and conditions';
     }
     
     return newErrors;
@@ -182,7 +193,7 @@ const RegistrationPage = () => {
       
       // Safety check - if no program found, throw error
       if (!selectedProgram) {
-        throw new Error('البرنامج المحدد غير موجود');
+        throw new Error(lang === 'ar' ? 'البرنامج المحدد غير موجود' : 'Selected program not found');
       }
       
       const localizedProgram = formData.programType === 'course' 
@@ -226,7 +237,7 @@ ${diplomaInfo}
 
 الخدمات الإضافية:
 ${data.selectedServices.length > 0 
-  ? data.selectedServices.map(service => `• ${service.name} - ${service.price}`).join('\n')
+  ? data.selectedServices.map(service => `• ${service.name[lang] || service.name.ar || service.name.en} - ${service.price}`).join('\n')
   : 'لم يتم اختيار خدمات إضافية'
 }
 
@@ -252,7 +263,7 @@ ${data.notes || 'لا توجد ملاحظات'}
     return response;
   } catch (error) {
     console.error('Error sending email:', error);
-    throw new Error('فشل في إرسال البريد الإلكتروني. الرجاء المحاولة مرة أخرى.');
+    throw new Error(lang === 'ar' ? 'فشل في إرسال البريد الإلكتروني. الرجاء المحاولة مرة أخرى.' : 'Failed to send email. Please try again.');
   }
 };
 
@@ -278,7 +289,7 @@ const handleSubmit = async (e) => {
     if (!selectedProgram) {
       console.log('Debug - formData.selectedProgram:', formData.selectedProgram);
       console.log('Debug - programList:', programList.map(p => ({ id: p.id, title: p.title })));
-      throw new Error('البرنامج المحدد غير موجود');
+      throw new Error(lang === 'ar' ? 'البرنامج المحدد غير موجود' : 'Selected program not found');
     }
     
     const localizedProgram = formData.programType === 'course' 
@@ -290,7 +301,7 @@ const handleSubmit = async (e) => {
     
     // Format selected services for email display
     const selectedServicesText = selectedServicesList
-      .map(service => `${service.name}`)
+      .map(service => `${service.name[lang] || service.name.ar || service.name.en}`)
       .join(', ');
     
     const servicesTotal = selectedServicesList.reduce(
@@ -336,7 +347,7 @@ const handleSubmit = async (e) => {
     
   } catch (error) {
     console.error('Error submitting form:', error);
-    setSubmitError(error.message || 'حدث خطأ أثناء إرسال النموذج. الرجاء المحاولة مرة أخرى.');
+    setSubmitError(error.message || (lang === 'ar' ? 'حدث خطأ أثناء إرسال النموذج. الرجاء المحاولة مرة أخرى.' : 'An error occurred while submitting the form. Please try again.'));
   } finally {
     setIsSubmitting(false);
   }
@@ -360,14 +371,14 @@ const programList = formData.programType === 'course' ? courses : programs;
 const localizedProgramList = useMemo(() => 
   programList.map(p => {
     const localizedData = formData.programType === 'course' 
-      ? getCourseData(p, 'ar') 
-      : getProgramData(p, 'ar');
+      ? getCourseData(p, lang) 
+      : getProgramData(p, lang);
     return {
       ...p,
       ...localizedData
     };
   }),
-  [formData.programType, programList]
+  [formData.programType, programList, lang]
 );
 const selectedProgram = useMemo(() => 
   programList.find(p => parseInt(p.id) === parseInt(formData.selectedProgram)),
@@ -375,19 +386,19 @@ const selectedProgram = useMemo(() =>
 );
 
 return (
-  <div className="bg-gray-50 min-h-screen" dir="rtl">
-    <RegistrationHeader selectedProgram={selectedProgram} />
+  <div className="bg-gray-50 min-h-screen" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+    <RegistrationHeader selectedProgram={selectedProgram} lang={lang} t={t}/>
     {/* <EmailConfirmationNotice formData={formData} /> */}
     
     {submitSuccess ? (
-      <SuccessConfirmation formData={formData} selectedProgram={selectedProgram} calculateTotal={calculateTotal} />
+      <SuccessConfirmation formData={formData} selectedProgram={selectedProgram} calculateTotal={calculateTotal} lang={lang}/>
     ) : (
       <form onSubmit={handleSubmit}>
         <div className="max-w-7xl mx-auto px-1 py-8">
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
-              <ProgramTypeSelector programType={formData.programType} handleProgramTypeChange={handleProgramTypeChange} />
-              <PersonalInfoSection formData={formData} handleInputChange={handleInputChange} errors={errors} degrees={degrees} />
+              <ProgramTypeSelector programType={formData.programType} handleProgramTypeChange={handleProgramTypeChange} lang={lang} t={t}/>
+              <PersonalInfoSection formData={formData} handleInputChange={handleInputChange} errors={errors} degrees={degrees} lang={lang} t={t}/>
               <ProgramSelectionSection 
                 programs={localizedProgramList} 
                 formData={formData} 
@@ -396,11 +407,12 @@ return (
                 additionalServices={additionalServices} 
                 errors={errors}
                 programType={formData.programType}
+                lang={lang}
               />
               {formData.programType === 'diploma' && (
-                <DiplomaSpecificSection formData={formData} handleInputChange={handleInputChange} errors={errors} />
+                <DiplomaSpecificSection formData={formData} handleInputChange={handleInputChange} errors={errors} lang={lang}/>
               )}
-              <PaymentSection formData={formData} handleInputChange={handleInputChange} errors={errors} />
+              <PaymentSection formData={formData} handleInputChange={handleInputChange} errors={errors} lang={lang}/>
             </div>
             
             <div className="lg:col-span-1">

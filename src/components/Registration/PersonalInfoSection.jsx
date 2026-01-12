@@ -1,6 +1,6 @@
   import { UserIcon, EnvelopeIcon, PhoneIcon, IdentificationIcon, AcademicCapIcon } from '@heroicons/react/24/outline';
 
-  function PersonalInfoSection ({ formData, handleInputChange, errors, degrees }) 
+  function PersonalInfoSection ({ formData, handleInputChange, errors, degrees, t, lang}) 
   {
     return (
     <div className="bg-white rounded-2xl p-8 shadow-lg mb-8">
@@ -9,15 +9,15 @@
           <UserIcon className="h-6 w-6 text-[#202C5B]" />
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-gray-800">المعلومات الشخصية</h2>
-          <p className="text-gray-600">الرجاء إدخال بياناتك الشخصية الصحيحة</p>
+          <h2 className="text-2xl font-bold text-gray-800"> {t('registration.personalInfo.title')}</h2>
+          <p className="text-gray-600"> {t('registration.personalInfo.description')}</p>
         </div>
       </div>
       
       <div className="grid md:grid-cols-2 gap-6">
         <div>
           <label className="block text-gray-700 mb-2 font-medium">
-            الاسم الكامل *
+            {t('registration.personalInfo.fullName')}
           </label>
           <div className="relative">
             <input
@@ -28,7 +28,7 @@
               className={`w-full pr-10 pl-10 py-3.5 rounded-xl border ${
                 errors.fullName ? 'border-red-500' : 'border-gray-300'
               } focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent`}
-              placeholder="أدخل الاسم الكامل كما في الهوية"
+              placeholder={lang === 'ar' ? 'أدخل الاسم الكامل كما في الهوية' : 'Enter full name as in ID'}
             />
             <UserIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
           </div>
@@ -39,7 +39,7 @@
         
         <div>
           <label className="block text-gray-700 mb-2 font-medium">
-            البريد الإلكتروني *
+            {t('registration.personalInfo.email')}
           </label>
           <div className="relative">
             <input
@@ -61,7 +61,7 @@
         
         <div>
           <label className="block text-gray-700 mb-2 font-medium">
-            رقم الجوال *
+            {t('registration.personalInfo.phone')}
           </label>
           <div className="relative">
             <input
@@ -84,7 +84,7 @@
         
         <div>
           <label className="block text-gray-700 mb-2 font-medium">
-            رقم الهوية الوطنية *
+            {t('registration.personalInfo.idNumber')}
           </label>
           <div className="relative">
             <input
@@ -107,7 +107,7 @@
         
         <div>
           <label className="block text-gray-700 mb-2 font-medium">
-            المؤهل العلمي *
+            {t('registration.personalInfo.degree')}
           </label>
           <div className="relative">
             <select
@@ -118,8 +118,8 @@
                 errors.degree ? 'border-red-500' : 'border-gray-300'
               } focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent appearance-none`}
             >
-              <option value="">اختر المؤهل العلمي</option>
-              {degrees.map((degree, index) => (
+              <option value="">{t('registration.personalInfo.degree')}</option>
+              {degrees[lang].map((degree, index) => (
                 <option key={index} value={degree}>{degree}</option>
               ))}
             </select>
@@ -132,7 +132,7 @@
         
         <div>
           <label className="block text-gray-700 mb-2 font-medium">
-            جهة اتصال للطوارئ
+            {t('registration.personalInfo.emergencyPhone')}
           </label>
           <div className="relative">
             <input
@@ -141,7 +141,7 @@
               value={formData.emergencyContact}
               onChange={handleInputChange}
               className="w-full pr-10 pl-10 py-3.5 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent"
-              placeholder=" رقم جهة الاتصال"
+              placeholder="05XXXXXXXX"
               maxLength="10"
             />
             <PhoneIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />

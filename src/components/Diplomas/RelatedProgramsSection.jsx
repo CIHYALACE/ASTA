@@ -1,40 +1,44 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Programs from "../../api/Programs";
+import { getProgramData } from "../../api/Programs";
 
-const RelatedProgramsSection = ({ currentProgramId }) => {
+const RelatedProgramsSection = ({ currentProgramId, lang }) => {
   const navigate = useNavigate();
-
+  const isRTL = lang === 'ar';
+  
   // Get related programs (excluding current program)
   const relatedPrograms = Programs
     .filter(program => program.id !== parseInt(currentProgramId))
     .slice(0, 3); // Show max 3 related programs
-
+    
   if (relatedPrograms.length === 0) return null;
 
   const handleProgramClick = (programId) => {
     window.scrollTo(0, 0);
-    navigate(`/ar/programs/${programId}`);
+    navigate(`/${lang}/programs/${programId}`);
   };
 
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          دورات ذات صلة
+          {isRTL ? 'دورات ذات صلة' : 'Related Programs'}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {relatedPrograms.map((program) => (
+          {relatedPrograms.map((program) => {
+            const localizedProgram = getProgramData(program, lang);
+            return (
             <div
               key={program.id}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
               onClick={() => handleProgramClick(program.id)}
             >
               <div className="relative h-48 overflow-hidden">
-                {program.image ? (
+                {localizedProgram.image ? (
                   <img
-                    src={program.image}
-                    alt={program.title}
+                    src={localizedProgram.image}
+                    alt={localizedProgram.title}
                     className="w-full h-full object-cover"
                   />
                 ) : (
@@ -47,17 +51,17 @@ const RelatedProgramsSection = ({ currentProgramId }) => {
                 <div className="absolute top-4 right-4">
                   <div className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg">
                     <span className="text-sm font-medium text-gray-900">
-                      {program.category}
+                      {localizedProgram.category}
                     </span>
                   </div>
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2 line-clamp-2">
-                  {program.title}
+                  {localizedProgram.title}
                 </h3>
                 <p className="text-gray-600 mb-4 line-clamp-2">
-                  {program.subtitle}
+                  {localizedProgram.subtitle}
                 </p>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-2">
@@ -65,24 +69,25 @@ const RelatedProgramsSection = ({ currentProgramId }) => {
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                     <span className="text-sm font-medium text-gray-900">
-                      {program.rating || "4.5"}
+                      {localizedProgram.rating || "4.5"}
                     </span>
                   </div>
-                  <div className="text-lg font-bold text-blue-600">
-                    {program.price} ريال
-                  </div>
+                  <span className="text-lg font-bold text-blue-600">
+                    {localizedProgram.price} {isRTL ? 'ريال' : 'Riyal'}
+                  </span>
                 </div>
                 <div className="flex items-center gap-4 text-sm text-gray-600">
                   <div className="flex items-center gap-1">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span>{program.duration}</span>
+                    <span>{localizedProgram.duration}</span>
                   </div>
                 </div>
               </div>
             </div>
-          ))}
+          )
+        })}
         </div>
       </div>
     </section>

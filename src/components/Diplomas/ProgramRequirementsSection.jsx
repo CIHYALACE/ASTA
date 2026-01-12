@@ -1,9 +1,8 @@
 import { CheckCircleIcon, BuildingOfficeIcon, PhoneIcon } from '@heroicons/react/24/solid';
-import { useParams } from 'react-router-dom';
 import { getProgramData } from '../../api/Programs';
 
-function RequirementsSection({ program }) {
-  const { lang } = useParams();
+function RequirementsSection({ program, lang }) {
+  const isRTL = lang === 'ar';
   
   // Get localized program data
   const localizedProgram = getProgramData(program, lang);
@@ -19,8 +18,8 @@ function RequirementsSection({ program }) {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 border-r-4 border-[#30AFC1] pr-4">
-              متطلبات القبول
+            <h2 className={`text-3xl font-bold text-gray-800 mb-8 ${isRTL ? 'border-r-4 border-[#30AFC1] pr-4' : 'border-l-4 border-[#30AFC1] pl-4'}`}>
+              {isRTL ? 'متطلبات القبول' : 'Admission Requirements'}
             </h2>
             
             <div className="space-y-4">
@@ -32,13 +31,13 @@ function RequirementsSection({ program }) {
                   <span className="text-gray-700">{req}</span>
                 </div>
               ))}
-              {requirements.length === 0 && <p className="text-gray-500"> - لا توجد متطلبات</p>}
+              {requirements.length === 0 && <p className="text-gray-500"> {isRTL ? '- لا توجد متطلبات' : '- No requirements'}</p>}
             </div>
           </div>
           
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 border-r-4 border-[#3CBEB3] pr-4">
-              مزايا البرنامج
+            <h2 className={`text-3xl font-bold text-gray-800 mb-8 ${isRTL ? 'border-r-4 border-[#3CBEB3] pr-4' : 'border-l-4 border-[#3CBEB3] pl-4'}`}>
+              {isRTL ? 'مزايا البرنامج' : 'Program Benefits'}
             </h2>
             
             <div className="space-y-4">
@@ -53,12 +52,12 @@ function RequirementsSection({ program }) {
             <div className="mt-8 bg-gradient-to-r from-[#30AFC1] to-[#3CBEB3] rounded-2xl p-6 text-white">
               <div className="flex items-center gap-3 mb-4">
                 <BuildingOfficeIcon className="h-8 w-8" />
-                <h3 className="text-xl font-bold">دعم التوظيف</h3>
+                <h3 className="text-xl font-bold">{isRTL ? 'دعم التوظيف' : 'Job Support'}</h3>
               </div>
-              <p className="mb-4">نوفر لك دعم كامل في إعداد السيرة الذاتية، التدريب على المقابلات الشخصية، وتوصيلك بشركات رائدة في المجال.</p>
+              <p className="mb-4">{isRTL ? 'نوفر لك دعم كامل في إعداد السيرة الذاتية، التدريب على المقابلات الشخصية، وتوصيلك بشركات رائدة في المجال.' : 'We provide you with full support in preparing your CV, interview training, and connecting you with leading companies in the field.'}</p>
               <button className="flex items-center gap-2 text-white hover:text-gray-100">
                 <PhoneIcon className="h-5 w-5" />
-                <span>تواصل مع مستشار التوظيف</span>
+                <span>{isRTL ? 'تواصل مع مستشار التوظيف' : 'Contact Job Advisor'}</span>
               </button>
             </div>
           </div>

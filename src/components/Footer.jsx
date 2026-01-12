@@ -7,6 +7,7 @@ export default function Footer() {
   const [email, setEmail] = useState('');
   const { lang = 'ar' } = useParams();
   const { t } = useTranslation();
+  const isRTL = lang === 'ar';
 
   const handleNewsletterSubmit = (e) => {
     e.preventDefault();
@@ -217,30 +218,30 @@ export default function Footer() {
       </div>
       
       {/* Bottom Bar - Copyright */}
-      <div className="border-t-2 gradient-border pt-6">
+      <div className="border-t-2 gradient-border pt-6" dir={isRTL ? 'rtl' : 'ltr'}>
         <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <div className="text-gray-400 text-sm text-center md:text-right">
-              © {new Date().getFullYear()} أكاديمية المهارات التطبيقية - جميع الحقوق محفوظة اكاديمية المهارات التطبيقية
+              © {new Date().getFullYear()} {isRTL ? 'أكاديمية المهارات التطبيقية' : 'Academy of Applied Skills'} - {isRTL ? 'جميع الحقوق محفوظة' : 'All rights reserved'}
              </div>
             
             {/* Policies Links */}
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors duration-200">
-                سياسة الخصوصية
+              <a href={`/${lang}/academic-integrity`} className="hover:text-white transition-colors duration-200">
+                {isRTL ? 'سياسة الخصوصية' : 'Privacy Policy'}
+              </a>
+              <a href={`/${lang}/academic-integrity`} className="hover:text-white transition-colors duration-200">
+                {isRTL ? 'شروط الاستخدام' : 'Terms of Use'}
               </a>
               <a href="#" className="hover:text-white transition-colors duration-200">
-                شروط الاستخدام
-              </a>
-              <a href="#" className="hover:text-white transition-colors duration-200">
-                الأسئلة الشائعة
+                {isRTL ? 'الأسئلة الشائعة' : 'FAQ'}
               </a>
             </div>
             
             {/* Payment Methods */}
             <div className="flex items-center gap-3">
-              <div className="text-gray-400 text-sm ml-2">طرق الدفع:</div>
+              <div className="text-gray-400 text-sm ml-2">{isRTL ? 'طرق الدفع:' : 'Payment Methods:'}</div>
               <div className="flex gap-2">
                 {['visa', 'mastercard', 'mada', 'apple-pay', 'tabby', 'tamara'].map((method) => (
                   <div

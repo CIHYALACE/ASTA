@@ -1,6 +1,6 @@
 import { BookOpenIcon, AcademicCapIcon } from '@heroicons/react/24/outline';
 
-function ProgramTypeSelector({ programType, handleProgramTypeChange }) {
+function ProgramTypeSelector({ programType, handleProgramTypeChange , t, lang}) {
   return (
     <div className="bg-white rounded-2xl p-8 shadow-lg mb-8">
       <div className="flex items-center gap-3 mb-8">
@@ -8,8 +8,8 @@ function ProgramTypeSelector({ programType, handleProgramTypeChange }) {
           <BookOpenIcon className="h-6 w-6 text-[#202C5B]" />
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-gray-800">اختر نوع البرنامج</h2>
-          <p className="text-gray-600">اختر ما إذا كنت تريد التسجيل في دورة أم برنامج دبلوم</p>
+          <h2 className="text-2xl font-bold text-gray-800">{t('registration.programSelection.title')}</h2>
+          <p className="text-gray-600">{t('registration.programSelection.description')}</p>
         </div>
       </div>
 
@@ -33,9 +33,9 @@ function ProgramTypeSelector({ programType, handleProgramTypeChange }) {
               }`} />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">الدورات الاحترافية</h3>
+              <h3 className="text-start text-lg font-bold text-gray-800 mb-2">{t('header.nav.courses')}</h3>
               <p className="text-gray-600 text-sm">
-                دورات قصيرة متخصصة تركز على مهارات محددة
+                {t('courses.selection.description')}
               </p>
               {/* <div className="mt-4 flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">
@@ -65,9 +65,9 @@ function ProgramTypeSelector({ programType, handleProgramTypeChange }) {
               }`} />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">برامج الدبلوم</h3>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">{t('header.nav.diplomas')}</h3>
               <p className="text-gray-600 text-sm">
-                برامج شاملة وطويلة الأجل لشهادة دبلوم معترف بها
+                {t('diplomas.selection.description')}
               </p>
               {/* <div className="mt-4 flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">

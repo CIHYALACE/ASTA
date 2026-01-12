@@ -1,6 +1,6 @@
 import { BookmarkIcon, BriefcaseIcon, AcademicCapIcon } from '@heroicons/react/24/outline';
 
-function DiplomaSpecificSection({ formData, handleInputChange, errors }) {
+function DiplomaSpecificSection({ formData, handleInputChange, errors, lang }) {
   return (
     <div className="bg-white rounded-2xl p-8 shadow-lg mb-8">
       <div className="flex items-center gap-3 mb-8">
@@ -8,8 +8,8 @@ function DiplomaSpecificSection({ formData, handleInputChange, errors }) {
           <AcademicCapIcon className="h-6 w-6 text-[#202C5B]" />
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-gray-800">معلومات الدبلوم الإضافية</h2>
-          <p className="text-gray-600">الرجاء ملء المعلومات الخاصة ببرنامج الدبلوم</p>
+          <h2 className="text-2xl font-bold text-gray-800">{lang === 'ar' ? 'معلومات الدبلوم الإضافية' : 'Additional Diploma Information'}</h2>
+          <p className="text-gray-600">{lang === 'ar' ? 'الرجاء ملء المعلومات الخاصة ببرنامج الدبلوم' : 'Please fill in the additional diploma information'}</p>
         </div>
       </div>
 
@@ -17,7 +17,7 @@ function DiplomaSpecificSection({ formData, handleInputChange, errors }) {
         {/* Prior Experience */}
         <div>
           <label className="block text-gray-700 mb-2 font-medium">
-            هل لديك خبرة سابقة في المجال؟ *
+            {lang === 'ar' ? 'هل لديك خبرة سابقة في المجال؟' : 'Do you have prior experience in the field?'} *
           </label>
           <div className="relative">
             <select
@@ -28,11 +28,11 @@ function DiplomaSpecificSection({ formData, handleInputChange, errors }) {
                 errors.priorExperience ? 'border-red-500' : 'border-gray-300'
               } focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent appearance-none`}
             >
-              <option value="">اختر من فضلك</option>
-              <option value="none">لا توجد خبرة</option>
-              <option value="less-than-1">أقل من سنة</option>
-              <option value="1-3">1-3 سنوات</option>
-              <option value="more-than-3">أكثر من 3 سنوات</option>
+              <option value="">{lang === 'ar' ? 'اختر من فضلك' : 'Select please'}</option>
+              <option value="none">{lang === 'ar' ? 'لا توجد خبرة' : 'No experience'}</option>
+              <option value="less-than-1">{lang === 'ar' ? 'أقل من سنة' : 'Less than 1 year'}</option>
+              <option value="1-3">{lang === 'ar' ? '1-3 سنوات' : '1-3 years'}</option>
+              <option value="more-than-3">{lang === 'ar' ? 'أكثر من 3 سنوات' : 'More than 3 years'}</option>
             </select>
           </div>
           {errors.priorExperience && (
@@ -43,7 +43,7 @@ function DiplomaSpecificSection({ formData, handleInputChange, errors }) {
         {/* Career Goals */}
         <div>
           <label className="block text-gray-700 mb-2 font-medium">
-            أهدافك المهنية *
+            {lang === 'ar' ? 'أهدافك المهنية' : 'Your career goals'} *
           </label>
           <div className="relative">
             <textarea
@@ -53,7 +53,7 @@ function DiplomaSpecificSection({ formData, handleInputChange, errors }) {
               className={`w-full pr-4 pl-4 py-3.5 rounded-xl border ${
                 errors.careerGoals ? 'border-red-500' : 'border-gray-300'
               } focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent`}
-              placeholder="اشرح أهدافك المهنية..."
+              placeholder={lang === 'ar' ? 'اشرح أهدافك المهنية...' : 'Explain your career goals...'}
               rows="4"
             />
           </div>
@@ -65,13 +65,13 @@ function DiplomaSpecificSection({ formData, handleInputChange, errors }) {
         {/* Preferred Study Schedule */}
         <div>
           <label className="block text-gray-700 mb-2 font-medium">
-            الجدول الدراسي المفضل *
+            {lang === 'ar' ? 'الجدول الدراسي المفضل' : 'Preferred study schedule'} *
           </label>
           <div className="space-y-2">
             {[
-              { value: 'fulltime', label: 'دوام كامل' },
-              { value: 'parttime', label: 'دوام جزئي' },
-              { value: 'weekend', label: 'أيام نهاية الأسبوع' }
+              { value: 'fulltime', label: lang === 'ar' ? 'دوام كامل' : 'Full-time' },
+              { value: 'parttime', label: lang === 'ar' ? 'دوام جزئي' : 'Part-time' },
+              { value: 'weekend', label: lang === 'ar' ? 'أيام نهاية الأسبوع' : 'Weekend' }
             ].map(option => (
               <label key={option.value} className="flex items-center gap-3 p-3 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50">
                 <input
@@ -94,7 +94,7 @@ function DiplomaSpecificSection({ formData, handleInputChange, errors }) {
         {/* Financial Support */}
         <div>
           <label className="block text-gray-700 mb-2 font-medium">
-            هل تحتاج إلى دعم مالي؟ *
+            {lang === 'ar' ? 'هل تحتاج إلى دعم مالي؟' : 'Do you need financial support?'} *
           </label>
           <div className="relative">
             <select
@@ -105,11 +105,11 @@ function DiplomaSpecificSection({ formData, handleInputChange, errors }) {
                 errors.financialSupport ? 'border-red-500' : 'border-gray-300'
               } focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent appearance-none`}
             >
-              <option value="">اختر من فضلك</option>
-              <option value="no">لا أحتاج دعم مالي</option>
-              <option value="partial">دعم جزئي</option>
-              <option value="full">دعم كامل</option>
-              <option value="scholarship">منحة دراسية</option>
+              <option value="">{lang === 'ar' ? 'اختر من فضلك' : 'Select please'}</option>
+              <option value="no">{lang === 'ar' ? 'لا أحتاج دعم مالي' : 'No financial support needed'}</option>
+              <option value="partial">{lang === 'ar' ? 'دعم جزئي' : 'Partial support'}</option>
+              <option value="full">{lang === 'ar' ? 'دعم كامل' : 'Full support'}</option>
+              <option value="scholarship">{lang === 'ar' ? 'منحة دراسية' : 'Scholarship'}</option>
             </select>
           </div>
           {errors.financialSupport && (

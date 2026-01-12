@@ -1,6 +1,6 @@
   import { ShieldCheckIcon } from '@heroicons/react/24/outline';
   
-  function PaymentSection({ formData, handleInputChange, errors }) {
+  function PaymentSection({ formData, handleInputChange, errors, lang }) {
     return (
     <div className="bg-white rounded-2xl p-8 shadow-lg mb-8">
       <div className="flex items-center gap-3 mb-8">
@@ -8,21 +8,21 @@
           <ShieldCheckIcon className="h-6 w-6 text-purple-600" />
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-gray-800">الدفع والتفاصيل</h2>
-          <p className="text-gray-600">اختر طريقة الدفع واكتب أي ملاحظات إضافية</p>
+          <h2 className="text-2xl font-bold text-gray-800">{lang === 'ar' ? 'الدفع والتفاصيل' : 'Payment & Details'}</h2>
+          <p className="text-gray-600">{lang === 'ar' ? 'اختر طريقة الدفع واكتب أي ملاحظات إضافية' : 'Choose payment method and add any additional notes'}</p>
         </div>
       </div>
       
       <div className="grid md:grid-cols-2 gap-8">
         <div>
           <label className="block text-gray-700 mb-4 font-medium">
-            طريقة الدفع
+            {lang === 'ar' ? 'طريقة الدفع' : 'Payment Method'}
           </label>
           <div className="space-y-4">
             {[
-              { id: 'full', label: 'دفع كامل', desc: 'خصم 5% عند الدفع الكامل' },
-              { id: 'installment', label: 'تقسيط', desc: 'دفع على 12 شهر بدون فوائد' },
-              { id: 'bank', label: 'تحويل بنكي', desc: 'خصم إضافي 2% للتحويل البنكي' }
+              { id: 'full', label: {ar: 'دفع كامل', en: 'Full Payment'}, desc: {ar: 'خصم 5% عند الدفع الكامل', en: '5% discount for full payment'} },
+              { id: 'installment', label: {ar: 'تقسيط', en: 'Installment'}, desc: {ar: 'دفع على 12 شهر بدون فوائد', en: 'Pay in 12 months without interest'} },
+              { id: 'bank', label: {ar: 'تحويل بنكي', en: 'Bank Transfer'}, desc: {ar: 'خصم إضافي 2% للتحويل البنكي', en: 'Additional 2% discount for bank transfer'} }
             ].map(method => (
               <div
                 key={method.id}
@@ -46,8 +46,8 @@
                     )}
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-800">{method.label}</h3>
-                    <p className="text-sm text-gray-600">{method.desc}</p>
+                    <h3 className="font-bold text-gray-800">{method.label[lang]}</h3>
+                    <p className="text-sm text-gray-600">{method.desc[lang]}</p>
                   </div>
                 </div>
               </div>
@@ -57,14 +57,14 @@
         
         <div>
           <label className="block text-gray-700 mb-4 font-medium">
-            ملاحظات إضافية
+            {lang === 'ar' ? 'ملاحظات إضافية' : 'Additional Notes'}
           </label>
           <textarea
             name="notes"
             value={formData.notes}
             onChange={handleInputChange}
             className="w-full h-40 px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#23A0D0] focus:border-transparent resize-none"
-            placeholder="أي ملاحظات أو متطلبات خاصة تريد إضافتها..."
+            placeholder={lang === 'ar' ? 'أي ملاحظات أو متطلبات خاصة تريد إضافتها...' : 'Any additional notes or special requirements you would like to add...'}
           ></textarea>
         </div>
       </div>
@@ -80,7 +80,7 @@
             className="w-5 h-5 rounded border-gray-300 text-[#23A0D0] focus:ring-[#23A0D0]"
           />
           <label htmlFor="agreeToTerms" className="text-gray-700">
-            أوافق على الشروط والأحكام وسياسة الخصوصية *
+            {lang === 'ar' ? 'أوافق على الشروط والأحكام وسياسة الخصوصية *' : 'I agree to the terms and conditions and privacy policy *'}
           </label>
         </div>
         {errors.agreeToTerms && (

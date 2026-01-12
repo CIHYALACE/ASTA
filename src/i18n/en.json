@@ -40,7 +40,13 @@
 
   "footer": {
     "copyright": "All rights reserved to Applied Skills Training Academy © 2025",
-    "address": "East Region, Dammam, Saudi Arabia"
+    "address": "East Region, Dammam, Saudi Arabia",
+    "ourDiplomas": "Our Diplomas",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "message": "We offer academic and technical training programs based on the General Organization for Technical and Vocational Training to prepare national cadres for the job market in line with Vision 2030",
+    "newsLetter": "Subscribe to our newsletter",
+    "newsLetterDescription": "Subscribe to our newsletter to get the latest news and offers that suit you and help you achieve your professional excellence."
   },
 
   "hero": {
@@ -69,20 +75,32 @@
   },
 
   "courses": {
-    "title": "Our Courses",
+    "title": "Professional training courses",
     "certificates": "All Certificates",
-    "description": "Explore our professional courses",
+    "description":{
+      "1": "Develop your skills",
+      "2": "with the best professional training courses"
+
+    },
     "targetJobs": "Target Jobs",
     "seats": "seat",
     "card": {
       "duration": "Duration",
       "level": "Level"
+    },
+    "selection": {
+      "title": "Choose the Right Course for You",
+      "description": "Short specialized courses focused on specific skills"
     }
   },
 
   "diplomas": {
     "title": "Professional Diplomas",
-    "description": "Accredited diplomas with hands-on training"
+    "description": "Accredited diplomas with hands-on training",
+    "selection": {
+      "title": "Choose the Right Program for You",
+      "description": "We offer a variety of training programs that suit different professional needs"
+    }
   },
 
   "forms": {
@@ -195,10 +213,6 @@
       "title": "Our Training Programs",
       "subtitle": "Professional Accredited Diplomas"
     },
-    "selection": {
-      "title": "Choose the Right Program for You",
-      "description": "We offer a variety of training programs that suit different professional needs"
-    },
     "overview": {
       "title": "Program Overview",
       "description": "Learn about program details and features"
@@ -220,17 +234,33 @@
       "description": "Answers to your inquiries"
     }
   },
-
   "registration": {
-    "title": "Program Registration",
-    "subtitle": "Simple steps to join us",
+    "title": {
+      "1": "Register Now",
+      "2": "Start Your Professional Journey"
+    },
+    "subtitle": {
+      "1": "The data sent will be sent to",
+      "2": "registration coordinator"
+    },
+    "security": {
+      "1": "Your data is protected and secure",
+      "2": "A copy will be sent to your email",
+      "3": "Instant confirmation"
+    },
     "personalInfo": {
       "title": "Personal Information",
-      "description": "Enter your basic data"
+      "description": "Enter your basic data",
+      "fullName": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "emergencyPhone": "Emergency Phone",
+      "idNumber": "ID Number",
+      "degree": "Degree"
     },
     "programSelection": {
-      "title": "Program Selection",
-      "description": "Choose the program that suits you"
+      "title": "Program Type",
+      "description": "Choose whether you want to register for a course or a diploma program"
     },
     "payment": {
       "title": "Payment",

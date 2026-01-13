@@ -91,14 +91,23 @@ function CourseHeader({ course }) {
               </button>
               
               <div className="flex gap-3">
-                <button className="flex-1 flex items-center justify-center gap-2 bg-white/10 py-3 rounded-xl hover:bg-white/20 transition-colors">
+                <button
+                  className="flex-1 flex items-center justify-center gap-2 bg-white/10 py-3 rounded-xl hover:bg-white/20 transition-colors"
+                  onClick={() => {
+                    navigator.share({
+                      title: localizedCourse.title,
+                      text: localizedCourse.subtitle,
+                      url: window.location.href,
+                    });
+                  }}
+                >
                   <ShareIcon className="h-5 w-5" />
                   <span>مشاركة</span>
                 </button>
-                <button className="flex-1 flex items-center justify-center gap-2 bg-white/10 py-3 rounded-xl hover:bg-white/20 transition-colors">
+                {/* <button className="flex-1 flex items-center justify-center gap-2 bg-white/10 py-3 rounded-xl hover:bg-white/20 transition-colors">
                   <BookmarkIcon className="h-5 w-5" />
                   <span>حفظ</span>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

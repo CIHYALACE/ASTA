@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { getProgramData } from "../../api/Programs";
 
-const ProgramFAQSection = ({ program }) => {
+const ProgramFAQSection = ({ program, lang }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-
-  if (!program.faqs || program.faqs.length === 0) return null;
+  const isRTL = lang === 'ar';
+  const localizedProgram = getProgramData(program, lang);
+  
+  if (!localizedProgram.faqs || localizedProgram.faqs.length === 0) return null;
 
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? -1 : index);
@@ -13,17 +16,17 @@ const ProgramFAQSection = ({ program }) => {
     <section className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          الأسئلة الشائعة
+          {isRTL ? 'الأسئلة الشائعة' : 'Frequently Asked Questions'}
         </h2>
         <div className="space-y-4">
-          {program.faqs.map((faq, index) => (
+          {localizedProgram.faqs.map((faq, index) => (
             <div
               key={index}
               className="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-200"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-4 text-right flex items-center justify-between hover:bg-gray-100 transition-colors duration-200"
+                className={`w-full px-6 py-4 ${isRTL ? 'text-right' : 'text-left'} flex items-center justify-between hover:bg-gray-100 transition-colors duration-200`}
               >
                 <span className="font-semibold text-gray-900 text-lg">
                   {faq.question}

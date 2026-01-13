@@ -7,7 +7,7 @@ import {
   BookOpenIcon,
 } from '@heroicons/react/24/outline';
 // Components
-import ProgramsHeroSection from '../components/Diplomas/ProgramsHeroSection';
+import CoursesHeroSection from '../components/Courses/CoursesHeroSection';
 import CourseCard from '../components/Courses/CourseCard';
 // data
 import Courses, { getCourseData } from '../api/Courses';
@@ -88,7 +88,7 @@ const CoursesPage = () => {
 
   return (
     <>
-    <ProgramsHeroSection />
+    <CoursesHeroSection lang={lang}/>
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-8 px-4" dir="rtl">
       <div className="max-w-7xl mx-auto">
         {/* عنوان الصفحة */}

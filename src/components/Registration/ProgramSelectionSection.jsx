@@ -1,6 +1,6 @@
 import { BookOpenIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 
-function ProgramSelectionSection({ programs, formData, handleInputChange, handleServiceToggle, additionalServices, errors, programType }) {
+function ProgramSelectionSection({ programs, formData, handleInputChange, handleServiceToggle, additionalServices, errors, programType, lang }) {
   return (
     <div className="bg-white rounded-2xl p-8 shadow-lg mb-8">
       <div className="flex items-center gap-3 mb-8">
@@ -9,17 +9,17 @@ function ProgramSelectionSection({ programs, formData, handleInputChange, handle
         </div>
         <div>
           <h2 className="text-2xl font-bold text-gray-800">
-            اختر {programType === 'diploma' ? 'برنامج الدبلوم' : 'الدورة'}
+            { lang === 'ar' ? 'اختر' : 'Choose' } {programType === 'diploma' ? (lang === 'ar' ? 'برنامج الدبلوم' : 'Diploma Program') : (lang === 'ar' ? 'الدورة' : 'Course')}
           </h2>
           <p className="text-gray-600">
-            اختر {programType === 'diploma' ? 'برنامج الدبلوم' : 'الدورة'} التي تريد التسجيل بها
+            { lang === 'ar' ? 'اختر' : 'Choose' } {programType === 'diploma' ? (lang === 'ar' ? 'برنامج الدبلوم' : 'Diploma Program') : (lang === 'ar' ? 'الدورة' : 'Course')} {lang === 'ar' ? 'التي تريد التسجيل بها' : 'that you want to register for'}
           </p>
         </div>
       </div>
       
       <div className="space-y-4 mb-8">
         <label className="block text-gray-700 mb-2 font-medium">
-          البرنامج المتاح *
+          {lang === 'ar' ? 'البرنامج المتاح' : 'Available Program'} *
         </label>
         <div className="relative">
           <select
@@ -32,7 +32,7 @@ function ProgramSelectionSection({ programs, formData, handleInputChange, handle
           >
             {programs.map(program => (
               <option key={program.id} value={program.id}>
-                {program.title} - {program.category} ({program.price.toLocaleString()} ر.س)
+                {program.title} - {program.category} ({program.price.toLocaleString()} {lang === 'ar' ? 'ر.س' : 'SAR'})
               </option>
             ))}
           </select>
@@ -44,7 +44,7 @@ function ProgramSelectionSection({ programs, formData, handleInputChange, handle
       
       <div>
         <label className="block text-gray-700 mb-4 font-medium">
-          خدمات إضافية (اختياري)
+          {lang === 'ar' ? 'خدمات إضافية (اختياري)' : 'Additional Services (Optional)'}
         </label>
         <div className="grid md:grid-cols-2 gap-4">
           {additionalServices.map(service => (
@@ -71,8 +71,8 @@ function ProgramSelectionSection({ programs, formData, handleInputChange, handle
                     )}
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-800">{service.name}</h3>
-                    <span className="text-sm text-gray-600">{service.price.toLocaleString() || 'مجاني'}</span>
+                    <h3 className="font-bold text-gray-800">{service.name[lang]}</h3>
+                    <span className="text-sm text-gray-600">{service.price ? service.price.toLocaleString() : (lang === 'ar' ? 'مجاني' : 'Free')}</span>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   AcademicCapIcon,
   BookOpenIcon,
@@ -8,27 +9,16 @@ import {
   PlayCircleIcon,
   CheckCircleIcon
 } from '@heroicons/react/24/outline';
-import { useParams } from 'react-router-dom';
 
-const ProgramsHeroSection = () => {
-  const features = {
-    ar:[
-    "شهادات معتمدة عالمياً",
-    "مدربون خبراء في المجال",
-    "تدريب عملي وتطبيقي",
-    "دعم وظيفي بعد التخرج"
-    ],
-    en:[
-      "Internationally Approved Certificates",
-      "Expert Trainers in the Field",
-      "Practical and Applied Training",
-      "Job Support After Graduation"
-    ]
-  };
-
-  const { lang } = useParams();
+const CoursesHeroSection = ({ lang = 'ar' }) => {
+  const { t } = useTranslation();
+  const features = [
+    t("courses.features.1"),
+    t("courses.features.2"),
+    t("courses.features.3"),
+    t("courses.features.4")
+  ];
   const isRTL = lang === 'ar';
-
   return (
     <div className="relative overflow-hidden bg-gradient-to-r from-[#202C5B] to-[#226796] text-white" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* خلفية مع مثلثات هندسية */}
@@ -42,26 +32,27 @@ const ProgramsHeroSection = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* النص الرئيسي */}
-          <div className="text-left">
+          <div className={isRTL ? 'text-right' : 'text-left'}>
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <span className="text-sm font-medium">{isRTL ? 'برامج معتمدة دولياً' : 'Programs Approved Internationally'}</span>
+              <span className="text-sm font-medium"> {t("courses.title")}</span>
             </div>
             
-            <h1 className={`text-4xl ${isRTL ? 'md:text-5xl lg:text-6xl' : 'md:text-5xl lg:text-5xl'} font-bold mb-6 leading-tight`}>
-              {isRTL ? 'طور مهاراتك مع' : 'Develop Your Skills With'}
+            <h1 className={`${isRTL ? 'text-right text-4xl md:text-5xl lg:text-6xl' : 'text-left text-4xl md:text-4xl lg:text-5xl'} font-bold mb-6 leading-tight`}>
+              {t("courses.description.1")}
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#23A0D0] to-[#30AFC1] mt-2">
-                {isRTL ? 'أفضل برامج التدريب' : 'Best Training Programs'}
+                {t("courses.description.2")}
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              {isRTL ? 'انطلق في رحلة التعلم والتطوير مع برامجنا التدريبية المصممة خصيصاً لتواكب متطلبات سوق العمل الحديث وتساعدك على تحقيق أهدافك المهنية.' : 'Launch your journey of learning and development with our training programs designed specifically to keep up with the latest job market requirements and help you achieve your professional goals.'}
+             {lang === 'ar' ? 'انطلق في رحلة التعلم والتطوير مع برامجنا التدريبية المصممة خصيصاً لتواكب متطلبات سوق العمل الحديث وتساعدك على تحقيق أهدافك المهنية.' 
+                            : 'Launch your learning journey with our training programs designed specifically to keep up with the latest job market requirements and help you achieve your professional goals.'}
             </p>
 
             {/* الميزات */}
             <div className="mb-10">
               <div className="grid grid-cols-2 gap-4">
-                {features[lang].map((feature, index) => (
+                {features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#23A0D0] to-[#30AFC1] flex items-center justify-center">
                       <CheckCircleIcon className="h-4 w-4 text-white" />
@@ -75,46 +66,46 @@ const ProgramsHeroSection = () => {
             {/* أزرار التحكم */}
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="px-8 py-4 bg-gradient-to-r from-[#23A0D0] to-[#30AFC1] text-gray-900 rounded-xl font-bold text-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3">
-                <span>{isRTL ? 'استكشاف البرامج' : 'Explore Programs'}</span>
+                <span>{lang === 'ar' ? 'استكشاف البرامج' : 'Explore Programs'}</span>
                 <ArrowDownIcon className="h-5 w-5" />
               </button>
               
               <button className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl font-bold text-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3">
                 <PlayCircleIcon className="h-6 w-6" />
-                <span>{isRTL ? 'شاهد فيديو التعريف' : 'Watch Introduction Video'}</span>
+                <span>{lang === 'ar' ? 'شاهد فيديو التعريف' : 'Watch Introduction Video'}</span>
               </button>
             </div>
           </div>
 
           {/* الصورة */}
-          <div className="relative">
+          <div className={isRTL ? 'relative' : 'relative'}>
             <img src="/images/Student.png" alt="برامج تدريبية" className="rounded-2xl shadow-lg w-full h-auto object-cover col-span-2 lg:col-span-1" />
 
             {/* بطاقات عائمة */}
-            <div className="absolute -top-6 -left-6 w-64 bg-gradient-to-r from-[#23A0D0] to-[#30AFC1] rounded-2xl p-6 shadow-2xl transform rotate-3">
-              <div className="flex items-center gap-3 mb-4">
+            <div className={`absolute -top-6 ${isRTL ? '-left-6' : '-right-6'} w-64 bg-gradient-to-r from-[#23A0D0] to-[#30AFC1] rounded-2xl p-6 shadow-2xl transform rotate-3`}>
+              <div className={`flex items-center gap-3 mb-4 ${isRTL ? '' : 'flex-row-reverse'}`}>
                 <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
                   <AcademicCapIcon className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <div className="font-bold text-lg"> {isRTL ? 'برامج مكثفة' : 'Programs Intensive'}</div>
-                  <div className="text-sm text-blue-100">{isRTL ? '6-12 أسبوع' : '6-12 weeks'}</div>
+                  <div className="font-bold text-lg"> {lang === 'ar' ? 'برامج مكثفة' : 'Intensive Programs'}</div>
+                  <div className="text-sm text-blue-100">{lang === 'ar' ? '6-12 أسبوع' : '6-12 Weeks'}</div>
                 </div>
               </div>
-              <div className="text-sm"> {isRTL ? 'تعلم المهارات المطلوبة في سوق العمل' : 'Learn the skills needed in the job market'}</div>
+              <div className="text-sm">{lang === 'ar' ? 'تعلم المهارات المطلوبة في سوق العمل' : 'Learn the skills required in the job market'}</div>
             </div>
 
-            <div className="absolute -bottom-6 -right-6 w-56 bg-gradient-to-r from-[#3CBEB3] to-[#23A0D0] rounded-2xl p-6 shadow-2xl transform -rotate-3">
-              <div className="flex items-center gap-3 mb-4">
+            <div className={`absolute ${isRTL ? '-bottom-6 -right-6' : '-bottom-6 -left-6'} w-56 bg-gradient-to-r from-[#3CBEB3] to-[#23A0D0] rounded-2xl p-6 shadow-2xl transform -rotate-3`}>
+              <div className={`flex items-center gap-3 mb-4 ${isRTL ? '' : 'flex-row-reverse'}`}>
                 <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
                   <ChartBarIcon className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <div className="font-bold text-lg"> {isRTL ? 'ضمان التوظيف' : 'Job Guarantee'}</div>
-                  <div className="text-sm text-blue-100">{isRTL ? '90% توظيف' : '90% Employment'}</div>
+                  <div className="font-bold text-lg"> {lang === 'ar' ? 'ضمان التوظيف' : 'Employment Guarantee'}</div>
+                  <div className="text-sm text-blue-100">{lang === 'ar' ? '90% توظيف' : '90% Employment'}</div>
                 </div>
               </div>
-              <div className="text-sm"> {isRTL ? 'دعم كامل للحصول على وظيفة' : 'Full support for job placement'}</div>
+              <div className="text-sm">{lang === 'ar' ? 'دعم كامل للحصول على وظيفة' : 'Full support for job placement'}</div>
             </div>
           </div>
         </div>
@@ -124,11 +115,11 @@ const ProgramsHeroSection = () => {
           <div className="animate-bounce">
             <ArrowDownIcon className="h-8 w-8 mx-auto text-white/60" />
           </div>
-          <p className="text-blue-100 mt-2"> {isRTL ? 'قم بالتمرير لاكتشاف البرامج' : 'Scroll to explore programs'}</p>
+          <p className="text-blue-100 mt-2">{lang === 'ar' ? 'قم بالتمرير لاكتشاف البرامج' : 'Scroll to explore programs'}</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default ProgramsHeroSection;
+export default CoursesHeroSection;

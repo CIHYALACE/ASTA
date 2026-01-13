@@ -4,6 +4,7 @@ import { getCourseData } from '../../api/Courses';
 
 function InstructorSection({ course }) {
   const { lang } = useParams();
+  const isRTL = lang === 'ar';
   
   // Get localized course data
   const localizedCourse = getCourseData(course, lang);
@@ -11,8 +12,8 @@ function InstructorSection({ course }) {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8 border-r-4 border-[#23A0D0] pr-4">
-          المدرب
+        <h2 className={`text-3xl font-bold text-gray-800 mb-8 ${isRTL ? 'border-r-4 border-[#23A0D0] pr-4' : 'border-l-4 border-[#23A0D0] pl-4'}`}>
+          {isRTL ? 'المدرب' : 'Instructor'}
         </h2>
         
         <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8">
@@ -39,7 +40,7 @@ function InstructorSection({ course }) {
                 </div>
                 <div className="flex items-center gap-2 mt-4 md:mt-0">
                   <span className="px-4 py-2 bg-[#23A0D0] text-white rounded-full text-sm">
-                    خبرة {localizedCourse.instructor.experience}
+                    {isRTL ? 'خبرة' : 'Experience'} {localizedCourse.instructor.experience}
                   </span>
                 </div>
               </div>
@@ -51,11 +52,11 @@ function InstructorSection({ course }) {
               <div className="flex flex-wrap gap-4">
                 <button className="flex items-center gap-2 px-5 py-2.5 bg-gray-800 text-white rounded-xl hover:bg-gray-900 transition-colors">
                   <UserIcon className="h-5 w-5" />
-                  <span>عرض الملف الشخصي</span>
+                  <span>{isRTL ? 'عرض الملف الشخصي' : 'View Personal Profile'}</span>
                 </button>
                 <button className="flex items-center gap-2 px-5 py-2.5 border border-gray-300 text-gray-700 rounded-xl hover:bg-gray-50 transition-colors">
                   <EnvelopeIcon className="h-5 w-5" />
-                  <span>تواصل مع المدرب</span>
+                  <span>{isRTL ? 'تواصل مع المدرب' : 'Contact the instructor'}</span>
                 </button>
               </div>
             </div>

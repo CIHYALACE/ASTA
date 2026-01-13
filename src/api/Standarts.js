@@ -1733,8 +1733,8 @@ const standardsData = {
     refund: {
       id: 'refund',
       title: {
-        ar: 'سياسة الانسحاب والاسترجاع',
-        en: 'Withdrawal and Refund Policy'
+        ar: 'سياسة الإلغاء والانسحاب والتأجيل',
+        en: 'Cancellation, Withdrawal, and Postponement Policy'
       },
       icon: ReceiptRefundIcon,
       color: 'bg-gradient-to-r from-[#23A0D0] to-[#3CBEB3]',
@@ -1746,155 +1746,128 @@ const standardsData = {
       pdf: '/files/NinthStandart.pdf',
       content: {
         introduction: {
-          ar: 'تضع هذه السياسة الإطار النظامي والتنظيمي الذي ينظم حقوق والتزامات كل من المركز والمتدرب، لضمان تقديم خدمات تدريبية عالية الجودة وبما يتوافق مع الأنظمة المعمول بها.',
-          en: 'This policy establishes the regulatory and organizational framework that regulates the rights and obligations of both the center and the trainee, to ensure the provision of high-quality training services in accordance with applicable regulations.'
+          ar: 'تضع هذه السياسة الإطار النظامي والتنظيمي الذي ينظم حقوق والتزامات كل من الأكاديمية والمتدرب، لضمان تقديم خدمات تدريبية عالية الجودة وبما يتوافق مع الأنظمة المعمول بها.',
+          en: 'This policy establishes the regulatory and organizational framework that regulates the rights and obligations of both the academy and the trainee, to ensure the provision of high-quality training services in accordance with applicable regulations.'
         },
         sections: [
           {
             title: {
-              ar: 'أولاً: سياسة الانسحاب والاسترجاع',
-              en: 'First: Withdrawal and Refund Policy'
-            },
-            content: {
-              ar: 'لا يحق للمتدرب/ة استرداد أي مبالغ إلا في الظروف الاضطرارية وتشمل: مرض عضال أو وفاة المتدرب/ة (لا قدر الله) أو أحد أقاربه من الدرجة الأولى بشرط ألا يتجاوز تاريخ الفاتورة 6 أشهر، وفي حال التجاوز لا يحق للمتدرب/ة الاسترجاع نهائيًا (يرجى ملاحظة ان هذه الأعذار لا بد وأن يوافق عليها المسئول وتكون موثقة من جهات رسمية فقط). بعد حساب التكاليف المستحقة عليه في حال بدأ التدريب.',
-              en: 'The trainee is not entitled to refund any amounts except under emergency circumstances including: terminal illness or death of the trainee (God forbid) or a first-degree relative, provided that the invoice date does not exceed 6 months, and in case of exceeding, the trainee is not entitled to refund permanently (please note that these excuses must be approved by the responsible person and be documented only from official entities). After calculating the due costs if training has started.'
-            },
-            icon: ExclamationTriangleIcon,
-          },
-          {
-            title: {
-              ar: 'ثانيًا: أحكام الانسحاب المقبول',
-              en: 'Second: Provisions of Accepted Withdrawal'
-            },
-            subtitle: {
-              ar: 'في حال تم قبول العذر بالشروط المذكورة أعلاه يتم تطبيق الأحكام التالية:',
-              en: 'In case the excuse is accepted under the above-mentioned conditions, the following provisions apply:'
+              ar: 'أولًا: الدورات التطويرية والتأهيلية',
+              en: 'First: Developmental and Qualification Courses'
             },
             points: [
               {
-                ar: 'في حال الانسحاب قبل موعد بدء الدورة بمدة أكثر من 10 أيام عمل فانه يحق للمتدرب/ة استرداد كاملة مع خصم سعر الحقيبة التدريبية (إلكترونية أو مادة مطبوعة) في حالة استلام المتدرب/ة للحقيبة.',
-                en: 'In case of withdrawal more than 10 working days before the course start date, the trainee is entitled to full refund minus the training kit price (electronic or printed material) if the trainee has received the kit.'
+                category: {
+                  ar: 'الإلغاء قبل بدء الدورة',
+                  en: 'Cancellation Before Course Start'
+                },
+                items: [
+                  {
+                    ar: 'في حال رغبة المتدرب بإلغاء التسجيل قبل تاريخ بدء الدورة، يحق للأكاديمية خصم رسوم إدارية تصل إلى 30% من قيمة الرسوم المدفوعة.',
+                    en: 'If the trainee wishes to cancel registration before the course start date, the academy has the right to deduct administrative fees up to 30% of the paid fees value.'
+                  },
+                  {
+                    ar: 'لا يتم استرداد كامل المبلغ المدفوع في هذه المرحلة نظرًا لما يتم ترتيبه من تجهيزات مسبقة لحجز المقعد وإعداد البرنامج.',
+                    en: 'The full paid amount is not refunded at this stage due to the pre-arranged preparations for seat reservation and program preparation.'
+                  }
+                ]
               },
               {
-                ar: 'في حال الانسحاب قبل بدء الدورة بعشر أيام عمل تخصم 10% من الرسوم المدفوعة بالإضافة إلى خصم سعر الحقيبة التدريبية (إلكترونية أو مادة مطبوعة) إذا استلمها المتدرب/ة.',
-                en: 'In case of withdrawal ten working days before the course starts, 10% of the paid fees are deducted in addition to deducting the training kit price (electronic or printed material) if received by the trainee.'
+                category: {
+                  ar: 'الإلغاء بعد تفعيل الدورة',
+                  en: 'Cancellation After Course Activation'
+                },
+                items: [
+                  {
+                    ar: 'بمجرد تفعيل الدورة وإضافتها إلى حساب المشارك يُعد ذلك بمثابة بدء تقديم الخدمة، ولا يمكن استرداد قيمة الدورة لأي سبب كان.',
+                    en: 'Once the course is activated and added to the participant\'s account, this is considered as service commencement, and the course value cannot be refunded for any reason.'
+                  }
+                ]
               },
               {
-                ar: 'لمتدربي دورات اللغة الانجليزية: في حال الانسحاب في الأسبوع الدراسي الأول حتى لو حضر يوماً واحداً من بداية الدورة يُخصم 50% من قيمة الدورة.',
-                en: 'For English language course trainees: In case of withdrawal in the first academic week even if attended one day from the course start, 50% of the course value is deducted.'
+                category: {
+                  ar: 'الاسترداد خلال يوم واحد من السداد',
+                  en: 'Refund Within One Day of Payment'
+                },
+                items: [
+                  {
+                    ar: 'في حال طلب الاسترداد خلال يوم واحد من إجراء عملية الدفع، تتم معالجة الطلب خلال مدة أقصاها 15 يوم عمل.',
+                    en: 'If refund is requested within one day of payment processing, the request is processed within a maximum period of 15 working days.'
+                  },
+                  {
+                    ar: 'يتم خصم 30% من المبلغ المدفوع باعتبارها رسومًا إدارية لمعالجة الطلب وتجهيز الخدمة.',
+                    en: '30% of the paid amount is deducted as administrative fees for processing the request and preparing the service.'
+                  }
+                ]
               },
               {
-                ar: 'في حال الانسحاب في الأسبوع الدراسي الثاني من بداية الدورة لا يحق لهاسترجاع المبلغ المدفوع.',
-                en: 'In case of withdrawal in the second academic week from the course start, no refund of the paid amount is allowed.'
+                category: {
+                  ar: 'الخدمات المقدمة بالكامل',
+                  en: 'Fully Provided Services'
+                },
+                items: [
+                  {
+                    ar: 'لا يحق للمتدرب طلب استرداد الرسوم في حال تم تقديم الخدمة كاملة أو استكمال محتوى الدورة أو تسليم المتطلبات المتفق عليها.',
+                    en: 'The trainee is not entitled to request fee refund if the service has been fully provided or course content completed or agreed requirements delivered.'
+                  },
+                  {
+                    ar: 'تتيح الأكاديمية خيار تحويل الرسوم إلى دورة أخرى، مع دفع الفارق (إن وجد)، شريطة تقديم الطلب قبل بدء الدورة.',
+                    en: 'The academy allows the option of transferring fees to another course, with payment of the difference (if any), provided that the request is submitted before the course starts.'
+                  }
+                ]
               },
               {
-                ar: 'لا يتم استرداد أي مبالغ إلا بإحضار أصل الفاتورة',
-                en: 'No amounts are refunded except by presenting the original invoice.'
+                category: {
+                  ar: 'الاشتراك عبر أنظمة الدفع (تابي – تمارا)',
+                  en: 'Subscription Through Payment Systems (TABI - TAMARA)'
+                },
+                items: [
+                  {
+                    ar: 'في حالة الاشتراك عبر خدمات الدفع المقدمة من "تابي" أو "تمارا"، يعتبر الطلب نهائيًا، ولا يمكن إلغاؤه أو استرداد قيمته، التزامًا بسياسات الجهات المشغّلة.',
+                    en: 'In case of subscription through payment services provided by "TABI" or "TAMARA", the order is considered final, and cannot be canceled or its value refunded, in compliance with the operating entities\' policies.'
+                  }
+                ]
               }
             ],
-            icon: CheckCircleIcon,
+            icon: CurrencyDollarIcon,
           },
           {
             title: {
-              ar: 'ثالثًا: الإلغاء قبل بدء البرنامج أو الدورة',
-              en: 'Third: Cancellation Before Program or Course Start'
+              ar: 'ثانياً: البرامج التأهيلية والدبلوم',
+              en: 'Second: Qualification Programs and Diplomas'
+            },
+            content: {
+              ar: 'يجوز للمتدرب الانسحاب أو الاعتذار عن تكملة البرنامج ، ويطبق عليه سياسة إعادة الرسوم كالتالي:',
+              en: 'The trainee may withdraw or apologize for completing the program, and the fee refund policy applies as follows:'
             },
             points: [
               {
-                ar: 'في حال رغب المتدرب بإلغاء التسجيل قبل تاريخ بدء البرنامج، يحق للمركز خصم رسوم إدارية تصل إلى 40% من قيمة الرسوم المدفوعة.',
-                en: 'If the trainee wishes to cancel registration before the program start date, the center has the right to deduct administrative fees up to 40% of the paid fees value.'
+                ar: 'رسوم التسجيل في البرنامج التأهيلي أو الدبلوم غير مستردة.',
+                en: 'Registration fees for the qualification program or diploma are non-refundable.'
               },
               {
-                ar: 'لا يتم استرداد كامل المبلغ المدفوع في هذه المرحلة نظرًا لما يتم ترتيبه من تجهيزات مسبقة لحجز المقعد وإعداد البرنامج.',
-                en: 'The full paid amount is not refunded at this stage due to the pre-arranged preparations for seat reservation and program preparation.'
+                ar: 'يخصم (15%) من الرسوم في حال الانسحاب أو الاعتذار عن البرنامج قبل بدء الدراسة وفقاً للتقويم التدريبي.',
+                en: '15% of the fees are deducted in case of withdrawal or apology from the program before the start of study according to the training calendar.'
+              },
+              {
+                ar: 'يخصم (25%) من الرسوم خلال الأسابيع الثلاثة الأولى من بداية الفصل الدراسي وفقاً للتقويم التدريبي.',
+                en: '25% of the fees are deducted during the first three weeks from the beginning of the semester according to the training calendar.'
+              },
+              {
+                ar: 'لا تعاد الرسوم للمتدرب في حال الانسحاب أو الإعتذار بعد مضي الأسبوع الثالث وفقاً للتقويم التدريبي.',
+                en: 'Fees are not returned to the trainee in case of withdrawal or apology after the third week according to the training calendar.'
+              },
+              {
+                ar: 'إذا تقدم المتدرب بطلب تأجيل القبول فيجوز له ترحيل الرسوم الدراسية للفصل التالي.',
+                en: 'If the trainee submits a request to postpone acceptance, they may defer tuition fees to the next semester.'
               }
             ],
             icon: CalendarIcon,
           },
           {
             title: {
-              ar: 'رابعًا: الإلغاء بعد تفعيل الدورة (للدورات الإلكترونية)',
-              en: 'Fourth: Cancellation After Course Activation (For Electronic Courses)'
-            },
-            content: {
-              ar: 'بمجرد تفعيل الدورة وإضافتها إلى حساب المشارك يُعد ذلك بمثابة بدء تقديم الخدمة، ولا يمكن استرداد قيمة الدورة لأي سبب كان.',
-              en: 'Once the course is activated and added to the participant\'s account, this is considered as service commencement, and the course value cannot be refunded for any reason.'
-            },
-            icon: LockClosedIcon,
-          },
-          {
-            title: {
-              ar: 'خامسًا: استرداد الرسوم خلال يوم واحد من السداد',
-              en: 'Fifth: Fee Refund Within One Day of Payment'
-            },
-            points: [
-              {
-                ar: 'في حال طلب الاسترداد خلال يوم واحد من إجراء عملية الدفع، تتم معالجة الطلب خلال مدة أقصاها 15 يوم عمل.',
-                en: 'If refund is requested within one day of payment processing, the request is processed within a maximum period of 15 working days.'
-              },
-              {
-                ar: 'يتم خصم 40% من المبلغ المدفوع باعتبارها رسومًا إدارية لمعالجة الطلب وتجهيز الخدمة.',
-                en: '40% of the paid amount is deducted as administrative fees for processing the request and preparing the service.'
-              }
-            ],
-            icon: ClockIcon,
-          },
-          {
-            title: {
-              ar: 'سادسًا: الخدمات المقدمة بالكامل',
-              en: 'Sixth: Fully Provided Services'
-            },
-            content: {
-              ar: 'لا يحق للمتدرب طلب استرداد الرسوم في حال تم تقديم الخدمة كاملة أو استكمال محتوى الدورة أو تسليم المتطلبات المتفق عليها.',
-              en: 'The trainee is not entitled to request fee refund if the service has been fully provided or course content completed or agreed requirements delivered.'
-            },
-            icon: CheckCircleIcon,
-          },
-          {
-            title: {
-              ar: 'سابعًا: تحويل الرسوم إلى برنامج تدريبي آخر',
-              en: 'Seventh: Transfer of Fees to Another Training Program'
-            },
-            content: {
-              ar: 'يتيح المركز خيار تحويل الرسوم إلى برنامج آخر، مع دفع الفارق (إن وجد)، شريطة تقديم الطلب قبل بدء البرنامج الأصلي أو الدورة.',
-              en: 'The center allows the option of transferring fees to another program, with payment of the difference (if any), provided that the request is submitted before the start of the original program or course.'
-            },
-            icon: CurrencyDollarIcon,
-          },
-          {
-            title: {
-              ar: 'ثامنًا: الاشتراك عبر أنظمة الدفع (تابي – تمارا)',
-              en: 'Eighth: Subscription Through Payment Systems (TABI - TAMARA)'
-            },
-            points: [
-              {
-                ar: 'في حالة الاشتراك عبر خدمات الدفع المقدمة من "تابي" أو "تمارا"، يعتبر الطلب نهائيًا، ولا يمكن إلغاؤه أو استرداد قيمته، التزامًا بسياسات الجهات المشغّلة.',
-                en: 'In case of subscription through payment services provided by "TABI" or "TAMARA", the order is considered final, and cannot be canceled or its value refunded, in compliance with the operating entities\' policies.'
-              }
-            ],
-            icon: CurrencyDollarIcon,
-          },
-          {
-            title: {
-              ar: 'تاسعًا: خدمات الإفصاح عن بيانات الموظفين عبر منصة قوى',
-              en: 'Ninth: Employee Data Disclosure Services Through Qiwa Platform'
-            },
-            points: [
-              {
-                ar: 'عند طلب الخدمة والموافقة على العرض التدريبي بشكل نهائي، لا يمكن استرداد أي مبالغ مدفوعة.',
-                en: 'When requesting the service and final approval of the training offer, no paid amounts can be refunded.'
-              },
-              {
-                ar: 'يُعد تأكيد الطلب موافقة صريحة على تقديم الخدمة في التاريخ المحدد للجهة.',
-                en: 'Order confirmation is considered explicit consent to provide the service on the specified date to the entity.'
-              }
-            ],
-            icon: DocumentTextIcon,
-          },
-          {
-            title: {
-              ar: 'عاشرًا: أحكام عامة',
-              en: 'Tenth: General Provisions'
+              ar: 'ثالثاً: أحكام عامة',
+              en: 'Third: General Provisions'
             },
             points: [
               {
@@ -1906,15 +1879,15 @@ const standardsData = {
                 en: 'This policy aims to regulate the relationship fairly and transparently, and provide training services according to the highest standards.'
               },
               {
-                ar: 'يحق للمركز تحديث هذه السياسة عند الحاجة، وسيتم الإعلان عن ذلك عند تطبيق أي تعديل.',
-                en: 'The center has the right to update this policy when needed, and this will be announced when any amendment is applied.'
+                ar: 'يحق للأكاديمية تحديث هذه السياسة عند الحاجة، وسيتم الإعلان عن ذلك عند تطبيق أي تعديل.',
+                en: 'The academy has the right to update this policy when needed, and this will be announced when any amendment is applied.'
               }
             ],
             icon: ShieldCheckIcon,
           }
         ]
       }
-    }
+    },
   };
 
 export default standardsData;

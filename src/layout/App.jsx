@@ -12,8 +12,6 @@ const Courses = React.lazy(() => import('../pages/Courses'));
 const CourseDetails = React.lazy(() => import('../pages/CourseDetails'));
 const CategoryPage = React.lazy(() => import('../pages/CategoryPage'));
 const Registeration = React.lazy(() => import('../pages/Registeration'));
-const StudentServices = React.lazy(() => import('../pages/StudentServices'));
-const TermsAndConditions = React.lazy(() => import('../pages/Terms&Conditions'));
 const AcademicIntegrityPage = React.lazy(() => import('../pages/AcademicIntegrityPage'));
 const AdmissionAndRegistration = React.lazy(() => import('../pages/AdmissionAndRegistration'));
 
@@ -36,8 +34,6 @@ export default function App() {
           <Route path="courses/:id" element={<CourseDetails />} />
           <Route path="categories/:categoryId" element={<CategoryPage />} />
           <Route path="registration" element={<Registeration />} />
-          <Route path="student-services" element={<StudentServices />} />
-          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="admission&registration" element={<AdmissionAndRegistration />} />
         </Route>
       </Routes>

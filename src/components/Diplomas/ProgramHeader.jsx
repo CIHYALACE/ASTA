@@ -63,7 +63,7 @@ function ProgramHeader({ program, lang }) {
               <div className="flex items-center justify-between mb-6">
                 <div className='flex'>
                   <div className="text-3xl font-bold">{program.price}</div>
-                  <img src="/svgs/icons/WhiteRiyal.svg" alt="" className='w-10'/>
+                  <img src="/svgs/icons/WhiteRiyal.svg" alt="" className='w-10' loading="lazy"/>
                 </div>
               </div>
               
@@ -81,8 +81,8 @@ function ProgramHeader({ program, lang }) {
                   <span>{localizedProgram.instructor.name}</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <img src="/images/tabby-logo-1.png" className='w-15' alt="" />
-                  <img src="/images/tamaralogo_ar.png" className='w-15' alt="" />
+                  <img src="/images/tabby-logo-1.png" className='w-15' alt="" loading="lazy"/>
+                  <img src="/images/tamaralogo_ar.png" className='w-15' alt="" loading="lazy"/>
                 </div>
               </div>
               

@@ -40,6 +40,7 @@ const RelatedProgramsSection = ({ currentProgramId, lang }) => {
                     src={localizedProgram.image}
                     alt={localizedProgram.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 ) : (
                   <div className="w-full h-full bg-gray-300 flex items-center justify-center">

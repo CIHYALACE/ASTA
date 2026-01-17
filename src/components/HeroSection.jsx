@@ -1,18 +1,52 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
+import { useRef, useEffect } from "react";
 function HeroSection() {
     const navigate = useNavigate()
     const {lang} = useParams();
     const { t } = useTranslation();
+    const videoRef = useRef(null);
+    useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Respect slow connections
+    const conn = navigator.connection;
+    if (conn?.saveData || conn?.effectiveType?.includes("2g")) {
+        video.remove();
+        return;
+    }
+
+    // Fade in when video is actually playing
+    const onPlay = () => video.classList.remove("opacity-0");
+    video.addEventListener("playing", onPlay);
+
+    return () => video.removeEventListener("playing", onPlay);
+    }, []);
+
     return (
         <section className="relative min-h-screen min-h-[600px] flex items-center justify-center overflow-hidden" id="home">
-            <div className="absolute inset-0">
-                <video autoPlay muted loop playsInline className="w-full h-full object-cover">
+            <div className="absolute inset-0" style={{backgroundImage: 'url("/images/Asta_Hero.webp")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+                <video
+                    ref={videoRef}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                    poster="/images/Asta_Hero.webp"
+                    className="w-full h-full object-cover opacity-0 transition-opacity duration-700"
+                >
+                    <source src="/videos/Asta_AI.webm" type="video/webm" />
                     <source src="/videos/Asta_AI.mp4" type="video/mp4" />
                 </video>
-                <div className="absolute inset-0 z-10"
-                    style={{ background: "linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(44, 122, 123, 0.6) 100%)" }}
+
+                <div
+                    className="absolute inset-0"
+                    style={{
+                    background:
+                        "linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(44, 122, 123, 0.6) 100%)",
+                    }}
                 />
             </div>
             <div className="relative z-10 text-center w-full">

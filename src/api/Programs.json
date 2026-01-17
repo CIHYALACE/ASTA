@@ -1716,8 +1716,8 @@
       "en": "Can exit after completing the four semesters and obtain the diploma certificate"
     },
     "targetJobs": {
-      "ar": ["سكرتير قانوني بمكاتب المحاماة", "مساعد قانوني في دوائر الشؤون القانونية", "مساعد إداري في الإدارات القانونية بالشركات", "منسق ملفات قانونية في الجهات القضائية"],
-      "en": ["Legal Secretary in law offices", "Legal Assistant in legal affairs departments", "Administrative Assistant in company legal departments", "Legal Files Coordinator in judicial bodies"]
+      "ar": ["سكرتير قانوني", "باحث قانوني", "مساعد قانوني", "كاتب قانوني","محقق قانوني"],
+      "en": ["Legal Secretary", "Legal Researcher", "Legal Assistant", "Legal Files Coordinator", "Legal investigator"]
     },
     "faqs": [
       {
@@ -1746,8 +1746,8 @@
           "en": "What are the job opportunities after graduation?"
         },
         "answer": {
-          "ar": "العمل كمكتبي قانوني، سكرتير قانوني، مساعد قانوني في المكاتب القانونية والإدارات القانونية والجهات القضائية",
-          "en": "Work as legal clerk, legal secretary, legal assistant in law offices, legal departments, and judicial bodies"
+          "ar": "سكرتير قانوني, بحث قانوني, مساعد قانوني, كاتب قانوني, محقق قانوني",
+          "en": "Legal Clerk, Legal Researcher, Legal Assistant, Legal Files Coordinator, Legal investigator"
         }
       },
       {
@@ -1756,8 +1756,8 @@
           "en": "Does the program include practical training?"
         },
         "answer": {
-          "ar": "نعم، يتضمن 360 ساعة تدريب تعاوني في سوق العمل",
-          "en": "Yes, includes 360 hours of cooperative training in the job market"
+          "ar": "نعم، يتضمن 3 أشهر تدريب تعاوني في سوق العمل",
+          "en": "Yes, includes 3 months of cooperative training in the job market"
         }
       }
     ]

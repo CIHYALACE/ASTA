@@ -79,7 +79,7 @@ const CoursesHeroSection = ({ lang = 'ar' }) => {
 
           {/* الصورة */}
           <div className={isRTL ? 'relative' : 'relative'}>
-            <img src="/images/Student.png" alt="برامج تدريبية" loading="lazy" className="rounded-2xl shadow-lg w-full h-auto object-cover col-span-2 lg:col-span-1" />
+            <img src="/images/Student.png" alt="برامج تدريبية" className="rounded-2xl shadow-lg w-full h-auto object-cover col-span-2 lg:col-span-1" />
 
             {/* بطاقات عائمة */}
             <div className={`absolute -top-6 ${isRTL ? '-left-6' : '-right-6'} w-64 bg-gradient-to-r from-[#23A0D0] to-[#30AFC1] rounded-2xl p-6 shadow-2xl transform rotate-3`}>

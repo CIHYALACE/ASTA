@@ -1,26 +1,26 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SharedLayout from '../shared/SharedLayout';
-
 // Pages
-const Home = React.lazy(() => import('../pages/Home'));
-const AboutUs = React.lazy(() => import('../pages/AboutUs'));
-const TrainingPrograms = React.lazy(() => import('../pages/TrainingPrograms'));
-const ProgramDetails = React.lazy(() => import('../pages/ProgramDetails'));
-const Courses = React.lazy(() => import('../pages/Courses'));
-const CourseDetails = React.lazy(() => import('../pages/CourseDetails'));
-const CategoryPage = React.lazy(() => import('../pages/CategoryPage'));
-const Registeration = React.lazy(() => import('../pages/Registeration'));
-const AcademicIntegrityPage = React.lazy(() => import('../pages/AcademicIntegrityPage'));
-const AdmissionAndRegistration = React.lazy(() => import('../pages/AdmissionAndRegistration'));
+import Home from '../pages/Home';
+import AboutUs from '../pages/AboutUs';
+import TrainingPrograms from '../pages/TrainingPrograms';
+import ProgramDetails from '../pages/ProgramDetails';
+import Courses from '../pages/Courses';
+import CourseDetails from '../pages/CourseDetails';
+import CategoryPage from '../pages/CategoryPage';
+import Registeration from '../pages/Registeration';
+import StudentServices from '../pages/StudentServices';
+import TermsAndConditions from '../pages/Terms&Conditions';
+import AcademicIntegrityPage from '../pages/AcademicIntegrityPage';
+import AdmissionAndRegistration from '../pages/AdmissionAndRegistration';
 
 // Styles
 import '../style/App.css';
 
 export default function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route path="/" element={<Navigate to="/ar" />} />
 
@@ -34,9 +34,10 @@ export default function App() {
           <Route path="courses/:id" element={<CourseDetails />} />
           <Route path="categories/:categoryId" element={<CategoryPage />} />
           <Route path="registration" element={<Registeration />} />
+          <Route path="student-services" element={<StudentServices />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="admission&registration" element={<AdmissionAndRegistration />} />
         </Route>
       </Routes>
-    </Suspense>
   );
 }

@@ -1,10 +1,8 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
-import { useInView } from 'react-intersection-observer';
 
 const AboutSection = () => {
     const { t } = useTranslation();
-    const [ref, inView] = useInView({threshold: 0, triggerOnce: true});
   return (
 <section className="py-16 bg-gray-50">
         <div className="mx-10 px-4 md:px-6">
@@ -31,14 +29,7 @@ const AboutSection = () => {
                     </div>
                 </div>
                 <div className="md:w-1/2">
-                <video
-                    ref={ref}
-                    className={`${inView ? '' : 'opacity-0'} w-full h-full object-cover rounded-2xl transition-all duration-300`}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                >
+                <video autoPlay muted loop playsInline className="w-full h-full object-cover rounded-2xl">
                     <source src="/videos/Asta_AI.mp4" type="video/mp4" />
                 </video>
                 </div>

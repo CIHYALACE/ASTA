@@ -39,7 +39,6 @@ const RelatedCoursesSection = ({ currentCourseId }) => {
                       src={localizedCourse.image}
                       alt={localizedCourse.title}
                       className="w-full h-full object-cover"
-                      loading="lazy"
                     />
                   ) : (
                     <div className="w-full h-full bg-gray-300 flex items-center justify-center">

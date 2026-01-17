@@ -22,7 +22,6 @@ function InstructorSection({ program, lang }) {
                   src={program.instructor.image} 
                   alt={program.instructor.name}
                   className="w-40 h-40 rounded-2xl object-cover border-4 border-white shadow-lg mx-auto"
-                  loading="lazy"
                 />
               ) : (
                 <div className="w-40 h-40 rounded-2xl bg-gray-200 border-4 border-white shadow-lg mx-auto flex items-center justify-center">

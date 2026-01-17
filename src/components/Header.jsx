@@ -176,7 +176,6 @@ export default function Navbar() {
                       alt="ASTA Logo"
                       width={63}
                       height={17}
-                      loading="lazy"
                       // priority
                       className="h-auto"
                     />
@@ -217,8 +216,6 @@ export default function Navbar() {
                   alt="ASTA Logo"
                   width={152}
                   height={42}
-                  loading="lazy"
-                  // priority
                   className="h-auto md:w-[120px] lg:w-[152px] md:mx-8"
                 />
               </a>
@@ -554,8 +551,6 @@ export default function Navbar() {
                   alt="ASTA Logo"
                   width={63}
                   height={17}
-                  loading="lazy"
-                  // priority
                   className="h-auto"
                 />
               </a>
@@ -655,7 +650,6 @@ export default function Navbar() {
                   <img
                     src="/icons/6.svg"
                     alt="whatsapp"
-                    loading="lazy"
                     className="w-6! h-6!"
                   />
                 </a>

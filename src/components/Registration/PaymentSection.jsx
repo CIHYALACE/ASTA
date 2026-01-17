@@ -47,7 +47,7 @@
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800">{method.label[lang]}</h3>
-                    <p className="text-sm text-gray-600">{method.desc[lang]}</p>
+                    {/* <p className="text-sm text-gray-600">{method.desc[lang]}</p> */}
                   </div>
                 </div>
               </div>
@@ -80,7 +80,15 @@
             className="w-5 h-5 rounded border-gray-300 text-[#23A0D0] focus:ring-[#23A0D0]"
           />
           <label htmlFor="agreeToTerms" className="text-gray-700">
-            {lang === 'ar' ? 'أوافق على الشروط والأحكام وسياسة الخصوصية *' : 'I agree to the terms and conditions and privacy policy *'}
+            {lang === 'ar' ? (
+              <>
+                أوافق على <a href={`/${lang}/academic-integrity`} className="text-[#23A0D0] underline">الشروط والأحكام</a> و<a href={`/${lang}/academic-integrity`} className="text-[#23A0D0] underline">سياسة الخصوصية</a> *
+              </>
+            ) : (
+              <>
+                I agree to the <a href={`/${lang}/academic-integrity`} className="text-[#23A0D0] underline">terms and conditions</a> and <a href={`/${lang}/academic-integrity`} className="text-[#23A0D0] underline">privacy policy</a> *
+              </>
+            )}
           </label>
         </div>
         {errors.agreeToTerms && (

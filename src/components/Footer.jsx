@@ -68,6 +68,7 @@ export default function Footer() {
                   src="/svgs/ASTA_Logo.svg"
                   alt="أكاديمية المهارات التطبيقية"
                   className="w-[250px] h-auto0" // invert brightness-0 to make the logo color white
+                  loading="lazy"
                   width={250}
                   height={60}
                 />

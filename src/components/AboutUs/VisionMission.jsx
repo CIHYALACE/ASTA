@@ -52,15 +52,11 @@ const VisionMission = ({lang}) => {
                            }}></i>
                     </div>
                     <h3 className="text-2xl font-bold text-dark-blue mb-4 text-center relative pb-3 gradient-text">
-                        {isRTL ? "الرؤية" : "Vision"}
+                        {t("visionMission.vision.title")}
                         <div className="absolute bottom-0 right-1/2 w-12 h-1 gradient-bg transform translate-x-1/2"></div>
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-center">
-                        {isRTL ? `أكاديمية المهارات التطبيقية انطلاقة نحو 
-                        اكتساب المزيد من المهارات التي تضعك في 
-                        صدارة المنافسة.` 
-                        : `Academy of Applied Skills aims to provide comprehensive training
-                         resources for professionals in the field of technology.`}
+                        {t("visionMission.vision.description")}
                     </p>
                 </div>
                 
@@ -80,14 +76,11 @@ const VisionMission = ({lang}) => {
                            }}></i>
                     </div>
                     <h3 className="text-2xl font-bold text-dark-blue mb-4 text-center relative pb-3 gradient-text">
-                        {isRTL ? "الرسالة" : "Mission"}
+                        {t("visionMission.mission.title")}
                         <div className="absolute bottom-0 right-1/2 w-12 h-1 gradient-bg transform translate-x-1/2"></div>
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-center">
-                        {isRTL ? `أكاديمية المهارات التطبيقية تهدف إلى توفير 
-                        موارد تدريبية متكاملة للمهنيين في مجال التكنولوجيا.` 
-                        : `Academy of Applied Skills aims to provide comprehensive training
-                         resources for professionals in the field of technology.`}
+                        {t("visionMission.mission.description")}
                     </p>
                 </div>
                 
@@ -107,11 +100,11 @@ const VisionMission = ({lang}) => {
                            }}></i>
                     </div>
                     <h3 className="text-2xl font-bold text-dark-blue mb-4 text-center relative pb-3 gradient-text">
-                        {isRTL ? "القيم" : "Values"}
+                        {t("visionMission.values.title")}
                         <div className="absolute bottom-0 right-1/2 w-12 h-1 gradient-bg transform translate-x-1/2"></div>
                     </h3>
                     <p className="text-gray-600 leading-relaxed text-center">
-                        {isRTL ? "الابتكار، التميز، المصداقية، الالتزام، المرونة." : "Innovation, excellence, credibility, commitment, flexibility."}
+                        {t("visionMission.values.description")}
                     </p>
                 </div>
             </div>
